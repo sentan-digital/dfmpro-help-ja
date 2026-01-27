@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_63"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Bend Radius</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Bend Radius "最小曲げ半径"</h1>
+<h4>ルール</h4>
+<p>板金部品における曲げ半径を板厚で割った比率は、ユーザーが指定した値以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>最小曲げ半径は、加工対象材料の柔軟性および板厚に依存します。最小曲げ半径の要求値は、用途および材料によって異なる場合があります。</p>
+<p>航空宇宙や宇宙用途では、要求値がより高くなる場合があります。推奨値よりも半径が小さい場合、軟質材料では材料流動の問題が発生し、硬質材料では破断が生じる可能性があります。そのような場合、局所的なくびれ（ネッキング）や破断が発生することもあります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な目安として、最小曲げ半径は少なくとも板厚と同等以上であるべきです。焼なましされた金属の多くは、板厚と同じ半径まで曲げることができます。一方、より軟らかい金属の中には、内側半径を板厚の 1/2 まで曲げられるものもあります。曲げ半径の長さが短いと、最小曲げ半径は小さくなります。</p>
+<p>材料およびその硬さに基づき、最小曲げ半径と板金板厚の比率について異なる値を推奨します。</p>
+
+<br>
+
+<h4>構成</h4>
+<p><strong>曲げ半径と板厚の比率（Bend Radius to Thickness）</strong>の値を、適切に設定してください。</p>
+<p>さらに、ユーザーは <a href="../DFMPro_Customization/material_database.htm">材料データベース（Materials Database）</a> の製造材料を使用して、表示される一覧から特定の材料に基づいて比率を選択することもできます。</p>
+<p>ルールを実行する際は、入力選択（Input Selection）ダイアログボックスで、部品に対して表示される製造材料の一覧から任意の材料を選択してください。</p>
+<p>選択した材料に対して曲げ半径と板厚の比率が設定されていない場合、デフォルト値が部品解析に使用されます。</p>
+
+<br>
+
+<p><strong>材料ごとに設定した値は、硬質材料条件に適用されます：</strong></p>
+
+<br>
+
+<table align="center" border="1" cellspacing="0" width="439">
+  <colgroup>
+    <col style="width: 43.125%;"/>
+    <col style="width: 56.875%;"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight: bold; text-align: center;">材料</p></td>
+      <td><p style="text-align: center; font-weight: bold;">曲げ半径と板厚の比率</p></td>
+    </tr>
+    <tr>
+      <td><p>アルミニウム合金</p></td>
+      <td><p style="text-align: center;">6.0</p></td>
+    </tr>
+    <tr>
+      <td><p>ベリリウム銅</p></td>
+      <td><p style="text-align: center;">4.0</p></td>
+    </tr>
+    <tr>
+      <td><p>低鉛黄銅</p></td>
+      <td><p style="text-align: center;">2.0</p></td>
+    </tr>
+    <tr>
+      <td><p>マグネシウム</p></td>
+      <td><p style="text-align: center;">13.0</p></td>
+    </tr>
+    <tr>
+      <td><p>オーステナイト系ステンレス</p></td>
+      <td><p style="text-align: center;">6.0</p></td>
+    </tr>
+    <tr>
+      <td><p>低炭素・低合金鋼</p></td>
+      <td><p style="text-align: center;">4.0</p></td>
+    </tr>
+    <tr>
+      <td><p>チタン</p></td>
+      <td><p style="text-align: center;">3.0</p></td>
+    </tr>
+    <tr>
+      <td><p>チタン合金</p></td>
+      <td><p style="text-align: center;">4.0</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" height="350" width="358" src="../../assets/images/Common/image/min_bend_radius.JPG"/></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>R = 曲げ半径</p>
+<p>T = シート厚さ</p>
+
+
+<br>
+
+
+
+</body>
+</html>

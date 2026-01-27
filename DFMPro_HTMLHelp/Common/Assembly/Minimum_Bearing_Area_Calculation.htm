@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_14"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Bearing Area Calculation</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Bearing Area Calculation "最小座面積の計算"</h1>
+<h4>ルール</h4>
+<p>本ルールは、構成された値に基づいて最小座面積の条件をチェックします。</p>
+<p>&nbsp;</p>
+<h4>説明</h4>
+<p>座面積（Bearing area）とは、締結される部品に対してねじ頭部が直接当接して荷重を受け持つ面積を指します。プレート材質がボルト材質より弱い場合、座面部で破損が発生します。ボルトが穴へ引き抜け（プルスルー）ることを防ぎ、締結部の下により大きい座面を確保するため、ワッシャの使用を推奨します。</p>
+<p>&nbsp;</p>
+<p>本ルールは以下の条件をチェックします：</p>
+<ul>
+  <li>最小距離（すなわち、最小距離は &gt; 0.25（Wrench Flat - Dia. LMC Hole）であること）</li>
+  <li>最小座面積</li>
+</ul>
+<p>&nbsp;</p>
+<h4>例</h4>
+<p><b>座面積 - ボルト</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" height="591" width="811" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_Ex1.png"/>
+</div>
+<p>&nbsp;</p>
+<p><b>座面積 - ナット</b></p>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_Ex2.png"/>
+</div>
+<p>&nbsp;</p>
+<h4>推奨事項</h4>
+<ol>
+  <li><p><b>ボルトの座面積：面取りなし</b></p></li>
+</ol>
+<p>&nbsp;</p>
+<div>
+  <table cellspacing="0" width="1088">
+    <colgroup>
+      <col/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <div style="text-align:center;">
+            <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_1.png"/>
+          </div>
+        </td>
+        <td>
+          <p><b>推奨値：</b></p>
+          <p>Fastener.FirstEngagedComp.Material = STEEL</p>
+          <p>Fastener.WrenchFlatDiameter (Dw) = 0.562 inch</p>
+          <p>Fastener.MinSupportWidth (Wmin) = 0.066 inch</p>
+          <p>Fastener.ContactWidth (Wc) = 0.159 inch</p>
+          <p>Fastener.BearingArea (A) = 0.146 inch²</p>
+          <p>Fastener.Name = BOLT_1.PRT(52)</p>
+          <p>Fastener.FirstEngagedComp.Name = TOP_PLATE.PRT(43)</p>
+          <p>Fastener.ScrewDiameter (Ds) = 0.375 inch</p>
+          <p>Fastener.FirstEngagedHole.DiameterLMC (D) = 0.403 inch</p>
+          <p>&nbsp;</p>
+          <p>座面積 (A)：</p>
+          <p>Actual Value = 0.146 inch²</p>
+          <p>Recommended Value &gt;= 2.0 inch²</p>
+          <p>&nbsp;</p>
+          <p class="note-title">注記:</p>
+          <ul class="note-body">
+          <li><p>十分な座面積を確保できるワッシャを追加してください。</p></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p><b>式：</b></p>
+<p>Fastener.ContactWidth (Wc) = レンチ径 – 穴径（LMC）</p>
+<p>= (Dw - D)</p>
+<p>= 0.562 – 0.403</p>
+<p>= 0.159 inch</p>
+<p>&nbsp;</p>
+<p>Fastener.MinSupportWidth (Wmin) = 0.5 x（レンチ径 + ねじ径）– 穴径（LMC）</p>
+<p>= 0.5 x (Dw + Ds) - D</p>
+<p>= 0.5 x (0.562 + 0.375) - 0.403</p>
+<p>= 0.066 inch</p>
+<p>&nbsp;</p>
+<p>最小座面積 (A) = フェース面積 + π/4（ねじ径）² - π/4（穴径（LMC））²</p>
+<p>= Face area + π/4 (Ds)² - π/4 (D)²</p>
+<p>= 0.1635 - π/4 x ((0.403)² - 0.375²)</p>
+<p>= 0.146 inch²</p>
+<p>&nbsp;</p>
+<ol start="2">
+  <li><p><b>ボルトの座面積：面取りあり</b></p></li>
+</ol>
+<div>
+  <table cellspacing="0" width="1088">
+    <colgroup>
+      <col/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <div style="text-align:center;">
+            <img alt="" border="0" height="731" width="697" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_2.png"/>
+          </div>
+        </td>
+        <td>
+          <p><b>推奨事項:</b></p>
+          <p>Fastener.FirstEngagedComp.Material = STEEL</p>
+          <p>Fastener.WrenchFlatDiameter (Dw) = 0.562 inch</p>
+          <p>Fastener.MinSupportWidth (Wmin) = 0.016 inch</p>
+          <p>Fastener.ContactWidth (Wc) = 0.059 inch</p>
+          <p>Fastener.BearingArea (A) = 0.075 inch²</p>
+          <p>Fastener.Name = BOLT_1.PRT(52)</p>
+          <p>Fastener.FirstEngagedComp.Name = TOP_PLATE.PRT(43)</p>
+          <p>Fastener.ScrewDiameter (Ds) = 0.375 inch</p>
+          <p>Fastener.FirstEngagedHole.DiameterLMC (D) = 0.403 inch</p>
+          <p>&nbsp;</p>
+          <p>ベアリング面積 (A):</p>
+          <p>実際の値 = 0.075 inch²</p>
+          <p>推奨値 &gt;= 2.0 inch²</p>
+          <p>&nbsp;</p>
+          <p class="note-title">注記:</p>
+          <ul class="note-body">
+          <li><p>十分なベアリング面積を確保できるワッシャーを追加してください。</p></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p><b>計算式:</b></p>
+<p>Fastener.ContactWidth (Wc) = 二面幅 − 穴径（LMC） − 2 × 最大面取り</p>
+<p>= Dw − D − 2 × 最大面取り</p>
+<p>= 0.562 − 0.403 − 2 × 0.05</p>
+<p>= 0.059 inch</p>
+<p>&nbsp;</p>
+<p>Fastener.MinSupportWidth (Wmin) = 0.5 ×（二面幅 + ねじ径） − 穴径（LMC） − 最大面取り</p>
+<p>= 0.5 × (Dw + Ds) − D − 最大面取り</p>
+<p>= 0.5 × (0.562 + 0.375) − 0.403 − 0.05</p>
+<p>= 0.016 inch</p>
+<p>&nbsp;</p>
+<p>最小ベアリング面積 (A) = 接触面積 + π/4（ねじ径）<sup>2</sup> − π/4（穴径（LMC） + 2 × 最大面取り）<sup>2</sup></p>
+<p>= 接触面積 + π/4（Ds）<sup>2</sup> − π/4（D + 2 × 最大面取り）<sup>2</sup></p>
+<p>= 0.075 inch²</p>
+<p>&nbsp;</p>
+<ol start="3">
+  <li><p><b>ナットのベアリング面積: 面取りなし</b></p></li>
+</ol>
+<div>
+  <table cellspacing="0" width="1101">
+    <colgroup>
+      <col/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <div style="text-align:center;">
+            <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_3.png"/>
+          </div>
+        </td>
+        <td>
+          <p><b>推奨事項:</b></p>
+          <p>Fastener.FirstEngagedComp.Material = STEEL</p>
+          <p>Fastener.WrenchFlatDiameter (Dw) = 0.562 inch</p>
+          <p>Fastener.MinSupportWidth (Wmin) = 0.016 inch</p>
+          <p>Fastener.ContactWidth (Wc) = 0.159 inch</p>
+          <p>Fastener.BearingArea (A) = 0.121 inch²</p>
+          <p>Fastener.Name = NUT_1.PRT(55)</p>
+          <p>Fastener.FirstEngagedComp.Name = BOTTOM_PLATE.PRT(40)</p>
+          <p>Fastener.ScrewDiameter (Ds) = 0.312 inch</p>
+          <p>Fastener.FirstEngagedHole.DiameterLMC (D) = 0.403 inch</p>
+          <p>&nbsp;</p>
+          <p>座面面積 (A):</p>
+          <p>実際の値 = 0.121 inch²</p>
+          <p>推奨値 &gt;= 2.0 inch²</p>
+          <p>&nbsp;</p>
+          <p class="note-title">注記:</p>
+          <ul class="note-body">
+          <li><p>十分な座面面積を確保できるワッシャーを追加してください。</p></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>&nbsp;</p>
+<p><b>数式:</b></p>
+<p>Fastener.ContactWidth (Wc) = レンチ径 – 穴径（LMC）</p>
+<p>= (Dw - D)</p>
+<p>= 0.562 – 0.403</p>
+<p>= 0.159 inch</p>
+<p>&nbsp;</p>
+<p>Fastener.MinSupportWidth (Wmin) = 0.5 x（レンチ径 + ねじ径）– 穴径（LMC）</p>
+<p>= 0.5 x (Dw + Ds) - D</p>
+<p>= 0.5 x (0.562 + 0.375) - 0.403</p>
+<p>= 0.066 inch</p>
+<p>&nbsp;</p>
+<p>最小座面面積 (A) = 座面の面積 + π/4（ねじ径）<sup>2</sup> - π/4（穴径（LMC））<sup>2</sup></p>
+<p>= 座面の面積 + π/4 (Ds)<sup>2</sup> - π/4 (D)<sup>2</sup></p>
+<p>= 0.121 inch<sup>2</sup></p>
+<h4> </h4><br>
+<ol start="4">
+  <li><p><b>ボルトの座面面積: 面取りなしのスロット</b></p></li>
+</ol>
+<div>
+  <table cellspacing="0" width="1101">
+    <colgroup>
+      <col/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <div style="text-align:center;">
+            <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_4.png"/>
+          </div>
+        </td>
+        <td>
+          <p><b>推奨事項:</b></p>
+          <p>Fastener.FirstEngagedComp.Material = STEEL（鋼）</p>
+          <p>Fastener.WrenchFlatDiameter (Dw) = 0.562 インチ</p>
+          <p>Fastener.MinSupportWidth (Wmin) = 0.035 インチ</p>
+          <p>Fastener.ContactWidth (Wc) = 0.129 インチ</p>
+          <p>Fastener.BearingArea (A) = 0.049 インチ²</p>
+          <p>Fastener.Name = HEX_8.PRT(184)</p>
+          <p>Fastener.FirstEngagedComp.Name = SLOT_PLATE_1.PRT(45)</p>
+          <p>Fastener.ScrewDiameter (Ds) = 0.375 インチ</p>
+          <p>Fastener.FirstEngagedHole.DiameterLMC (D) = 0.433 インチ</p>
+          <p>&nbsp;</p>
+          <p>面圧受け面積（A）:</p>
+          <p>実測値 = 0.049 インチ²</p>
+          <p>推奨値 &gt;= 100.0 インチ²</p>
+          <p>&nbsp;</p>
+          <p class="note-title">注記:</p>
+          <ul class="note-body">
+          <li><p>十分な面圧受け面積を確保できるワッシャーを追加してください。</p></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h4> </h4><br>
+<p><b>計算式:</b></p>
+<p>Fastener.ContactWidth (Wc) = レンチ幅径 − 穴径（LMC）</p>
+<p>= (Dw - D)</p>
+<p>= 0.562 − 0.433</p>
+<p>= 0.129 インチ</p>
+<p>&nbsp;</p>
+<p>Fastener.MinSupportWidth (Wmin) = 0.5 ×（レンチ幅径 + ねじ径）− 穴径（LMC）</p>
+<p>= 0.5 × (Dw + Ds) - D</p>
+<p>= 0.5 × (0.562 + 0.375) - 0.433</p>
+<p>= 0.035 インチ</p>
+<p>アルファ（α） = acos ((D/2.0) / Dw/2)</p>
+<p>= acos (0.433/2)/0.281</p>
+<p>= 0.6921 ラジアン</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_Alpha.png"/>
+</div>
+<p>&nbsp;</p>
+<p>面圧受け面積（A） = (Dw/2)<sup>2</sup> × (2 × α − sin (2 × α)) + 追加される実効面積</p>
+<p>= 0.078961 x (2 x 0.06921 - 0.9826) + 0.0170</p>
+<p>= 0.04871 inch<sup>2</sup></p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_BearingArea.png"/>
+</div>
+<h4> </h4><br>
+<ol start="5">
+  <li><p><b>ボルトの座面面積：面取り付き長穴</b></p></li>
+</ol>
+<div>
+  <table cellspacing="0" width="1101">
+    <colgroup>
+      <col/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <div style="text-align:center;">
+            <img alt="" border="0" width="660" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_5.png"/>
+          </div>
+        </td>
+        <td>
+          <p><b>推奨事項：</b></p>
+          <p>Fastener.FirstEngagedComp.Material = STEEL</p>
+          <p>Fastener.WrenchFlatDiameter (Dw) = 0.562 inch</p>
+          <p>Fastener.MinSupportWidth (Wmin) = 0.005 inch</p>
+          <p>Fastener.ContactWidth (Wc) = 0.049 inch</p>
+          <p>Fastener.BearingArea (A) = 0.025 inch²</p>
+          <p>Fastener.Name = HEX_8.PRT(185)</p>
+          <p>Fastener.FirstEngagedComp.Name = SLOT_PLATE_1.PRT(45)</p>
+          <p>Fastener.ScrewDiameter (Ds) = 0.375 inch</p>
+          <p>Fastener.FirstEngagedHole.DiameterLMC (D) = 0.413 inch</p>
+          <p> </p>
+          <p>Min Support Width (Wmin):</p>
+          <p>Actual Value = 0.005 inch</p>
+          <p>Recommended Value &gt; 0.012 inch</p>
+          <p> </p>
+          <p>Bearing Area (A):</p>
+          <p>Actual Value = 0.024 inch²</p>
+          <p>Recommended Value &gt;= 100.0 inch²</p>
+          <p class="note-title">注記:</p>
+          <ul class="note-body">
+          <li><p>十分な座面積を確保できるワッシャーを追加してください。</p></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h4> </h4><br>
+<p><b>式:</b></p>
+<p>Fastener.ContactWidth (Wc) = レンチ径 – 穴径 LMC - 2 x 最大面取り</p>
+<p>= Dw - D - 2 x 最大面取り</p>
+<p>= 0.562 – 0.413 - 2 x 0.05</p>
+<p>= 0.049 inch</p>
+<p>&nbsp;</p>
+<p>Fastener.MinSupportWidth (Wmin) = 0.5 x (レンチ径 + ねじ径) – 穴径 LMC - 最大面取り</p>
+<p>= 0.5 x (Dw + Ds) - D - 最大面取り</p>
+<p>= 0.5 x (0.562 + 0.375) - 0.413 - 0.05</p>
+<p>= 0.005 inch</p>
+<p>Alpha (&alpha;) = acos [(D + Wc/2.0) / Dw/2]</p>
+<p>= acos [(0.513/2.0)/0.281]</p>
+<p>= 0.4209 rad</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_Alpha1.png"/>
+</div>
+<p>&nbsp;</p>
+<p>支持面積 (A) = (Dw/2)<sup>2</sup> x (2 x &alpha; - sin (2 x &alpha;)) + 追加する実面積</p>
+<p>= 0.078961 x (2 x 0.04209 - 0.7458) + 0.0170</p>
+<p>= 0.024580 inch<sup>2</sup></p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Minimum_Bearing_Area_Calculation_BearingArea1.png"/>
+</div>
+<br>
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ パーツ</a>で実行できます。</p></li>
+<li><p>チェックを正常に実行するためには、アセンブリ内のボルト、ワッシャ、ナットを識別するために、ハードウェア名およびハードウェア種別の情報を必ず入力する必要があります。</p></li>
+<li><p>ハードウェアを構成するには、<a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェア データベース</a>を参照してください。</p></li>
+</ul>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Hardware_Database_Rule_Image.png"/>
+</div>
+
+<br>
+</body>
+</html>

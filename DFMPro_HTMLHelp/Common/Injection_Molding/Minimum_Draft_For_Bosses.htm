@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_10"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Draft for Bosses</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Draft for Bosses "ボスの最小抜き勾配"</h1>
+<h4>ルール</h4>
+<p>ボスの外周面（OD）および中空穴（ID）における最小抜き勾配は、指定された値以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>ボス形状の外径には、金型から部品を容易に離型するために最小の抜き勾配角が必要です。</p>
+<p>場合によっては、ファスナーや他の嵌合部品と適切にかみ合わせるために、ボス形状内の中空穴にも最小の抜き勾配角が必要となります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、ボスの外周面（OD）における最小抜き勾配は 0.5 度以上とすることが推奨されます。また、ボスの中空穴（ID）における最小抜き勾配は 0.25 度以上とすることが推奨されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro はボス形状を識別し、ボスの外周面（OD）および中空穴（ID）に設定されている抜き勾配角をチェックします。これらの抜き勾配値は、構成された値と照合して検証されます。</p>
+<p>ユーザーは、デフォルトで構成されている値を編集することができます。</p>
+<p>ルール UI では、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から取得され、ユーザーは材料およびそれぞれの値を構成することができます。</p>
+<p>材料およびその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルール UI 上で材料グループおよびグレードとともに構成済み材料の一覧をフィルタ表示できます。同じキー（Ctrl+M）を使用してフィルタをリセットできます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png"/>
+</div>
+
+<br>
+
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum_Draft_For_Boss_Help.bmp"/>
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>t = 公称肉厚</p>
+<p>Q1 = ボス ID の最小抜き勾配</p>
+<p>Q2 = ボス OD の最小抜き勾配</p>
+
+
+<br>
+</body>
+</html>

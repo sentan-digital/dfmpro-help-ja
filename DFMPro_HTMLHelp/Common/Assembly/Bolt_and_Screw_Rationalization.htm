@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Bolt and Screw Rationalization</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>"Bolts and Screws Rationalization" ボルトおよびねじの標準化・合理化</h1>
+
+<h4>ルール</h4>
+<p>同じ直径のボルトおよびねじについては、ヘッド形状・材質・長さを統一することを推奨します。</p>
+<p>もしくは</p>
+<p>同一径のボルトおよびねじでは、長さのバリエーションを抑えるため、隣接する長さの差をユーザー設定値以上とすることを推奨します。</p>
+<p>異なる径のボルトおよびねじについて、連続する径の差がユーザー設定値未満の場合、違反として検出されます。</p>
+
+
+<br>
+
+<h4>説明</h4>
+
+<p>締結部品（留め具／ハードウェア）の合理化は、部品点数削減、調達効率向上、在庫管理の簡素化につながり、結果として組織に大きなコスト削減効果をもたらします。</p>
+<p>アセンブリ内に長さの近い締結部品が複数存在する場合、長さの種類を削減し、同一長さの締結部品へ置き換えることが可能です。これにより、締結部品の標準化が進み、調達・在庫・組立の効率向上につながります。</p>
+<p>ヘッド形状の最適化は、締結部品の合理化を進める有効な手段です。用途上問題がなければ、アセンブリ全体で同一のヘッド形状を採用することで、工具の共通化や作業手順の簡素化が可能となり、作業時間、工数、コストの削減に寄与します。</p>
+<p>アセンブリ設計の初期段階でこのような締結部品を特定し、合理化のための適切な対応を行うことで、後工程での手戻りを防ぎ、組立コストを大幅に低減することが可能です。</p>
+<p>&nbsp;</p>
+
+<p><strong>ボルト・ねじの標準化・合理化</strong></p>
+<ul>
+  <li>在庫点数を最小限に抑えることで、組立工程を効率化します。</li>
+  <li>取扱いおよび組立作業を標準化します。</li>
+  <li>作業者の習熟が容易になります。</li>
+  <li>生産量の増加および作業の標準化により、自動化の機会が生まれます。</li>
+</ul>
+
+<br>
+
+<h4>推奨事項</h4>
+
+<p>一般的な指針として、全体的な組立コストを削減するために、ボルトおよびねじの種類のばらつきは避けるべきです。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>「トップレベル」または「全レベル」の選択に基づき、DFMPro はアセンブリ内に存在するボルトおよびねじを特定し、それらを検証に使用します。</p>
+<p>DFMPro は、同一径・同一ヘッド形状・同一材質のボルトおよびねじについて、連続する長さのばらつきをチェックします。</p>
+<p>DFMPro は、ユーザー設定値に基づき、ボルトおよびねじの径のばらつきをチェックします。</p>
+<p>ユーザーは、デフォルトで設定されている値を編集できます。</p>
+
+<br>
+
+<h4>例</h4>
+
+<p><strong>ケース A:</strong> 同一径・同一ヘッド形状・同一材質のボルトおよびねじについては、長さを統一するか、または隣接する長さの差がユーザー設定値以上となるように合理化する必要があります。</p>
+<p>&nbsp;</p>
+
+<p><strong>合理化されたボルト・ねじの長さタイプ</strong></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Bolt_Screw_Rationalization_Help_length_04.png" />
+</div>
+<p>&nbsp;</p>
+
+<p><strong>合理化されたボルト・ねじの材質タイプ</strong></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Bolt_Screw_Rationalization_Help_Material_type_04.bmp" />
+</div>
+
+<h2>&nbsp;</h2>
+<br>
+
+<p><strong>合理化されたボルト・ねじのヘッドタイプ</strong></p>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Bolt_Screw_Rationalization_Help_head_type.bmp" />
+</div>
+
+<h2>Excel インポート形式</h2>
+
+<p>ユーザーは、ルール構成で <em><strong>Ctrl+I</strong></em> コマンドを使用して、Excel シートテンプレートからハードウェアデータを一括でインポートできます。データがインポートされると、DFMPro ハードウェアデータベースで利用できるようになります。</p>
+<p>ハードウェアを構成するには、<a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェアデータベース</a> を参照してください。</p>
+<p>&nbsp;</p>
+
+<p><strong>標準テンプレート形式:</strong></p>
+
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>P1</strong></p>
+      </td>
+      <td>
+        <p><strong>H1</strong></p>
+      </td>
+      <td>
+        <p><strong>H2</strong></p>
+      </td>
+      <td>
+        <p><strong>T</strong></p>
+      </td>
+      <td>
+        <p><strong>D</strong></p>
+      </td>
+      <td>
+        <p><strong>L</strong></p>
+      </td>
+      <td>
+        <p><strong>M</strong></p>
+      </td>
+      <td>
+        <p><strong>S</strong></p>
+      </td>
+      <td>
+        <p><strong>P2</strong></p>
+      </td>
+      <td>
+        <p><strong>R</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Fastener_1</p>
+      </td>
+      <td>
+        <p>WASHER</p>
+      </td>
+      <td>
+        <p>Circular</p>
+      </td>
+      <td>
+        <p>M3</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+      <td>
+        <p>5</p>
+      </td>
+      <td>
+        <p>SS</p>
+      </td>
+      <td>
+        <p>N</p>
+      </td>
+      <td>
+        <p>Fastener_4</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Fastener_2</p>
+      </td>
+      <td>
+        <p>NUT</p>
+      </td>
+      <td>
+        <p>Hexagonal</p>
+      </td>
+      <td>
+        <p>M10</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+      <td>
+        <p>25</p>
+      </td>
+      <td>
+        <p>SS</p>
+      </td>
+      <td>
+        <p>Y</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Fastener_3</p>
+      </td>
+      <td>
+        <p>BOLT</p>
+      </td>
+      <td>
+        <p>Hexagonal</p>
+      </td>
+      <td>
+        <p>M12</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+      <td>
+        <p>30</p>
+      </td>
+      <td>
+        <p>SS</p>
+      </td>
+      <td>
+        <p>N</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+      <td>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>P1 = ハードウェア名</p>
+<p>H1 = ハードウェアタイプ</p>
+<p>H2 = ヘッドタイプ</p>
+<p>T = ねじ</p>
+<p>D = 直径</p>
+<p>L = 長さ</p>
+<p>M = 材質</p>
+<p>S = 推奨ステータス</p>
+<p>P2 = 推奨ハードウェア</p>
+<p>R = 備考</p>
+</div>
+</div>
+
+
+<br>
+
+
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p style="color:#800000;">必須フィールドは、<em>Hardware</em> <em>Name</em>、<em>Hardware Type</em>、<em>Head Type</em>、<em>Material</em>、<em>Diameter</em>、および <em>Length</em> です。</p></li>
+</ul>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Hardware_Database_Rule_Bolt_and_Screw.png" />
+</div>
+
+<br>
+
+<ul class="note-body">
+<li>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベル アセンブリ部品</a> で、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a> に基づいて実行できます。</li>
+<li>トップレベルまたは全レベルの識別については、このルールでは個別のルール構成が DFMPro 設定よりも優先されます。詳細は <a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a> セクションを参照してください。</li>
+<li>DFMPro ハードウェアデータベースで留め具に単位が定義されていない場合は、留め具ドキュメントの単位が合理化のために考慮されます。</li>
+<li>ユーザーは、コンポーネント名を構成するためにワイルドカード文字を使用できます:</li>
+</ul>
+
+
+<ol><ol class="note-body">
+<li>*dia*（コンポーネント名に dia または DIA が含まれる）</li>
+<li>*_dia（名前が _dia または DIA で終わる）</li>
+<li>dia*（名前が _dia または DIA で始まる）</li>
+</ol></ol>
+
+<br>
+
+<ul class="note-body">
+<li>すべてのパラメータはハードウェアデータベースから読み取られます。直径はシャンク径として参照されます。</li>
+<li>このルールはハードウェアデータベースの情報を使用し、これらの値に基づいて合理化が行われます。このルールを実行するには、顧客はハードウェアデータベースで次の必須フィールドを構成する必要があります:</li>
+</ul>
+
+<ul><ul class="note-body">
+<li>ハードウェア名</li>
+<li>ハードウェアタイプ</li>
+<li>ヘッドタイプ</li>
+<li>材質</li>
+<li>直径</li>
+<li>長さ</li>
+</ul></ul>
+
+
+
+<br>
+</body>
+</html>

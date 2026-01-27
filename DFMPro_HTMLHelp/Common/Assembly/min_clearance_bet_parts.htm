@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_15"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Clearance Between Components</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+  <style type="text/css">
+    /*<![CDATA[*/
+    table.MsoNormalTable {
+      mso-style-parent: ;
+      font-size: 11.0pt;
+      font-family: Calibri, sans-serif;
+    }
+    /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>Minimum Clearance Between Components "コンポーネント間の最小クリアランス"</h1>
+<h4>ルール</h4>
+<p>アセンブリ内の任意の2つのコンポーネント間の最小クリアランスは、ユーザーが指定した値以上である必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>以下のタイプ間のクリアランスがチェックされます：</p>
+<ol>
+<li><p>パーツ同士</p></li>
+<li><p>パーツとサブアセンブリ</p></li>
+<li><p>サブアセンブリ同士</p></li>
+</ol>
+<br>
+<h4>構成</h4>
+<p>コンポーネント間の最小クリアランス ルールは、以下の3つの方法で構成できます：</p>
+<br>
+<ol type="A">
+<li><p>デフォルト クリアランスをチェック</p>
+<p>このオプションはデフォルトで選択されています。クリアランス値は、アセンブリ内のすべてのパーツの組み合わせ（全ペア）間でチェックされます。</p></li>
+</ol>
+
+
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Clearance_Between_Components_UI_CP.bmp"/>
+</div>
+<br>
+<ol type="A" start="2">
+<li><p>選択したペア間の最小クリアランスをチェック</p>
+<p>このオプションでは、アセンブリ内で選択したコンポーネントのペア間についてクリアランスがチェックされます。</p></li>
+</ol>
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Clearance_Between_Components_Selected_CP.png"/>
+</div>
+<br>
+<ol type="A" start="3">
+<li><p>選択したペア間の最小クリアランスをチェック（パーツとサブアセンブリ）</p>
+<p>パーツとサブアセンブリの構成の場合、クリアランスの検証は2つのコンポーネント（つまり、コンポーネント1とコンポーネント2）の間で行われます。ここでは、サブアセンブリは1つのコンポーネントとして扱われます。</p></li>
+</ol>
+
+<br>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Minimum_Clearance_between_Components_3.png"/>
+</div>
+<br>
+<p>上記の構成では、ルールは1件の失敗（Failure）のみを表示します。つまり、構成したパーツとサブアセンブリ間の最小クリアランスです。</p>
+<br>
+
+<p class="note-title">注記:</p>
+
+
+<ul class="note-body">
+<li><p>検証される各コンポーネントのペアについて、最小クリアランスは単一のインスタンスとして報告されます。</p></li>
+</ul>
+<br>
+<h4>コンポーネント1とコンポーネント2の下にコンポーネントを追加する：</h4>
+<p>ルール構成でコンポーネントを追加する方法は3つあります：</p>
+<ol>
+  <li>コンポーネント名を手動で<em><strong>入力</strong></em>します。</li>
+  <li>右クリックしてファイルの場所を参照します。この手順をコンポーネント1とコンポーネント2の両方に対して実行します。</li>
+</ol>
+<br>
+
+<p class="note-title">注記:</p>
+
+
+<ul class="note-body">
+<li><p>必要なファイルを参照して追加した後、ユーザーは表内のファイル拡張子を削除する必要があります。</p></li>
+</ul>
+<br>
+<ol start="3">
+  <li>キーボードで<strong><em>Ctrl+I</em></strong>を押して、MS Excelファイルをインポートします。このExcelファイルには、最初の2列に追加されたコンポーネント名、3列目にクリアランス値を含む3列が入ります。Excelファイルをインポートすると、データは自動的にルールマネージャーへ取り込まれます。（以下の例を参照）</li>
+</ol>
+<br>
+<table align="center" cellspacing="0" border="1" width="38.736%">
+  <colgroup>
+    <col style="width: 32.765%;"/>
+    <col style="width: 51.185%;"/>
+    <col style="width: 16.05%;"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p>Gear</p></td>
+      <td><p>Connection_plate</p></td>
+      <td><p>0.5</p></td>
+    </tr>
+    <tr>
+      <td><p>Gear</p></td>
+      <td><p>Extension_rod</p></td>
+      <td><p>1.0</p></td>
+    </tr>
+    <tr>
+      <td><p>Board_Plate</p></td>
+      <td><p>Top_cap</p></td>
+      <td><p>2.0</p></td>
+    </tr>
+  </tbody>
+</table>
+<p style="text-align:center;">標準テンプレート形式</p>
+<br>
+
+<table align="center" border="1" width="799">
+  <tbody>
+    <tr>
+      <td width="112"><h4>入力</h4></td>
+      <td width="671"><h4>解釈</h4></td>
+    </tr>
+    <tr>
+      <td width="112"><p>ABC</p></td>
+      <td width="671"><p>ユーザーが名前のみを構成した場合、それはパーツとして扱われます。</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>*ABC*</p></td>
+      <td width="671"><p>パーツ名に abc または ABC を含むパーツ。</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>*</p></td>
+      <td width="671"><p>すべてのパーツ。</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>*_M32</p></td>
+      <td width="671"><p>末尾が _M32 で終わるすべてのパーツ。</p></td>
+    </tr>
+    <tr>
+      <td width="112"><p>*_pcb_*.asm</p></td>
+      <td width="671"><p>ユーザーがCAD拡張子を構成している場合、このルールはアセンブリとして扱われます。サブアセンブリ名に _pcb_ を含むもの。</p></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>ファイル名は大文字と小文字を区別しません。</p></li>
+</ul>
+
+<br>
+
+<ul>
+  <li>
+    <p><b>拘束（Mate）コンポーネントを無視：</b>検証において拘束（Mate）コンポーネントを無視するには、この<i>チェックボックス</i>を<b>選択</b>します。</p>
+  </li>
+  <li>
+    <p><b>サーフェスボディ（Quilt）を無視：</b>検証においてサーフェスボディを無視するには、この<i>チェックボックス</i>を<b>選択</b>します。</p>
+  </li>
+  <li>
+    <p><b>干渉しているコンポーネントを無視：</b>検証において干渉しているコンポーネントを無視するには、この<i>チェックボックス</i>を<b>選択</b>します。</p>
+  </li>
+</ul>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" height="491" width="381" src="../../assets/images/Common/image/minimumclearance_between_components.bmp"/>
+</div>
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>C = コンポーネント間のクリアランス</p>
+</div>
+</div>
+<br>
+
+
+
+
+<p class="note-title">注記:</p>
+
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベル アセンブリ パーツ</a>で実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

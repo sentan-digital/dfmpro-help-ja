@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Deep Radiused Corners</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Deep Radiused Corners "深い半径コーナー"</h1>
+<h4>ルール</h4>
+<p>コーナーRが深いフライス加工フィーチャーの設計は避けてください。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>ポケットのコーナーRが深い場合、加工にはより長いエンドミルが必要となり、工具の破損やビビりが発生しやすく、加工時間も長くなります。その結果、製造コスト全体が増加します。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Deep_radiused_Corner_Help.bmp" />
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>h = ポケットの深さ</p>
+<p>R = 側面R（コーナー半径）</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li>
+    <p>一般的なガイドラインとして、フィーチャーの深さとコーナーRの比は 8.0 を超えないようにしてください（材料によっては、より小さい値が推奨される場合があります）。</p>
+  </li>
+  <li>
+    <p>期待される比率を満たすために、コーナーRを大きくする、またはポケットの深さを小さくすることが推奨されます。</p>
+  </li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro は、フィーチャーの深さとコーナーRの比を算出し、設定された値と比較してチェックします。</p>
+<p>ユーザーは、デフォルトで設定されている比率を編集することができます。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Deep_Radiused_Corners_mill.bmp" />
+</div>
+
+
+<br>
+</body>
+</html>

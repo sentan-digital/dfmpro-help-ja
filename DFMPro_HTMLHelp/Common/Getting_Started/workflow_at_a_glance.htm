@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>How to Use DFMPro</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+  <h1>DFMPro の使い方</h1>
+<p><i>DFMPro</i> は、設計者向けのソフトウェアであり、製造性を上流工程で検証し、製造が困難・高コスト、または製造不可能な設計領域を特定することを支援します。</p>
+<p><i>DFMPro</i> は Creo Parametric 内で動作するアドインアプリケーションです。DFMPro for Creo Parametric をインストールすると、<b>protk.dat</b> ファイルを使用して、DFMPro セットアッププログラムが Creo Parametric の補助アプリケーションとして自動的に有効化されます。</p>
+<p> </p>
+
+
+<div style="text-align:center;">
+
+<br>
+
+<h2>DFMPro を起動して設計解析を実行する</h2>
+<ol start="1">
+<li><p><strong><i>Creo Parametric</i></strong> を起動します。</p></li>
+<li><p>単一のソリッドボディを含む <em><strong>パーツ／アセンブリ</strong></em> ドキュメントを開きます。</p></li>
+<li><p><strong><i>DFMPro</i></strong> メニューをクリックします。</p></li>
+<li><p>DFMPro メニュー内の  <span class="icon-inline"><img alt="" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp"></span><strong><i>Start DFMPro</i></strong> をクリックして、ユーザーインターフェースを起動します。</p></li>
+<li><p>ルール構成用のデフォルトのルールファイルが、DFMPro ユーザーインターフェースに表示されます。このファイルでは、すべての設計に対してすべてのルールが有効になっています。</p></li>
+</ol>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>既存のルールファイルを使用するか、組織の設計環境において <a href="selecting_rules_to_run.htm">追加のルールファイルを作成</a> してください。</p></li>
+</ul>
+<br>
+
+
+<ol start="6">
+<li><p>ドロップダウンリストから適切な <em><strong>製造プロセス</strong></em> を選択します：積層造形、ケーブリング、鋳造、ダイカスト、基本設計ルール、射出成形、精密鋳造、熱成形、フライス加工、砂型鋳造、板金加工、板金成形、チューブ配管、真空樹脂注入成形、溶接、旋盤加工、または組立て。</p></li>
+<li><p><a href="User_Inputs.htm">User Inputs</a> グループボックスで、必要な入力パラメータを定義します。</p></li>
+<li><p>DFMPro メニューで<span class="icon-inline"><img alt="" src="../../assets/images/Common/image/New_RuleMgr_SW.bmp"></span><strong><i>Rule Manager</i></strong>ボタンをクリックし、ルールマネージャーダイアログボックスを開きます。</p></li>
+<li><p>選択した製造プロセスに応じて実行するために必要な <a href="selecting_rules_to_run.htm">ルールのチェックボックス</a> をリストから選択します。</p></li>
+</ol>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>ユーザーは事前定義されたルールファイルを使用することも、<span class="icon-inline"><img alt="" src="../../assets/images/Common/image/toolbarimage.bmp"></span><i>Configure Rule</i> ボタンをクリックして<a href="configuring_rules.htm">デフォルト値を変更</a>することもできます。また、設計環境内で<a href="selecting_rules_to_run.htm">追加のルールファイルを作成</a>することも可能です。</p></li>
+</ul>
+
+<br>
+
+<ol start="10">
+<li><p><span class="icon-inline"><img alt="" src="../../assets/images/Common/image/Run_button.png"></span><a href="validating_part_against_the_rules.htm">解析を実行</a>して、ルールに対してパーツを検証します。</p></li>
+<li><p>実行後、DFMPro では <a href="viewing_and_interpreting_results.htm">結果を表示して解釈</a> することができます。</p></li>
+<li><p>ユーザーは <a href="correcting_errors_and_revalidate.htm">エラーを修正して再検証</a> することができます。</p></li>
+</ol>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>報告されたエラーが重要でない場合は、今後の解析実行において <a href="ignoring_over_reported_failures.htm">不要なエラーとして指定</a> できます。</p></li>
+</ul>
+
+<br>
+
+
+
+<ol start="13">
+<li><p>設計を <b>レビュー担当者</b> に提出して検証してもらいます。</p></li>
+</ol>
+
+<p>DFMPro によってすでに検証が行われているため、レビュー担当者は同じ検証手順を繰り返す必要はありません。DFMPro が解析できなかった領域および報告された箇所のみを確認すればよく、手動レビューではそれらの領域に重点を置いてください。</p>
+<p>通常、レビュー担当者は DFMPro で自動化されていない設計上の観点について確認を行います。</p>
+
+<br>
+
+<h2>DFMPro の有効化／無効化</h2>
+<p><b>必要に応じて手動で有効化・無効化する手順：</b></p>
+<ol start="1">
+<li><p><strong><i>Tools</i></strong> をクリックして補助アプリケーションを開きます。</p></li>
+<li><p>補助アプリケーションで <strong><i>DFMPro</i></strong> オプションを選択します。</p></li>
+<li><p><strong><i>Start</i></strong> ボタンをクリックして DFMPro を起動します。</p></li>
+<li><p><strong><i>Start</i></strong> ボタンをクリックしてアプリケーションを追加します。</p></li>
+<li><p>DFMPro を無効化するには、<strong><i>Stop</i></strong> ボタンをクリックします。</p></li>
+<li><p>アプリケーションを完全に削除するには、<strong><i>Delete</i></strong> ボタンをクリックします。</p></li>
+<li><p><strong><i>Close</i></strong> ボタンをクリックします。</p></li>
+</ol>
+
+
+<br>
+
+<p>DFMPro の使い方を素早く習得するには、<a href="../../Creo_Parametric/Tutorials/prismatic_milled_part.htm">Prismatic Milled Part</a> チュートリアルの演習を参照してください。</p>
+<p>この例はフライス加工を対象としていますが、ワークフローは、積層造形、ケーブリング、鋳造、ダイカスト、射出成形、精密鋳造、砂型鋳造、板金加工、板金成形、熱成形、チューブ配管、旋盤加工、真空樹脂注入成形、組立て、および溶接アセンブリでも同じです。</p>
+
+
+<br>
+
+
+</body>
+</html>

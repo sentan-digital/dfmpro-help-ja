@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_16"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Entity Selection</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div><h1>エンティティ選択</h1><br>
+<ol>
+<li><p>User Inputs グループボックスで <img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"/> <strong><i>Analyze</i></strong> ボタンをクリックすると、<i>Entity Selection</i> グループボックスが表示されます。</p></li>
+<li><p>主抜き方向はデフォルトで選択されており、モデルはデフォルトの金型（コア／キャビティ／その他）の面分類に基づいて解析されます。</p></li>
+<li><p>DFMPro では、一次および二次の抜き方向を定義するために、グラフィックス領域から <strong><i>Plane</i></strong> または <strong><i>Planar face</i></strong> または <strong><i>Part Edge</i></strong> または <strong><i>Axis</i></strong> または <i><strong>Non-planar faces</strong>（円すい面および円筒面）</i> を選択できます。</p></li>
+<li><p>主抜き方向については、定義済みの抜き方向を変更するために <img alt="" border="0" src="../../assets/images/Common/image/Select_Entity_Button.png"/> <strong><i>Select Entity</i></strong> ボタンをクリックします。選択内容は、以前に選択されていた面を置き換え、Entity Selection グループボックスに新しい抜き方向 ID が表示されます。</p></li>
+<li><p>二次抜き方向については、部品の複雑さに応じて、アンダーカット／サイドアクション用としてメーカーに複数の二次抜き方向を提示できます。</p></li>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Select_Entity_Button.png"/> <strong><i>Select Entity</i></strong> ボタンをクリックし、必要な抜き方向を選択します。同じ手順を繰り返して、フィールドに複数の必要な抜き方向を追加します。</p></li>
+</ol>
+<p>選択された二次抜き方向 ID は、Entity Selection グループボックスに表示されます。</p>
+<p> </p>
+
+<h2>プロセス固有の入力</h2><br>
+<p>User Inputs タブで選択した製造プロセスに応じて、Entity Selection グループボックスのフィールドおよびレイアウトはそれに合わせて変更されます。以下はいくつかの例です。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_IM.png"/>
+</div>
+<p>鋳造、ダイカスト、射出成形プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Casting.png"/>
+</div>
+<p>鋳造プロセス向けの Entity Selection グループボックス</p>
+<p>Note:</p>
+<p>鋳造の製造プロセスでは、複数プロセスに対する DFMPro の統合結果を同時に得るために、二次プロセスを定義できます。</p>
+<p>詳細については、<a href="Analysis_with_Multiple_Processes.htm">Analysis with Multiple Processes</a> を参照してください。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_SandCasting.png"/>
+</div>
+<p>砂型鋳造プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Sheet_Metal.png"/>
+</div>
+<p>板金プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_AddManufacturing.png"/>
+</div>
+<p>積層造形プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Thermoforming.png"/>
+</div>
+<p>熱成形プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Vacuum_infusion.png"/>
+</div>
+<p>バキュームインフュージョン（真空含浸）プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Turn.png"/>
+</div>
+<p>旋削プロセス向けの Entity Selection グループボックス</p>
+<p> </p>
+<p>Note:</p>
+<p>Entity Selection グループボックスは、<i>Investment Casting</i>、<i>Sheet Metal Forming</i>、および <i>Tubing</i> プロセスには適用されません。</p>
+<p> </p>
+
+<h2>機械加工セットアップ</h2><br>
+<p>DFMPro は、<a href="Machining_Setup.htm">Machining Setup</a> を表示および編集するためのオプションを提供します。セットアップ情報に基づいて、設計者は設計のフィーチャーを最適化できます。</p>
+<p> </p>
+
+</body></html>

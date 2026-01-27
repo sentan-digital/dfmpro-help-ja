@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_12"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Hole Alignment</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Hole Alignment "穴の位置合わせ"</h1>
+<h4>ルール</h4>
+<p>このルールは、穴の位置合わせをチェックします。</p>
+<br>
+<h4>説明</h4>
+<p>組立時の問題を回避するために、ファスナー用の穴については適切な位置合わせを十分に考慮する必要があります。</p>
+<p>このルールは、CADモデル内で設計された穴が、相手部品にある他の穴と適切に位置合わせされているかどうかをチェックします。また、塞がれた穴や未使用の穴についても確認できます。</p>
+<p>外部表面に存在する開口穴のみが、位置合わせチェックの対象となります。アクセス性条件はチェックされません。</p>
+<p>直径が互いに50%以内の差である穴が、位置合わせチェックの対象として考慮されます。</p>
+<p>ユーザーは、部品同士の間にある程度のすき間を持って組み立てられている部品についても、穴位置合わせルールをチェックできます。この場合、<i>部品間のすき間</i>の値を入力する必要があります。</p>
+<br>
+<h4>推奨事項</h4>
+<p>穴を設計する際には、相手部品との関係における穴の位置や配置を考慮してください。設計者は軸方向の位置合わせを維持する必要があります。</p>
+<br>
+<h4>構成</h4>
+<p>穴位置合わせルールは、以下の3つの条件をチェックするために使用できます。</p>
+<p> </p>
+<h3>軸ずれした穴（デフォルトで選択）:</h3>
+<p>平行な軸上にある穴のペアで、軸方向にずれがある場合です。穴が部分的または完全に重なっているケースのみが考慮されます。このルールは、異なる2つの部品に属する穴の位置合わせをチェックします。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Hole_Alignment_help.bmp"/>
+</div>
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>A = 軸ずれケース</p>
+<p>B = 塞がれた穴のケース</p>
+<p>C = 未使用の穴のケース</p>
+<p>G = 部品間のすき間（穴が存在する2つの面間の距離）</p>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+
+<h3>塞がれた穴（デフォルトでは未選択）:</h3>
+<p>他の部品の面によって塞がれている、部品上の穴をチェックします。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/hole alignment_4.bmp"/>
+</div>
+<p> </p>
+<h3>未使用の穴（デフォルトでは未選択）:</h3>
+<p>外気に開放されている部品上の貫通穴をチェックします。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/hole alignment_5.bmp"/>
+</div>
+<h4>2つの部品間のすき間:</h4>
+<p>穴が存在する部品の面同士の距離を示します。</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/hole alignment_6.bmp"/>
+</div>
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>G = 部品間のすき間（上図に示すように、穴が存在する2つの面間の距離）</p>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールでは、位置合わせチェックの対象として、標準穴サイズデータベースで提供されている最大穴サイズ以下の穴サイズが考慮されます。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

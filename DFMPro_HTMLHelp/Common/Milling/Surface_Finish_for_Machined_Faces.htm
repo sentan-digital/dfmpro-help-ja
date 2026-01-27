@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_17"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Surface Finish for Machined Faces</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Surface Finish for Machined Faces "切削加工面の表面粗さ"</h1>
+<h4>ルール</h4>
+<p>パーツの材料に基づいて、本ルールは厳しい（細かい）表面粗さ（仕上げ）値をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>表面粗さ（仕上げ）値を付与する際、設計者は材料グレード、社内設備（工作機械）の加工能力、そして熟練作業者の確保状況を考慮する必要があります。より低い表面粗さ値は、必要な場合にのみ指定すべきです。これは、&quot;Ra&quot; の値が小さいほど、より多くの加工工数／加工工程および品質管理が必要になるためです。</p>
+<p>図1は、従来の製造プロセスにおける表面粗さに対する相対サイクルタイムを示します。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Surface_Finish_for_Machined_Faces1.png" />
+</div>
+
+<br>
+
+<p>図1</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Surface_Finish_for_Machined_Faces2.png" />
+</div>
+
+<br>
+
+<p>図2</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>設計者は、パーツの材料、実際のパーツ機能、パーツの動き（運動）、外観（意匠）、設備（工作機械）の能力、そして全体の加工コスト制約を考慮すべきです。不必要に厳しい表面粗さ値は、特に量産において、パーツコストを指数関数的に増加させます。</p>
+<br>
+<h4>構成</h4>
+<p>本ルールでは、材料に基づいて表面粗さ（仕上げ）値を構成できます。ユーザーは、以下の画像に示すように、許容される標準の表面粗さ値をミクロンおよびマイクロインチ単位で構成できます。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Surface_Finish_for_Machined_Config1.png" />
+</div>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Surface_Finish_for_Machined_Config2.png" />
+</div>
+
+<br>
+
+<p>ルールUI内の材料リストは、<a href="../DFMPro_Customization/material_database.htm">Materials Database</a> から読み込まれます。ユーザーは、材料およびそれに関連付けられた値を構成できます。材料グループ内では、材料グレードはアルファベット順に並べ替えられます。材料グループが選択された場合、DFMPro は材料グループ全体で一貫した比率を維持したまま解析を実行します。</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Material_Group_Grade_Dropdown.png" />
+</div>
+
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Surface_Finish_For_Machined_Faces.png" />
+</div>
+
+
+<br>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.5.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Radius at Base of Boss</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Radius at Base of Boss "ボス根元部の最小半径"</h1>
+<h4>ルール</h4>
+<p>ボス根元部の最小半径は、ユーザーが指定した値に従う必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>ボスは、多くの部品設計において、部品同士を取り付けるための取付点や、締結部品を組み付けるために使用されます。最も一般的な形状は、ねじ、ねじ込みインサート、またはその他の締結用ハードウェアを受け入れるための穴を備えた円筒状の突起です。</p>
+<p>ダイカスト工程では、凝固中に合金がコアに沿って収縮し、その結果、周囲全体に分散されるべき応力が、鋭角なコーナー部に集中してしまいます。これにより部品が弱くなり、場合によっては破断に至ることもあります。また、この部分は局所的な熱および応力の集中点となり、最終的には割れや早期破損を引き起こす可能性があります。</p>
+<p>応力を低減するために、ボスの根元部には所定の最小半径を持つ適切なフィレットを設ける必要があります。ただし、フィレット半径が大きすぎると、ボス根元部に肉厚部が形成されてしまうため注意が必要です。</p>
+<br>
+<h4>推奨事項</h4>
+<p>一般的に、ボス根元部の最小半径は、構成で設定された値に従う必要があります。</p>
+<br>
+<h4>構成</h4>
+<p>ルール UI では、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">材料マッピング</a> から読み込まれ、ユーザーは材料およびそれらの値を構成することができます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルール UI 上で材料グループおよびグレードとともに、構成済み材料の一覧をフィルタリングして表示できます。同じキー（Ctrl+M）を使用して、フィルタをリセットできます。</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png"/>
+</div>
+<p> </p>
+<h4>例</h4><br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Minimum Radius at Base of Boss.bmp"/>
+</div>
+
+<br>
+
+
+
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>R = 根元部の半径</p>
+<p>t = 公称肉厚</p>
+</div>
+</div>
+
+
+
+<br>
+
+</body></html>

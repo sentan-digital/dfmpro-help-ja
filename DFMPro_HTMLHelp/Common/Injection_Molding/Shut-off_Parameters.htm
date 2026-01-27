@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_26"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="en-US"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Shut-off Parameters</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Shut-off Parameters "シャットオフ寸法"</h1>
+<h4>ルール</h4>
+<p>本ルールは、入力値に基づいて最小シャットオフ角度を識別します。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>シャットオフとは、金型の 2 つの部分が互いに当接し、樹脂が通過するのを防ぐ箇所を指します。また、スライドがコアまたはキャビティに当接するインターフェースを指す場合もあります。シャットオフ面が金型の開閉方向と平行な場合、金型部品同士が擦れ合うのを防ぐために、抜き勾配を設ける必要があります。</p>
+<p>引き抜き方向に沿ったコアおよびキャビティの界面において、部品に最小シャットオフ角度およびシャットオフリリーフを確保することで、擦れを生じさせることなく、コアとキャビティの表面を円滑に分離することができます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、最小シャットオフ角度は 5 度以上（&gt;= 5 度）とする必要があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro は、リップフィーチャー、スナップフィット、壁面の切り欠きなど、コアおよびキャビティ金型が互いに摺動する部品内のシャットオフ位置を識別します。シャットオフリリーフの入力値に基づいて、十分なシャットオフ抜き勾配角度が設けられているかをチェックします。シャットオフ抜き勾配が不十分な場合、ルールはエラーとして検出します。以下のケースでは、シャットオフ箇所が識別されます。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Shut_off_Parameters_Configuration.bmp" />
+</div>
+
+<br>
+
+<h4>例</h4>
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Shut_off_Parameters_Help.bmp" />
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>Q = シャットオフ角度</p>
+<p>D = シャットオフリリーフ</p>
+
+<br>
+
+<p>注記：</p>
+<p>本ルールは、コア面とキャビティ面が接続されているシャットオフ領域を識別します。そのため、シャットオフ領域を正しく検証するには、正しい引き抜き方向の設定が必要です。</p>
+
+<br>
+</body>
+</html>

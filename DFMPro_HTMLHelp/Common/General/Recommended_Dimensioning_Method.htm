@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.7.0_12"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Dimensioning Method</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Recommended Dimensioning Method "推奨寸法記入法"</h1>
+<h4>ルール</h4>
+<p>このルールは、正しいPMI寸法記入方法をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>設計者は、正しい参照を用いてPMIを指定する必要があります。</p>
+<p>通常、設計者はPMIを人の目でしか読み取れないグラフィカルな表現として定義しがちです。しかし、参照の指定が不正確なため、これらの表現は機械やソフトウェアでは利用できません。設計者が正しい参照を用いてPMI（セマンティックPMI）を指定すれば、それは機械やソフトウェアで利用可能になります。セマンティックPMIは、CAM（Computer-Aided Manufacturing）やCMM（座標測定機）などの製造自動化に使用されます。</p>
+
+<br>
+
+<p>以下に、PMI表現の例を示します。</p>
+<p>次の図は、グラフィカルPMI表現とセマンティックPMI表現を示しています。グラフィカルPMIではPMIを確認することはできますが、他のパターン穴との関連付け（アソシアティビティ）が欠けています。</p>
+
+<br>
+
+<table align="center" cellspacing="0" width="756">
+<colgroup><col style="width: 48.413%;"/><col style="width: 51.587%;"/></colgroup>
+<tbody>
+<tr>
+<td><div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Recommended Dimensioning Method 1.png"/></div></td>
+<td><div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Recommended Dimensioning Method 2.png"/></div></td>
+</tr>
+
+<tr>
+<td><p>グラフィカルPMI表現 ― 関連付けが欠如</p></td>
+<td><p>セマンティックPMI表現 ― 関連付けが維持されている</p></td>
+</tr>
+</tbody>
+</table>
+
+
+<br>
+
+
+<h4>推奨事項</h4>
+<p>設計者は、CADモデル内でPMI情報を指定する際に、正しい参照を使用する必要があります。</p>
+
+<br>
+
+<h4>例</h4>
+<p> </p>
+<table align="center" cellspacing="0" width="635">
+<colgroup><col style="width: 46.7%;"/><col style="width: 53.3%;"/></colgroup>
+<tbody>
+<tr>
+<td colspan="2"><div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Recommended Dimensioning Method 3.png"/></div></td>
+</tr>
+<tr>
+<td><p>単一の穴に関連付けられたPMI</p></td>
+<td><p>4つのパターン穴に関連付けられたPMI</p></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<table align="center" cellspacing="0" width="635">
+<colgroup><col style="width: 46.7%;"/><col style="width: 53.3%;"/></colgroup>
+<tbody>
+<tr>
+<td colspan="2"><div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Recommended Dimensioning Method 4.png"/></div></td>
+</tr>
+<tr>
+<td><p>エッジに関連付けられたPMI</p></td>
+<td><p>面に関連付けられたPMI</p></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<table align="center" cellspacing="0" width="635">
+<colgroup><col style="width: 46.7%;"/><col style="width: 53.3%;"/></colgroup>
+<tbody>
+<tr>
+<td colspan="2"><div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Recommended Dimensioning Method 5.png"/></div></td>
+</tr>
+<tr>
+<td><p>半穴面に関連付けられたPMI</p></td>
+<td><p>全面の穴面に関連付けられたPMI</p></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<table align="center" cellspacing="0" width="635">
+<colgroup><col style="width: 46.7%;"/><col style="width: 53.3%;"/></colgroup>
+<tbody>
+<tr>
+<td colspan="2"><div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Recommended Dimensioning Method 6.png"/></div></td>
+</tr>
+<tr>
+<td><p>単一の穴に関連付けられたPMI</p></td>
+<td><p>4つの穴に関連付けられたPMI</p></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>CADモデルで指定された公差は、eDrawingsレポートには表示されません。</p>
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Inseparable_Assembly">DFMPro設定</a>に基づき、分離不可能なアセンブリパーツに対して実行できます。</p>
+</ul>
+
+
+<br>
+</body>
+</html>

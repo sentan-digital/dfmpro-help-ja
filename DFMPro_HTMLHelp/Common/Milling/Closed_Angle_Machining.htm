@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Closed Angle Machining</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Closed Angle Machining "閉じた角度の加工"</h1>
+<h4>ルール</h4>
+<p>このルールはポケット面の角度を識別します。角度が推奨値を超える場合、エラーとしてフラグを立てます。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>閉角ポケットとは、面角度が90度未満のポケットを指します。このような形状は4軸または5軸加工機で加工できます。この場合、図1に示すようにエンドミルで外周壁を加工する肩削り（ショルダーミリング）により材料を除去します。残った底面側の材料は、図2に示すようにボールノーズエンドミルで除去します。閉角が大きくなると、非標準のアンダーカットや工具アクセス性の問題が生じます。非標準のアンダーカットの場合、現場チームが専用のアンダーカット工具を製作する必要があり、リードタイムと投入コストが増加します。</p>
+
+<br>
+
+<table align="center" cellspacing="0" width="81.861%">
+  <colgroup>
+    <col style="width: 50.287%;"/>
+    <col style="width: 49.713%;"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>
+        <div style="text-align:center;">
+          <img alt="" border="0" src="../../assets/images/Common/image/ClosedAngleMachining1.png" />
+        </div>
+      </td>
+      <td>
+        <div style="text-align:center;">
+          <img alt="" border="0" src="../../assets/images/Common/image/ClosedAngleMachining2.png" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>図1</p>
+      </td>
+      <td>
+        <p>図2</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>閉角は許容範囲内に収める必要があります。閉角を大きくすると工具アクセス性の問題が発生します。内壁にこのようなアンダーカットを持つパーツを設計する場合、工具が容易に動作できるように十分なクリアランスを確保してください。ガイドラインでは、加工壁と他の任意の内壁との間における最小クリアランスは、アンダーカット深さの少なくとも4倍とすることが推奨されています。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/ClosedAngleMachining3.png" />
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>Qs = 閉角</p>
+
+<br>
+</body>
+</html>

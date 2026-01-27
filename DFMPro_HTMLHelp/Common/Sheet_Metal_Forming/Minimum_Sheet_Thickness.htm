@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.13.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Sheet Thickness</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Sheet Thickness "最小板厚"</h1>
+<h4>ルール</h4>
+<p>板金成形（Sheet Metal Forming）では、材料のしわを防ぐために、設計者は最小板厚を確保する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>板金成形プロセスでは、圧縮ひずみによって材料同士が押し付けられ、重なり合うようになります。厚い材料は薄い材料よりも圧縮力に対して抵抗しやすいため、薄い材料はしわが発生しやすくなります。</p>
+<p>板金成形材料とその延性は、破断することなく引張状態での変形を保持できることを保証します。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>特定材料に対する最小板厚は、構成で設定された値以上である必要があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>ユーザーは <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から加工材料（fabrication material）を構成できます。ルールを実行する前に、入力選択（Input Selection）ダイアログボックスで、部品に対して表示される加工材料のリストから任意の材料を選択してください。</p>
+<p>必要に応じて、デフォルトで構成されている値を編集できます。</p>
+<p>ルールUIでは、材料リストは <a href="../DFMPro_Customization/material_database.htm">Materials Database</a> から読み込まれます。ユーザーは材料と、それに関連付けられた値を構成できます。材料グループ内では、材料グレードはアルファベット順に並べ替えられます。材料グループが選択されている場合、DFMProは材料グループ全体で一貫した比率を維持しながら解析を進めます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Material_Group_Grade_Dropdown.png">
+</div>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum_Sheet_Thickness_SMF_Help.bmp">
+</div>
+
+<br>
+
+<p><b>ここでは、</b></p>
+<p>t = 板金の板厚</p>
+
+<br>
+
+<p><b>注記:</b></p>
+<p>曲げ部の測定において、板厚測定に使用されるテセレーション（tessellation）により、板厚にわずかなばらつきが観察されました。この変化は、平坦な平面よりも形状近似の影響が大きい曲面で特に顕著です。</p>
+
+<br>
+</body>
+</html>

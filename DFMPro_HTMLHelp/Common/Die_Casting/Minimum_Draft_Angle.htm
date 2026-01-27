@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.5.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Draft Angle</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Minimum Draft Angle "最小抜き勾配"</h1>
+<h4>ルール</h4>
+<p>部品の内側および外側の壁について、引き抜き方向に沿った抜き勾配角は、ユーザーが指定した値以上である必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>抜き勾配角の設計は、ダイカスト部品を設計する際の重要な要素です。部品はコア側に収縮しやすい傾向があり、その結果、コア表面に高い接触圧が発生し、コアと部品の間の摩擦が増加します。これにより、金型からの部品の離型が困難になります。</p>
+<p>抜き勾配角が小さい場合、金型の抜き勾配面にわずかな凹みがあるだけでも離型が妨げられ、鋳造品表面にドラッグマークが発生します。そのため、部品の離型を補助するために、抜き勾配角は適切に付与する必要があります。また、抜き勾配角を設けることで、サイクルタイムの短縮や生産性の向上にもつながります。抜き勾配角は、引き抜き方向に沿った部品の内壁または外壁に適用する必要があります。</p>
+<br>
+<h4>推奨事項</h4>
+<p>一般的な指針として、コアの抜き勾配角は 1.0 度、キャビティは 2.0 度、サイドコアは 0.5 度とすることが推奨されます。</p>
+<p>ユーザーは、業界標準に応じてこれらの値を変更することができます。</p>
+<br>
+<h4>構成</h4>
+<p>ルール UI では、材料の一覧は <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から読み込まれ、ユーザーは材料およびそれぞれの値を構成することができます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルール UI 上で Material Group およびグレードとともに構成済み材料の一覧をフィルタリングして表示できます。同じキー（Ctrl+M）を使用してフィルターをリセットすることもできます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png"/>
+</div>
+<br>
+<h4>例</h4>
+<br>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum_Draft_Angle_DC_Help.bmp"/>
+</div>
+
+<br>
+
+
+
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>Q1 = コアの抜き勾配角</p>
+<p>Q2 = キャビティの抜き勾配角</p>
+<p>Q3 = サイドコアの抜き勾配角</p>
+</div>
+</div>
+
+
+
+
+<br>
+
+</body></html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="9.0_2"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Enable Diagnostic Data Collection for Product Improvement</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div><h1>製品改善のための診断データ収集を有効化</h1><br>
+<p>お客様側から DFMPro の使用状況データを収集する目的は、製品の品質と性能を向上させることです。</p>
+<p> </p>
+<p>既定では、DFMPro の使用状況データを収集するために、<b><i>製品改善のための診断データ収集を有効化</i></b> チェックボックスが選択されています。このチェックボックスの選択を解除すると、このオプションを無効化できます。</p>
+<p> </p>
+<p>インストール時に <b><i>製品改善のための診断データ収集を有効化</i></b> チェックボックスが選択されている場合、使用状況データの共有を停止（オプトアウト）するには、<a href="#Opted-out_through_DFMPro_Settings_dialog_box">DFMPro-Settings ダイアログボックス</a>を使用します。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Enable_Diagnostic_Data_Collection_CP.png"/>
+</div>
+<p> </p>
+<p>本ソフトウェアは、ユーザーや組織に固有のデータを収集せず、またデータ収集が製品の性能に影響することはありません。ただし、取得されるデータは限定された一部に限られます。</p>
+<p><b>収集されるデータの例を以下に示します。</b></p>
+<ul>
+<li><p><b>製品名:</b> 例：DFMPro for Creo Parametric</p></li>
+<li><p><b>DFMPro for Creo Parametric のバージョン</b></p></li>
+<li><p><b>ビルドバージョン:</b> XXXX</p></li>
+<li><p><b>言語:</b> 例：US English</p></li>
+<li><p><b>イベント情報</b></p></li>
+</ul>
+<ul>
+<li>Sessions: DFMPro for Creo Parametric のセッションが読み込まれた回数（起動操作の有無に関わらない）</li>
+<li>Analysis Sessions: UI が起動され、終了した回数</li>
+<li>Analysis Count: 解析がトリガーされ、完了またはキャンセルされた回数</li>
+<li>Post Analysis Events: Ignore、Ignore similar、および画像キャプチャの操作</li>
+<li>Input Events: Entity-Selection、Machined-Entire-part、Machined-Setup の詳細を取得</li>
+<li>Mold-Classification: 完了の詳細を取得</li>
+<li>Utility Events: レポートのインポートおよびエクスポート操作の詳細を収集</li>
+<li>Rule Manager: Register Rules、Register Database、Map Material、Material Property の詳細を収集</li>
+</ul>
+<ul>
+<li><p><b>実行情報</b></p></li>
+</ul>
+<p>ルール名および実行ステータス</p>
+<p>使用されたプロセス（例：Turn、Mill など）</p>
+<p> </p>
+<h2>インストール後にオプトアウトするオプション</h2><br>
+<p>既定では、<i>製品改善のための診断データ収集を有効化</i> オプションは常にオンになります。以下のいずれかの方法でインストールした後、使用状況データの共有を停止（オプトアウト）したい場合は、次の手順に従ってください。</p>
+<ol>
+<li><p>標準インストール</p></li>
+<li><p>サイレントインストール</p></li>
+<li><p>コピー＆ペースト インストール</p></li>
+</ol>
+<p> </p>
+<h4><a name="Opted-out_through_DFMPro_Settings_dialog_box" id="Opted-out_through_DFMPro_Settings_dialog_box"></a>DFMPro - Settings ダイアログボックスからオプトアウトする手順</h4><br>
+<ol>
+<li><p>マシンにインストール後、DFMPro メニューで <img alt="" border="0" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp"/> <strong><i>Start DFMPro</i></strong> ボタンを選択します。</p></li>
+</ol>
+<ol start="2">
+<li><p>DFMPro ユーザーインターフェースで <strong><i>Settings</i></strong> ボタンをクリックし、DFMPro - Settings ダイアログボックスを開きます。</p></li>
+</ol>
+<p>または</p>
+<p>以下に記載のインストール先にある <strong><i>DFXSettingApplication.exe</i></strong> ファイルを選択し、DFMPro - Settings ダイアログボックスを起動します。</p>
+<p>例：<i>C:\Program Files\Geometric\DFMPro for Creo Parametric(x64)\DFMPro</i></p>
+<p> </p>
+<ol start="3">
+<li><p>Others タブで、<b><i>製品改善のための診断データ収集を有効化</i></b> チェックボックスがオンになっていることを確認します。</p></li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Others_Tab_CP.png"/>
+</div>
+<p> </p>
+<ol start="4">
+<li><p>このオプションを無効にするには、チェックボックスの選択を解除します。</p></li>
+</ol>
+<p>コマンドが設定されると、オプトアウトのインストールタイムラインが、データ追跡を停止するためのオプトアウト信号を送信します。</p>
+<p> </p>
+<p> </p>
+
+
+
+</body></html>

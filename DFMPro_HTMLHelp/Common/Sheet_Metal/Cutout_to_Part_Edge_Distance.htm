@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_21"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Cutout to Part Edge Distance - Based on Cutout Length</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Cutout to Part Edge Distance - Based on Cutout Length "カットアウト長さに基づくカットアウトから部品端面間の距離"</h1>
+<h4>ルール</h4>
+<p>カットアウトからパーツのエッジまでの最小距離と板厚との比率は、ユーザーが指定した値以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>カットアウトからパーツのエッジまでの距離が最小値を下回る場合、対象領域における板材の変形や割れの可能性が高くなります。許容距離は製造方法によって異なります。カットアウトがエッジに近すぎると、エッジが変形して膨らみが生じることがあります。これは、パーツをクランプするためのスペースが不足していることが原因で発生する場合があります。カットアウトのエッジからの最小距離は、材料の板厚とする必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li>カットアウトからパーツのエッジまでの最小距離と板厚との比率は、2.0 以上である必要があります。</li>
+  <li>カットアウトからパーツのエッジまでの最小距離と板厚との比率（カットアウト長さに対して）は、ユーザーが指定した値以上である必要があります。</li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<ul>
+  <li><b>最小距離：</b> DFMProはパーツ上のカットアウトを特定し、カットアウトとパーツエッジ間の最小距離を、構成された値に対して検証します。</li>
+  <li><b>カットアウト長さに基づく：</b> DFMProはまず標準カットアウト形状（円、正方形、長方形、オブロングなど）の長さを算出し、その後、構成値に基づいてカットアウトの最大長さを使用します。カットアウトとパーツエッジ間の該当距離が相関付けられ、解析のために検証されます。</li>
+</ul>
+<p>ユーザーは、デフォルトで構成されている値を変更することができます。</p>
+
+<br>
+
+<p>注記：</p>
+<p>ユーザーが2つ目のオプションである「カットアウト長さに基づく（Based on Cutout Length）」を選択し、曲げエッジ上にカットアウトが存在する場合、それらのカットアウトは解析対象外となります。ただし、これらのカットアウトは1つ目のオプションでは違反（失敗）となります。</p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout_to_part_edge_distance_based_on_line_length_Note.bmp"></div>
+<h4>例</h4><br>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout to Part Edge Distance Based on Cutout Length_Help.bmp"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>D = カットアウトからパーツエッジまでの最小距離</p>
+<p>L = カットアウト長さ</p>
+<p>t = 板厚</p>
+
+<br>
+
+<h2>Excel入力形式</h2>
+<p>ユーザーは、<b><i>Import</i></b> ボタンを使用して、Excelシートテンプレート内にある一括データをインポートすることができます。</p>
+
+<br>
+
+<p><b>標準テンプレート形式：</b></p>
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col width="57">
+    <col width="57">
+    <col width="57">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight: bold;text-align: center">L1/t</p></td>
+      <td><p style="font-weight: bold;text-align: center">L2/t</p></td>
+      <td><p style="font-weight: bold;text-align: center">D/t</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-weight: normal;text-align: center">1</p></td>
+      <td><p style="font-weight: normal;text-align: center">10</p></td>
+      <td><p style="font-weight: normal;text-align: center">1.0</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-weight: normal;text-align: center">10</p></td>
+      <td><p style="font-weight: normal;text-align: center">25</p></td>
+      <td><p style="font-weight: normal;text-align: center">2.5</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-weight: normal;text-align: center">30</p></td>
+      <td><p style="font-weight: normal;"> </p></td>
+      <td><p style="font-weight: normal;text-align: center">3.5</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p>注記：</p>
+<p>面取り付きのカットアウトにも対応しています。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout_With_Chamfers_right.png"></div>
+
+<br>
+
+<p>以下の標準形状のカットアウトが「カットアウト長さに基づく（Based on cutout length）」でサポートされています。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" height="264" src="../../assets/images/Common/image/Supported_shape_based_on_cutout_length.bmp" width="455"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>L = カットアウトの長さ</p>
+
+
+<br>
+
+
+</body></html>

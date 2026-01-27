@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="12.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Using a Different Database</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+<h1>別のデータベースを使用する</h1><br>
+<p>DFMPro には、一般的に使用される標準穴径を含むデフォルトのデータベースが付属しています。この <a href="modifying_the_DFMPro_database.htm">データベースは変更可能</a>であり、ユーザーの加工環境で使用される穴径を含めることができます。</p>
+<p>ただし、一部の組織では、異なるスキーマや形式（例：Access データベース）を持つ独自のデータベースを使用している場合があります。</p>
+<p>ユーザーのデータベースからデフォルトのデータベースへ情報をコピーする代わりに、ユーザーのデータベースへアクセスするアプリケーションを指定することができます。</p>
+
+<h2>コネクタプログラムの登録</h2><br>
+<p>コネクタプログラムを作成し、DLL としてコンパイルした後、その DLL を DFMPro に登録します。</p>
+
+<ol>
+  <li>
+    <p>
+      <div style="text-align:center;">
+        <img alt="" border="0" src="../../assets/images/Common/image/New_RuleMgr_SW.bmp"/>
+      </div>
+      DFMPro メニューから <strong><i>ルールマネージャー</i></strong> ボタンをクリックします。
+    </p>
+  </li>
+  <li>
+    <p>
+      <div style="text-align:center;">
+        <img alt="" border="0" src="../../assets/images/Common/image/Register_database_icon.png"/>
+      </div>
+      ルールマネージャーダイアログボックスで <strong><i>データベースモジュールの登録</i></strong> ボタンをクリックします。
+    </p>
+  </li>
+</ol>
+
+<p>このダイアログボックスでは、以下の操作が可能です：</p>
+
+<ul>
+  <li><p>既存の登録済みデータベースモジュールを削除する</p></li>
+  <li><p>現在のデータベースモジュールを読み込む</p></li>
+  <li><p>新しいデータベースモジュールを読み込む</p></li>
+</ul>
+
+<ol start="3">
+  <li>
+    <p>
+      <div style="text-align:center;">
+        <img alt="" border="0" height="21" width="73" src="../../assets/images/Common/image/btn_long_threedots.gif"/>
+      </div>
+      <strong><i>参照</i></strong> ボタンをクリックし、モジュールファイル（*.DLL）を選択します。
+    </p>
+  </li>
+  <li>
+    <p><strong><i>読み込み</i></strong> ボタンをクリックします。</p>
+  </li>
+</ol>
+
+<p><strong>注:</strong></p>
+<p>API（Application Programming Interface）の詳細については、<a href="../Getting_Started/contacting_technical_support.htm">テクニカルサポート</a>までお問い合わせください。</p>
+
+</body></html>

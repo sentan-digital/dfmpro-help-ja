@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.3.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Interference Between Cables</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>Interference Between Cables "ケーブル同士の干渉"</h1>
+<h4>ルール</h4>
+<p>このルールは、ケーブル同士の衝突（干渉）を識別します。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>ケーブリング（ワイヤハーネス）設計では、ケーブル同士の干渉を避けることが推奨されます。干渉は、電気的干渉、熱や低温、湿気、放射線、そして経年による損傷などの重大な問題につながります。</p>
+<p>また、ケーブルの干渉は、信号の損失、電磁的な誤動作による機器故障などの問題を引き起こす場合があります。</p>
+<p>ケーブリング（ワイヤハーネス）設計では、ケーブル同士の干渉を避けることが推奨されます。干渉は、電気的干渉、熱や低温、湿気、放射線、そして経年による損傷などの重大な問題につながります。</p>
+<p>また、ケーブルの干渉は、信号の損失、電磁的な誤動作による機器故障などの問題を引き起こす場合があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な設計ガイドラインでは、ケーブルの干渉を避けることが推奨されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>ルール構成では、ルールのユーザーインターフェース上でケーブルバンドルを構成するためのオプションが提供されます。ルールは、構成されたバンドルに対してのみ実行されます。</p>
+<p>ユーザーは、<a href="../Getting_Started/DFMPro_Settings.htm#Cabling">DFMPro Settings</a> から、ケーブルおよびケーブルバンドルの識別設定を行うことができます。</p>
+
+<br>
+
+<h4>ケーブルおよびケーブルバンドル構成の入力形式</h4>
+<table align="center" border="1" width="806" cellspacing="0">
+  <colgroup>
+    <col width="90"/>
+    <col width="667"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p><strong>入力</strong></p></td>
+      <td><p><strong>解釈</strong></p></td>
+    </tr>
+    <tr>
+      <td><p>Cable</p></td>
+      <td><p>属性値には、（スペース、-、_）を含まず、名前「cable」のみを含める必要があります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*Cable*</p></td>
+      <td><p>属性値の名前に「cable」を含める必要があります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_Cable</p></td>
+      <td><p>すべての属性値は「_cable」で終わる必要があります。</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Interference_Between_Cables.png"/>
+</div>
+
+<br>
+
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>DFMPro 設定ファイルにケーブル識別の詳細が存在しない場合、ルールは次の警告を表示します:</p>
+<p><i>Cable Identification is not defined in the DFMPro Settings file.</i>：DFMPro Settings ファイルで Cable Identification が定義されていません。</p></li>
+</ul>
+<br>
+
+<ul class="note-body">
+<li><p>現在の制約により、ケーブル部品は eDrawings レポートでは表示されません。</p></li>
+<li><p>このルールは、Creo Cabling モジュールで作成されたケーブルをサポートします。</p></li>
+<li><p>このルールは、異なるハーネス間に存在する 2 本のケーブル間の干渉をチェックします。</p></li>
+<li><p>ケーブルまたはワイヤに導体がある場合、このルールはサポートされません（下図のとおり）。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Interference_Between_Cables_Bundle_Segments_Note2.png"/>
+</div>
+
+<br>
+
+<ul class="note-body">
+<li><p>ワイヤハーネスにおいて、ケーブルがケーブルバンドルセグメント（図のとおり）で作成されている場合、ルールはバンドルセグメント全体を 1 本のケーブルとして扱います。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Interference_Between_Cables_Bundle_Segments_Note1.png"/>
+</div>
+
+<br>
+
+</body>
+</html>

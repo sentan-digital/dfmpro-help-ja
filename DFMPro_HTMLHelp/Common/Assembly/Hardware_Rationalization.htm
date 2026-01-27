@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_11"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Hardware Rationalization</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>Hardware Rationalization "ハードウェアの合理化"</h1>
+<h4>ルール</h4>
+<p>同じ直径、ヘッドタイプ、材質、および長さのハードウェアを使用してください。このルールは、構成に基づいてハードウェアのばらつきを確認します。</p>
+<p>&nbsp;</p>
+<h4>説明</h4>
+<p>アセンブリに、長さ、直径、材質、ヘッドタイプなどのパラメータがわずかに異なるハードウェアが含まれている場合、ハードウェアの合理化により組織のコストを大幅に削減できます。このルールは、そのようなハードウェアのばらつきをなくすための情報を設計者に提供します。機能要件に基づき、設計者はハードウェアを置き換えて共通化します。</p>
+<p>アセンブリ内でそのようなハードウェアを特定し、それらの合理化のために適切な対応を取ることで、アセンブリコストを大幅に削減するのに役立ちます。</p>
+<p>&nbsp;</p>
+<p><b>利点：ハードウェアの合理化</b></p>
+<ul>
+  <li><p>在庫量を最小化することで、組立工程を円滑にします。</p></li>
+  <li><p>取り扱いおよび組立作業を標準化します。</p></li>
+  <li><p>作業者の習熟が容易になります。</p></li>
+  <li><p>生産量の増加と作業の標準化により、自動化の機会が生まれます。</p></li>
+</ul>
+<p>&nbsp;</p>
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、組立コストを避けるために、ハードウェアの小さなばらつきを避けることを推奨します。</p>
+<p>&nbsp;</p>
+<h4>構成</h4>
+<p>「Top Level」または「All Level」の選択に基づき、DFMProはアセンブリ内に存在するハードウェアを特定し、検証に使用します。</p>
+<p>&nbsp;</p>
+<h4>例</h4><br>
+<p><b>長さタイプ</b></p>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Bolt_Screw_Rationalization_Help_length_04.png"/>
+</div>
+<p><b>材質タイプ</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Bolt_Screw_Rationalization_Help_Material_type_04.bmp"/>
+</div>
+<h2>&nbsp;</h2>
+<p><b>ヘッドタイプ</b></p>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Bolt_Screw_Rationalization_Help_head_type.bmp"/>
+</div>
+
+<br>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>必須項目は <i>Hardware</i> <i>Name</i>、<i>Hardware Type</i>、<i>Head Type</i>、<i>Material</i>、<i>Diameter</i>、および <i>Length</i> です。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Hardware_Database_Rule_Bolt_and_Screw.png"/>
+</div>
+
+<ul class="note-body">
+<li><p>DFMPro ハードウェアデータベースにおいて、留め具に単位が定義されていない場合は、留め具ドキュメントの単位が合理化に使用されます。</p>
+<li><p>直径および長さの値の構成では、分数ではなく数値を入力してください（例：1/4&quot; は 0.25、2-1/4&quot; は 2.25、1 1/4&quot; は 1.25）。</p></li>
+<li><p>ハードウェアデータベースに分数値が構成されている場合、ルールはそれらを散布図上でゼロとしてプロットします。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリパーツ</a>で実行できます。</p></li>
+<li><p>トップレベルまたは全レベルの識別については、このルールに関しては個別のルール構成がDFMPro Settingsより優先されます。詳細は <a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> セクションを確認してください。</p></li>
+</ul>
+<br>
+</body>
+</html>

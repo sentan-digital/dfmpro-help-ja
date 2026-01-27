@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_18"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Top-Level Assembly Analysis</title>
+  <meta name="topic-status" content="Draft"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  <h1>トップレベル アセンブリ解析</h1><br>
+<p><a href="DFMPro_Settings.htm#Assembly">DFMPro Settings</a> で <em><strong>Execute Assembly Rules only on Top Level Assembly Parts</strong></em> オプションが選択されている場合、DFMPro はトップレベルとして識別されたサブアセンブリ内部の問題を識別しません。ただし、2 つ以上のトップレベルのサブアセンブリまたはパーツ間の問題は識別されます。</p>
+<p>これにより、アセンブリ解析を製品モジュール間のインターフェースレベルの問題に限定できます。このような設定は、製品アセンブリが非常に大規模で、製品アセンブリを全体または部分的にロードしたときにのみインターフェースレベルの問題が観察される場合に非常に有用です。</p>
+<p>“トップレベル”コンポーネントを識別する際のキーワードは <strong>loaded</strong> と <strong>visible</strong> です。</p>
+<p>ロードされており可視なすべてのパーツの共通親アセンブリがレベル 0 であり、このアセンブリの直下の子がレベル 1 のコンポーネントで、これらがトップレベル コンポーネントと見なされます。</p>
+<p><strong>詳細は以下のリンクを参照してください。</strong></p>
+<ul>
+<li><a href="#DFMPro_Settings">DFMPro Settings</a></li>
+<li><a href="#Supported_Rules">Supported Rules</a></li>
+</ul>
+<p>以下のサンプル Assembly は、Top-Level Assembly Analysis 機能を説明しています。</p>
+<p>Where,</p>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Where_Image.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample1.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample2.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample3.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample4.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample5.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample6.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample7.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample8.png"/>
+</div>
+<div style="text-align:center;">
+<img src="../../assets/images/Common/image/Top_Levle_Assembly_Sample9.png"/>
+</div>
+
+<h2 id="DFMPro_Settings">DFMPro Settings</h2><br>
+<p>トップレベルの識別と解析は、<a href="DFMPro_Settings.htm#Assembly">DFMPro Settings</a> での選択内容に依存します。以下に列挙するルールについては、個別のルール構成が DFMPro Settings より優先されます。</p>
+<ul>
+<li><a href="../Assembly/Bolt_and_Screw_Rationalization.htm">Bolt and Screw Rationalization</a></li>
+<li><a href="../Assembly/Hardware_Rationalization.htm">Hardware Rationalization</a></li>
+<li><a href="../Assembly/Preferred_Hardware.htm">Preferred Hardware</a></li>
+<li><a href="../Assembly/Recommended_Bolted_Joints.htm">Recommended Bolted Joints</a></li>
+</ul>
+<p>詳細については <a href="DFMPro_Settings.htm#General">DFMPro Settings</a> ページを参照してください。その他すべてのルールについては、DFMPro Settings が個別のルール構成より優先され、一貫した動作を保証します。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Asm_General_Tab_CP.png"/>
+</div>
+
+<h2 id="Supported_Rules">Supported Rules</h2><br>
+<p>この機能強化は、すべてのアセンブリルールと一部の一般ルール（ユーザーが構成したカスタムルールを含む）を対象とします。サポートされるルールのリストを以下に示します:</p>
+
+<h4>Assembly ルール</h4>
+<ul>
+<li><a href="../Assembly/Bolt_and_Screw_Rationalization.htm">Bolt and Screw Rationalization</a></li>
+<li><a href="../Assembly/check_contact_material.htm">Check Contact Material</a></li>
+<li><a href="../Assembly/check_pref_comp.htm">Check Preferred Components</a></li>
+<li><a href="../Assembly/Distance_Between_Components.htm">Distance Between Components</a></li>
+<li><a href="../Assembly/fastener_accessiblity.htm">Fastener Accessibility</a></li>
+<li><a href="../Assembly/Fastener_Accessibility_Based_on_Fastening_Tool_Parameters.htm">Fastener Accessibility - Based on Fastening Tool Parameters</a></li>
+<li><a href="../Assembly/fastener_clearance.htm">Fastener Clearance</a></li>
+<li><a href="../Assembly/fastener_engagement_length.htm">Fastener Engagement Length</a></li>
+<li><a href="../Assembly/Fixed_Fastener_Calculation.htm">Fixed Fastener Calculation</a></li>
+<li><a href="../Assembly/Floating_Fastener_Calculation.htm">Floating Fastener Calculation</a></li>
+<li><a href="../Assembly/Hardware_Rationalization.htm">Hardware Rationalization</a></li>
+<li><a href="../Assembly/hole_alignment.htm">Hole Alignment</a></li>
+<li><a href="../Assembly/interference_detection.htm">Interference Detection</a></li>
+<li><a href="../Assembly/Minimum_Bearing_Area_Calculation.htm">Minimum Bearing Area Calculation</a></li>
+<li><a href="../Assembly/min_clearance_bet_parts.htm">Minimum Clearance Between Components</a></li>
+<li><a href="../Assembly/Missing_Washer.htm">Missing Washer</a></li>
+<li><a href="../Assembly/Preferred_Hardware.htm">Preferred Hardware</a></li>
+<li><a href="../Assembly/Projected_Tolerance_Modifier.htm">Projected Tolerance Modifier</a></li>
+<li><a href="../Assembly/Recommended_Bolted_Joints.htm">Recommended Bolted Joints</a></li>
+<li><a href="../Assembly/Recommended_Extended_Thread_Length.htm">Recommended Extended Thread Length</a></li>
+<li><a href="../Assembly/Recommended_Shank_Length.htm">Recommended Shank Length</a></li>
+<li><a href="../Assembly/recomm_thread_connection.htm">Recommended Thread Connection</a></li>
+<li><a href="../Assembly/Slot_to_Hole_Alignment.htm">Slot to Hole Alignment</a></li>
+</ul>
+
+<h4>General ルール</h4>
+<ul>
+<li><a href="../General/chamfered_hole_edges.htm">Chamfered Hole Edges</a></li>
+<li><a href="../General/fillet_radius_generic.htm">Fillet Radius</a></li>
+<li><a href="../General/min_drill_break_thk.htm">Minimum Drill Breakout Wall Thickness</a></li>
+<li><a href="../General/min_wall_thk_for_boss.htm">Minimum Wall Thickness for Boss</a></li>
+<li><a href="../General/part_count_reduction_material_based.htm">Part Count Reduction - Material Based</a></li>
+<li><a href="../General/recommended_countersink_hole_parameters.htm">Recommended Countersink Hole Parameters</a></li>
+<li><a href="../General/thread_relief_for_hole.htm">Thread Relief for Hole</a></li>
+<li><a href="../General/use_preferred_materials.htm">Use Preferred Materials</a></li>
+</ul>
+
+
+
+</body></html>

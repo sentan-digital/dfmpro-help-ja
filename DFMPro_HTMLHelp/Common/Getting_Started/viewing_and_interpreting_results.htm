@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_28"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Viewing and Interpreting Results</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>結果の表示と解釈</h1>
+<p>DFMPro の解析が完了すると、結果には以下の情報が表示されます。</p>
+<ul>
+  <li><p>違反したルールの数および詳細</p></li>
+  <li><p>合格したルールの数</p></li>
+  <li><p>指定された設計タイプに適用されないルールの数。ユーザーは、適用されない <a href="register_rule_modules.htm">ルールモジュールを削除</a> することで、この情報を結果から除外できます。</p></li>
+  <li><p>DFMPro がパーツ全体を解析できたかどうか。解析できなかった場合は、解析されていないパーツの領域が特定されます。</p></li>
+</ul>
+
+<br>
+
+<p><strong>違反したルールの詳細:</strong></p>
+<ul>
+  <li><p>ルールモジュール</p></li>
+  <li><p>ルール名</p></li>
+  <li><p>ルールに違反しているインスタンスの数（失敗インスタンス）</p></li>
+  <li><p>各失敗インスタンスの問題点、およびグラフィックスエリア上でのその位置</p></li>
+</ul>
+
+<br>
+
+<p>解析が完了したら、DFX タブ内に表示されているすべての情報を確認するために、以下の手順に従うことができます。</p>
+
+<ol>
+  <li><p>ルール グループボックスには、推奨事項、合格したルール、適用外ルール、未解析領域の一覧が表示されます。</p></li>
+</ol>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Rule_Group_Box.png">
+</div>
+
+<br>
+
+<ol start="2">
+  <li><p>まだ展開されていない場合は、<strong><i>推奨事項</i></strong> 項目を展開して、違反したチェックの一覧を表示します。</p></li>
+  <li><p>特定のルールに対する失敗インスタンスの一覧から <strong><i>インスタンス</i></strong> 項目をクリックします。失敗インスタンスとは、通常、加工が困難なボディ上の形状、またはルールに違反している属性を指します。</p></li>
+  <li><p><strong><i>インスタンス</i></strong> をクリックすると、インスタンス詳細グループボックスが表示され、期待条件と実際の条件を含め、この形状のどこに問題があるかといった具体的な情報が表示されます。</p></li>
+  <li><p><strong><i>失敗インスタンス</i></strong> をクリックし、<strong><i>ズーム</i></strong> コマンドを選択すると、グラフィックスエリア内の該当形状にフォーカスします。DFMPro は、CAD ウィンドウ内の該当箇所にズームしながら、インスタンス グループボックス内で選択されたインスタンスをハイライト表示します。</p></li>
+</ol>
+
+<br>
+
+<p>同様の方法で、結果内に存在するすべての失敗インスタンスを順に確認できます。</p>
+
+<ol start="6">
+  <li><p>ルール グループボックス配下の失敗インスタンスを表示するには、<strong><i>Ctrl</i></strong> キーを押しながら <strong><i>ルートノード</i></strong> または <strong><i>ルール</i></strong> をクリックします。</p></li>
+  <li><p>パーツが完全に解析されていない場合は、未解析領域が有効になります。<strong><i>未解析領域</i></strong> ノードをクリックすると、ボディ上の未解析領域がハイライト表示されます。</p></li>
+  <li><p>ユーザーは <a href="ignoring_over_reported_failures.htm#Scatter_Plot_Result_View">散布図結果ビュー</a> を使用して、標準的な推奨事項から大きく逸脱している重要な失敗インスタンスを迅速に特定することもできます。</p></li>
+  <li><p><a href="correcting_errors_and_revalidate.htm">エラーを修正し、設計を再検証</a> します。</p></li>
+  <li><p>DFMPro では、以下のインストール先に共有されているテンプレート内の文字列を編集することで、<i>DFMPro 結果ペイン</i> に表示される文字列を変更できます。</p></li>
+</ol>
+
+
+<p><i>C:\ProgramData\GeometricLtd\DFMPro\Wildfire\Settings\Lang\Common\DFMResourceData.xls</i></p>
+
+<br>
+
+<p><strong>テンプレートで利用可能なデフォルト文字列:</strong></p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Strings_Template.png">
+</div>
+
+<p> </p>
+<p><strong>例:</strong></p>
+<p><i>推奨事項</i> は <i>ルール推奨事項</i> または <i>設計推奨事項</i> といった名称に変更できます。</p>
+
+<br>
+
+<h2>結果のフィルタリング</h2>
+<p><b><i><a href="DFMPro_Graphical_Filter.htm">グラフィカル フィルター</a></i></b> コマンドは、表示されるダイアログボックスで指定された <b><i>領域ベース フィルター、面／エッジ エンティティ選択、</i></b> または <b><i>フィーチャー選択</i></b> に基づいて、ルール推奨事項をフィルタリングします。</p>
+<p> </p>
+<p><b><i>コンポーネントまたはラベルごとにルールをグループ化</i></b> コマンドは、違反ルールを含むアセンブリ内のコンポーネント一覧をフィルタリングします。アセンブリ内で特定の名前を持つコンポーネントを特定する際に有効です。</p>
+
+<ul>
+  <li><p><strong>コンポーネント別にグループ化:</strong> コンポーネント名に基づいて結果を表示します。</p></li>
+  <li><p><strong>ラベル別にグループ化:</strong> ラベルに基づいて結果を表示します。追加されたラベルは、生成される DFMPro レポートでも使用されます。</p></li>
+</ul>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Group_by_Components_CP.png">
+  <img alt="" border="1" src="../../assets/images/Common/image/Group_by_Label.png">
+</div>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Group_by_Label_Report_CP.png">
+</div>
+
+<br>
+
+<p><strong>注記:</strong></p>
+<p>コンポーネント別にグループ化 コマンドは、Assembly、Welding、Sheet Metal、または Tubing ルールでのみ使用できます。</p>
+<p>ラベル別にグループ化 コマンドは、Assembly ルール（例: <a href="../Assembly/Distance_Between_Components.htm">コンポーネント間距離</a>）でのみ使用できます。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Group_by_Label_RuleCong_CP.png">
+</div>
+
+<br>
+
+<p><strong>無視されたインスタンスの詳細</strong></p>
+<p>インスタンスが無視された状態は、ルール名ノードに追加されます。以下の画像では、Deep Holes ルールにおいて (7) は失敗したインスタンスの総数を示し、(1) は無視されたインスタンスの数を示しています。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/ViewingAndInterpretingResults_Rec_Count_details.png">
+</div>
+
+
+<br>
+</body>
+</html>

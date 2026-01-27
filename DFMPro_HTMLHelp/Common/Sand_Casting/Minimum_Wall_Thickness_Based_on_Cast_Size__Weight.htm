@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.11.0_2"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Wall Thickness Based on Cast Size and Weight</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Wall Thickness Based on Cast Size and Weight "鋳物サイズおよび重量に基づく最小製品肉厚"</h1>
+<h4>ルール</h4>
+<p>砂型鋳造部品における最小肉厚は、鋳物のサイズおよび重量に関連付けて設定する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>極端に薄い部位や厚肉部は、鋳造において重大な問題を引き起こします。鋳物の断面肉厚は、巣や引け巣などの欠陥を防ぐために均一である必要があります。多くの場合、肉厚が小さすぎると、溶湯が鋳型内を十分に流れなくなります。一方で、厚肉部は薄肉部に比べて冷却に時間がかかります。</p>
+<p>肉厚を均一に保つことで、熱応力および残留応力を低減できます。肉厚の急激な変化は避け、フィレットを設ける、またはテーパ状にすることが推奨されます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインでは、最小肉厚が小さすぎると鋳型内での金属流動を妨げるとされています。ただし、鋳物のサイズや重量によっては、最小肉厚を十分に確保できない場合もあります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProは、面間の肉厚を検証し、鋳物のサイズおよび重量に基づく最小肉厚が、設定された値以上であることを確認します。設計者は、鋳物サイズ範囲、鋳物重量範囲、またはその両方を設定できます。実際の部品サイズおよび重量に基づいて、DFMProは最小肉厚の値を設定値と比較します。</p>
+<p><b>鋳物サイズ：</b>鋳物の最大断面長 &lt;CS&gt; は、以下に示すように最大対角長とします。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum Wall Thickness Based on Cast Size and Weight Image 1.png">
+</div>
+
+<br>
+
+<h4>注記：</h4>
+<ul>
+<li><p>本ルールを使用するには、新たに追加した材料グループおよびグレードに対して、<a href="../DFMPro_Customization/material_database.htm">材料データベース編集</a>ダイアログで材料密度を定義することが必須です。</p></li>
+<li><p>新たに追加した材料グループおよびグレードは、<a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">製造プロセス</a>にマッピングする必要があります。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum_Wall_Thickness_Edit_Material_Database_dialog_box.png">
+</div>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum Wall Thickness Based on Cast Size and Weight Image 2.png">
+</div>
+
+<br>
+
+<p>ここで、</p>
+<p>t = 最小肉厚</p>
+
+
+<br>
+</body>
+</html>

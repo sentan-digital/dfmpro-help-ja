@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_13"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Interference Detection</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Interference Detection "干渉検出"</h1>
+<h4>ルール</h4>
+<p>目的とする機能と組み立てやすさを実現するために、アセンブリ構成部品間の干渉を避けてください。</p>
+<br>
+<h4>説明</h4>
+<p>このルールは、アセンブリ構成部品間の干渉状態を特定します。干渉検出は複雑なアセンブリで特に有用であり、構成部品同士が干渉しているかどうかを可視化して判断するのが難しい場合に役立ちます。</p>
+<br>
+<h4>推奨事項</h4>
+<p>デフォルトでは、すべてのアセンブリ構成部品が解析対象として選択され、すべてのキルト（Quilt）サーフェスは干渉検出から除外されます。一般に、構成部品の公称寸法（ノミナル寸法）により干渉が発生しないことが期待されます。</p>
+<br>
+<h4>構成</h4>
+<p>干渉検出ルールは、次の2つの方法で構成できます：</p>
+<ol type="A">
+  <li><p>すべての構成部品をチェック</p>
+  <p>これはデフォルトで選択されています。アセンブリ内のすべての構成部品の組み合わせ（ペア）について、干渉状態がチェックされます。</p></li>
+</ol>
+
+<p> </p>
+<ol type="A" start="2">
+  <li><p>選択した構成部品をチェック</p>
+  <p>デフォルトではチェックされていません。アセンブリ内で選択した構成部品ペア間の干渉状態がチェックされます。</p></li>
+</ol>
+
+
+<br>
+<h4>列（Component 1 と Component 2）の下に構成部品を追加する：</h4>
+<p>ルール構成で構成部品を追加する方法は3つあります：</p>
+<ol>
+  <li><p>列に構成部品名を手動で入力します。</p></li>
+  <li><p>右クリックしてファイルの場所を参照（browse）します。この手順を Component 1 と Component 2 の両方に対して実行します。</p></li>
+  <li><p>キーボードで Ctrl+I を押して、MS Excel ファイルをインポートします。この Excel ファイルには、各列に追加された構成部品名が入った2つの列が含まれます。Excel ファイルをインポートすると、データは自動的に Rule Manager に取り込まれます（下の例を参照）。</p></li>
+</ol>
+<table align="center" border="1" cellspacing="0" width="306">
+  <colgroup>
+    <col style="width: 50.093%;"/>
+    <col style="width: 49.907%;"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p><b>Component 1</b></p></td>
+      <td><p><b>Component 2</b></p></td>
+    </tr>
+    <tr>
+      <td><p>Gear_prt</p></td>
+      <td><p>ring_dsk_2</p></td>
+    </tr>
+    <tr>
+      <td><p>Gear_prt</p></td>
+      <td><p>ring_dsk_4</p></td>
+    </tr>
+    <tr>
+      <td><p>Rod_new</p></td>
+      <td><p>connex_rod_xd7800</p></td>
+    </tr>
+    <tr>
+      <td><p>Plate</p></td>
+      <td><p>xnp_123prt</p></td>
+    </tr>
+  </tbody>
+</table>
+<p style="text-align:center;"><b>標準テンプレート形式</b></p>
+<p> </p>
+<p><b>Component 1 の各パーツを、Component 2 にあるすべてのパーツと照合してチェック</b></p>
+<p>このオプションは、<i>Component 1</i> 列にある各パーツについて、<i>Component 2</i> 列にあるすべてのパーツとの干渉をチェックするために使用できます。</p>
+<h4> </h4><br>
+<h4>特定の構成部品の干渉解析における入力形式</h4><br>
+<table align="center" border="1" width="806">
+  <colgroup>
+    <col width="174"/>
+    <col width="620"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p><strong>入力</strong></p></td>
+      <td><p><strong>解釈</strong></p></td>
+    </tr>
+    <tr>
+      <td><p> ABC</p></td>
+      <td><p> ABC.prt または abc.prt.1 または aBc.prt.4 – アセンブリで使用されている最新バージョンがチェックされます。</p></td>
+    </tr>
+    <tr>
+      <td><p> ABC.asm</p></td>
+      <td><p>アセンブリとして「.asm」というサフィックスが追加され、チェック対象になります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*ABC*</p></td>
+      <td><p> 名前に abc または ABC を含むパーツ。</p></td>
+    </tr>
+    <tr>
+      <td><p>*</p></td>
+      <td><p> すべてのパーツ。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_M32</p></td>
+      <td><p> _M32 で終わるすべてのパーツ。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_pcb_*.asm</p></td>
+      <td><p> 名前に _pcb_ を含むすべてのサブアセンブリ。</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>ファイル名は大文字・小文字を区別しません。</p></li>
+</ul>
+
+<br>
+<h4>除外（Ignored）構成部品</h4>
+<p>干渉検出の検証中に、構成部品のリストを除外できます。この条件は、許容される干渉を引き起こすことが分かっている特定の構成部品を含めた解析を行う場合に、ユーザーが望む干渉結果のみを得られるようにするために役立ちます。</p>
+<br>
+<h4>Components 列の下に除外構成部品を追加する：</h4>
+<p>ルール構成で除外構成部品を追加する方法は3つあります：</p>
+<ol>
+  <li><p>構成部品名を手動で入力します。</p></li>
+  <li><p>右クリックしてファイルの場所を参照し、パーツまたはアセンブリ名を選択します。</p></li>
+  <li><p>キーボードで Ctrl+I を押して、MS Excel ファイルをインポートします。この Excel ファイルには、各行に追加された構成部品名が入った1列が含まれます。Excel ファイルをインポートすると、データは自動的に Rule Manager に取り込まれます（下の例を参照）。</p></li>
+</ol>
+
+<br>
+
+<table align="center" border="1" cellspacing="0" width="132">
+  <colgroup>
+    <col style="width: 100%;"/>
+  </colgroup>
+  <tbody>
+    <tr><td><p>Gear_prt</p></td></tr>
+    <tr><td><p>Gear_prt</p></td></tr>
+    <tr><td><p>Rod_new</p></td></tr>
+    <tr><td><p>Plate</p></td></tr>
+  </tbody>
+</table>
+<p style="text-align:center;"><b>標準テンプレート形式</b></p>
+<p> </p>
+<h4>除外（Ignored）干渉解析における入力形式</h4><br>
+<table align="center" border="1" width="806">
+  <colgroup>
+    <col width="90"/>
+    <col width="667"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p><strong>入力</strong></p></td>
+      <td><p><strong>解釈</strong></p></td>
+    </tr>
+    <tr>
+      <td><p> ABC</p></td>
+      <td><p> ABC.prt または abc.prt.1 または aBc.prt.4 – アセンブリで使用されている最新バージョンがチェックされます。</p></td>
+    </tr>
+    <tr>
+      <td><p> ABC.asm</p></td>
+      <td><p> アセンブリとして「.asm」というサフィックスが追加され、チェック対象になります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*ABC*</p></td>
+      <td><p> 名前に abc または ABC を含むパーツ。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_M32</p></td>
+      <td><p> _M32 で終わるすべてのパーツ。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_pcb_*.asm</p></td>
+      <td><p> 名前に _pcb_ を含むすべてのサブアセンブリ。</p></td>
+    </tr>
+  </tbody>
+</table>
+<h4> </h4><br>
+<h4>以下のパーツタイプ間の干渉がチェックされます：</h4>
+<ol>
+  <li><p>ソリッド同士（Solid to Solid）</p></li>
+  <li><p>ソリッドとキルト（Solid to Quilt）</p></li>
+  <li><p>パーツ（ソリッドまたはキルト）とサブアセンブリ（Part (Solid or Quilt) to sub-assembly）</p></li>
+  <li><p>サブアセンブリ同士（Sub-assembly to sub-assembly）</p></li>
+  <li><p>ハイブリッドパーツ（ソリッドとキルトの両方を含む）（Hybrid Parts (having solids as well as quilts)）</p></li>
+</ol>
+<br>
+<h4>追加オプション</h4><br>
+<table align="center" border="1" cellspacing="0" width="959">
+  <colgroup>
+    <col style="width: 23.641%;"/>
+    <col style="width: 76.359%;"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p>Option</p></td>
+      <td><p> Function</p></td>
+    </tr>
+    <tr>
+      <td><p> Ignore Interference Volume</p></td>
+      <td><p>  構成された値より小さい干渉体積（Interference volume）は無視されます。</p></td>
+    </tr>
+    <tr>
+      <td><p> Ignore Quilt Surfaces</p></td>
+      <td><p>  アセンブリファイル内のすべての構成部品／キルトサーフェスが無視されます。</p></td>
+    </tr>
+    <tr>
+      <td><p> Ignore Threaded Region</p></td>
+      <td>
+        <p>ルール検証中、ねじ穴と留め具の間の実際の干渉領域（インターフェース）が無視されます。</p>
+        <p>例：</p>
+        <div style="text-align:center;">
+          <img alt="" border="0" src="../../assets/images/Common/image/Symbolic_Thread_Support_Interference_Detection.png"/>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4><b>結果の分類</b></h4>
+<p>DFMPro は、<a href="../DFMPro_Customization/Hardware_Database.htm">データベース</a>に登録されている留め具に応じて結果を分類します。</p>
+<ul>
+  <li>留め具同士（Between Fasteners）</li>
+  <li>構成部品同士（Between Components）</li>
+  <li>留め具と構成部品（Between Fastener &amp; Component）</li>
+</ul>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/interference_detection_result_categorized.jpg"/>
+</div>
+
+<br>
+<h4>例</h4>
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/interference_detection.jpg"/>
+</div>
+
+<br>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリパーツ</a>で実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

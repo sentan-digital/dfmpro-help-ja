@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_23"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Slot to Hole Alignment</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>Slot to Hole Alignment "長穴と穴の位置合わせ"</h1>
+<h4>ルール</h4>
+<ul>
+  <li>
+    <p>単一の穴を持つスロットの組み合わせでは、穴はスロットと同一直線上にあり、かつスロットの中央に配置されている必要があります。</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Rule_Help.bmp"/>
+</div>
+<ul>
+  <li>
+    <p>2つの穴を持つスロットの組み合わせでは、穴はスロットの中心軸に対して対称に配置されている必要があります。</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Help_02.bmp"/>
+</div>
+<p>&nbsp;</p>
+
+<h4>説明</h4>
+<p>穴とスロットの中心軸がずれていると、組立上の問題が発生します。ねじが正しくはまらないといった不適切な嵌合や、その他の軽微な位置ずれであっても、ねじ山の損傷につながることがよくあります。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Damaged thread.png"/>
+</div>
+<p>&nbsp;</p>
+
+<p>このルールでは、次の位置ずれケースをチェックします：</p>
+<ol>
+  <li><strong>スロットの中心軸と穴軸の位置ずれ</strong></li>
+</ol>
+<ul><ul>
+  <li>このルールは、スロットの中心と穴軸との間の位置ずれを特定します。違反が検出された場合、メッセージには X 方向および Y 方向の距離値も表示されます。</li>
+  <li>X：スロットの長軸（メジャー軸）からの最小距離を示します。</li>
+  <li>Y：スロットの短軸（マイナー軸）からの最小距離を示します。</li>
+</ul></ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Explanation1.bmp"/>
+</div>
+<p>&nbsp;</p>
+
+<ol>
+<li value="2"><p><strong>穴が存在しないケース</strong></p>
+<p>スロットが存在しているにもかかわらず、対応する穴が存在しない場合、このルールはそれを検出し、穴欠落ケースとして判定します。</p>
+<p>ユーザーは、ルール UI の「Ignore Missing Hole Cases」オプションを選択することで、穴欠落の違反を無視することができます。</p>
+<p>このオプションは、デフォルトでは選択されていません。</p></li>
+</ol>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Explanation2.bmp"/>
+</div>
+<p>&nbsp;</p>
+
+<ol>
+<li value="3"><p><strong>穴が塞がれているケース</strong></p>
+<p>スロットの端部によって穴が塞がれている場合、このルールは穴閉塞ケースとして検出し、X および Y の距離値で軸方向の位置ずれを表示します。</p>
+<p>ユーザーは、ルール UI の「Ignore Blocked Hole Cases」オプションを選択することで、このような穴閉塞ケースを無視することができます。デフォルトでは選択されていません。</p></li>
+</ol>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Explanation3.bmp"/>
+</div>
+<p>&nbsp;</p>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>現在、スロット幅が穴径の 140% 以内にあるスロットと穴の組み合わせが、位置合わせチェックの対象として扱われます。</p></li>
+</ul>
+<br>
+
+<h4>推奨事項</h4>
+<p>組立を容易にするため、相手側コンポーネントに関連するアセンブリコンポーネントにおいて、スロットに対する穴の位置および配置を考慮してください。</p>
+<p>一般的なガイドラインとして、締結に使用する穴とスロットの位置合わせは、ユーザー指定の値に従う必要があります。</p>
+<br>
+
+<h4>構成</h4>
+<p><b>2つのパーツ間のギャップ：</b>穴とスロットが存在するパーツ面同士の距離。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Help_01.bmp"/>
+</div>
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>G = パーツ間のギャップ（上の画像に示すとおり、スロットと穴が存在する2つの面間の距離）。</p>
+</div>
+</div>
+<br>
+
+
+
+
+<h4>無視するケース ― 穴軸とスロット中心線が整列している場合</h4>
+<p>ユーザーは、このチェックボックスを選択することで、下図のように穴軸とスロット中心線が整列しているケースを無視できます。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" height="333" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Ignored_option.bmp" width="775"/>
+</div>
+<p>&nbsp;</p>
+
+<h4>例</h4>
+<br/>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Slot_to_Hole_Alignment_Help_image.bmp"/>
+</div>
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D = スロットと穴の公差における許容位置ずれ</p>
+<p>G = パーツ間のギャップ</p>
+</div>
+</div>
+<br>
+
+
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>本ルールでは、スロットと穴の位置合わせチェックにおいて、標準穴径データベースで提供される最大穴径以下の穴サイズを対象として扱います。</p></li>
+<li><p>本ルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

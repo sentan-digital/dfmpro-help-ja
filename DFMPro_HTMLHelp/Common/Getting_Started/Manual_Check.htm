@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="7.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="en-UK"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Manual Check</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div><h1>マニュアルチェック</h1><br>
+<p>組織においては、3D CAD データに直接関連しないチェックの一部を設計者が実行する場合があります。しかし、このようなチェックはより重要であり、部品やアセンブリの設計中に設計者自身が実行すべきものです。「マニュアルチェック」を DFMPro フレームワークに統合することで、設計者向けの共通チェックリストと単一のレポートを実現できます。</p>
+<p>DFMPro のマニュアルチェック機能は、CAD ジオメトリに依存しないチェック（例：図面関連チェック、標準順守チェック、テンプレート関連チェックなど）を実行するためのフレームワークを提供します。これらのチェックを標準の「DFMPro_Manual_Check.xlsx」で構成すると、すべてのチェックがルールファイル内の独立したルールとして利用可能になります。設計者はそれらのルールを選択して DFMPro 解析を実行できます。実行中、DFMPro はマニュアルチェックダイアログボックスを表示し、ユーザーは実施済みであることを示すチェックを選択できます。</p>
+<p> </p>
+<h2>DFMPro マニュアルチェックのセットアップ</h2><br>
+<p>DFMPro のインストール中に、マニュアルチェック用の「DFMPro_Manual_Check.xlsx」ファイルが DFMPro データベースの場所に作成されます。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Manual_Check_Setup.png"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Setup_path.png"/>
+</div>
+<p> </p>
+<h2>マニュアルチェックの構成</h2><br>
+<p>DFMPro のインストールが正常に完了すると、マシン上にマニュアルチェック用の環境変数「DFMPRO_MANUAL_CHECKS」を作成できます。この変数は、DFMPro_Manual_Check.xlsx が配置されているディレクトリを指します。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Manual_Check_Configuration.png"/>
+</div>
+<p> </p>
+<ul>
+<li><p><b>変数名</b> – DFMPRO_MANUAL_CHECKS</p></li>
+<li><p><b>変数値</b> – 「DFMPro_Manual_Check.xlsx」ファイルが配置されているディレクトリパス</p></li>
+</ul>
+<p> </p>
+<p>注記:</p>
+<p><b>既定の場所を変更した後、または共通のネットワーク上の場所からファイルを読み込む場合、組織はこの変数を使用して場所を定義する必要があります。</b></p>
+<p><b>変更後の場所は、以下に示すように、DFMDataBase フォルダ以降のディレクトリと同一のフォルダおよびサブフォルダ構造を維持する必要があります。</b></p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Folder_Structure_CP.png"/>
+</div>
+<p> </p>
+<h2>マニュアルチェック用テンプレート</h2><br>
+<p>DFMPro_Manual_Check.xlsx テンプレートでは、SME が以下の情報を定義して、ルールマネージャーにマニュアルチェック用のルールを追加できます。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Manual_Check_Template.png"/>
+</div>
+<p> </p>
+<ul>
+<li><p><b>ルール ID</b> – DFMPro が内部的に使用し、DFMPro ルールマネージャーに名称を追加するために用いられます。</p></li>
+<li><p><b>ルール名</b> – ルールマネージャーに表示される名称です。</p></li>
+<li><p><b>カテゴリ</b> – マニュアルチェックのカテゴリ（例：Milling、Sheet Metal、Injection Molding、Assembly など）。</p></li>
+<li><p><b>ルールの説明</b> – マニュアルチェックルールに関する情報を提供します。</p></li>
+<li><p><b>重要度</b> – マニュアルチェックの重要度を定義します（例：Critical、Low、High、Medium、Insignificant）。</p></li>
+<li><p><b>モジュール</b> – 3D CAD パーツに対して実行するために必要なモジュール（例：「Modeling」）を選択します。</p></li>
+</ul>
+<p> </p>
+<p>注記:</p>
+<p>上記形式で Excel ファイルに追加・保存されたマニュアルチェックのみが、DFMPro ルールマネージャーに追加されます。</p>
+<p> </p>
+<h2>DFMPro ルールマネージャー</h2><br>
+<p>マニュアルチェックの構成が正常に完了すると、すべてのチェックは DFMPro の 3D CAD チェックと同じ方法で DFMPro ルールマネージャーに追加されます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Rule_Manager.png"/>
+</div>
+<p> </p>
+<p>設計者は、3D CAD チェックと併せてルールマネージャー内で「マニュアルチェック」を選択し、ルールファイルを保存できます。</p>
+<p> </p>
+<p>注記:</p>
+<p>「マニュアルチェック」機能を使用するには、Microsoft Excel アプリケーションが必須の前提条件となります。</p>
+<p> </p>
+<h2>マニュアルチェックの実行</h2><br>
+<p>設計者はルールファイルを参照し、DFMPro 解析を実行できます。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Execution.png"/>
+</div>
+<p> </p>
+<ol>
+<li><p><b>ルールファイルを参照します。</b></p></li>
+<li><p><strong><i>Run</i></strong> ボタンをクリックして DFMPro の実行を開始します。</p></li>
+<li><p>解析中に、必要なマニュアルチェックを選択できるマニュアルチェックダイアログボックスが表示されます。</p></li>
+<li><p><strong><i>OK</i></strong> ボタンをクリックして DFMPro 解析を続行します。</p></li>
+<li><p>DFMPro の実行が正常に完了すると、実施されたマニュアルチェックはルール一覧に表示され、実施されていないチェックは「推奨事項」に表示されます。</p></li>
+<li><p>Notes に追加された情報は、Excel レポートに表示されます。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Manual_Check_dialog box.png"/>
+</div>
+<h2> </h2><br>
+<p>注記:</p>
+<p>マニュアルチェックテンプレート「DFMPro_Manual_Check.xlsx」において、既存のルールに新しい変更が加えられ、ルールファイルを保存せずにルールを実行しようとした場合、DFMPro マニュアルチェックの実行中に、変更されたルールに対する入力ウィンドウがグレーアウトされます（下図参照）。</p>
+<p>これを回避するには、ルールファイルを開いて保存してください。これにより、変更内容がルールファイルと同期されます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_dialog_Grayout.png"/>
+</div>
+<p> </p>
+<p> </p>
+<h2>DFMPro の結果</h2><br>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Results.png"/>
+</div>
+<p> </p>
+<h2>DFMPro レポート</h2><br>
+<p>DFMPro は、マニュアルチェックルール専用の個別レポートは生成しません。ルールの合否情報は、標準の DFMPro レポートに追加されます。マニュアルチェックルールに関するすべての情報は、シート内で確認できます。</p>
+<p> </p>
+<h4>Excel レポート</h4><br>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Report_Excel.png"/>
+</div>
+<p> </p>
+<h2>XML レポート</h2><br>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Manual_Check_Report_XML.png"/>
+</div>
+<p> </p>
+<h2>PDF レポート</h2><br>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Manual_Check_Report_PDF.png"/>
+</div>
+<p> </p>
+<h2>eDrawings レポート</h2><br>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Manual_Check_Report_eDrawings.png"/>
+</div>
+<p> </p>
+
+
+
+</body></html>

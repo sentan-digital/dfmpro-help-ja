@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="8.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="build tags" content="English_CP"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>PLM Integration - FAQ</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>PLM 連携 – FAQ</h1>
+<br>
+<h4><b>部品のバージョン管理はどのように扱われ、DFMPro レポートは PLM システム内でどのように管理されますか？</b></h4>
+<br>
+<p>Creo Parametric アプリケーションが部品のバージョン管理を行います。チェックインおよびチェックアウトのたびに、レポートとともに部品のバージョン情報が PLM 上で管理されます。レポートは、該当する部品バージョンに対してチェックインされます。</p>
+<p> </p>
+<h4>初回の実行で 1 つ目のレポートを選択し、次回の実行で 2 つ目のレポートを選択した場合、PLM システム内のレポートはどのように追加または上書きされますか？</h4>
+<br>
+<p>ユーザーが部品をチェックインするまでは、レポートはローカルで上書きされます。チェックインが行われると、最終的なレポートが該当するバージョンに添付されます。</p>
+<p> </p>
+<p>ご質問や問題がある場合は、dfmpro.support@hcl-software.com のテクニカルサポートチームまでお問い合わせください。</p>
+<p> </p>
+<h4>部品／アセンブリに *.dfmr およびレポートが Windchill に添付されている状態で、ユーザーが Windchill から部品をチェックアウトし、DFMPro 解析を実行せずに修正してチェックインした場合はどうなりますか？</h4>
+<br>
+<p>この場合、古い *.dfmr およびレポートは、新しい部品／アセンブリのリビジョンに対する添付ファイルとして引き継がれます。この状態では、*.dfmr およびレポートは部品／アセンブリのリビジョンと同期していません。PLM へ部品をチェックインする前に解析を実行する運用を行ってください。</p>
+<p> </p>
+<p>注記：</p>
+<br>
+<p>組織で config.sup ファイルを使用している場合、Windchill から開いたモデルに対して解析を実行するには、「save_file_iterations」オプションを「Yes」に設定する必要があります。</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Creo_PLM_Integration_FAQ.png" />
+</div>
+
+
+</body></html>

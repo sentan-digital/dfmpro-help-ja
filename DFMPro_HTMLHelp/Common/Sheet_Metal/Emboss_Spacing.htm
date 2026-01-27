@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_31"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="en-US"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Emboss Spacing</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>Emboss Spacing "エンボス間隔"</h1>
+<h4>ルール</h4>
+<p>エンボス同士の最小距離は、ユーザーが指定した値に従う必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>エンボス加工は、板金設計における成形工程の一部です。設計時には、せん断や変形を防ぐために、エンボス同士の最小距離を確保する必要があります。</p>
+<p>一般に、設計者はこれらの問題を防ぐため、エンボス同士の間に十分な間隔を確保する必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li><p>エンボス間距離と板厚の比は、10.0 以上である必要があります。</p></li>
+  <li><p>板厚に対する距離（エンボス深さを考慮した場合）の比は、ユーザーが指定した値以上である必要があります。</p></li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<ul>
+  <li><b>最小距離</b>：DFMPro はエンボス同士の距離を特定し、距離と板厚の比を算出します。その比は、設定された比率に対して検証されます。</li>
+  <li><b>エンボス深さに基づく</b>：DFMPro はまずエンボスの深さを計算し、エンボス深さと板厚の比に基づいて、必要なエンボス間隔を推奨します。</li>
+</ul>
+
+<br>
+
+<p>ユーザーは、デフォルトで設定されている値を変更することができます。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Emboss_Spacing_Help.bmp"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>t = 板厚</p>
+<p>D = エンボス間の距離</p>
+<p>h = エンボス深さ</p>
+
+<br>
+
+<h2>Excel 入力フォーマット</h2>
+<p>ユーザーは、<b><i>Import</i></b> ボタンを使用して、Excel シートテンプレートに含まれる大量のデータをインポートすることができます。</p>
+
+<br>
+
+<p><b>標準テンプレート形式：</b></p>
+<table align="center" border="1" cellspacing="0" width="180">
+  <colgroup>
+    <col>
+    <col>
+    <col>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight: bold;text-align: center">h1/t</p></td>
+      <td><p style="font-weight: bold;text-align: center">h2/t</p></td>
+      <td><p style="font-weight: bold;text-align: center">D/t</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center">0</p></td>
+      <td><p style="text-align: center">10</p></td>
+      <td><p style="text-align: center">1</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center">10</p></td>
+      <td><p style="text-align: center">25</p></td>
+      <td><p style="text-align: center">2</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center">25</p></td>
+      <td><p> </p></td>
+      <td><p style="text-align: center">2.5</p></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<br>
+<p>ここでは、</p>
+<p>h1/t および h2/t = エンボス深さと板厚の比の範囲</p>
+
+
+<br>
+</body>
+</html>

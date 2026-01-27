@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_18"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Tool Accessibility</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Tool Accessibility "工具アクセス性"</h1>
+<h4>ルール</h4>
+<p>切削工具は、推奨される加工姿勢においてフィーチャーへアクセスできる必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>工具が部品と干渉（衝突）すると、工具と部品の双方が損傷するなどの悪影響につながる可能性があります。場合によっては、これらの干渉が機械オペレーターに対する安全上のリスクとなることもあります。そのため、実際の加工を開始する前に、干渉のないセットアップを確保することは、こうした損傷を防ぐうえで常に推奨されます。</p>
+<p>DFMPro は、設計段階で推奨方向を自動的に識別し、ツールホルダーと部品の間で発生し得る干渉をチェックします。さらに、DFMPro はフィーチャーの最小幅および最小側面半径に基づいて、そのフィーチャーで可能な最大工具径（TD：Tool Diameter）を自動計算します。</p>
+
+<br>
+
+<p><b>ルールの動作</b></p>
+<ul>
+  <li>
+    <p>ユーザーが TL/TD 比 = 8.0 を設定します。</p>
+  </li>
+  <li>
+    <p><b>DFMPro が工具径（TD）を決定</b>：TD は以下の最小値として決定されます。</p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>スロットの最小幅</p>
+  </li>
+  <li>
+    <p>最小側面半径</p>
+  </li>
+  <li>
+    <p>例：TD = 5.0 mm、比 = 8.0 の場合、TL = 40 mm</p>
+  </li>
+</ul>
+<p> </p>
+<ul>
+  <li>
+    <p><b>DFMPro が工具長（TL）を計算</b>：TL = TD ×（設定比）</p>
+  </li>
+</ul>
+<ul>
+  <li>例：TD = 5.0 mm、比 = 8.0 の場合、TL = 40 mm</li>
+</ul>
+<p> </p>
+<ul>
+  <li>
+    <p><b>ホルダー逃げチェック</b>：各スロットまたは穴に対して工具長（TL）を決定した後、DFMPro は設定されたホルダー逃げ量（Holder Clearance Value）を計算された工具高さに加算します。続いて、DFMPro はツールホルダーと隣接フィーチャーとの間で干渉が発生しないかをチェックします。干渉が検出された場合、DFMPro は干渉問題としてフラグを立てます。</p>
+  </li>
+</ul>
+
+<br>
+
+<p>注記：</p>
+<p>側面半径が存在しない不規則なスロットや、最小幅の算出が単純ではないケースでは、DFMPro が工具径を決定できない場合があります。この場合、当該フィーチャーに対して工具アクセス性チェックを実行できない旨が設計者へ通知されます。</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Tool_Accessibility_UI.jpg" />
+</div>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li>
+    <p>加工が困難な、アクセス不能フィーチャーは避けてください。</p>
+  </li>
+  <li>
+    <p>縦方向の長い側壁に非常に近い位置へ、ポケット、スロット、穴などのフィーチャーを追加しないでください。</p>
+  </li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<p>ユーザーがアクセス可能フィーチャーに対してホルダー干渉をチェックしたい場合、DFMPro では許容される最大の工具長／工具径比（TL/TD）を設定できます。</p>
+
+<br>
+
+<h4>例</h4>
+<p>本ルールは、以下の失敗カテゴリを個別に表示します：</p>
+<ul>
+  <li>
+    <p><b>アクセス不能フィーチャー：</b>工具のアクセス性が確保できず、加工できないフィーチャー。</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/ToolAccessibility_Example1.bmp" />
+</div>
+<p>アクセス不能なフィーチャー／領域</p>
+<p> </p>
+<ul>
+  <li>
+    <p><b>ホルダー干渉：</b>アクセス可能なフィーチャーであっても、ホルダーが隣接フィーチャーと衝突する可能性があるもの。</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/ToolAccessibility_Example2.bmp" />
+</div>
+<p>アクセス可能なフィーチャー - ホルダー干渉</p>
+<p> </p>
+<ul>
+  <li>
+    <p>アクセス不能フィーチャーでルールが失敗した場合、ホルダー干渉のチェックは行われません。</p>
+  </li>
+</ul>
+
+<br>
+
+<p>注記：</p>
+<p>ドリル工具はデータベースで設定されます。ルールマネージャーでドリル径を確認するには、<a href="../Drilling/standard_hole_sizes.htm">standard hole sizes</a> ルールを編集してください。</p>
+<p>解析では、<a href="../Drilling/standard_hole_sizes.htm">standard hole sizes</a> ルール構成で選択された <b>Unit Selection</b> オプションに基づき、最大ドリル工具径が考慮されます。</p>
+
+<br>
+
+</body></html>

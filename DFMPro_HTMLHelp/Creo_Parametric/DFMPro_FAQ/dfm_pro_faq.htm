@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="14.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>DFMPro FAQ</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+<h1>DFMPro FAQ</h1>
+<br>
+<p><a name="Top" id="Top"></a><a href="#Rules">DFMProでサポートされている具体的なルールは何ですか？</a></p>
+<p><a name="Top" id="Top"></a><a href="#Rules">DFMProがサポートしているCreo Parametricのバージョンはどれですか？</a></p>
+<p><a href="#Why_Enable_Diagnostic_Data_Collection_for_Product_Improvement_is_by_default">DFMProのインストール中に、なぜ&quot;<i>Enable Diagnostic Data Collection for Product Improvement&quot;</i>がデフォルトで選択されているのですか？</a></p>
+<p><a href="#What_type_of_data_is_captured">どのような種類のデータが収集されますか？</a></p>
+<p><a href="#SpecificRules">自分の業務に適用する特定のルールを選択できますか？</a></p>
+<p><a href="#AssemblySupport">DFMProはアセンブリをサポートしていますか？</a></p>
+<p><a href="#ErrorFree">DFMProを実行すれば、エラーのない設計であることを100%保証できますか？</a></p>
+<p><a href="#IgnoreErrors">DFMPro実行中に、本物ではない（正当でない）エラーが報告された場合、これらのエラーをどう扱えばよいですか？</a></p>
+<p><a href="#Time">複雑なパーツに対してDFMProを実行すると、かなり時間がかかります。応答時間を改善する方法はありますか？</a></p>
+<p><a href="#CustomizeOptions">DFMProはカスタマイズできますか？</a></p>
+<p><a href="#Can_HCL_Technologies_Ltd._help_me_in_creating_a_solution_for_my_organization_">HCL Technologies Ltd.は、当組織向けのソリューション作成を支援できますか？</a></p>
+<p><a href="#EDLicense">eDrawingsでレポートを生成するには、別途ライセンスが必要ですか？</a></p>
+<p><a href="#EDLicense">DFMProのインストールは、Creo Parametricのアンドゥ／リドゥ機能に影響しますか？</a></p>
+<p><a href="#Why_are_multiple_check_in_and_check-out_calls_seen_in_the_network_license_log_file_">ネットワークライセンスのログファイルに、複数のチェックイン／チェックアウトが記録されるのはなぜですか？</a></p>
+<p><a href="#Why_DFMPro_prompts_me_to_save_the_family_instance_part_file_before_it_runs_">DFMProが実行前にファミリインスタンスのパーツファイルの保存を促すのはなぜですか？</a></p>
+<p><a href="#New_UI_supports_Sheet_Metal">DFMProの新しいユーザーインターフェースは、アセンブリに対して旋削（Turning）または板金（Sheet Metal）を実行することをサポートしていますか？</a></p>
+<p><a href="#Iinstall_and_use_Server_andCreo">同じシステムにDFMPro License Server 7.1と、v7.1より古いバージョンのDFMPro for Creo Parametricをインストールして使用できますか？</a></p>
+<p><a href="#CAD_File_Save_Again">DFMProがCADパーツファイルの再保存を促すのはなぜですか？</a></p>
+<p><a href="#SimulationLive">DFMProとCreo Simulation Liveは同時に動作しますか？</a></p>
+<p><a href="#recommendations_for_fillets_not_displayed">抜き勾配角度関連の一部ルールで、フィレットに関する推奨事項が表示されないのはなぜですか？</a></p>
+<p><a href="#Does_DFMPro_run_on_the_family_table_instances_part_assembly">DFMProはファミリーテーブルのインスタンス（パーツ／アセンブリ）で実行できますか？</a></p>
+<p><a href="#Does_DFMPro_Highlight_3D_PMI_tolerances_in_instance_recommendation">DFMProは、インスタンスの推奨事項において3D PMI公差をハイライトしますか？</a></p>
+<p><a href="#Creo_Parametric_version_the_support_for_the_Cabling_module_and_its_rules">Cablingモジュールとそのルールのサポートは、Creo Parametricのどのバージョンから提供されていますか？</a></p>
+<p><a href="dfm_pro_faq.htm#Continue_to_use_CAD_commands_when_working_with_DFMPro">DFMProを使用中でもCADコマンドを継続して使用できますか？</a></p>
+<p><a href="dfm_pro_faq.htm#Level_of_accuracy_for_thickness-related_rules">DFMProはどの程度の精度を使用しますか？</a></p>
+<p><a href="dfm_pro_faq.htm#DFMPro_support_multibody_parts_as_Creo_Parametric_supports">Creo Parametric 7.0以降でマルチボディ機能がサポートされていますが、DFMProもマルチボディパーツをサポートしていますか？</a></p>
+<p><a href="dfm_pro_faq.htm#DFMPro_support_Sheet_Metal_multibody_and_other_hardware">板金ボディ1つと、ウェルドナット、プレスナット、PEMナットなどのハードウェアを含む板金マルチボディを、DFMProはサポートしていますか？</a></p>
+<p><b><a href="#Support_holes_multiple_holes_using_Sketched_Entities">PTCがCreo Parametric 8.0以降で導入した、配置参照として&quot;Sketched Entities&quot;を使用して複数回作成された穴を、DFMProはサポートしていますか？</a></b></p>
+<p><b><a href="#Support_lightweight_hole_representation_in_all_hole_types">PTCがCreo Parametric 8.0以降で導入した、すべての穴タイプにおける軽量穴表現（lightweight hole representation）を、DFMProはサポートしていますか？</a></b></p>
+<p><a href="#Error_message_Unable_to_open_the_database_displayed_while_launching_DFMPro">DFMPro起動時に、エラーメッセージ「Unable to open the database」が表示されるのはなぜですか？</a></p>
+<p><a href="#Which_method_does_DFMPro_use_for_thickness_analysis">DFMProは肉厚解析にどの手法を使用しますか？</a></p>
+<p><a href="#Does_DFMPro_recognize_sheet_metal_features_that_have_thickness_variation">DFMProは、板金の厚みが変化するフィーチャーを認識しますか？</a></p>
+<p><a href="#Can_a_part_assembly_be_modified_once_the_DFMPro_analysis_is_started">DFMProの解析開始後に、パーツ／アセンブリを変更できますか？</a></p>
+<p><a href="#Does_DFMPro_consider_components_present_in_different_folders_for_assembly_analysis">アセンブリ解析において、DFMProは異なるフォルダに存在するコンポーネントも考慮しますか？</a></p>
+<p><a href="#Does_DFMPro_recognize_partial_holes_in_the_Sheet_Metal_analysis">DFMProは、板金解析における部分穴（partial holes）を認識しますか？</a></p>
+<p><a href="#Does_DFMPro_support_blind_holes_and_blind_cutouts_for_Sheet_Metal_analysis">DFMProは、板金解析における止まり穴（blind holes）および止まり抜き形状（blind cutouts）をサポートしていますか？</a></p>
+
+<p> </p>
+
+<h4><a name="Rules" id="Rules"></a>DFMProでサポートされている具体的なルールは何ですか？</h4>
+<br>
+<p>DFMProは、以下の製造プロセスに関連するルールをサポートしています：</p>
+<ul>
+  <li><p>Additive Manufacturing</p></li>
+  <li><p>Assembly</p></li>
+  <li><p>Cabling</p></li>
+  <li><p>Casting</p></li>
+  <li><p>Die Casting</p></li>
+  <li><p>Injection Molding</p></li>
+  <li><p>Investment Casting</p></li>
+  <li><p>Milling</p></li>
+  <li><p>Sand Casting</p></li>
+  <li><p>Sheet Metal</p></li>
+  <li><p>Sheet Metal Forming</p></li>
+  <li><p>Thermoforming</p></li>
+  <li><p>Tubing</p></li>
+  <li><p>Turning</p></li>
+  <li><p>Vacuum Infusion</p></li>
+  <li><p>Welding</p></li>
+</ul>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="Rules" id="Rules"></a>DFMProがサポートしているCreo Parametricのバージョンはどれですか？</h4>
+<br>
+<p>DFMProは、以下のバージョンをサポートしています：</p>
+<ul>
+  <li><p>Creo Parametric 12.4</p></li>
+  <li><p>Creo Parametric 11.0</p></li>
+  <li><p>Creo Parametric 10.0</p></li>
+  <li><p>Creo Parametric 9.0</p></li>
+  <li><p>Creo Parametric 8.0</p></li>
+</ul>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="Why_Enable_Diagnostic_Data_Collection_for_Product_Improvement_is_by_default" id="Why_Enable_Diagnostic_Data_Collection_for_Product_Improvement_is_by_default"></a>DFMProのインストール中に、なぜ&quot;Enable Diagnostic Data Collection for Product Improvement&quot;がデフォルトで選択されているのですか？</h4>
+<br>
+<p>はい。製品の品質と性能の改善に役立てるため、DFMProの利用状況データのうち限定的なセットを収集する目的で、このチェックボックスをデフォルトで有効にしています。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="What_type_of_data_is_captured" id="What_type_of_data_is_captured"></a>どのような種類のデータが収集されますか？</h4>
+<br>
+<p>ユーザーや組織に固有の機密データは収集していません。収集しているのは限定的なデータセットのみです。収集データの例を以下に示します：</p>
+<ul>
+  <li><p><b>Product name:</b> 例：DFMPro for Creo Parametric</p></li>
+  <li><p><b>DFMPro for Creo Parametric Version</b></p></li>
+  <li><p><b>Build version:</b> XXXX</p></li>
+  <li><p><b>Language:</b> 例：US English</p></li>
+  <li><p><b>Event Information</b></p></li>
+</ul>
+<ul>
+  <li>Sessions: DFMPro for Creo Parametric のセッションがロードされた回数（起動操作の有無にかかわらず）</li>
+  <li>Analysis Sessions: UIが起動され、閉じられた回数。</li>
+  <li>Analysis Count: 解析がトリガーされ、完了またはキャンセルされた回数。</li>
+  <li>Post Analysis Events: Ignore、Ignore similar、および画像キャプチャ活動。</li>
+  <li>Input Events: Entity-Selection、Machined-Entire-part、Machined-Setup の詳細を収集。</li>
+  <li>Mold-Classification: 完了状況の詳細を収集。</li>
+  <li>Utility Events: ExcelおよびXMLレポートのインポート／エクスポート活動の詳細を収集。</li>
+  <li>Rule Manager: Register Rules、Register Database、Map Material、Material Property の詳細を収集。</li>
+</ul>
+<ul>
+  <li><p><b>Execution Information</b></p></li>
+</ul>
+<ul>
+  <li>ルール名および実行ステータス</li>
+  <li>使用したプロセス（例：Turn、Mill、Sheet Metal など）</li>
+</ul>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="SpecificRules" id="SpecificRules"></a>自分の業務に適用する特定のルールを選択できますか？</h4>
+<br>
+<p>はい。DFMProは、ユーザーごとの運用（プラクティス）の違いにより、ユーザーごとに異なる場合があります。このような状況では、DFMPro Rules Managerで該当するルールを選択して有効化することで、選択したチェックのみを実行するようにDFMProを構成できます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="AssemblySupport" id="AssemblySupport"></a>DFMProはアセンブリをサポートしていますか？</h4>
+<br>
+<p>はい。DFMProは、アセンブリのコンポーネントに対してDFMProルールの解析を行います。また、アセンブリ内の個々のコンポーネントを個別に解析します。解析は各コンポーネントごとに個別に実行され、統合レポートが表示されます。アセンブリ内の特定コンポーネントをDFMPro解析から除外するには、それらを抑制（suppress）してください。</p>
+<p>ただし、DFMProはDesign for Assemblyに関連するルールもサポートしています。アセンブリを解析するには、Assemblyモジュールを選択してください。</p>
+<p>DFMProに同梱されている標準の射出成形（Injection Molding）ルールは、アセンブリに対しては実行されません。射出成形ルールは、個々のパーツに対して実行してください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="ErrorFree" id="ErrorFree"></a>DFMProを実行すれば、エラーのない設計であることを100%保証できますか？</h4>
+<br>
+<p>現時点では、答えは&quot;いいえ&quot;となる場合があります。既存のアルゴリズムでは、例外的なケースにおいて過少報告または過大報告するツールをカバーできないことがあります。また、DFMProは常にパーツの完全なジオメトリを解析できるとは限りません。DFMProが解析できなかったジオメトリがある場合、それらはグラフィカルインターフェース上でハイライト表示されます。その後、手動で確認できます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="IgnoreErrors" id="IgnoreErrors"></a>DFMPro実行中に、本物ではない（正当でない）エラーが報告された場合、これらのエラーをどう扱えばよいですか？</h4>
+<br>
+<p>一部のエラーは、コンテキスト依存である可能性があります（つまり、特定の状況では、あるルール違反がエラーとして扱う必要がない場合があります）。DFMProでは、違反の該当箇所を無視（Ignore）して上書きするオプションが提供されています。また、頻繁に無視する必要があるルールについては、そのルールに設定されているパラメータが正しいか、または修正が必要かを確認することも良い運用です。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="Time" id="Time"></a>複雑なパーツに対してDFMProを実行すると、かなり時間がかかります。応答時間を改善する方法はありますか？</h4>
+<br>
+<p>DFMProは、さまざまなルール違反を検出するためにジオメトリの詳細解析を行う必要があり、この処理は複雑なパーツでは非常に時間がかかる場合があります。すべてのルールを実行する代わりに、DFMPro Rule Managerダイアログボックスで構成を変更し、ルールを選択して実行することで、所要時間を短縮できます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="CustomizeOptions" id="CustomizeOptions"></a>DFMProはカスタマイズできますか？</h4>
+<br>
+<p>DFMProのデフォルトのルール設定は、組織で一般的に採用されているプラクティスに基づいています。DFMProはAPI（Application Programming Interface）を提供しており、デフォルトのルールセットとシームレスに実行できる独自ルールを新たに定義できます。</p>
+<p>DFMProのプログラミングインターフェースを使用して、以下のような1つ以上の要件に合わせてDFMProをカスタマイズできます：</p>
+<ul>
+  <li><p>DFMProが提供する既存の解析エンジンを使用して新しいルールをプログラムする、または他の独自解析エンジンを統合する。フィーチャー認識エンジンはHCL Technologies Ltd.により開発され、DFMProに組み込まれています。</p></li>
+  <li><p>組織内の既存データベースや製品データ管理（PDM）システムと連携し、既存または新規ルールに必要なパラメータ情報を取得する。</p></li>
+  <li><p>現行ロジックが要件に対して不十分な場合、既存ルールを再実装する。</p></li>
+  <li><p>組織のワークフローにDFMProを統合する。</p></li>
+</ul>
+<p>DFMProのフレームワーク技術は、その他のさまざまな要件にも対応できます。詳細については、<a href="../../Common/Getting_Started/contacting_technical_support.htm">technical support</a>にお問い合わせください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Can_HCL_Technologies_Ltd._help_me_in_creating_a_solution_for_my_organization_"></a>HCL Technologies Ltd.は、当組織向けのソリューション作成を支援できますか？</h4>
+<br>
+<p>はい。組織向けのカスタム／独自ソリューションを作成するサービスを喜んで提供します。HCL Technologies Ltd.の開発専門性により、ベストプラクティスを自動化したカスタムの事前設計チェックを、企業の作業環境に統合できる形で実装することが可能です。詳細は、<a href="../../Common/Getting_Started/contacting_technical_support.htm">Technical Support</a>にお問い合わせください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="EDLicense" id="EDLicense"></a>eDrawingsでレポートを生成するには、別途ライセンスが必要ですか？</h4>
+<br>
+<p>はい。<i>eDrawings</i>形式でレポートを生成するには、高度なレポート生成ライセンスが必要です。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="EDLicense" id="EDLicense"></a>DFMProのインストールは、Creo Parametricのアンドゥ／リドゥ機能に影響しますか？</h4>
+<br>
+<p>DFMProウィンドウが開いている間は、Creo Parametricのアンドゥ／リドゥ機能は無効になります。</p>
+<p>この挙動は、Pro/Toolkit APIの制限によるものです。Creo Parametric 1.0～7.0で確認されています。</p>
+<p> </p>
+<p>Note:</p>
+<p>詳細の閲覧にはPTC Supportログインが必要です。次のリンクをクリックしてください： <a href="https://www.ptc.com/en/support/article?n=CS143895" target="_blank">https://www.ptc.com/en/support/article?n=CS143895</a></p>
+<p>この問題は、Creo Parametric 7.0.2リリースで修正されています。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="Why_are_multiple_check_in_and_check-out_calls_seen_in_the_network_license_log_file_" id="Why_are_multiple_check_in_and_check-out_calls_seen_in_the_network_license_log_file_"></a>ネットワークライセンスのログファイルに、複数のチェックイン／チェックアウトが記録されるのはなぜですか？</h4>
+<br>
+<p>複数のコンポーネントによってチェックアウトされるライセンスが必要となります。ただし、ユーザー、ホスト、およびディスプレイ（リモート接続している場合）の組み合わせに基づき、最初と最後のチェックアウト／チェックインのみが適切に考慮されます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Why_DFMPro_prompts_me_to_save_the_family_instance_part_file_before_it_runs_"></a>DFMProが実行前にファミリインスタンスのパーツファイルの保存を促すのはなぜですか？</h4>
+<br>
+<p>この挙動は、Creo Parametric v4.0 M070より古いバージョンで見られる場合があります。Creo Parametric v4.0 M070以降では修正されています。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="New_UI_supports_Sheet_Metal" id="New_UI_supports_Sheet_Metal"></a>DFMProの新しいユーザーインターフェースは、アセンブリに対して旋削（Turning）または板金（Sheet Metal）を実行することをサポートしていますか？</h4>
+<br>
+<p>いいえ。新しいユーザーインターフェースでは、旋削（Turning）はサポートしていません。板金（Sheet Metal）プロセスについては、<a href="../../Common/Sheet_Metal/part_count_reduction_thickness_based.htm">Part Count Reduction - Thickness Based</a> ルールに限りサポートしています。</p>
+<p> </p>
+
+<h4><a name="Iinstall_and_use_Server_andCreo" id="Iinstall_and_use_Server_andCreo"></a>同じシステムにDFMPro License Server 7.1と、v7.1より古いバージョンのDFMPro for Creo Parametricをインストールして使用できますか？</h4>
+<br>
+<p>はい。サーバーとDFMProアプリケーションを同じシステムにインストールできます。クライアント（ライセンス設定）を構成する際は、DFMPro for Creo Parametricのライセンスに属するDFMPro License Managerを起動してください。</p>
+<p> </p>
+
+<h4><a name="CAD_File_Save_Again" id="CAD_File_Save_Again"></a>DFMProがCADパーツファイルの再保存を促すのはなぜですか？</h4>
+<br>
+<p>パーツがCreo Parametric 4.0 F000より前のリリースで、レガシー公差（注記）を含む状態で作成されている場合、PMI関連のDFMProルールが実行された後にCreo Parametricがパーツを変更します。これらのレガシー公差（注記）は、Creo Parametric 4.0の新しい幾何公差に変換されるため、DFMPro解析の実行後にユーザーはパーツを再度保存する必要があります。なお、パーツのリビジョン番号も増加します。</p>
+<p>このプロンプトを回避するため、ユーザーはCreo Parametricのモデルツリーからこれらのレガシー公差を変換し、DFMPro解析を実行する前にパーツを保存することを推奨します。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="SimulationLive" id="SimulationLive"></a>DFMProとCreo Simulation Liveは同時に動作しますか？</h4>
+<br>
+<ul>
+  <li><p>Toolkitライブラリの競合により、DFMProが補助アプリケーションとしてロードされている場合、Creo Simulation Liveは動作しません。この問題は、SPR 10179627としてPTC R&amp;Dに報告されています。</p></li>
+  <li><p>詳細および回避策については、次の記事を参照してください。</p></li>
+</ul>
+<p><a href="https://www.ptc.com/en/support/article/CS327045" target="_blank">Article - CS327045 - Premature exit using Creo Simulation Live with DFMPro loaded via Toolkit application in Creo Parametric (ptc.com)</a></p>
+<p> </p>
+<p>Note:</p>
+<p>この記事の閲覧にはPTC Supportログインが必要です。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="recommendations_for_fillets_not_displayed" id="recommendations_for_fillets_not_displayed"></a>抜き勾配角度関連の一部ルールで、フィレットに関する推奨事項が表示されないのはなぜですか？</h4>
+<br>
+<p>フィレットは、周囲の面による支持に依存する見かけ上（cosmetic）のフィーチャーです。フィレットに関連する抜き勾配角度は、支持している面の抜き勾配に起因します。推奨事項の数を減らすため、DFMProは多くの抜き勾配角度関連ルールにおいて、支持面に対してのみ抜き勾配角度の推奨事項を表示します。</p>
+<p>この挙動の例外となるルールの一例は、Draft angle based on height です。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a name="Does_DFMPro_run_on_the_family_table_instances_part_assembly" id="Does_DFMPro_run_on_the_family_table_instances_part_assembly"></a>DFMProはファミリーテーブルのインスタンス（part /assembly）で実行できますか？</h4>
+<br>
+<p>CASE I:- DFMProは、パーツモデル（*.PRT）のファミリーテーブルインスタンスをサポートします。</p>
+<p>CASE II:- DFMProは、Creo Parametricで直接開かれたアセンブリモデルのファミリーテーブルインスタンスをサポートします。</p>
+<p> </p>
+<p>Note:</p>
+<p>組織でconfig.supファイルを使用している場合、ファミリーテーブルインスタンスに対して解析を実行するには、“Create instances accelerator files upon instance storage”オプションを選択する必要があります。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/PLM Integration_FAQ1.png"/>
+</div>
+<h4><a href="#Top">top</a></h4>
+<br>
+<p> </p>
+
+<h4><a name="Does_DFMPro_Highlight_3D_PMI_tolerances_in_instance_recommendation" id="Does_DFMPro_Highlight_3D_PMI_tolerances_in_instance_recommendation"></a>DFMProは、インスタンスの推奨事項において3D PMI公差をハイライトしますか？</h4>
+<br>
+<p>はい。PTCのconfig.proファイルで次のオプションが有効になっている場合、DFMProは3D PMI公差をハイライト表示します。</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/PLM Integration_FAQ2.png"/>
+</div>
+<h3><a href="#Top">top</a></h3>
+<br>
+<p> </p>
+
+<h4><a name="Creo_Parametric_version_the_support_for_the_Cabling_module_and_its_rules" id="Creo_Parametric_version_the_support_for_the_Cabling_module_and_its_rules"></a>Cablingモジュールとそのルールのサポートは、Creo Parametricのどのバージョンから提供されていますか？</h4>
+<br>
+<p>Cablingモジュールおよびそのルールのサポートは、Creo Parametric v7.0以降のバージョンで利用できます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+<p> </p>
+
+<h4><a id="Continue_to_use_CAD_commands_when_working_with_DFMPro"></a>DFMProを使用中でもCADコマンドを継続して使用できますか？</h4>
+<br>
+<p>DFMProの解析中は、表示（View）や表示設定（Display）に関連するCADコマンドを使用できます。ただし、CADモデルの変更または解析を伴うコマンドの使用は推奨されません。DFMProの解析が完了して結果が表示された後は、すべてのCADコマンドを継続して使用できます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Level_of_accuracy_for_thickness-related_rules"></a>DFMProはどの程度の精度を使用しますか？</h4>
+<br>
+<p>DFMProの結果は、一般的に小数点以下3桁まで表示されます。テッセレーション（三角形分割）を必要とする肉厚関連の計算では、ミリメートル単位の場合、結果は小数点以下2桁までしか表示されません。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="DFMPro_support_multibody_parts_as_Creo_Parametric_supports"></a>Creo Parametric 7.0以降でマルチボディ機能がサポートされていますが、DFMProもマルチボディパーツをサポートしていますか？</h4>
+<br>
+<p>DFMProはマルチボディパーツ設計をサポートしています。詳細は、<a href="../../Common/Multibody_Support/Multibody_Part_Design.htm">Multibody Part Design</a>を参照してください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="DFMPro_support_Sheet_Metal_multibody_and_other_hardware"></a>板金ボディ1つと、ウェルドナット、プレスナット、PEMナットなどのハードウェアを含む板金マルチボディを、DFMProはサポートしていますか？</h4>
+<br>
+<p>はい。DFMProは板金マルチボディをサポートしています。単一の板金ボディに対して実行されます。詳細は、<a href="../../Common/Multibody_Support/Sheet_Metal_Module.htm">Sheet Metal Module</a>を参照してください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><b><a id="Support_holes_multiple_holes_using_Sketched_Entities"></a>PTCがCreo Parametric 8.0以降で導入した、配置参照として“Sketched Entities”を使用して複数回作成された穴を、DFMProはサポートしていますか？</b></h4>
+<br>
+<p>いいえ。DFMProは、スケッチベースの参照で作成された穴をサポートしていません。パーツ上に存在する実際の穴のみを識別します。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><b><a id="Support_lightweight_hole_representation_in_all_hole_types"></a>PTCがCreo Parametric 8.0以降で導入した、すべての穴タイプにおける軽量穴表現（lightweight hole representation）を、DFMProはサポートしていますか？</b></h4>
+<br>
+<p>いいえ。DFMProは軽量穴表現（lightweight hole representation）をサポートしていません。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Error_message_Unable_to_open_the_database_displayed_while_launching_DFMPro"></a>DFMPro起動時に、エラーメッセージ「Unable to open the database」が表示されるのはなぜですか？</h4>
+<br>
+<p><b>このエラーメッセージは、次の条件で表示される可能性があります：</b></p>
+<ul>
+  <li><p>読み取り／書き込み権限を持つ管理者（Admin）がRule Managerを開いたままにしている場合、他のユーザーがDFMProを起動する際にエラーが表示されます。</p></li>
+  <li><p>管理者（Admin）がWindowsのスタートメニューからRule Managerを起動している場合、同じマシン上でユーザーがDFMProを起動しようとするとエラーが表示されます。</p></li>
+</ul>
+<p>したがって、DFMProを起動する前に、Rule Managerが閉じていることを確認してください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Which_method_does_DFMPro_use_for_thickness_analysis"></a>DFMProは肉厚解析にどの手法を使用しますか？</h4>
+<br>
+<p>DFMProは、肉厚解析にSphere法を使用します。DFMProはSphere法による接触距離測定を使用します。Sphere法で算出される肉厚値は、Sphereの開始点と接触点の間の直線距離に等しくなります。詳細については次の図を参照してください。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Thickness_Analysis_FAQ.png"/>
+</div>
+<p> </p>
+<p>Measured thickness is equal to the distance from A to B.</p>
+<p> </p>
+<p>Where,</p>
+<p>A and B = Sphere Touching Points.</p>
+<p>Q = Angle between faces where thickness is measured and should be &lt; 45 degrees.</p>
+<p> </p>
+<p>面間の角度が45度以上の場合、その領域では材料流動が重要ではないため、これらの面は肉厚解析の対象になりません。これらの面はほぼ向かい合っており、材料流動に対して重要な領域を形成すると判断しました。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Does_DFMPro_recognize_sheet_metal_features_that_have_thickness_variation"></a>DFMProは、板金の厚みが変化するフィーチャーを認識しますか？</h4>
+<br>
+<p>成形フィーチャー（例：Emboss、Extruded Forms、Extruded Holes）では、高さやコーナーR値の不均一により厚み変化が生じる場合があります。DFMProはそのようなフィーチャーを認識せず、それらのフィーチャーは未解析領域（unanalyzed regions）カテゴリに移動されます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Can_a_part_assembly_be_modified_once_the_DFMPro_analysis_is_started"></a>DFMProの解析開始後に、パーツ／アセンブリを変更できますか？</h4>
+<br>
+<p>DFMProで解析中のパーツ／アセンブリは、解析プロセス（入力の選択）開始後は変更しないでください。選択したエンティティが変更により削除または変更される可能性があり、その結果、予測不能な結果につながるためです。結果が利用可能になった後は、DFMProが特定した設計上の問題を修正するためにモデルを変更できます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Does_DFMPro_consider_components_present_in_different_folders_for_assembly_analysis"></a>アセンブリ解析において、DFMProは異なるフォルダに存在するコンポーネントも考慮しますか？</h4>
+<br>
+<p>DFMProは、解析のためにアセンブリファイルと同じフォルダに存在するコンポーネントのみを考慮します。解析に含めるため、すべてのコンポーネントが同じフォルダに配置されていることを確認してください。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Does_DFMPro_recognize_partial_holes_in_the_Sheet_Metal_analysis"></a>DFMProは、板金解析における部分穴（partial holes）を認識しますか？</h4>
+<br>
+<p>DFMProは板金解析で部分穴（partial holes）をサポートしていません。これらのフィーチャーは未解析領域（unanalyzed regions）として分類されます。</p>
+<p><a href="#Top">top</a></p>
+<p> </p>
+
+<h4><a id="Does_DFMPro_support_blind_holes_and_blind_cutouts_for_Sheet_Metal_analysis"></a>DFMProは、板金解析における止まり穴（blind holes）および止まり抜き形状（blind cutouts）をサポートしていますか？</h4>
+<br>
+<p>現時点では、DFMProは板金解析における止まり穴（blind holes）および止まり抜き形状（blind cutouts）をサポートしていません。</p>
+<p><a href="#Top">top</a></p>
+
+
+
+</body></html>

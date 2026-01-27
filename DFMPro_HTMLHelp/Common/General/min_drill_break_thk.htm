@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.7.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Drill Breakout Wall Thickness</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Minimum Drill Breakout Wall Thickness "ドリル貫通部最小肉厚"</h1>
+<h4>ルール</h4>
+<p>ドリル加工された穴面と対応する壁面との間の最小ドリル貫通部肉厚は、ユーザーが指定した値以上でなければなりません。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>最小ドリル貫通部肉厚は、ドリル加工時に、加工された穴面と対応する壁面との間で破損が発生するのを防ぐために必要です。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインでは、最小ドリル貫通部肉厚は 5 mm 以上とすることが推奨されています。</p>
+
+<br>
+
+<h4>構成</h4>
+<ul>
+<li><p>T1 の設定では、対応するフィールドで演算子と値を変更できます。</p></li>
+<li><p>T2 の設定では、板厚を絶対値として評価するか、穴径に対する比率として評価するか、またはその両方を選択できます。</p></li>
+</ul>
+
+<p>例えば、T2 = 0.5 × 直径 + 0.5 mm</p>
+<p>T2 を直径の比率として測定するには、ユーザーはドロップダウンをクリックして比率（Ratio）を選択する必要があります。選択すると、直径が自動的に 2 番目のドロップダウンに表示されます。<br/>&nbsp;</p>
+<p>デフォルトでは、値は 5 mm に設定されています。ユーザーは、このデフォルトで設定された値を編集できます。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Minimum_Drill_Breakout_Help_NX.bmp"/></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>T1 = 底面からの最小ドリル貫通部肉厚</p>
+<p>T2 = 側面からの最小ドリル貫通部肉厚</p>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>最大許容ドリル径を超える直径を持つ穴は、本ルールの対象外とします。</p></li>
+<li><p>このルールは、アセンブリレベルの解析にも対応しています。</p></li>
+<li><p>本ルールでは、テーパ穴はサポートされていません。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a> に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

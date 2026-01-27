@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.13.0_6"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Hole Diameter</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Recommended Hole Diameter "推奨穴径"</h1>
+<h4>ルール</h4>
+<p>推奨される穴径と板厚の比率は、ユーザーが指定した値の範囲内である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>小径穴や細長い穴を打ち抜く際、横方向の力によってパンチ先端が曲がったりたわんだりする場合があります。これにより、パンチが曲がった側でパンチとダイのクリアランスが小さくなります。このような傾いたパンチによる過度に小さいクリアランスは、工具やダイを損傷させます。板厚および材料に基づいて最小穴径を維持することで、工具破損の問題を解消できます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>最小穴径は、材料および板厚に基づいて適切に設定する必要があります。パンチ先端を案内し、パンチの横方向の動きを防止するフルガイド式ストリッパを使用することで、正確な打ち抜きを確保し、工具寿命を延ばすことができます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>ユーザーは Map Material から加工材料を設定し、対応する穴径と板厚の比率を構成できます。ルール実行時に、DFMPro は最小穴径を特定し、事前に設定された値と比較して穴径と板厚の比率を算出します。</p>
+<p>ルール UI では、材料の一覧が <a href="../DFMPro_Customization/material_database.htm">Materials Database</a> から読み込まれます。ユーザーは材料およびそれに関連する値を設定できます。材料グループ内では、材料グレードはアルファベット順に並び替えられます。材料グループが選択されている場合、DFMPro は材料グループ全体で一貫した比率を維持したまま解析を実行します。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Material_Group_Grade_Dropdown.png">
+</div>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Hole_Diameters_SMF_Help.bmp">
+</div>
+
+<br>
+
+<p><b>ここでは、</b></p>
+<p>D = 穴径</p>
+<p>t = 板金の板厚</p>
+
+<br>
+
+<p><b>注記:</b></p>
+<p>このルールは、単純穴（Simple Holes）のみに適用されます。</p>
+
+
+<br>
+</body>
+</html>

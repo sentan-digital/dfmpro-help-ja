@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_25"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Rib Reinforcement Check</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Rib Reinforcement Check "リブ補強チェック"</h1>
+<h4>ルール</h4>
+<p>リブの高さ、幅、または断面積を部品肉厚で割った比率は、ユーザーが指定した値未満である必要があります。この指針に違反した場合、リブは補強リブによって補強する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>リブは、プラスチック部品上に設けられる縦方向の突起で、さまざまな目的で使用されます。部品の強度を高めるため、あるいは部品設計に装飾的な要素を加えるために使用されることがあります。</p>
+<p>リブの幅や高さが肉厚に対して過度に大きい場合、構造的な健全性に影響を及ぼす可能性があります。そのようなリブが高荷重を受ける場合には、補強リブを追加する必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、リブ高さはさまざまな検討事項に基づき、肉厚の 3 倍以内に制限されます。リブ幅（および断面積）に関する指針は、使用条件に基づいて策定する必要があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>自立リブの場合、リブ高さは支持面に対する法線方向に測定されます。支持面の法線が変化する場合や、リブが複数方向から支持されている場合には、引き抜き方向が高さ測定の基準として考慮されます。測定されるリブ断面積は近似値となります。</p>
+<p>製品の製造条件および使用条件に合わせて、高さ比率および断面積比率の適切な値を設定してください。</p>
+<p>ルール UI では、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から読み込まれ、ユーザーは材料およびその値を設定することができます。</p>
+<p>材料およびその値を設定した後、ユーザーは Ctrl+M コマンドを使用して、ルール UI 内で材料グループおよびグレードごとに設定済み材料の一覧をフィルタ表示することができます。同じキー（Ctrl+M）を使用して、フィルタをリセットすることもできます。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Filter_Configuration_Command.png" />
+</div>
+
+<br>
+
+<h4>例</h4>
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Rib_Reinforcement_Check - Help.bmp" />
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>H = リブ高さ</p>
+<p>t = 公称肉厚</p>
+<p>W = リブ幅</p>
+<p>A = 断面積</p>
+
+
+<br>
+</body>
+</html>

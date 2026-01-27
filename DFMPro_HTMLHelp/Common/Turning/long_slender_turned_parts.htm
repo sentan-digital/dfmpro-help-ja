@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.17.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Long - Slender Turned Parts</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Long - Slender Turned Parts "長尺・細径旋削部品"</h1>
+<h4>ルール</h4>
+<p>パーツの軸方向長さは、中心方向へのたわみを防ぐために、パーツの最小直径に対して適切な比率である必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>長くて細いパーツの場合、自由端の中心に穴あけを行い、心押し台にデッドセンタまたはライブセンタを使用して支持する必要があります。このような支持がない場合、工具がワークに及ぼす力によって、ワークが工具から逃げる方向に曲がってしまいます。また、ワークがチャック爪内で緩み、危険な飛翔物として飛び出す可能性もあります。</p>
+<p>たとえ心押し台で支持されていても、非常に長く細いパーツでは、中心方向へたわみが生じる可能性があります。</p>
+<br>
+<h4>推奨事項</h4>
+<p>可能な限り、心押し台による支持を必要としないように旋削パーツを設計することが推奨されます。これは、高いアスペクト比で長い形状ではなく、短く太い形状（ずんぐりした形状）とすることで実現できます。</p>
+<br>
+<h4>構成</h4>
+<p>パーツの全長と最小直径とのアスペクト比について、デフォルトで構成されている値は 8.0 以下です。</p>
+<p>ルールUIでは、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から読み込まれ、ユーザーは材料およびその値を構成できます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルールUI内で材料グループおよびグレードとともに、構成済み材料の一覧をフィルタ表示できます。同じキー（Ctrl+M）を使用してフィルタをリセットすることもできます。</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png">
+</div>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Long_Slender_Parts_Help.bmp">
+</div>
+<br>
+<p>ここで、</p>
+<p>L = 旋削長さ（Turn Length）</p>
+<p>D = 最小直径（Minimum Diameter）</p>
+
+<br>
+</body>
+

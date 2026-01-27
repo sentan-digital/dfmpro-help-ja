@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_33"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Import/Export Results</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div><h1>結果のインポート／エクスポート</h1><br>
+<p><b>結果のエクスポート：</b><img alt="" border="0" src="../../assets/images/Common/image/Import_Export_CP.png"/> <i>Export Results</i> コマンドを使用して、現在の解析結果を *<i>.dfmr</i> ファイル形式で保存します。ユーザーは、このファイルを DFMPro にインポートして結果を確認できます。</p>
+<p><b>結果のインポート：</b><img alt="" border="0" src="../../assets/images/Common/image/Import_Export_CP.png"/> <i>Import Result</i> コマンドを使用して、以前に保存した結果を表示するために *.<i>dfmr</i> ファイルを読み込みます。</p>
+<p> </p>
+<p>DFMPro ユーザーインターフェース上で <img alt="" border="0" src="../../assets/images/Common/image/Import_Export_CP.png"/> <i>Import/Export</i> オプションをクリックすると、選択したコマンドに応じて現在の解析結果がインポートまたはエクスポートされます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Import_Export_DFMPro_dialogbox.png"/>
+</div>
+
+<h2> </h2><br>
+<h2>PLM システムからの結果のエクスポート／インポート</h2><br>
+<h4>DFMPro 設定に応じたさまざまな方法：</h4><br>
+<ul>
+<li>
+<p><b>インポート：</b><a href="DFMPro_Settings.htm#Import_Export">DFMPro 設定</a>でこのオプションを選択すると、DFMPro は *.dfmr ファイルを読み込み、以前に保存した結果を表示します。解析後、DFMPro の結果／レポートおよびパーツ／アセンブリのリビジョンは、チェックイン時に PLM システムに保存されます。</p>
+</li>
+<li>
+<p><b>自動インポート：</b>このオプションでは、結果が自動的にインポートされます（結果ファイルの保存場所を参照する必要はありません）。</p>
+</li>
+</ul>
+<p><a href="DFMPro_Settings.htm#Import_Export">DFMPro 設定</a>で、自動インポート用の既定フォルダーを設定します。</p>
+<ul>
+<li>
+<p><b>エクスポート：</b><a href="DFMPro_Settings.htm#Import_Export">DFMPro 設定</a>でこのオプションを選択すると、DFMPro はレポートのエクスポート先を参照でき、現在の解析レポートを .dfmr ファイル形式で PLM システムに保存します。このファイルは <i>DFMPro</i> にインポートして再度結果を確認できます。</p>
+</li>
+</ul>
+<p> </p>
+<p>PLM（Windchill）連携で <i>DFMPro for Creo Parametric</i> を使用する方法については、<a href="../PLM_Integration/Example_Workflow_PLM_Integration.htm">演習ワークフロー</a>を参照してください。</p>
+<p> </p>
+<p>Note:</p>
+<ul>
+<li>インポートされた結果が、現在開いている CAD モデルと同期していない場合、黄色の背景で強調表示されます。さらに、DFMPro はパーツが変更されたことを示すメッセージを表示します。これは通常、CAD モデルが変更されている場合や、結果生成時に使用されたモデルと異なる場合に発生します。</li>
+<li>解析時に使用したルールファイルが削除または変更されている場合でも、DFMPro は結果をインポートできます。結果内に保存されているルールファイルは、一時的な場所にバックアップされ、結果のインポートが確実に行われます。</li>
+<li>必要に応じて、バックアップされたルールファイルを次回の解析に使用できます。</li>
+</ul>
+<p> </p>
+
+<h4>中間入力のエクスポート：</h4><br>
+<p>複雑なパーツに対して、DFMPro は中間入力（引き抜き方向および金型分類）のエクスポート機能を提供します。ユーザーは金型分類を修正し、*.dfmr ファイルとしてエクスポートできます。修正された分類は、対象パーツが変更されていない場合、次回の解析で使用できます。</p>
+<p> </p>
+<p>「<b>中間入力のエクスポート</b>」機能は、以下のプロセスでサポートされています：</p>
+<ul>
+<li><p>射出成形</p></li>
+<li><p>熱成形</p></li>
+<li><p>真空注型</p></li>
+<li><p>砂型鋳造</p></li>
+<li><p>鋳造</p></li>
+<li><p>ダイカスト</p></li>
+</ul>
+<p> </p>
+<p><b>中間入力エクスポート機能の手順：</b></p>
+<ol>
+<li><p><strong><i>パーツ</i></strong>を開き、<strong><i>射出成形</i></strong>を実行します。</p></li>
+<li><p>パーツの引き抜き方向を指定し、金型分類を修正します。</p></li>
+<li><p>入力内容を *.dfmr としてエクスポートします。</p></li>
+<li><p>次回、パーツを開き、正しいルールファイルを構成します。</p></li>
+<li><p>以前にエクスポートした入力結果をインポートし、解析を再実行します。</p></li>
+</ol>
+<p> </p>
+<p><b>Note:</b></p>
+<p>この中間入力機能は、DFMPro の PLM 連携が「<b>ON</b>」（PLM システムでの DFMPro 結果のエクスポート／インポートのチェックボックスが選択されている場合）のときは利用できません。</p>
+<p>中間入力（*.dfmr ファイル）をインポートする前に、構成されているルールファイルが、エクスポートおよび保存したものと同一であることを確認してください。</p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Export_intermidiate_Inputs.GIF"/>
+</div>
+
+
+
+</body></html>

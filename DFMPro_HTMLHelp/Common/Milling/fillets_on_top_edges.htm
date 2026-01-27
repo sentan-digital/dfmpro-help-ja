@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Fillets on Top Edges</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Fillets On Top Edges "上面エッジの半径"</h1>
+<h4>ルール</h4>
+<p>ポケット、ボス、およびスロットの上面にあるエッジは、フィレットではなく面取り（チャンファー）にする必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>製品設計では、（鋭い角が望ましくない場合）フィーチャーの外側エッジに対して、丸め処理の代わりに面取り（ベベル）や面取り（チャンファー）を適用できるようにすることが理想的です。</p>
+<p>丸め処理には成形逃げ（フォームリリーフ）付きカッターと高精度な段取りが必要ですが、ベベルやチャンファーは正面フライス（フェイスミル）を使用します。前者は後者に比べてかなり高コストです。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Convex_Fillet.png" />
+</div>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>外側フィレットには特殊なカッターと精密な段取りが必要で、いずれも高コストです。そのため、外側コーナーでは、経済的な加工の観点からフィレットよりも面取り（チャンファー）が望ましいです。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>既定では、すべてのフィレットが対象として考慮されます。オプションとして、既定の 25.4 mm（1 インチ）または構成で指定した値より高いフィレットは無視できます。</p>
+
+<br>
+
+<p><b>考慮されるパラメータ:</b></p>
+
+<ul>
+  <li>
+    <p>スロットフィーチャーに関連付けられているフィレットは、親のスロットフィーチャーとは独立して検証されます。</p>
+  </li>
+  <li>
+    <p>すべてのフィレット（すなわち、フィーチャーに関連付けられたフィレットおよび単独フィレット）は、利用可能なすべての加工方向について検証されます。</p>
+  </li>
+</ul>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Fillets_on_Top_Edges.png" />
+</div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>ドリル工具はデータベースで構成されます。<a href="../Drilling/standard_hole_sizes.htm">standard hole sizes</a> ルールを編集して、ルールマネージャーでドリル径を確認してください。</p></li>
+<li><p>最大ドリル工具径は、<a href="../Drilling/standard_hole_sizes.htm">standard hole sizes</a> ルール構成で選択した <b>Unit Selection</b> オプションに基づいて解析時に考慮されます。</p></li>
+<li><p>軸が加工方向と平行な単独のスタンドアロンフィレットは、上面フィレットとしては考慮されません。</p></li>
+<li><p>次の例に示すように、青色のフィレットは側面方向から加工できます。したがって、これらのフィレットは検証のための上面フィレットとしては考慮されません。</p></li>
+</ul>
+
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Fillets_on_Top_Edges_NoteExample.png" />
+</div>
+
+<br>
+</body>
+</html>

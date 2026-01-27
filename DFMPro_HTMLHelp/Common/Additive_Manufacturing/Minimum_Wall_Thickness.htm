@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.1.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Minimum Wall Thickness</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Minimum Wall Thickness "最小製品肉厚"</h1>
+<h4>ルール</h4>
+<p>本ルールは、Fusion Deposition Modeling（FDM）、Stereolithography（SLA）、Selective Laser Sintering（SLS）など、異なる積層造形プロセスに基づいて、支持壁および非支持壁の最小肉厚条件をチェックします。</p>
+<br>
+<h4>説明</h4>
+<p>使用するプロセスに応じて、支持壁および非支持壁の最小肉厚を維持する必要があります。薄肉壁は、冷却工程における不均一な収縮により反りが発生しやすくなります。樹脂が乾燥または硬化する前に曲がってしまい、それを保持するために追加のサポートが必要となります。</p>
+<ul>
+  <li>
+    <p><b>Fusion Deposition Modeling（FDM）</b> ― 支持壁および非支持壁の最小肉厚は 0.8 mm とする必要があります。</p>
+  </li>
+  <li>
+    <p><b>Stereolithography（SLA）</b> ― 支持壁の最小肉厚は 0.5 mm、非支持壁の最小肉厚は 1.0 mm とする必要があります。</p>
+  </li>
+  <li>
+    <p><b>Selective Laser Sintering（SLS）</b> ― 支持壁の最小肉厚は 0.7 mm とする必要があります。</p>
+  </li>
+</ul>
+<br>
+<h4>構成</h4>
+<p>ルール構成では、Fusion Deposition Modeling、Stereolithography、Selective Laser Sintering などの製造プロセスを設定し、それぞれに対応する支持壁および非支持壁の最小肉厚値を設定できます。</p>
+<br>
+<table align="center" cellspacing="0" width="84.07%">
+  <colgroup>
+    <col/>
+    <col/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>
+        <div style="text-align:center;">
+          <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Wall_Thickness_AM_Supported_Wall.bmp"/>
+        </div>
+      </td>
+      <td>
+        <div style="text-align:center;">
+          <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Wall_Thickness_AM_Unsupported_Wall.png"/>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><b>支持壁</b></p>
+        <p>（少なくとも 2 辺以上が造形物の他の部分と接続されている壁）</p>
+      </td>
+      <td>
+        <p><b>非支持壁</b></p>
+        <p>（2 辺未満しか造形物の他の部分と接続されていない壁）</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p> </p>
+<h4>例</h4><br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Wall_Thickness_AM.bmp"/>
+</div>
+
+<br>
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>Tmin = 最小肉厚</p>
+</div>
+</div>
+
+<br>
+</body>
+</html>

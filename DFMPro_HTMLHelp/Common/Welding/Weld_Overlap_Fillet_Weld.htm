@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.19.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Weld Overlap Region - Fillet Weld</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Weld Overlap Region - Fillet Weld "隅肉溶接の重なり領域"</h1>
+<h4>ルール</h4>
+<p>このルールは、設定された溶接長さ（Weld Length）およびクリアランス値（Clearance value）を考慮して、溶接が重なっている可能性のあるケースをチェックします。</p>
+<br>
+<h4>説明</h4>
+<p>隣接する溶接同士のクリアランスが不十分な場合、溶接形状に歪みが発生する可能性が高くなります。多くの場合、溶接の重なりによって品質エンジニアが溶接の正しいパラメータを確認することが困難となり、遅延につながります。</p>
+<br>
+<h4>構成</h4>
+<p>ユーザーは、板厚の範囲および溶接長さの範囲に加えて、許容されるクリアランス値を構成できます。</p>
+<br>
+<h4>推奨事項</h4>
+<p>板厚およびそれぞれの溶接長さに基づき、設計者は2つの溶接が結合しないように、溶接間に十分なクリアランスを確保する必要があります。</p>
+<br>
+<h4>重要事項</h4>
+<ul>
+  <li>
+    <p>このルールの実行において、解析中に考慮されるのはすみ肉溶接（fillet weld）のみです。</p>
+  </li>
+  <li>
+    <p>板から板への交差するシーム（seam）については、すべてのシームに溶接が存在するものと仮定し、解析対象として考慮されます（板厚は除く）。</p>
+  </li>
+  <li>
+    <p>解析は溶接アセンブリに対して実行されます。これは、すべてのファスナーがDFMProハードウェアデータベースに追加されていることを条件として、（ファスナーを除く）すべてのパーツが溶接コンポーネントとして扱われることを意味します。</p>
+  </li>
+  <li>
+    <p>すみ肉溶接の幅（Width）と長さ（Length）は同一であると仮定します。</p>
+  </li>
+  <li>
+    <p>ルール構成ダイアログボックスで指定された板厚範囲に対して、DFMProはルール検証のために利用可能な最小の板厚を考慮します。</p>
+  </li>
+  <li>
+    <p>DFMProは板厚が一定であり、変動の対象ではないと仮定します。</p>
+  </li>
+</ul>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Weld_Overlap_Fillet_Weld_Help.png">
+</div>
+<br>
+<p>ここで、</p>
+<p>L = Weld Length "溶接長さ"</p>
+<p>T = Plate Thickness "板厚"</p>
+<p>C = Clearance between Two Welds "2つの溶接間のクリアランス"</p>
+
+<br>
+</body>
+</html>

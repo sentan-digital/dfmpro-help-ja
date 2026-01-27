@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.1.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Gap Between Faces</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Gap between Faces "面間の隙間"</h1>
+<h4>ルール</h4>
+<p>部品上の2つの面間の最小ギャップは、指定された値以上である必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>積層造形プロセスにおいて、面間のギャップが小さすぎる場合、洗浄などの後処理作業が困難になる可能性があります。</p>
+<br>
+<h4>推奨事項</h4>
+<ul>
+  <li>
+    <p>ビルド方向に平行な面間の最小ギャップは、0.23 mm以上である必要があります。</p>
+  </li>
+  <li>
+    <p>ビルド方向に対して傾斜している面間の最小ギャップは、0.40 mm以上である必要があります。</p>
+  </li>
+</ul>
+<br>
+<p>平行度の許容値のデフォルトは15度ですが、ユーザーが設定することも可能です。面とビルド方向との角度に基づいて、本ルールは平行面および傾斜面に対する最小面間ギャップを検証します。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Gap_Between_Faces_Recommendations.png"/>
+</div>
+
+<br>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>ギャップは、ビルド方向に沿って2つの面間で測定されます。</p></li>
+</ul>
+
+<ul><ul class="note-body">
+  <li><p>ビルド方向に平行な面: 両方の面がビルド方向に対して平行である必要があります。</p></li>
+  <li><p>ビルド方向に対して傾斜した面: 2つの面のいずれもビルド方向に平行ではありません。</p></li>
+</ul></ul>
+
+<br>
+
+<h4>例</h4><br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Gap_Between_Faces_Help.bmp"/>
+</div>
+
+<br>
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D = 面間距離</p>
+</div>
+</div>
+
+<br>
+</body>
+</html>

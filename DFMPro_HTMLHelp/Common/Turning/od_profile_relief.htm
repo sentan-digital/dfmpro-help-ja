@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.17.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>OD Profile Relief</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>OD Profile Relief "外径輪郭の逃げ"</h1>
+<h4>ルール</h4>
+<p>旋削パーツの外径において、プロファイルの逃げは、パーツの旋削加工を円滑に行うのに役立ちます。</p>
+<br>
+<h4>説明</h4>
+<p>旋削パーツの輪郭形状は、スタイラスおよび切削工具の変更回数を最小限に抑えつつ、容易にトレースできる形状である必要があります。側壁が平行な溝や、側壁が急峻な溝は、1回の加工で実現できません。</p>
+<br>
+<h4>推奨事項</h4>
+<ul>
+  <li>
+    <p>パーツの軸に対して最大 58° まで傾いた輪郭は、切削工具（およびスタイラス）で加工可能です。以下の画像は、輪郭が軸に対して直角（垂直）である場合の加工可能な輪郭を示しています。</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/OD_Profile_Relief_Help.bmp">
+</div>
+<br>
+<p>ここで、</p>
+<p>Q = 工具逃げ角（Tool Relief Angle）</p>
+<br>
+<ul>
+  <li>
+    <p>旋削工具に適切な逃げを確保するため、外径プロファイルと回転軸に平行な面との間に形成される鋭角は、ユーザーが構成した値を超えてはなりません。</p>
+  </li>
+</ul>
+<br>
+<h4>構成</h4>
+<p><i>外径プロファイル上の工具逃げ角（Tool relief angle on outer diameter profile）</i> のデフォルト構成値は 58 度以下です。</p>
+<p>ユーザーは適切な値を構成できます。</p>
+<p>ルールUIでは、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から読み込まれ、ユーザーは材料およびその値を構成できます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルールUI内で材料グループおよびグレードとともに、構成済み材料の一覧をフィルタ表示できます。同じキー（Ctrl+M）を使用してフィルタをリセットすることもできます。</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png">
+</div>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/ODProfileExmp.bmp">
+</div>
+
+<br>
+</body>

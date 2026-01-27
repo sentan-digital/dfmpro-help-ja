@@ -1,0 +1,1339 @@
+﻿P {
+   text-align:left;
+   margin-top:0pt;
+   font-family:Verdana, sans-serif;
+   margin-bottom:3pt;
+   color:#000000;
+   margin-left:6pt;
+   font-size:10pt;
+}
+LI.P {
+      text-align:left;
+      font-family:Verdana, sans-serif;
+      color:#000000;
+      font-size:10pt;
+}
+H1 {
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    font-family: "Trebuchet MS";
+    margin-bottom: 20pt;
+    margin-left: 2pt;
+    font-size: 14pt;
+    padding-top: 8pt;
+
+    /* blue bar */
+    background: #1e6bd6;   /* 好きな青に変えてOK */
+    color: #ffffff;        /* 青地なら白文字が見やすい */
+    display: block;
+}
+LI.H1 {
+       font-family:"Trebuchet MS";
+       color:#ffffff;
+       font-size:30pt;
+}
+H2 {
+    text-align:left;
+    margin-top:3pt;
+    font-family:"Trebuchet MS" , sans-serif;
+    margin-bottom:3pt;
+    color:#0000ff;
+    margin-left:6pt;
+    font-size:11pt;
+    font-weight:bold;
+    mso-fareast-font-family:MS Mincho;
+    mso-fareast-language:JA;
+    mso-ansi-language:EN-US;
+    mso-bidi-language:AR-SA;
+}
+LI.H2 {
+       text-align:left;
+       font-family:"Trebuchet MS";
+       color:#0000c0;
+       font-size:11pt;
+       font-weight:bold;
+}
+H3 {
+    margin-top:8pt;
+    font-family:Arial, san-serif;
+    margin-bottom:3pt;
+    margin-left:6pt;
+    font-size:10pt;
+    font-weight:bold;
+}
+LI.H3 {
+       font-family:Arial, san-serif;
+       font-size:10pt;
+       font-weight:bold;
+}
+H4 {
+    text-align:left;
+    margin-top:4pt;
+    font-family:Verdana, sans-serif;
+    margin-bottom:4pt;
+    color:#800000;
+    margin-left:6pt;
+    font-size:10pt;
+    font-weight:bold;
+}
+LI.H4 {
+       text-align:left;
+       font-family:Arial, sans-serif;
+       color:#800000;
+       font-size:10pt;
+       font-weight:bold;
+}
+H5 {
+    text-align:left;
+    margin:12pt 6.5pt 3pt 5.75pt;
+    font-family:Arial;
+    font-size:12pt;
+    font-weight:bold;
+}
+LI.H5 {
+       text-align:left;
+       font-family:Arial;
+       font-size:12pt;
+       font-weight:bold;
+}
+H6 {
+    text-align:left;
+    font-style:italic;
+    margin:12pt 6.5pt 3pt 5.75pt;
+    font-family:Arial;
+    font-size:12pt;
+    font-weight:bold;
+}
+LI.H6 {
+       text-align:left;
+       font-style:italic;
+       font-family:Arial;
+       font-size:12pt;
+       font-weight:bold;
+}
+H6.Heading7 {
+             text-align:left;
+             margin:12pt 6.5pt 3pt 5.75pt;
+             font-family:"MS Sans Serif";
+             font-size:10pt;
+}
+LI.H6-Heading7 {
+                text-align:left;
+                font-family:"MS Sans Serif";
+                font-size:10pt;
+}
+H6.Heading8 {
+             text-align:left;
+             font-style:italic;
+             margin:12pt 6.5pt 3pt 5.75pt;
+             font-family:"MS Sans Serif";
+             font-size:10pt;
+}
+LI.H6-Heading8 {
+                text-align:left;
+                font-style:italic;
+                font-family:"MS Sans Serif";
+                font-size:10pt;
+}
+H6.Heading9 {
+             text-align:left;
+             font-style:italic;
+             margin:12pt 6.5pt 3pt 5.75pt;
+             font-family:"MS Sans Serif";
+             font-size:9pt;
+}
+LI.H6-Heading9 {
+                text-align:left;
+                font-style:italic;
+                font-family:"MS Sans Serif";
+                font-size:9pt;
+}
+P.Topic-Text {
+              text-align:left;
+              margin-top:0pt;
+              font-family:Verdana;
+              margin-bottom:3pt;
+              color:#800000;
+              margin-left:48px;
+              font-size:10pt;
+}
+LI.P-Topic-Text {
+                 text-align:left;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+p.Topic-Heading {
+                 text-align:left;
+                 margin-top:6pt;
+                 font-family:Arial, sans-serif;
+                 margin-bottom:3pt;
+                 color:#008000;
+                 font-size:10pt;
+                 font-weight:bold;
+                 margin-left:24px;
+}
+LI.P-Topic-Heading {
+                    text-align:left;
+                    font-family:Verdana;
+                    font-size:12pt;
+                    font-weight:bold;
+}
+P.Topic-Text-Indent {
+                     text-align:left;
+                     margin-top:0pt;
+                     font-family:Verdana;
+                     margin-bottom:3pt;
+                     margin-left:24px;
+                     font-size:10pt;
+}
+LI.P-Topic-Text-Indent {
+                        text-align:left;
+                        font-family:Verdana;
+                        font-size:10pt;
+}
+P.Body-Text {
+             text-align:left;
+             margin-top:0pt;
+             font-family:Verdana;
+             margin-bottom:3pt;
+             margin-left:48px;
+             font-size:10pt;
+}
+LI.P-Body-Text {
+                text-align:left;
+                font-family:Verdana;
+                font-size:10pt;
+}
+P.List-Number-Tbl {
+                   text-align:left;
+                   margin-top:6pt;
+                   text-indent:-18pt;
+                   font-family:Arial, san-serif;
+                   margin-bottom:4pt;
+                   margin-left:18pt;
+                   font-size:10pt;
+}
+LI.P-List-Number-Tbl {
+                      text-align:left;
+                      text-indent:-18pt;
+                      font-family:Arial, san-serif;
+                      font-size:10pt;
+}
+P.List-Number-5 {
+                 text-align:left;
+                 text-indent:-18pt;
+                 margin:0pt 6.5pt 3pt 90pt;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+LI.P-List-Number-5 {
+                    text-align:left;
+                    text-indent:-18pt;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.Topic-Text-Num-Indent {
+                         text-align:left;
+                         margin-top:0pt;
+                         font-family:Verdana;
+                         margin-bottom:3pt;
+                         margin-left:40px;
+                         font-size:10pt;
+}
+LI.P-Topic-Text-Num-Indent {
+                            text-align:left;
+                            font-family:Verdana;
+                            font-size:10pt;
+}
+P.Tip-Note-Heading {
+                    text-align:left;
+                    margin-top:1pt;
+                    font-family:"Trebuchet MS";
+                    margin-bottom:3pt;
+                    color:#916805;
+                    margin-left:6pt;
+                    font-size:12pt;
+                    font-weight:bold;
+}
+LI.P-Tip-Note-Heading {
+                       text-align:left;
+                       font-family:"Trebuchet MS";
+                       color:#916805;
+                       font-size:12pt;
+                       font-weight:bold;
+}
+P.Tip-Note-Text {
+                 text-align:left;
+                 margin-top:0pt;
+                 font-family:Verdana;
+                 margin-bottom:3pt;
+                 margin-left:50px;
+                 font-size:10pt;
+}
+LI.P-Tip-Note-Text {
+                    text-align:left;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.Tip-Note-Text-Bulleted {
+                          text-align:left;
+                          list-style-type:disc;
+                          text-indent:-0.02in;
+                          margin:0pt 0pt 2pt 7.4pt;
+                          font-family:Verdana;
+                          font-size:10pt;
+                          font-weight:normal;
+}
+LI.P-Tip-Note-Text-Bulleted {
+                             text-align:left;
+                             list-style-type:disc;
+                             text-indent:-0.02in;
+                             font-family:Verdana;
+                             font-size:10pt;
+                             font-weight:normal;
+}
+P.Topic-Text-Bulleted {
+                       text-align:left;
+                       text-indent:0px;
+                       margin:0pt 0pt 2.4pt -12px;
+                       font-family:Verdana;
+                       font-size:10pt;
+                       font-weight:normal;
+}
+LI.P-Topic-Text-Bulleted {
+                          text-align:left;
+                          text-indent:0px;
+                          font-family:Verdana;
+                          font-size:10pt;
+                          font-weight:normal;
+}
+P.Topic-Text-Numbered {
+                       text-align:left;
+                       text-indent:0px;
+                       margin:0pt 0pt 2.4pt 0px;
+                       font-family:Verdana;
+                       font-size:10pt;
+}
+LI.P-Topic-Text-Numbered {
+                          text-align:left;
+                          font-family:Verdana;
+                          font-size:10pt;
+}
+P.footnote-text {
+                 text-align:left;
+                 margin:0pt 0pt 2.4pt 36px;
+                 font-family:"Trebuchet MS" , sans-serif;
+                 color:#3d3d00;
+                 font-size:10pt;
+                 font-weight:bold;
+}
+LI.P-footnote-text {
+                    text-align:left;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.List-Bullet-2 {
+                 text-align:left;
+                 text-indent:0px;
+                 margin:4px 0pt 4px 48px;
+                 font-family:Verdana, sans-serif;
+                 font-size:10pt;
+}
+LI.P-List-Bullet-2 {
+                    text-align:left;
+                    text-indent:-9.35pt;
+                    font-family:"MS San Serif";
+                    font-size:10pt;
+}
+P.List-Bullet {
+               text-align:left;
+               text-indent:0px;
+               margin:0pt 0pt 2.4pt 0.1in;
+               font-family:Verdana;
+               font-size:10pt;
+}
+LI.P-List-Bullet {
+                  text-align:left;
+                  text-indent:-18pt;
+                  font-family:Verdana;
+                  font-size:10pt;
+}
+P.Topic-Num-Bullet {
+                    text-align:left;
+                    text-indent:-7px;
+                    margin:0pt 0pt 2.4pt 0.273in;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+LI.P-Topic-Num-Bullet {
+                       text-align:left;
+                       text-indent:-7px;
+                       font-family:Verdana;
+                       font-size:10pt;
+}
+P.Normal-Indent {
+                 text-align:left;
+                 margin:0pt 0pt 2.4pt 36pt;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+LI.P-Normal-Indent {
+                    text-align:left;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.Topic-Text-Onestep {
+                      text-align:left;
+                      text-indent:0px;
+                      margin:0pt 0pt 2.4pt 87px;
+                      font-family:Verdana;
+                      font-size:10pt;
+}
+LI.P-Topic-Text-Onestep {
+                         text-align:left;
+                         text-indent:-9.35pt;
+                         font-family:Verdana;
+                         font-size:10pt;
+}
+P.Topic-Text-Bullet-Indent {
+                            text-align:left;
+                            margin:0pt 0pt 3pt 33.85pt;
+                            font-family:Verdana;
+                            font-size:10pt;
+}
+LI.P-Topic-Text-Bullet-Indent {
+                               text-align:left;
+                               font-family:Verdana;
+                               font-size:10pt;
+}
+P.Body-Text-2-Body-Indent {
+                           text-align:left;
+                           margin-top:0pt;
+                           margin-bottom:4pt;
+                           margin-left:54pt;
+                           font-size:13pt;
+}
+LI.P-Body-Text-2-Body-Indent {
+                              text-align:left;
+                              font-size:13pt;
+}
+P.List-Continue-6 {
+                   text-align:left;
+                   margin-top:0pt;
+                   text-indent:-18pt;
+                   margin-bottom:4pt;
+                   margin-left:72pt;
+                   font-size:13pt;
+}
+LI.P-List-Continue-6 {
+                      text-align:left;
+                      text-indent:-18pt;
+                      font-size:13pt;
+}
+P.List-Number-6 {
+                 text-align:left;
+                 margin-top:0pt;
+                 text-indent:-18pt;
+                 margin-bottom:4pt;
+                 margin-left:72pt;
+                 font-size:13pt;
+}
+LI.P-List-Number-6 {
+                    text-align:left;
+                    text-indent:-18pt;
+                    font-size:13pt;
+}
+P.List-Continue-5 {
+                   text-align:left;
+                   margin:0pt 0pt 6pt 90pt;
+                   font-family:Verdana;
+                   font-size:10pt;
+}
+LI.P-List-Continue-5 {
+                      text-align:left;
+                      font-family:Verdana;
+                      font-size:10pt;
+}
+P.Body-Text-First-Indent {
+                          text-align:left;
+                          text-indent:10.5pt;
+                          margin:0pt 0pt 2.4pt 6pt;
+                          font-family:Verdana;
+                          font-size:10pt;
+}
+LI.P-Body-Text-First-Indent {
+                             text-align:left;
+                             text-indent:10.5pt;
+                             font-family:Verdana;
+                             font-size:10pt;
+}
+P.Body-Text-First-Indent-2 {
+                            text-align:left;
+                            margin-top:0pt;
+                            text-indent:10.5pt;
+                            font-family:Verdana;
+                            margin-bottom:3pt;
+                            margin-left:18pt;
+                            font-size:10pt;
+}
+LI.P-Body-Text-First-Indent-2 {
+                               text-align:left;
+                               text-indent:10.5pt;
+                               font-family:Verdana;
+                               font-size:10pt;
+}
+P.Body-Text-Indent-2 {
+                      text-align:left;
+                      line-height:24pt;
+                      margin-top:0pt;
+                      font-family:Verdana;
+                      margin-bottom:6pt;
+                      margin-left:18pt;
+                      font-size:10pt;
+}
+LI.P-Body-Text-Indent-2 {
+                         text-align:left;
+                         line-height:24pt;
+                         font-family:Verdana;
+                         font-size:10pt;
+}
+P.List-Number {
+               text-align:left;
+               margin-top:2px;
+               text-indent:0px;
+               font-family:Verdana, sans-serif;
+               margin-bottom:3px;
+               margin-left:0.1in;
+               font-size:10pt;
+               font-weight:normal;
+}
+LI.P-List-Number {
+                  text-align:left;
+                  text-indent:-18pt;
+                  font-family:Arial, san-serif;
+                  font-size:10pt;
+}
+P.List {
+        text-align:left;
+        margin-top:0pt;
+        text-indent:-18pt;
+        font-family:Verdana;
+        margin-bottom:4pt;
+        margin-left:36pt;
+        font-size:10pt;
+}
+LI.P-List {
+           text-align:left;
+           text-indent:-18pt;
+           font-family:Verdana;
+           font-size:10pt;
+}
+P.List-Continue {
+                 text-align:left;
+                 margin-top:0pt;
+                 text-indent:-18pt;
+                 font-family:Verdana;
+                 margin-bottom:8pt;
+                 margin-left:36pt;
+                 font-size:10pt;
+}
+LI.P-List-Continue {
+                    text-align:left;
+                    text-indent:-18pt;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.List-Num-6-Bullet {
+                     text-align:left;
+                     margin-top:0pt;
+                     text-indent:-18pt;
+                     font-family:Verdana;
+                     margin-bottom:6pt;
+                     margin-left:144pt;
+                     font-size:10pt;
+}
+LI.P-List-Num-6-Bullet {
+                        text-align:left;
+                        text-indent:-18pt;
+                        font-family:Verdana;
+                        font-size:10pt;
+}
+P.List-Bullet-6 {
+                 text-align:left;
+                 text-indent:-18pt;
+                 margin:0pt 0pt 6pt 126pt;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+LI.P-List-Bullet-6 {
+                    text-align:left;
+                    text-indent:-18pt;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.List-Bullet-5 {
+                 text-align:left;
+                 text-indent:-18pt;
+                 margin:0pt 0pt 2.4pt 54pt;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+LI.P-List-Bullet-5 {
+                    text-align:left;
+                    text-indent:-18pt;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.List-Bullet-7 {
+                 text-align:left;
+                 text-indent:-10.8pt;
+                 margin:0pt 0pt 4pt 154.8pt;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+LI.P-List-Bullet-7 {
+                    text-align:left;
+                    text-indent:-10.8pt;
+                    font-family:Verdana;
+                    font-size:10pt;
+}
+P.Block-Text {
+              text-align:left;
+              margin:0pt 0pt 0pt 5.75pt;
+              font-family:Verdana;
+              font-size:10pt;
+}
+LI.P-Block-Text {
+                 text-align:left;
+                 font-family:Verdana;
+                 font-size:10pt;
+}
+P.Topic-Caption {
+                 text-align:left;
+                 margin:0pt 0pt 2.4pt 9pt;
+                 font-family:Verdana;
+                 font-size:14pt;
+                 font-weight:bold;
+}
+LI.P-Topic-Caption {
+                    text-align:left;
+                    font-family:Verdana;
+                    font-size:14pt;
+                    font-weight:bold;
+}
+P.Topic-Text-Item {
+                   text-align:left;
+                   text-indent:0px;
+                   margin:0pt 18pt 2.4pt 10px;
+                   font-family:Verdana;
+                   font-size:10pt;
+}
+LI.P-Topic-Text-Item {
+                      text-align:left;
+                      text-indent:-18pt;
+                      font-family:Verdana;
+                      font-size:10pt;
+}
+P.header {
+          text-align:left;
+          margin:0pt 0pt 2.4pt 6pt;
+          font-family:Verdana;
+          font-size:10pt;
+}
+LI.P-header {
+             text-align:left;
+             font-family:Verdana;
+             font-size:10pt;
+}
+P.footer {
+          text-align:left;
+          margin:0pt 0pt 2.4pt 6pt;
+          font-family:Verdana;
+          font-size:10pt;
+}
+LI.P-footer {
+             text-align:left;
+             font-family:Verdana;
+             font-size:10pt;
+}
+P.Topic-Text-Num-Bullet {
+                         text-align:left;
+                         margin-top:0pt;
+                         text-indent:-18pt;
+                         font-family:Verdana;
+                         margin-bottom:3pt;
+                         margin-left:46.8pt;
+                         font-size:10pt;
+}
+LI.P-Topic-Text-Num-Bullet {
+                            text-align:left;
+                            text-indent:-18pt;
+                            font-family:Verdana;
+                            font-size:10pt;
+}
+P.Document-Map {
+                text-align:left;
+                background-color:#000080;
+                margin:0pt 0pt 2.4pt 6pt;
+                font-family:Tahoma;
+                font-size:10pt;
+}
+LI.P-Document-Map {
+                   text-align:left;
+                   font-family:Tahoma;
+                   font-size:10pt;
+}
+P.List-Bullet-3 {
+                 text-align:left;
+                 margin-top:0pt;
+                 text-indent:-18pt;
+                 margin-bottom:8pt;
+                 margin-left:72pt;
+                 font-size:10pt;
+}
+LI.P-List-Bullet-3 {
+                    text-align:left;
+                    text-indent:-18pt;
+                    font-size:10pt;
+}
+P.Body-Text-3 {
+               text-align:left;
+               margin-top:0pt;
+               font-family:Verdana;
+               margin-bottom:6pt;
+               margin-left:6pt;
+               font-size:8pt;
+}
+LI.P-Body-Text-3 {
+                  text-align:left;
+                  font-family:Verdana;
+                  font-size:8pt;
+}
+P.List-Bullet-Tbl {
+                   text-align:left;
+                   margin-top:0pt;
+                   text-indent:-18pt;
+                   font-family:Verdana;
+                   margin-bottom:6pt;
+                   margin-left:18pt;
+                   font-size:10pt;
+}
+LI.P-List-Bullet-Tbl {
+                      text-align:left;
+                      text-indent:-18pt;
+                      font-family:Verdana;
+                      font-size:10pt;
+}
+P.Body-Indent-Tbl {
+                   text-align:center;
+                   margin-top:0pt;
+                   font-family:Verdana;
+                   margin-bottom:12pt;
+                   margin-left:0px;
+                   font-size:10pt;
+}
+LI.P-Body-Indent-Tbl {
+                      text-align:left;
+                      font-family:Verdana;
+                      font-size:10pt;
+}
+P.Header-Base {
+               text-align:left;
+               margin-top:0pt;
+               font-family:Verdana;
+               margin-bottom:0pt;
+               font-size:10pt;
+}
+LI.P-Header-Base {
+                  text-align:left;
+                  font-family:Verdana;
+                  font-size:10pt;
+}
+P.caption {
+           text-align:center;
+           font-style:normal;
+           margin-top:3pt;
+           font-family:Verdana, sans-serif;
+           margin-bottom:3pt;
+           color:#000080;
+           font-size:10pt;
+           font-weight:bold;
+}
+LI.P-caption {
+              text-align:center;
+              font-style:italic;
+              font-size:9pt;
+}
+P.Topic-Num-Bullet-Char {
+                         text-align:left;
+                         margin-top:0pt;
+                         text-indent:0px;
+                         font-family:Verdana;
+                         margin-bottom:3pt;
+                         margin-left:24px;
+                         font-size:10pt;
+}
+LI.P-Topic-Num-Bullet-Char {
+                            text-align:left;
+                            text-indent:-14.4pt;
+                            font-family:Verdana;
+                            font-size:10pt;
+}
+P.Topic-Text-Indent-Char {
+                          text-align:left;
+                          margin-top:0pt;
+                          font-family:Verdana;
+                          margin-bottom:3pt;
+                          margin-left:105px;
+                          font-size:10pt;
+}
+LI.P-Topic-Text-Indent-Char {
+                             text-align:left;
+                             font-family:Verdana;
+                             font-size:10pt;
+}
+P.Topic-Text-Num-Bul-Indent {
+                             text-align:left;
+                             margin-top:0pt;
+                             text-indent:0px;
+                             font-family:Verdana;
+                             margin-bottom:3pt;
+                             margin-left:0px;
+                             font-size:10pt;
+}
+LI.P-Topic-Text-Num-Bul-Indent {
+                                text-align:left;
+                                text-indent:0px;
+                                font-family:Verdana;
+                                font-size:10pt;
+}
+P.Topic-Text-Num-Ind-Square {
+                             text-align:left;
+                             margin-top:0pt;
+                             text-indent:-7.2pt;
+                             font-family:Verdana;
+                             margin-bottom:3pt;
+                             margin-left:43.2pt;
+                             font-size:10pt;
+}
+LI.P-Topic-Text-Num-Ind-Square {
+                                text-align:left;
+                                text-indent:-7.2pt;
+                                font-family:Verdana;
+                                font-size:10pt;
+}
+P.Bullet1 {
+           text-align:left;
+           margin-top:0pt;
+           text-indent:-14.4pt;
+           font-family:Verdana;
+           margin-bottom:0pt;
+           margin-left:14.4pt;
+           font-size:10pt;
+}
+LI.P-Bullet1 {
+              text-align:left;
+              text-indent:-14.4pt;
+              font-family:Verdana;
+              font-size:10pt;
+}
+P.Body-Text-Keep {
+                  text-align:left;
+                  margin-top:0pt;
+                  font-family:Verdana;
+                  margin-bottom:4pt;
+                  margin-left:108pt;
+                  font-size:13pt;
+}
+LI.P-Body-Text-Keep {
+                     text-align:left;
+                     font-family:Verdana;
+                     font-size:13pt;
+}
+P.Topic-Bullet-Indent {
+                       text-align:left;
+                       margin-top:0pt;
+                       font-family:Verdana;
+                       margin-bottom:3pt;
+                       font-size:10pt;
+}
+LI.P-Topic-Bullet-Indent {
+                          text-align:left;
+                          font-family:Verdana;
+                          font-size:10pt;
+}
+P.Style-Topic-Text-Bulleted- + -Bold {
+                                      text-align:left;
+                                      margin-top:0pt;
+                                      font-family:Verdana;
+                                      margin-bottom:3pt;
+                                      font-size:10pt;
+                                      font-weight:bold;
+}
+LI.P-Style-Topic-Text-Bulleted- + -Bold {
+                                         text-align:left;
+                                         font-family:Verdana;
+                                         font-size:10pt;
+                                         font-weight:bold;
+}
+P.Body-Text-Indent-3 {
+                      text-align:left;
+                      margin-top:0pt;
+                      font-family:Verdana;
+                      margin-bottom:6pt;
+                      margin-left:18pt;
+                      font-size:8pt;
+}
+LI.P-Body-Text-Indent-3 {
+                         text-align:left;
+                         font-family:Verdana;
+                         font-size:8pt;
+}
+P.Body-Text-2 {
+               text-align:left;
+               margin-top:2pt;
+               font-family:Verdana;
+               margin-bottom:2pt;
+               font-size:10pt;
+}
+LI.P-Body-Text-2 {
+                  text-align:left;
+                  font-family:Verdana;
+                  font-size:10pt;
+}
+UNKNOWN {
+         text-align:left;
+         margin-top:5pt;
+         font-family:"Arial Unicode MS";
+         margin-bottom:5pt;
+         font-size:12pt;
+         text-align:left;
+         font-family:"Arial Unicode MS";
+         font-size:12pt;
+         text-align:left;
+         margin-top:5pt;
+         font-family:Verdana;
+         margin-bottom:5pt;
+         color:#000000;
+         font-size:10pt;
+         text-align:left;
+         font-family:Verdana;
+         color:#000000;
+         font-size:10pt;
+}
+P.procedure {
+             text-align:left;
+             margin-top:2pt;
+             font-family:Verdana, sans-serif;
+             margin-bottom:3pt;
+             margin-left:7pt;
+             font-size:10pt;
+}
+LI.P-procedure {
+                text-align:left;
+                font-family:"Arial Unicode MS";
+                font-size:12pt;
+}
+P.Heading-Base {
+                text-align:center;
+                margin:2pt 6.5pt 2pt 5.75pt;
+                font-family:"Trebuchet MS";
+                color:#800000;
+                font-size:10pt;
+                font-weight:bold;
+}
+LI.P-Heading-Base {
+                   text-align:left;
+                   font-family:"Trebuchet MS";
+                   font-size:10pt;
+                   font-weight:bold;
+}
+P.Plain-Text {
+              text-align:left;
+              margin-top:0pt;
+              font-family:"Courier New";
+              margin-bottom:0pt;
+              font-size:10pt;
+}
+LI.P-Plain-Text {
+                 text-align:left;
+                 font-family:"Courier New";
+                 font-size:10pt;
+}
+P.dialog-item {
+               text-align:left;
+               margin-top:5pt;
+               font-family:Verdana;
+               margin-bottom:5pt;
+               color:#000000;
+               font-size:10pt;
+}
+LI.P-dialog-item {
+                  text-align:left;
+                  font-family:Verdana;
+                  color:#000000;
+                  font-size:10pt;
+}
+P.List-Continue-6-Char-Char {
+                             text-align:left;
+                             margin-top:0pt;
+                             text-indent:-18pt;
+                             font-family:Verdana;
+                             margin-bottom:4pt;
+                             margin-left:72pt;
+                             font-size:13pt;
+}
+LI.P-List-Continue-6-Char-Char {
+                                text-align:left;
+                                text-indent:-18pt;
+                                font-family:Verdana;
+                                font-size:13pt;
+}
+P.List-Continue-6-Char {
+                        text-align:left;
+                        margin-top:0pt;
+                        text-indent:-18pt;
+                        margin-bottom:4pt;
+                        margin-left:72pt;
+                        font-size:13pt;
+}
+LI.P-List-Continue-6-Char {
+                           text-align:left;
+                           text-indent:-18pt;
+                           font-size:13pt;
+}
+P.HTML-Preformatted {
+                     text-align:left;
+                     margin-top:0pt;
+                     font-family:"Courier New";
+                     margin-bottom:0pt;
+                     color:#000000;
+                     font-size:10pt;
+}
+LI.P-HTML-Preformatted {
+                        text-align:left;
+                        font-family:"Courier New";
+                        color:#000000;
+                        font-size:10pt;
+}
+BODY {
+      background-color:#ffffff;
+}
+LI.kadov-P {
+            font-family:Arial;
+            color:#000000;
+            font-size:12pt;
+}
+LI.kadov-H1 {
+             font-family:Arial;
+             font-size:16pt;
+             font-weight:bold;
+}
+LI.kadov-H2 {
+             font-family:Arial;
+             font-size:14pt;
+             font-weight:bold;
+}
+LI.kadov-H3 {
+             font-family:Arial;
+             font-size:12pt;
+             font-weight:bold;
+}
+LI.kadov-H4 {
+             font-family:Arial;
+             font-size:12pt;
+             font-weight:bold;
+}
+LI.kadov-H5 {
+             font-family:Arial;
+             font-size:12pt;
+             font-weight:bold;
+}
+LI.kadov-H6 {
+             font-family:Arial;
+             font-size:12pt;
+             font-weight:bold;
+}
+A:link {
+        font-family:Verdana, sans-serif;
+        color:#0000ff;
+        font-size:10pt;
+}
+A:active {
+          font-family:Verdana, sans-serif;
+          color:#cf771e;
+          font-size:10pt;
+}
+A:visited {
+           font-family:Verdana, sans-serif;
+           color:#0000ff;
+           font-size:10pt;
+}
+A.expandspot {
+              font-style:italic;
+              color:#008000;
+              cursor:hand;
+              text-decoration:none;
+}
+SPAN.expandtext {
+                 font-style:italic;
+                 color:#ff0000;
+                 font-weight:normal;
+}
+A.dropspot {
+            font-style:italic;
+            font-family:Arial, sans-serif;
+            color:#009b27;
+            font-size:11pt;
+            cursor:hand;
+            font-weight:normal;
+            text-decoration:none;
+}
+A.glossterm {
+             font-style:italic;
+             color:#800000;
+             cursor:hand;
+             text-decoration:none;
+}
+SPAN.glosstext {
+                font-style:italic;
+                color:#0000ff;
+                font-weight:normal;
+}
+OL {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+UL {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+P.Tip {
+       border-bottom:#08407a 1px solid;
+       padding-bottom:3pt;
+       margin-top:5pt;
+       margin-bottom:5pt;
+       border-top:#08407a 1px solid;
+       x-next-type:P;
+}
+LI.P-Tip {
+}
+P.Tip-Indent {
+              border-bottom:#08407a 1px solid;
+              padding-bottom:3pt;
+              margin-top:5pt;
+              margin-bottom:5pt;
+              margin-left:40px;
+              border-top:#08407a 1px solid;
+}
+LI.P-Tip-Indent {
+}
+rh-list.BasicNumber {
+                     x-lvl-1-format:<x>&c;
+                     x-lvl-2-type:lower-alpha;
+                     x-lvl-2-format:<x>&c;
+                     x-lvl-1-p-tag:P;
+                     x-lvl-2-margin:20px;
+                     x-lvl-2-p-tag:P;
+                     x-lvl-3-type:lower-roman;
+                     x-lvl-3-format:<x>&c;
+                     x-lvl-3-margin:40px;
+                     x-lvl-3-p-tag:P;
+                     x-lvl-4-type:decimal;
+                     x-lvl-4-format:&o<x>&c;
+                     x-lvl-4-margin:60px;
+                     x-lvl-4-p-tag:P;
+                     x-lvl-5-format:&o<x>&c;
+                     x-lvl-5-margin:80px;
+                     x-lvl-5-p-tag:P;
+                     x-lvl-6-type:lower-roman;
+                     x-lvl-6-format:&o<x>&c;
+                     x-lvl-6-margin:100px;
+                     x-lvl-6-p-tag:P;
+                     x-lvl-7-margin:120px;
+                     x-lvl-7-p-tag:P;
+                     x-lvl-8-type:lower-alpha;
+                     x-lvl-8-margin:140px;
+                     x-level-count:9;
+                     x-lvl-9-type:lower-roman;
+                     x-lvl-9-margin:160px;
+}
+rh-list.sss {
+             x-lvl-1-format:<x>;
+             x-lvl-2-type:square;
+             x-lvl-2-format:<x>;
+             x-lvl-2-margin:20px;
+             x-lvl-3-type:circle;
+             x-lvl-3-format:<x>;
+             x-lvl-3-margin:40px;
+             x-lvl-4-type:diamond;
+             x-lvl-4-format:<x>;
+             x-lvl-4-margin:60px;
+             x-lvl-5-format:<x>;
+             x-lvl-5-margin:80px;
+             x-lvl-6-type:square;
+             x-lvl-6-format:<x>;
+             x-lvl-6-margin:100px;
+             x-lvl-7-margin:120px;
+             x-lvl-8-type:diamond;
+             x-lvl-8-margin:140px;
+             x-level-count:9;
+             x-lvl-9-type:disc;
+             x-lvl-9-margin:160px;
+             x-lvl-1-type:disc;
+             x-lvl-5-type:disc;
+             x-lvl-7-type:circle;
+             x-lvl-7-format:<x>;
+             x-lvl-8-format:<x>;
+             x-lvl-9-format:<x>;
+             x-lvl-9-pfx-class:rls-9-Bullets;
+             x-lvl-1-pfx-class:rls-1-Bullets;
+             x-lvl-2-pfx-class:rls-2-Bullets;
+             x-lvl-3-pfx-class:rls-3-Bullets;
+             x-lvl-4-pfx-class:rls-4-Bullets;
+             x-lvl-5-pfx-class:rls-5-Bullets;
+             x-lvl-6-pfx-class:rls-6-Bullets;
+             x-lvl-7-pfx-class:rls-7-Bullets;
+             x-lvl-8-pfx-class:rls-8-Bullets;
+}
+rh-list.NumberBulletAlphaBullet {
+                                 x-lvl-2-type:bullet;
+                                 x-lvl-2-format:<x>;
+                                 x-lvl-1-p-tag:P;
+                                 x-lvl-2-margin:20px;
+                                 x-lvl-2-p-tag:P;
+                                 x-lvl-3-margin:40px;
+                                 x-lvl-3-p-tag:P;
+                                 x-lvl-4-type:circle;
+                                 x-lvl-4-format:<x>;
+                                 x-lvl-4-margin:60px;
+                                 x-lvl-4-p-tag:P;
+                                 x-lvl-5-margin:80px;
+                                 x-lvl-5-p-tag:P;
+                                 x-lvl-6-type:Degree;
+                                 x-lvl-6-format:<x>;
+                                 x-lvl-6-margin:100px;
+                                 x-lvl-6-p-tag:P;
+                                 x-lvl-7-margin:120px;
+                                 x-lvl-7-p-tag:P;
+                                 x-lvl-8-type:diamond;
+                                 x-lvl-8-margin:140px;
+                                 x-level-count:9;
+                                 x-lvl-9-margin:160px;
+                                 x-lvl-5-type:decimal;
+                                 x-lvl-8-format:<x>;
+                                 x-lvl-8-p-tag:P;
+                                 x-lvl-9-p-tag:P;
+}
+rh-list.Bullets {
+                 x-lvl-1-format:<x>;
+                 x-lvl-2-type:square;
+                 x-lvl-2-format:<x>;
+                 x-lvl-2-margin:20px;
+                 x-lvl-3-type:circle;
+                 x-lvl-3-format:<x>;
+                 x-lvl-3-margin:40px;
+                 x-lvl-4-type:diamond;
+                 x-lvl-4-format:<x>;
+                 x-lvl-4-margin:60px;
+                 x-lvl-5-format:<x>;
+                 x-lvl-5-margin:80px;
+                 x-lvl-6-type:square;
+                 x-lvl-6-format:<x>;
+                 x-lvl-6-margin:100px;
+                 x-lvl-7-margin:120px;
+                 x-lvl-8-type:diamond;
+                 x-lvl-8-margin:140px;
+                 x-level-count:9;
+                 x-lvl-9-type:disc;
+                 x-lvl-9-margin:160px;
+                 x-lvl-1-type:disc;
+                 x-lvl-5-type:disc;
+                 x-lvl-7-type:circle;
+                 x-lvl-7-format:<x>;
+                 x-lvl-8-format:<x>;
+                 x-lvl-9-format:<x>;
+                 x-lvl-9-pfx-class:rls-9-Bullets;
+                 x-lvl-1-pfx-class:rls-1-Bullets;
+                 x-lvl-2-pfx-class:rls-2-Bullets;
+                 x-lvl-3-pfx-class:rls-3-Bullets;
+                 x-lvl-4-pfx-class:rls-4-Bullets;
+                 x-lvl-5-pfx-class:rls-5-Bullets;
+                 x-lvl-6-pfx-class:rls-6-Bullets;
+                 x-lvl-7-pfx-class:rls-7-Bullets;
+                 x-lvl-8-pfx-class:rls-8-Bullets;
+}
+rh-list.Sub-bullet {
+                    x-lvl-1-format:<x>;
+                    x-lvl-2-type:square;
+                    x-lvl-2-format:<x>;
+                    x-lvl-2-margin:20px;
+                    x-lvl-3-type:circle;
+                    x-lvl-3-format:<x>;
+                    x-lvl-3-margin:40px;
+                    x-lvl-4-type:diamond;
+                    x-lvl-4-format:<x>;
+                    x-lvl-4-margin:60px;
+                    x-lvl-5-format:<x>;
+                    x-lvl-5-margin:80px;
+                    x-lvl-6-type:square;
+                    x-lvl-6-format:<x>;
+                    x-lvl-6-margin:100px;
+                    x-lvl-7-margin:120px;
+                    x-lvl-8-type:diamond;
+                    x-lvl-8-margin:140px;
+                    x-level-count:9;
+                    x-lvl-9-type:disc;
+                    x-lvl-9-margin:160px;
+                    x-lvl-1-type:disc;
+                    x-lvl-5-type:disc;
+                    x-lvl-7-type:circle;
+                    x-lvl-7-format:<x>;
+                    x-lvl-8-format:<x>;
+                    x-lvl-9-format:<x>;
+                    x-lvl-9-pfx-class:rls-9-Bullets;
+                    x-lvl-1-pfx-class:rls-1-Bullets;
+                    x-lvl-2-pfx-class:rls-2-Bullets;
+                    x-lvl-3-pfx-class:rls-3-Bullets;
+                    x-lvl-4-pfx-class:rls-4-Bullets;
+                    x-lvl-5-pfx-class:rls-5-Bullets;
+                    x-lvl-6-pfx-class:rls-6-Bullets;
+                    x-lvl-7-pfx-class:rls-7-Bullets;
+                    x-lvl-8-pfx-class:rls-8-Bullets;
+}
+SPAN.rls-9-Bullets {
+                    font-size:8pt;
+}
+SPAN.rls-1-Bullets {
+                    font-size:12pt;
+}
+SPAN.rls-2-Bullets {
+                    font-size:12pt;
+}
+SPAN.rls-3-Bullets {
+                    font-size:12pt;
+}
+SPAN.rls-4-Bullets {
+                    font-size:12pt;
+}
+SPAN.rls-5-Bullets {
+                    font-size:10pt;
+}
+SPAN.rls-6-Bullets {
+                    font-size:10pt;
+}
+SPAN.rls-7-Bullets {
+                    font-size:10pt;
+}
+SPAN.rls-8-Bullets {
+                    font-size:10pt;
+}
+P.Style1 {
+          text-align:left;
+          margin-top:0pt;
+          text-indent:-18pt;
+          font-family:Verdana;
+          margin-bottom:6pt;
+          margin-left:144pt;
+          font-size:10pt;
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="4.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Prismatic Mill Module</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>プリズマティックミル モジュール</h1><br>
+<ul>
+  <li>
+    <p>パーツに複数のミリング用ソリッドボディが含まれている場合、DFMPro はこれらのボディを個別のパーツとしてそれぞれ解析します。</p>
+  </li>
+  <li>
+    <p>穴フィーチャーコマンドによって作成された穴に関連するルール（例：ドリル加工ルール）は、単一のフィーチャーとして実行されます（穴が単一ボディ内に存在する場合、または複数ボディを貫通して存在する場合でも、総深さを持つ単一の穴フィーチャーとして扱われます）。</p>
+  </li>
+</ul>
+<p><strong>対応しているルールは以下のとおりです：</strong></p>
+<ul>
+  <li><a href="../Drilling/deep_holes.htm">Deep Holes</a></li>
+  <li><a href="../Drilling/entry_exit_surface_for_holes.htm">Entry/Exit Surface for Holes</a></li>
+  <li><a href="../Drilling/flat_bottomed_holes.htm">Flat Bottom Holes</a></li>
+  <li><a href="../Drilling/Minimum_Hole_Diameter.htm">Minimum Hole Diameter</a></li>
+  <li><a href="../Drilling/partial_holes.htm">Partial Holes</a></li>
+  <li><a href="../Drilling/standard_hole_sizes.htm">Standard Hole Sizes</a></li>
+</ul>
+<ul>
+  <li>
+    <p>以下のケースでは、穴は作成されて別のボディまで切削されています。この場合、DFMPro のルール検証では、ボディ1およびボディ2の深さを含む総深さが考慮されます。</p>
+  </li>
+</ul>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Multibody_PrismaticMill_Fig1.png"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Multibody_PrismaticMill_Chart.png"/>
+</div>
+<p> </p>
+<p>注記：</p><br>
+<p><a href="../Getting_Started/Analysis_Region.htm">解析領域</a>の「Selected Region」および「Edit Machining Setup」オプションは、マルチボディパーツの場合には使用できません。</p>
+<p>パターン穴およびミラー穴はサポートされていません。</p>
+
+</body></html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_19"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Cutout To Bend Distance</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Cutout to Bend Distance "カットアウトから曲げ部間の距離"</h1>
+<h4>ルール</h4>
+<p>カットアウトから曲げまでの最小距離と板厚との比率は、ユーザーが指定した値以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>曲げに近すぎるカットアウトは、曲げ加工中に変形します。カットアウトのエッジから内側曲げRの開始位置までの距離が、板厚の少なくとも2倍であれば、変形は最小限になります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、カットアウトから内側曲げRの開始位置までの最小距離は、板厚の少なくとも2倍以上であることが推奨されます。</p>
+<p>カットアウトからパーツの曲げまでの最小距離と板厚との比率（カットアウト長さに対して）は、ユーザーが指定した値以上である必要があります。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout_to_Bend_Distance_Help.bmp"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>D = カットアウトから曲げまでの距離</p>
+<p>t = 板厚</p>
+<p>L = カットアウト長さ</p>
+<p>R = 曲げ半径</p>
+
+<br>
+
+<p>注記：</p>
+<p>カットアウト長さに基づく推奨に対して、以下の形状がサポートされています：</p>
+<div style="text-align:center;"><img alt="" border="0" height="264" src="../../assets/images/Common/image/Supported_shape_based_on_cutout_length.bmp" width="455"></div>
+
+<br>
+
+<h2>Excel入力形式</h2>
+<p>ユーザーは、<b>Ctrl + I</b> コマンドを使用して、Excelシートテンプレート内にある一括データをインポートすることができます。</p>
+
+<br>
+
+<h4>R&lt;=Ri の場合</h4>
+<p><b>標準テンプレート形式：</b></p>
+
+<br>
+
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col style="width: 30.064%;">
+    <col style="width: 30.36%;">
+    <col style="width: 41.76%;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="text-align: center; font-weight: bold;">L1</p></td>
+      <td><p style="text-align: center; font-weight: bold;">L2</p></td>
+      <td><p style="text-align: center; font-weight: bold;">D/t</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">0</p></td>
+      <td><p style="text-align: center;">1.0</p></td>
+      <td><p style="text-align: center;">2.0</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">1.0</p></td>
+      <td><p style="text-align: center;">2.0</p></td>
+      <td><p style="text-align: center;">2.5</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">2.0</p></td>
+      <td><p style="text-align: center;"> </p></td>
+      <td><p style="text-align: center;">3.0</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p>ここでは、</p>
+<p>L1 = カットアウト長さ = 最小（超過）</p>
+<p>L2 = カットアウト長さ = 最大（～まで、または含む）</p>
+
+<br>
+
+<h4>R&gt;Ri の場合</h4>
+<p><b>標準テンプレート形式：</b></p>
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col style="width: 30.064%;">
+    <col style="width: 30.36%;">
+    <col style="width: 41.76%;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="text-align: center; font-weight: bold;">L1/t</p></td>
+      <td><p style="text-align: center; font-weight: bold;">L2/t</p></td>
+      <td><p style="text-align: center; font-weight: bold;">D/t</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">0</p></td>
+      <td><p>20.0</p></td>
+      <td><p style="text-align: center;">2.5</p></td>
+    </tr>
+    <tr>
+      <td><p>20.0</p></td>
+      <td><p> </p></td>
+      <td><p style="text-align: center;">4.0</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p>ここでは、</p>
+<p>L1/t および L2/t = カットアウト長さと板厚の比率の範囲</p>
+
+<br>
+
+<p>注記：</p>
+<p>曲げと重なっている／干渉しているカットアウトは、ルール解析の対象となり、距離0として違反（失敗）を表示します。</p>
+<p>このルールは、正方形・長方形・オブロングのカットアウトが曲げエッジに対して直交し、かつ交差している場合は考慮しません。</p>
+<p>面取り付きのカットアウトにも対応しています。</p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout_With_Chamfers_left.png"></div>
+
+
+<br>
+</body>
+</html>

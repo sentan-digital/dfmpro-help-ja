@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_15"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Custom Message</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>カスタムメッセージ</h1>
+<p>ユーザーは、ルールマネージャーダイアログボックスでカスタムメッセージ／ルール重要度メッセージを構成できます。業界標準や設計標準（通常、部品設計時に参照されるもの）、または設計エンジニアの参照用として組織固有のドキュメントやガイドラインに関連するカスタムメッセージを追加する必要がある場合、カスタムメッセージ機能を使用すると、重要なメッセージや標準の URL リンクを、以下に示すようにカスタムメッセージ列へ追加できます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Custom_Message_CP_NX_CATIA.png"/>
+</div>
+
+<br>
+
+<p>結果には、追加された URL リンクがルール説明グループボックスに表示されます。設計エンジニアは、これを参照ガイドラインとして開くことができます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Custom_Message_RuleDescription.png"/>
+</div>
+
+<br>
+
+<p>書き込み権限を持つユーザーのみがカスタムメッセージを追加できます。追加されたメッセージは DFMPro データベースに保存され、書き込み権限を持つユーザーのみがアクセス可能です。</p>
+
+<br>
+
+<h2>以下の手順に従ってください：</h2>
+<ol style="list-style: lower-roman;">
+<li><p><strong><i>ルールマネージャー</i></strong> ダイアログボックスを開きます。</p></li>
+<li><p>各ルールに対してカスタムメッセージや情報を入力し、DFMPro データベースに保存します。</p></li>
+</ol>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Custom_Message_CP_NX_CATIA.png"/>
+</div>
+
+<br>
+
+<ol  style="list-style: lower-roman;" start="3">
+<li><p>以下に示すコマンドを使用して、各ルールに追加したカスタムメッセージを保存またはインポートします：</p></li>
+</ol>
+
+<ol><ol class="LowerAlpha">
+<li>ルールマネージャーダイアログボックスの <img alt="" border="0" src="../../assets/images/Common/image/Custom_Message_Export_msg.png"/> <strong><i>カスタムメッセージをエクスポート</i></strong> ボタンをクリックし、Help_ID、ルール名、ルールカテゴリ、カスタムメッセージ列などの詳細を含む Excel ファイルをエクスポートします。
+<p>ルールマネージャーダイアログボックスで利用可能なルールに基づき、テンプレート「<i>CustomMessageTemplate.xlsx</i>」が Excel ファイルとしてエクスポートされます。</p>
+<p>DFMPro では、各ルールの <i>カスタムメッセージ列</i> にカスタムメッセージを追加し、保存することができます。</p></li>
+</ol></ol>
+
+
+
+<ol><ol class="LowerAlpha">
+<li value="2">ルールマネージャーダイアログボックスの <img alt="" border="0" src="../../assets/images/Common/image/Custom_Message_Import_msg.png"/> <strong><i>カスタムメッセージをインポート</i></strong> ボタンをクリックし、更新されたカスタムメッセージの Excel ファイルを選択して、カスタムメッセージをインポートします。
+<p>対応するカスタムメッセージが、ルールマネージャーダイアログボックスに表示されます。</p></li>
+</ol></ol>
+
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Custom_Message_CP_NX_CATIA.png"/>
+</div>
+<p> </p>
+
+<ol start="4" style="list-style: lower-roman;">
+<li><p>カスタムメッセージに入力された情報は、DFMPro データベースに保存されます。</p></li>
+<li><p>追加されたカスタムメッセージは、結果ウィンドウのルール説明グループボックスに表示されます（以下で強調表示）。同じカスタムメッセージは DFMPro レポートにも表示されます。</p></li>
+</ol>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Custom_Message_RuleDescription1.png"/>
+</div>
+<p> </p>
+
+<p>注記:</p>
+<ul>
+<li><p>標準のカスタムテンプレートを使用し、テンプレート内のテキストを変更または削除しないでください。</p></li>
+<li><p>カスタムメッセージ列には最大 256 文字まで入力できます。カスタムメッセージを追加する際は、複数行のテキストは避けてください。</p></li>
+<li><p>カスタムメッセージには、URL リンク（Web リンク、HTML ドキュメントリンク、リポジトリ、またはネットワーク上のパス）を追加できます。</p></li>
+<li><p>URL リンクの場合、テキストはハイパーリンク形式である必要があります。「www」「http」「https」「\\」などのすべての標準的な URL 形式のハイパーリンクがサポートされています。</p></li>
+</ul>
+
+</body></html>

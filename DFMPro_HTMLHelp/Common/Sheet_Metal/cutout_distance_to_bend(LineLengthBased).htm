@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_20"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Cutout To Bend Distance - Based on Line Length</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Cutout to Bend Distance - Based on Line Length "長さに基づくカットアウトから曲げ部間の最小距離"</h1>
+<h4>ルール</h4>
+<p>切り欠きのエッジと曲げの間の最小距離の比は、長さL1およびL2の最小値の(1/n)倍以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>切り欠きが曲げに近すぎると、曲げ加工中に変形します。切り欠きのエッジから内側曲げRの開始点までの距離が板厚の少なくとも2倍であれば、変形は最小限になります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、切り欠きから内側曲げRの開始点までの最小距離は、L1およびL2の最小長さの少なくとも1/10倍である必要があります。ユーザーは、長さL1とL2の間の角度を指定することで切り欠き解析を制限できます。推奨角度(X)は20°以下です。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;"><img alt="" border="0" height="454" src="../../assets/images/Common/image/Cutout_to_bend_distance_based_on_line_length_UI.bmp" width="454"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>A = 切り欠きから曲げまでの最小距離</p>
+<p>X = 線（L1、L2）間の角度</p>
+
+<br>
+
+<p>注記:</p>
+<p>面取り付きの切り欠きもサポートされています。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" height="366" src="../../assets/images/Common/image/Cutout_With_Chamfers_left.png" width="382"></div>
+
+<br>
+
+
+<p>以下の標準形状の切り欠きが、「線長に基づく」でサポートされています。</p>
+
+<br>
+
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Supported_Shapes_based_on_line_Length.png"></div>
+
+<br>
+</body>
+</html>

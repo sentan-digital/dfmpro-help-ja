@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.11.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Draft Angle Based on Height</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Draft Angle Based on Height "高さに基づく抜き勾配"</h1>
+<h4>ルール</h4>
+<p>引き抜き方向に対して、パーツの内側壁および外側壁にドラフト角を付与する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>ドラフト角の設計は、砂型鋳造部品を設計するうえで不可欠な要素です。砂型鋳造プロセスでは、ドラフトはパターン（模型）設計のための逃げ（余裕）を与えます。適切なドラフト角を付与することで、金型（砂型）を損傷することなくパターンを引き抜くことができます。ドラフトがない形状やアンダーカットは追加の中子（コア）を用いれば作成できますが、追加コストが発生します。</p>
+<p>ドラフト角の量は、造型方法、パターンの引き抜き（方向／方法）、およびパターンに使用される材料に依存します。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、内側壁のドラフト角は外側壁の2倍にすることが推奨されます。</p>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Draft_Angle_based_on_height_Help.bmp">
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>H = 面の高さ</p>
+<p>A1 = 外側面のドラフト角</p>
+<p>A2 = 内側面のドラフト角</p>
+<p>A3 = 中子面（コア面）のドラフト角</p>
+
+<br>
+
+<h2>Excel入力フォーマット</h2>
+<p>ユーザーは、Excelシートのテンプレートに含まれる一括データを［Import］ボタンを使用して取り込むことができます。</p>
+
+<br>
+
+<p>標準テンプレート形式：</p>
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col width="100">
+    <col width="100">
+    <col width="100">
+    <col width="100">
+    <col width="100">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p>H1</p></td>
+      <td><p>H2</p></td>
+      <td><p>A1</p></td>
+      <td><p>A2</p></td>
+      <td><p>A3</p></td>
+    </tr>
+    <tr>
+      <td><p>0</p></td>
+      <td><p>25.4</p></td>
+      <td><p>3</p></td>
+      <td><p>3</p></td>
+      <td><p>1.5</p></td>
+    </tr>
+    <tr>
+      <td><p>25.4</p></td>
+      <td><p>50.8</p></td>
+      <td><p>1.5</p></td>
+      <td><p>2.5</p></td>
+      <td><p>1</p></td>
+    </tr>
+    <tr>
+      <td><p>50.8</p></td>
+      <td><p>102</p></td>
+      <td><p>1.0</p></td>
+      <td><p>1.5</p></td>
+      <td><p>1</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p>ここでは、</p>
+<p>H1 = 面の高さ = 最小（超過）</p>
+<p>H2 = 面の高さ = 最大（～まで／以下（含む））</p>
+
+
+<br>
+</body>
+</html>

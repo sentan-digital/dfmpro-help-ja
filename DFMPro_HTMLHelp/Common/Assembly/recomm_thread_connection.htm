@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_22"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Thread Connection</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Recommended Thread Connection "推奨されるネジ接続"</h1>
+<h4>ルール</h4>
+<p>ねじ接続において、雄（外ねじ）側と雌（内ねじ）側のねじは互換性がある必要があります。</p>
+<br>
+
+<h4>説明</h4>
+<p>このルールは、ねじ接続の雄側と雌側のねじに互換性があるかどうかをチェックします。動作中に不適切な接続、亀裂、応力破断などの問題を避けるため、ねじ接続の雄側と雌側では互換性のあるねじ種類／ねじ形状のみを使用することが推奨されます。</p>
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li>接続では同一／互換性のあるねじを使用してください。&nbsp;</li>
+  <li>接続では、平行ねじ同士、テーパねじ同士を使用してください。</li>
+</ul>
+<p>&nbsp;</p>
+
+<h4>構成</h4>
+<p>［ルール構成］ウィンドウでは、<b><i>Check Thread Type</i></b> チェックボックスと <b><i>Exact Match</i></b> ラジオボタンがデフォルトで選択されています。複数のねじ種類が一致した場合、ユーザーは <b><i>Compatible Matches</i></b> ラジオボタンを選択できます。表形式の領域では、セミコロン（;）で区切ることで複数のねじ種類を追加できます。</p>
+<p>同様に、ユーザーは他のチェックボックスを選択して、ねじサイズおよびピッチのデータを比較できます。</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Recommended_Thread_Connection_Exact_Match.png"/>
+  &nbsp;
+  <img alt="" border="1" src="../../assets/images/Common/image/Recommended_Thread_Connection_Compatible_Matches.png"/>
+</div>
+
+<p>&nbsp;</p>
+
+<p>DFMPro は、DFMPro 設定の［アセンブリ］セクションにある <a href="../Getting_Started/DFMPro_Settings.htm#Hardware_Identifier">Hardware Identifier</a> タブでのユーザーの選択に基づいてファスナーを識別します。ユーザーは、Hardware Identifier として Feature Tree オプションまたは Database オプションのいずれかを選択できます。</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Thread_Connection_Settings_CP.png"/>
+</div>
+
+<p>&nbsp;</p>
+
+<p><b>Feature Tree オプション：</b></p>
+<p>ユーザーが <b>Feature Tree</b> オプションを選択した場合、このルールは CAD ファイルから雄ねじおよび雌ねじを読み取ります。</p>
+<p>&nbsp;</p>
+
+<p><b>Database オプション：</b></p>
+<p>ユーザーが <b>Database</b> オプションを選択した場合、DFMPro は DFMPro データベースからハードウェアを読み取ります。このルールは、DFMPro データベースから雄ねじを読み取り、CAD ファイル（ねじ穴パラメータ）から雌ねじを読み取ります。</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Recommended_Thread_Connection_Hardware_database.png"/>
+</div>
+
+<p>&nbsp;</p>
+
+<h4>ねじサイズの入力形式</h4>
+<br/>
+<table align="center" border="1" width="455">
+  <colgroup>
+    <col style="width: 21.486%;"/>
+    <col width="353"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td>
+        <p><strong>入力</strong></p>
+      </td>
+      <td>
+        <p><strong>解釈</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>M10*</p>
+      </td>
+      <td>
+        <p>&nbsp;ねじサイズが M10 で始まる。</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>*M10</p>
+      </td>
+      <td>
+        <p>&nbsp;ねじサイズが M10 で終わる。</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>*M10*</p>
+      </td>
+      <td>
+        <p>&nbsp;ねじサイズに M10 を含む。</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h4>例</h4>
+<br/>
+<div style="text-align:center;">
+  <img alt="" border="0" height="384" src="../../assets/images/Common/image/Recommended_Thread_Connection_Example.jpg" width="541"/>
+</div>
+
+<p>&nbsp;</p>
+
+<p>このルールは次に対して動作します：</p>
+<ul>
+  <li>
+    <p>ねじ情報を持つネイティブ CAD パーツ。</p>
+  </li>
+  <li>
+    <p>標準ねじと記号ねじの両方をサポートするルール（以下で説明）。</p>
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>以下の情報では、このルールがどのように実行されるか、およびサポートされるねじ種類について詳しく説明します。</p>
+<p>&nbsp;</p>
+
+<ol>
+  <li>
+    <p>規格名は、各 CAD システムのねじ定義フィーチャで使用されている名称と正確に一致している必要があります。Creo Parametric の Threaded Hole および Symbolic Thread フィーチャで使用されるねじ規格について、以下の画像の例を参照してください。</p>
+  </li>
+</ol>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Recommended_Thread_Connection_CP1.png"/>
+</div>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Recommended_Thread_Connection_CP2.png"/>
+</div>
+
+<br>
+
+<ol start="2">
+  <li>
+    <p>互換性のある複数の規格は、セミコロン（;）で区切って名称を記載することで指定できます（以下に例を示します）。</p>
+  </li>
+</ol>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Thread_Connection_Semicolon.png"/>
+</div>
+
+<p>&nbsp;</p>
+
+<ol start="3">
+  <li>
+    <p>コンポーネント内のすべてのねじフィーチャ（ねじ穴、化粧ねじなど）を、雄側／雌側の双方についてサポートします。</p>
+  </li>
+</ol>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" height="203" src="../../assets/images/Common/image/Recommended_Thread_Connection_Nuts.jpg" width="811"/>
+</div>
+
+<p>&nbsp;</p>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリパーツ</a>で、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> に基づいて実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.7.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Fillet Radius</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Fillet Radius "フィレット半径"</h1>
+<h4>ルール</h4>
+<p>最小および最大のフィレット半径は、ユーザーが指定した値に従う必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>設計者は、鋭角なコーナーや断面形状の急激な変化を避けなければなりません。また、内側コーナーは可能な限りフィレットを設け、外側コーナーはできるだけ丸み（半径）を付けて設計する必要があります。内側の鋭角コーナーを減らすことで、部品に追加の強度が与えられ、充填性も向上します。</p>
+<p>多くの場合、外側の鋭いエッジは人の安全に関わる問題と関連しています。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>製造プロセスに応じて、部品の内側コーナーおよび外側コーナーには異なる最小および最大のフィレット半径を設定する必要があります。</p>
+<p>一般的なガイドラインでは、内側コーナーの最小フィレット半径は 1.0 mm 以上、最大フィレット半径は 12 mm 以下であることが推奨されています。</p>
+<p>同様に、外側コーナーの最小フィレット半径は 0.25 mm 以上、最大フィレット半径は 12 mm 以下であることが推奨されています。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>規格に基づいて、ユーザーはフィレット半径を設定できます。現在のデフォルト設定の半径は 1.0 mm です。</p>
+<ul>
+  <li><p>ユーザーは、［鋭角エッジを検出］チェックボックスを選択することで、パーツ上の鋭角エッジを確認することもできます。</p></li>
+  <li><p>ユーザーは、凸形状の場合に鋭角エッジを検出するための有効な角度値を設定できます。設定された値に基づいて、DFMPro は鋭角なコーナーを検出します。</p></li>
+</ul>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Fillet Radius Updated Image.png"/></div>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>凸形状のフィレットの場合、本ルールでは解析のために 60～120 度の範囲の半径が使用されます。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Fillet Radius Updated Image 1.png"/></div>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>本ルールは、ミル加工、プラスチック、鋳造、ダイカスト部品に特に適しており、設計者は標準的なフィレット半径を使用し、鋭角なエッジを避けるべきです。</p></li>
+</ul>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Fillet_Radius.bmp"/></div>
+
+<br>
+
+<p>ここで、</p>
+<p>R = 半径</p>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>本ルールは、アセンブリレベルの解析にも対応しています。</p></li>
+<li><p>本ルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリパーツ</a>に対して実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

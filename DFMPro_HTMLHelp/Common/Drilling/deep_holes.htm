@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.6.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Deep Holes</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Deep Holes "深穴加工"</h1>
+<h4>ルール</h4>
+<p>加工が困難な、深くて小径の穴の作成は避けてください。</p>
+<br>
+<h4>説明</h4>
+<ul>
+<li><p>小径ドリルはぶれやすく、破損しやすいため、量産加工には適していません。</p></li>
+<li><p>深穴の加工では、切りくずの排出が困難になります。</p></li>
+<li><p>細くて深い穴は工具のたわみを引き起こし、破損しやすくなるため、工具コストが増加します。</p></li>
+<li><p>深穴加工にはガンドリルなどの特殊加工が必要となり、加工コストが増加します。</p></li>
+</ul>
+<br>
+<h4>推奨事項</h4>
+<ul>
+<li><p>細くて深い穴は避けてください。</p></li>
+</ul>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Deep_Holes1.bmp"/>
+</div>
+<br>
+<ul>
+<li><p>穴径を大きくしてください。</p></li>
+</ul>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Deep_Holes2.bmp"/>
+</div>
+<br>
+<ul>
+<li><p>可能であれば、ボーリング加工による穴を使用してください。</p></li>
+</ul>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Deep_Holes3.bmp"/>
+</div>
+<br>
+<p>一般的な指針として、穴の深さと直径の比率は 8.0 を超えないようにしてください。場合によっては、部品や工具材料に応じて、この比率を 3.0 程度まで低く抑えることが望まれます。</p>
+<br>
+<h4>構成</h4>
+<p>DFMPro は、設定可能な所定の値に対してアスペクト比をチェックすることで、深穴を識別します。アスペクト比は、穴の深さを穴径で割った比率として定義されます。</p>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Deep_Holes_Help.bmp"/>
+</div>
+<br>
+<p>ここで、</p>
+<p>d = 穴径</p>
+<p>h = 穴の深さ</p>
+<br>
+<p>注記:</p>
+<ul>
+<li><p>ドリル工具はデータベースで構成されています。ルールマネージャーダイアログボックスでドリル径を確認するには、<a href="standard_hole_sizes.htm">標準穴径</a>を編集してください。</p></li>
+<li><p>最大ドリル工具径は、<a href="standard_hole_sizes.htm">標準穴径</a>ルール構成で選択されている<b>単位選択</b>オプションに基づいて解析に考慮されます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.7.0_14"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Parallelism Tolerance</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Parallelism Tolerance "推奨平行度公差"</h1>
+<h4>ルール</h4>
+<p>3D CAD上で利用可能な指定幾何公差（GD&amp;T）情報およびPMI情報を特定し、指定値に対してより厳しい公差を検証します。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>平行度公差は、2つの面またはフィーチャが相互に連動して機能し、それらの間で一定の距離を維持する必要がある場合に使用されます。面の平行度は、ある平面が別の平面と一致していることを保証します。また、テーパを防ぐために、穴や円筒の両側面に適用することもできます。</p>
+
+<br>
+
+<ul>
+<li><p><b>面の平行度：</b> 2つの面またはフィーチャ間の平行度を制御します。これは平面度公差と同様に制御され、2つの平行な平面がその公差ゾーンとして機能します。</p></li>
+<li><p><b>軸の平行度：</b> 基準面または基準軸に対して、特定部品の中心軸がどの程度平行であるかを制御します。軸の形状は、理論的に完全に平行な軸の周囲に設定された円筒によって制御されます。</p></li>
+</ul>
+
+<br>
+
+<p>注記：</p>
+<p>平行度は参照されるフィーチャの角度を制御するものではなく、そのフィーチャが収まるべき包絡領域のみを作成します。</p>
+
+<br>
+
+<p>厳しい公差は、製品設計、製造、検査時間に影響を与えます。公差が厳しいことにより、以下の項目が追加され、最終製品コストが増加します。</p>
+<ul>
+<li><p>高度または特殊な検査装置が必要になる</p></li>
+<li><p>工具交換の頻度が増加する</p></li>
+<li><p>最終部品受入れにおける歩留まりが低下する</p></li>
+<li><p>スクラップ率が高くなる</p></li>
+<li><p>原材料使用量が増加する</p></li>
+</ul>
+
+<br>
+
+<p>過度に厳しい公差は、高コストおよび生産性の低下につながります。適切な公差を持つ部品は、優れた嵌合性と機能性を備え、製造効率も向上します。組立工程においては、厳しい公差を持つ部品は組み立てが困難となり、組立コストの増加につながります。</p>
+<p>適切な公差を設定する際には、以下の点を考慮する必要があります。</p>
+<ul>
+<li><p>部品の機能に基づき、重要公差と非重要公差を区別する</p></li>
+<li><p>不必要に厳しい公差を避ける</p></li>
+<li><p>品質コストを最小限に抑える</p></li>
+</ul>
+
+<br>
+
+<p>公差値を定義する前に活用できる有用なヒントを以下に示します。</p>
+
+<ul>
+<li><p>その部品はどのような機能を果たしているか？</p></li>
+<li><p>他の部品と相互作用する部品かどうかを確認する。相互作用しない場合は、厳しい公差を避ける</p></li>
+<li><p>重要寸法を特定し、必要に応じて公差を設定する</p></li>
+<li><p>部品品質を向上させるために、なぜ厳しい公差が必要なのかについて、製造元と十分な情報に基づいた判断を行う</p></li>
+</ul>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、過度に厳しい公差はコスト増加および生産性低下につながります。公差値は、社内の加工能力および検査能力を考慮して設定する必要があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProでは、公差タイプ、部品サイズ範囲、およびそれに対応する公差値を構成することができます。</p>
+
+<br>
+
+<p>部品外形サイズ = 部品のおおよその最大対角長さ</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Tolerance_Common.png"/>
+</div>
+
+<br>
+
+<p>ここで、</p>
+<p>Lt = 長さ</p>
+<p>Wt = 幅</p>
+<p>Ht = 高さ</p>
+<p>Ldt = 部品の対角長さ</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Parallelism_Tolerance.png"/>
+</div>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>CADモデルで指定された公差は、eDrawingsレポートでは表示されません。</p></li>
+<li><p>ルール構成で設定された公差値は、公差ゾーンとして扱われます。</p></li>
+<li><p>このルールは、面やエッジなど、CADフィーチャに関連付け（参照）されている幾何公差のみを考慮します。</p></li>
+<li><p>このルールは、幾何公差を持つ部品モデルに対して実行されます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

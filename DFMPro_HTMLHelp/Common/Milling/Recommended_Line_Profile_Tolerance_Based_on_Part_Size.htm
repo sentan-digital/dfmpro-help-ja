@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_12"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Line Profile Tolerance Based on Part Size</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Line Profile Tolerance Based on Part Size "部品サイズに基づく推奨線輪郭度公差"</h1>
+<h4>ルール</h4>
+<p>このルールは、部品サイズ範囲に基づいて最小の線輪郭度公差値をチェックします。</p>
+<br>
+<h4>説明</h4>
+<p>線輪郭度は、任意のフィーチャ内の任意の線（通常は曲線形状）を囲む公差域を定義します。これは、任意の線形公差に適用できる2次元の公差範囲です。断面形状が真の曲率半径からどの程度変化できるかを規定します。線輪郭度は、自動車のボンネットや航空機の翼などの曲面に適用されます。航空機の翼では、各断面ごとに異なるプロファイル形状が必要となり、各位置で輪郭度公差が公差域内に収まっていることを確認するために、複数回の測定が必要になります。</p>
+<p>厳しい公差は、製品設計、製造、および検査時間に影響を与えます。公差が厳しい場合、次のような要因が追加され、最終的な製品コストが増加します。</p>
+<ul>
+  <li>
+    <p>高度または専用の検査装置が必要になる</p>
+  </li>
+  <li>
+    <p>工具交換の頻度が増加する</p>
+  </li>
+  <li>
+    <p>最終部品の合格率が低下する</p>
+  </li>
+  <li>
+    <p>スクラップ率が高くなる</p>
+  </li>
+  <li>
+    <p>原材料の使用量が増加する</p>
+  </li>
+</ul>
+
+<br>
+
+<p>公差が厳しすぎると、コスト増加と生産性低下につながります。適切な公差を持つ部品は、優れた嵌合性と機能を備え、製造効率も向上します。組立においては、公差が厳しい部品は組み付けが困難になり、組立コストが増加します。</p>
+<p>適切な公差を指定する際には、次の点を考慮する必要があります。</p>
+<ul>
+  <li>
+    <p>部品の機能に基づいて、重要公差と非重要公差を区別する</p>
+  </li>
+  <li>
+    <p>不要に厳しい公差を避ける</p>
+  </li>
+  <li>
+    <p>品質コストを最小限に抑える</p>
+  </li>
+</ul>
+
+<br>
+
+<p>公差値を定義する前に活用できる有用なヒントは次のとおりです。</p>
+<ul>
+  <li>
+    <p>部品はどのような機能を果たすのか？</p>
+  </li>
+  <li>
+    <p>他の部品と相互作用する部品かを確認する。相互作用しない場合は、厳しい公差を避ける</p>
+  </li>
+  <li>
+    <p>重要寸法を特定し、必要に応じて公差を付与する</p>
+  </li>
+  <li>
+    <p>部品品質を向上させるために、なぜ厳しい公差が必要なのかについて、製造業者と十分に検討した上で判断する</p>
+  </li>
+</ul>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、不要に厳しい公差を追加すると、加工時間が増加する可能性があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProでは、公差タイプ、部品サイズ範囲、および対応する公差値をユーザーが設定できます。</p>
+<p>部品外接サイズ = 部品のおおよその最大対角長さ</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Tolerance_Common.png" />
+</div>
+
+<br>
+
+<p>ここで、</p>
+<p>Lt = 長さ</p>
+<p>Wt = 幅</p>
+<p>Ht = 高さ</p>
+<p>Ldt = 部品対角長さ</p>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Line_Profile_Tolerance_Based_on_Part_Size1.png" />
+</div>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Line_Profile_Tolerance_Based_on_Part_Size2.png" />
+</div>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Line_Profile_Tolerance_Based_on_Part_Size3.png" />
+</div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>CADモデルで指定された公差は、eDrawingsレポートには表示されません。</p></li>
+<li><p>ルール構成で設定された公差値は、公差域として扱われます。</p></li>
+<li><p>このルールでは、面やエッジなどのCADフィーチャに関連付け（参照）された幾何公差のみが考慮されます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,23 @@
+(function() {    var toc =  [
+{"name":"ルール (Rules)","type":"item","tilePath":"","description":"","url":"Creo_Parametric/DFMPro_Rules/dfm_rules.htm"},
+{"name":"ルール重要度を定義するためのガイドライン (Guidelines for Defining Rule Criticality)","type":"item","tilePath":"","description":"","url":"Common/DFMPro_Customization/Guidelines_for_Defining_Rule_Criticality.htm"},
+{"name":"積層造形 (Additive Manufacturing)","type":"book","tilePath":"","key":"toc11"},
+{"name":"組立て (Assembly)","type":"book","tilePath":"","key":"toc12"},
+{"name":"ケーブリング (Cabling)","type":"book","tilePath":"","key":"toc13"},
+{"name":"鋳造 (Casting)","type":"book","tilePath":"","key":"toc14"},
+{"name":"ダイカスト (Die Casting)","type":"book","tilePath":"","key":"toc15"},
+{"name":"ドリル加工 (Drilling)","type":"book","tilePath":"","key":"toc16"},
+{"name":"基本設計ルール (General)","type":"book","tilePath":"","key":"toc17"},
+{"name":"射出成形 (Injection Molding)","type":"book","tilePath":"","key":"toc18"},
+{"name":"精密鋳造 (Investment Casting)","type":"book","tilePath":"","key":"toc19"},
+{"name":"フライス加工 (Milling)","type":"book","tilePath":"","key":"toc20"},
+{"name":"砂型鋳造 (Sand Casting)","type":"book","tilePath":"","key":"toc21"},
+{"name":"板金加工 (Sheet Metal)","type":"book","tilePath":"","key":"toc22"},
+{"name":"板金成形 (Sheet Metal Forming)","type":"book","tilePath":"","key":"toc23"},
+{"name":"熱成形 (Thermoforming)","type":"book","tilePath":"","key":"toc24"},
+{"name":"過剰公差チェック (Tolerance)","type":"book","tilePath":"","key":"toc25"},
+{"name":"チューブ配管 (Tubing)","type":"book","tilePath":"","key":"toc26"},
+{"name":"旋盤加工 (Turning)","type":"book","tilePath":"","key":"toc27"},
+{"name":"真空樹脂注入成形 (Vacuum Infusion)","type":"book","tilePath":"","key":"toc28"},
+{"name":"溶接 (Welding)","type":"book","tilePath":"","key":"toc29"}];    
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

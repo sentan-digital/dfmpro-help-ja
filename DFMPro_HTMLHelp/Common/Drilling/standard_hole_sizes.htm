@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.6.0_11"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Standard Hole Sizes</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Standard Hole Sizes "標準穴径"</h1>
+<h4>ルール</h4>
+<p>可能な限り、特殊なドリル工具に伴う追加コストを避けるために、標準のドリルサイズを使用するのが最善です。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>特殊な穴径は、特注ドリル工具の購入費や在庫費用により製造コストを増加させます。</p>
+<p>また、標準穴を使用することで標準サイズのアクセサリを選択しやすくなり、その結果バリエーション（種類）を最小化できます。</p>
+<p>CADモデル内の穴は、データベース内のドリルサイズと比較され、標準穴径かどうかがチェックされます。特定の穴径が見つからない場合、その穴は非標準として報告されます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>製造で利用可能な標準ドリルサイズに従って、パーツ上の穴径を作成することを推奨します。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>デフォルトでは、本ルールは標準ドリルサイズを含む標準穴径のデータベースを構成します。ユーザーがルールマネージャーのダイアログボックスでルールを編集すると、［Standard Hole Sizes］ダイアログボックスが表示されます。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Standard_hole_size.bmp"/>
+</div>
+
+<h4>利用可能なオプション</h4>
+<ul>
+<li><p>［Display］オプションを使用して、MetricテーブルまたはInchテーブル内の値を表示します。</p></li>
+<li><p><strong>［Select］</strong> <em>［All sizes］</em>（drill、clearance drills、tab drills）または <em>［Drill sizes］</em> のサブセットを選択し、穴の検証に使用します。</p></li>
+<li><p><strong><em>デフォルトでは、［Drill sizes］</em></strong> オプションが選択されています。</p></li>
+<li><p>データベースに新しいサイズを追加／既存サイズを削除します。</p></li>
+<li><p><a href="../DFMPro_Customization/using_a_different_database.htm">ユーザー独自のデータベースにアクセスできるようにアプリケーションをカスタマイズします</a>。</p></li>
+</ul>
+
+<br>
+
+<h4>単位選択</h4>
+<ul>
+<li><p><strong>［Select］</strong> <b><em>［Metric］</em></b> を選択すると、穴径の検証時にメートル系ドリルのみを考慮します。</p></li>
+<li><p><strong>［Select］</strong> <b><em>［Inch］</em></b> を選択すると、穴径の検証時にインチ系ドリルのみを考慮します。</p></li>
+<li><p><strong>［Select］</strong> <b><em>［Use Both Units］</em></b> を選択すると、穴径の検証時にメートル系およびインチ系の両方のドリルを考慮します。ドリル径の単位が穴径の単位と異なる場合、比較のためにドリルサイズはドキュメント単位に変換されます。</p></li>
+</ul>
+
+<br>
+
+
+
+
+
+
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>推奨される最も近い値は、テーブルで利用可能なメートル系およびインチ系ドリルの統合リストに基づき、1つの単位（パーツの単位に従う）で表示されます。</p></li>
+</ul>
+
+
+
+<br>
+
+
+<ul>
+<li><p><strong>［Select］</strong> <b><em>［Use Document Units］</em></b> を選択すると、穴径の検証時にドキュメント単位に基づいてドリルを考慮します。例えば、英制（インチまたはフィート）単位のドキュメントでは、インチ系ドリルのみを考慮します。これはデフォルトの選択です。</p></li>
+</ul>
+
+<br>
+
+<h4>ドリル穴 vs ミリング穴</h4>
+<ul>
+<li><p>穴径がデータベースで指定された最大ドリル径を超える場合、その穴はミリング形状として扱われ、ドリル関連ルールは適用されません。</p></li>
+<li><p>最大ドリル径は、Metricテーブルに存在する標準ドリルサイズの最大値に基づき、<strong>Metric unit</strong> 選択に対して決定されます。</p></li>
+<li><p>最大ドリル径は、Inchテーブルに存在する標準ドリルサイズの最大値に基づき、<strong>Inch unit</strong> 選択に対して決定されます。</p></li>
+<li><p>最大ドリル径は、<strong>Use Both Units</strong> の場合、<strong>Metric unit</strong> または <strong>Inch unit</strong> のドリルテーブルのいずれかに存在する標準ドリルサイズの最大値に基づいて決定されます。</p></li>
+<li><p>最大ドリル径は、<strong>Use Document Units</strong> の場合、ドキュメント単位に応じて、<strong>Metric unit</strong> または <strong>Inch unit</strong> のドリルテーブルのいずれかに存在する値に基づいて決定されます。</p></li>
+<li><p>ユーザーが <strong>Metric</strong> オプションを選択した場合、デフォルトの最大ドリル径は 45.0 mm になります。ユーザーが Inch を選択した場合、デフォルトの最大ドリル径は 1.0 Inches になります。</p></li>
+</ul>
+
+<br>
+
+<h4>公差（穴径）</h4>
+<p>このフィールドを使用して、穴サイズとドリルサイズを比較する際のカスタム公差を指定します。比較にはドキュメント単位と同じ単位を使用してください。</p>
+
+<br>
+
+<h2>Excel入力形式</h2>
+<p>ユーザーは <em><strong>［Import］</strong></em> ボタンを使用して、Excelシートのテンプレートにある一括データをインポートできます。</p>
+
+<br>
+
+<p><strong>標準テンプレート形式:</strong></p>
+<table align="center" border="1" cellspacing="0" width="44">
+<colgroup><col width="100%"/></colgroup>
+<tbody>
+<tr><td><p><strong>D</strong></p></td></tr>
+<tr><td><p>0</p></td></tr>
+<tr><td><p>1.0</p></td></tr>
+<tr><td><p>25</p></td></tr>
+</tbody>
+</table>
+
+<br>
+
+
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D または d = 標準穴径</p>
+</div>
+</div>
+
+
+<br>
+</body>
+</html>

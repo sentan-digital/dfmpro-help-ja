@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_33"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Extruded Form Distance To Cutouts</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Extruded Form Distance to Cutouts "押出成形とカットアウト間の距離"</h1>
+<h4>ルール</h4>
+<p>押し出し成形（エクストルード）形状と穴／スロット間の距離は、ユーザー指定値に従っている必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>外観上の変形や損傷などの問題を回避するため、押し出し成形（エクストルード）形状と穴／スロット間の推奨最小距離を維持する必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li><p>押し出し成形（エクストルード）形状と穴の距離を板厚で割った比は、2.0 以上である必要があります。</p></li>
+  <li><p>押し出し成形（エクストルード）形状とスロットの距離を板厚で割った比（スロット長さに基づく）は、ユーザー指定値以上である必要があります。</p></li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro はパーツ上のフォーム形状および穴／スロットを識別し、それぞれの距離を構成値と照合して検証します。スロットの場合、DFMPro はまずスロットの長さを算出し、次に構成された長さの値に基づいてフォーム形状とスロット間の距離を相関付けます。これにより、解析用に検証が行われます。</p>
+<p>ユーザーは、デフォルトで構成されている値を変更できます。</p>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Extruded_Form_to_Cutout_Help.bmp"></div>
+
+<br>
+
+<p><b>ここでは、</b></p>
+<p>D1 = 押し出し成形（エクストルード）形状と穴の最小距離</p>
+<p>D2 = 押し出し成形（エクストルード）形状とスロットの最小距離</p>
+<p>L = スロット長さ</p>
+<p>t = 板厚</p>
+
+<br>
+
+<h2>Excel 入力フォーマット</h2>
+<p>ユーザーは、<b><i>Import</i></b> ボタンを使用して、Excel シートテンプレートに含まれる一括データをインポートできます。</p>
+
+<br>
+
+<p><b>標準テンプレート形式：</b></p>
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col width="57">
+    <col width="57">
+    <col width="57">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight:bold;text-align:center">L1/t</p></td>
+      <td><p style="font-weight:bold;text-align:center">L2/t</p></td>
+      <td><p style="font-weight:bold;text-align:center">D2/t</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-weight:normal;text-align:center">0</p></td>
+      <td><p style="font-weight:normal;text-align:center">10</p></td>
+      <td><p style="font-weight:normal;text-align:center">1</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-weight:normal;text-align:center">10</p></td>
+      <td><p style="font-weight:normal;text-align:center">25</p></td>
+      <td><p style="font-weight:normal;text-align:center">2</p></td>
+    </tr>
+    <tr>
+      <td><p style="font-weight:normal;text-align:center">25</p></td>
+      <td><p style="font-weight:normal;text-align:center"> </p></td>
+      <td><p style="font-weight:normal;text-align:center">2.5</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p>ここでは、</p>
+<p>L1/t および L2/t = スロット長さと板厚の比の範囲</p>
+
+<br>
+
+<p>注記：</p>
+<p>面取り付きのカットアウトもサポートされています。</p>
+<p>次の標準スロット形状がサポートされています。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Supported_shape_of_slots_Extruded_Rule.png"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>L = カットアウトの長さ</p>
+
+
+<br>
+
+</body></html>

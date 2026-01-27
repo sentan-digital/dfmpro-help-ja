@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_22"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Multiple Pulling Directions and Classification of Mold Faces</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+  <style type="text/css">
+    /*<![CDATA[*/
+    li.MsoNormal {
+      mso-style-parent: ;
+      margin-top: 0in;
+      margin-right: 0in;
+      margin-bottom: 10.0pt;
+      margin-left: 0in;
+      line-height: 115%;
+      font-size: 11.0pt;
+      font-family: Calibri, sans-serif;
+    }
+    /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div><h1>複数の抜き方向と金型面の分類</h1><br>
+<p> </p>
+<p>DFMPro は、解析対象のパーツのすべての面を、自動的に Core and Cavity、Cavity and Cavity、Side Action、Others の各グループに分類します。</p>
+<p>典型的なケースでは、いくつかの面を core から cavity へ、cavity から cavity へ、など移動する必要があります。<b>Edit Mold Wall Classification</b> 機能を使用すると、このような面をあるグループから別のグループへ移動できます。</p>
+<p> </p>
+<h2><b>金型分類の編集</b></h2><br>
+<ol>
+<li><p>Entity Selection グループボックスで <strong><i>Edit Classification of Mold Faces</i></strong> チェックボックスを選択して解析を実行すると、Edit Mold Wall Classification グループボックスが表示されます。</p></li>
+<li><p>DFMPro は、すべてのコンポーネント面を自動的に <i>Core and Cavity</i>、<i>Cavity and Cavity</i>、<i>Side Action (1, 2, 3…)</i>、および others に分類します。</p></li>
+</ol>
+<p>注:</p>
+<p>解析後、定義した Secondary の抜き方向の数は、Edit Mold Classification グループボックス内で同数の Side Actions（1, 2, 3…）として分類されます。</p>
+<p> </p>
+<ol start="3">
+<li><p>Primary および Secondary の抜き方向を定義した後、Core and Cavity、Cavity and Cavity、または Side Actions の分類オプションに該当する面が存在しない場合、その分類はグレーアウトされます。さらに、Edit Mold Classification グループボックス内にグループは作成されません。</p></li>
+</ol>
+<p>DFMPro では、面を定義して、あるグループから別のグループへ移動できます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Edit_Mold_Classification_GrayOut_SideAction.jpg"/>
+</div>
+<p> </p>
+<ol start="4">
+<li><p>Groups の下にある対応する面数を確認するには、それぞれの Core、Cavity、または Side Actions ボタンをクリックします。</p></li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Edit_Mold_Classification_Face_count.jpg"/>
+</div>
+<p>注:</p>
+<p><img alt="" border="0" src="../../assets/images/Common/image/refresh_icon.png"/><strong><i>Reset</i></strong> ボタンをクリックすると、変更をデフォルト分類に戻します。Reset ボタンが更新するのは、現在のセッションで適用された変更のみです。</p>
+<p> </p>
+<ol start="5">
+<li><p><strong><i>Core, Cavity, Side Actions</i></strong> などの分類オプションをクリックすると、該当する面グループと抜き方向がグラフィック領域に表示されます。</p></li>
+<li><p>DFMPro では、Core and Cavity または Cavity and Cavity のオプション間でのみ、利用可能なグループ/面を入れ替えることができます。</p></li>
+</ol>
+<ol style="list-style: lower-alpha;">
+<li> <b><i>Core</i></b> または <b><i>Cavity</i></b> オプションを右クリックし、コンテキストメニューから <b><i>Swap Core / Cavity Groups</i></b> ボタンを選択します。</li>
+<li>表示されるメッセージダイアログボックスで <b><i>OK</i></b> ボタンをクリックします。</li>
+<li>利用可能なすべてのグループ/面が、Core と Cavity のオプション間で入れ替えられます。</li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Edit_Mold_Classification_Swap_Groups.jpg"/>
+</div>
+<p>注:</p>
+<p>Thermoforming モジュールでは、Core/Cavity の入れ替え機能はサポートされません。</p>
+<p> </p>
+<ol start="7">
+<li>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Add_Faces_through_Graphical_Selection_icon.png"/> <i>Add / Remove Faces through Graphical Selection</i> オプションを使用すると、グラフィック領域から目的の面を選択し、選択した特定の Group に移動できます。</p>
+<ol>
+<li style="list-style: lower-alpha;"><p><strong><i>Add / Remove Faces through the Graphical Selection</i></strong> オプションをクリックし、コンテキストメニューから目的の Group オプションを選択します。</p></li>
+</ol>
+</li>
+</ol>
+<p>選択したグループに面が存在する場合、それらの面がグラフィック領域でハイライト表示されます。</p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Edit_Mold_Wall_zoom.bmp"/>
+</div>
+<p> </p>
+<ol style="list-style: lower-alpha;">
+<li value="2">グラフィック領域で <strong><i>Ctrl</i></strong> ボタンを使用して <em><strong>複数</strong></em> の面を選択し、マウスの中ボタンをクリックして選択を確定します。</li>
+</ol>
+<p>この操作により、ダイアログボックス内の <strong><i>OK</i></strong> ボタンが有効になります。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Select_Faces_Dialog_Box.png"/>
+</div>
+<p> </p>
+<p><strong><i>OK</i></strong> ボタンをクリックして、選択した面を選択中の Group に移動します。</p>
+<ol start="8">
+<li><p>DFMPro では、グループ/面をある分類オプションから別の分類オプションへ移動できます。<img alt="" border="0" src="../../assets/images/Common/image/Edit_Mold_Classification_DragDrop_icon.png"/> を使用し、<b>Ctrl</b> ボタンで目的の面を選択して <b>ドラッグ＆ドロップ</b> でメインのグループへ移動します。</p></li>
+</ol>
+<ol start="9">
+<li><p>サブグループ名を変更するには、目的のサブグループをダブルクリックするか、キーボードの <b>F2</b> ボタンを押してから、既存の名前を置き換える名前を入力します。キーボードの <strong><i>Enter</i></strong> ボタンを押して新しい名前を保存します。</p></li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Edit_Mold_Classification_Rename.jpg"/>
+</div>
+<p> </p>
+<ol start="10">
+<li><p>すべての抜き方向をグラフィック領域に表示するには、<img alt="" border="0" src="../../assets/images/Common/image/Show_all_pulling_directions_CP.png"/> <b><i>Show all pulling directions</i></b> ボタンをクリックします。</p></li>
+</ol>
+<p>ユーザーは、Mold Wall 面の失敗インスタンスをズームして確認できます。</p>
+<ul>
+<li><a href="DFMPro_Settings.htm#Zoom_on_Failed_Instance_Selection">Zoom on Failed Instance Selection</a> オプションが ON の場合、Zoom ビューには選択した Mold Wall 面が表示されます。</li>
+<li><a href="DFMPro_Settings.htm#Zoom_on_Failed_Instance_Selection">Zoom on Failed Instance Selection</a> オプションが OFF の場合、ユーザーは Mold Wall 面を右クリックしてズームする必要があります。</li>
+</ul>
+<ol start="11">
+<li><p>利用可能な分類に基づいて DFMPro 解析を続行するには、<b><i>OK</i></b> ボタンをクリックします。</p></li>
+<li><p>Mold Wall Classification は、次に関連するさまざまなルールで使用されます:</p></li>
+</ol>
+<ul>
+<li>Draft angles</li>
+<li>Wall thickness</li>
+<li>Surface area</li>
+</ul>
+<p>注:</p>
+<p>パーツが変更され、ユーザーが古い DFMPro 結果をインポートした場合、古い DFMPro 結果に保存されている抜き方向および edit mold wall classification 情報が、解析の再実行時に使用されます。</p>
+<p> </p>
+
+<h2>金型タイプの選択</h2><br>
+<ul>
+<li><p>デフォルトでは Core and Cavity の Mold Types が選択され、金型面は Core and Cavity として分類されます。</p></li>
+<li><p>特定のモデルでは、金型面が Cavity のみに属する場合があります。そのようなモデル向けに Cavity and Cavity のオプションが提供され、金型面は Cavity 1 と Cavity 2 に分類されます。</p></li>
+<li><p>Minimum Draft Angle ルールでは、Cavity and Cavity Mold Type が選択されている場合、キャビティのドラフト角の推奨値が適用されます。</p></li>
+</ul>
+<h2> </h2><br>
+
+<h4><a name="Casting_DieCasting_InjectionMolding_Processes" id="Casting_DieCasting_InjectionMolding_Processes"></a>鋳造、ダイカスト、射出成形プロセス</h4><br>
+<p>選択した Mold Type に基づき、Casting、Die Casting、Injection Molding の各プロセスは Core and Cavity または Cavity and Cavity に分類されます。製造要件に応じて、該当するラジオボタンを選択してください。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Casting.png"/>
+</div>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/IM_Process_corecavity.png"/><img alt="" border="1" src="../../assets/images/Common/image/IM_Process_cavitycavity.png"/>
+</div>
+<p> </p>
+<p> </p>
+
+<h4><a name="Therrmoforming_process" id="Therrmoforming_process"></a>熱成形（Thermoforming）プロセス</h4><br>
+<p>金型面の選択に基づき、Thermoforming プロセスは Male Mold と Female Mold に分類されます。製造要件に応じて、該当するラジオボタンを選択してください。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Thermoforming_Process_CP.png"/>
+</div>
+<p> </p>
+<table align="center" cellspacing="0" width="665">
+<colgroup>
+<col style="width: 50%;"/>
+<col style="width: 57.143%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td><p style="font-weight: bold; text-align: center;">Male Mold</p></td>
+<td><p style="font-weight: bold; text-align: center;">Female Mold</p></td>
+</tr>
+<tr>
+<td>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Thermoforming_MaleMold_Creo.png"/>
+</div>
+</td>
+<td>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Thermoforming_FemaleMold_Creo.png"/>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+
+<h4><a name="Vacuum_Infusion_Process" id="Vacuum_Infusion_Process"></a>真空含浸（Vacuum Infusion）プロセス</h4><br>
+<p>金型面の選択に基づき、Vacuum Infusion プロセスは Internal と External に分類されます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Vacuum_Infusion_Edit_Mold_Classification.png"/>
+</div>
+<p> </p>
+<p> </p>
+
+<h4><a name="Sand_Casting_Process" id="Sand_Casting_Process"></a>砂型鋳造（Sand Casting）プロセス</h4><br>
+<p>金型面の選択に基づき、Sand Casting プロセスは Cope と Drag に分類されます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/SC_Edit_Mold_Classification.png"/>
+</div>
+<p> </p>
+
+<h2> </h2><br>
+<h2>複数の抜き方向と金型面分類の記憶</h2><br>
+<p>複雑なパーツでは、ユーザーが複数の抜き方向と、以前に実施した mold wall classification を指定することがよくあります。その場合、<i>*.dfmr</i> をインポートして解析を再実行することで、入力した抜き方向と mold wall classification を記憶させることができます。</p>
+<p> </p>
+<p>同様に、最初に結果を保存してエクスポートし、2 回目の実行で結果をインポートして解析を再実行すると、DFMPro は以前入力した抜き方向を記憶します。</p>
+<ol style="list-style: lower-alpha;">
+<li style="list-style: upper-alpha;"><p>一度解析を実行すると、DFMPro はユーザーが入力したデータを記憶します。再実行時には、ユーザーはデータを再入力する必要がありません。</p></li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Remember_MPD.bmp"/>
+</div>
+<p> </p>
+<ol start="2" style="list-style: upper-alpha;">
+<li><p>新しい解析を実行する際に、以前に抜き方向として選択されていた面を変更または削除すると、DFMPro はその変更（抜き方向の変更）を赤色でハイライトしてユーザーに通知します。このような場合、ユーザーが入力抜き方向を修正するまで <i>Start Analysis</i> ボタンは無効になります。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Remember_MPD_modified.bmp"/>
+</div>
+<p>注:</p>
+<p>モデルが変更され、ユーザーが以前にエクスポートした結果をインポートすると、背景が黄色で表示されます。</p>
+<p> </p>
+
+
+
+</body></html>

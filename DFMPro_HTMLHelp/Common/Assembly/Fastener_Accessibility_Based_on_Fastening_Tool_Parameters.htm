@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_6"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Fastener Accessibility - Based on Fastening Tool Parameters</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Fastener Accessibility - Based on Fastening Tool Parameters "締結工具寸法に基づく留め具のアクセス性"</h1>
+
+<h4>ルール</h4>
+<p>締結工具のアクセス性パラメータに基づき、このルールはアセンブリ内の留め具のアクセス性をチェックします。</p>
+<br>
+
+<h4>説明</h4>
+<p>留め具にアクセスするためには、締結工具のための十分なスペースが必要であり、これにより締結作業の容易性が向上します。</p>
+<p>&nbsp;</p>
+
+<p><strong>このルールを使用するために、ユーザーは以下の入力を提供する必要があります:</strong></p>
+<p>留め具：ルールを検証するために使用される留め具の種類の名称。</p>
+<p>留め具は <a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェアデータベース</a> を通じて追加する必要があります。</p>
+<p>&nbsp;</p>
+
+<h4>構成</h4>
+
+<ul style="list-style: disc;">
+  <li>
+    <p><strong>Hardware Type</strong> 列は、ハードウェアタイプを構成するために使用されます。ユーザーは名前を入力する際にワイルドカード文字を使用できますが、ハードウェアデータベース内の名称と正しく一致している必要があります。</p>
+  </li>
+  <li>
+    <p><strong>Hardware Size</strong> 列は、ハードウェアサイズを構成するために使用されます。サイズ名にはワイルドカード文字を使用できます。サイズはハードウェアデータベース内のサイズと正しく一致している必要があります。また、同一行内でセミコロン（;）区切りにより複数のサイズを構成できます。</p>
+  </li>
+  <li>
+    <p><strong>Fastening Tool Name</strong> 列は、締結工具の名称を指定するための列です。</p>
+  </li>
+  <li>
+    <p><strong>Fastening Tool Accessibility Parameters</strong> 列は、工具のアクセス性パラメータを構成するために使用されます。ユーザーは、この列の <em><strong>Edit</strong></em> オプションをクリックすることで、アクセス性パラメータを構成できます。</p>
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Fastener_Accessibility_Based_on_Fastening_Tool_Parameters_1.png" />
+</div>
+<p>&nbsp;</p>
+
+<ul style="list-style: disc;">
+  <li>
+    <p>この表では、ユーザーは高さの値とともに直径方向のクリアランスを構成できます。</p>
+  </li>
+  <li>
+    <p>ユーザーは、工具の高さ方向クリアランスおよび工具の直径方向クリアランスを、絶対値として、または以下の表に示すようにハードウェアのヘッド直径に基づく形式で構成できます。</p>
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Fastener_Accessibility_Based_on_Fastening_Tool_Parameters_2.png" />
+</div>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/fastener_accessibility_Tool_Parameters_2.bmp" />
+</div>
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D = 留め具ヘッド直径（例：ボルトヘッド、ねじヘッド、リベット、ナット）</p>
+</div>
+</div>
+<br>
+
+
+
+
+<h4>例</h4>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Fastener_Accessibility_Based_on_Fastening_Tool_Parameters.png" />
+</div>
+
+<br>
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>d1、d2、d3 = 工具の半径方向クリアランス（d）</p>
+<p>h1、h2、h3 = 工具の軸方向クリアランス（h）</p>
+</div>
+</div>
+
+
+<br>
+
+
+
+
+
+
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>「締結工具寸法に基づく留め具のアクセス性」ルールで必須となるフィールドは、<em>Hardware</em> <em>Name</em>、<em>Hardware Type</em>、および <em>Size</em> です。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+</ul>
+
+</body></html>

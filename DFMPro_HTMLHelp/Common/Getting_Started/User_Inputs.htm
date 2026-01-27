@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>User Inputs</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  <h1>ユーザー入力</h1><br>
+<p>ユーザー入力のグループボックスでは、必要に応じて入力値を追加／変更できます。</p>
+<ol>
+<li>
+<p>DFMPro メニューの <img alt="" border="0" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp"/> <strong><i>Start DFMPro</i></strong> をクリックして、DFMPro ユーザーインターフェースを開きます。</p>
+</li>
+<li>
+<p>ユーザー入力のグループボックスで、パーツ／アセンブリを解析するために必要な入力値とパラメータを <strong>追加／変更</strong> します。</p>
+</li>
+<li>
+<p>DFMPro は、実行に進む前に、ユーザーインターフェース下部に設計者向けの提案／必要なアクションを表示します。</p>
+</li>
+</ol>
+
+<h2>ユーザー入力のグループボックス</h2><br>
+<p>このグループボックスでは、必要に応じて入力を定義できます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_CP.png"/>
+</div>
+<ul>
+<li>
+<p><b>ルールファイル構成:</b> ドロップダウンリストからルールファイルを参照して構成します。</p>
+</li>
+<li>
+<p><b>製造プロセス:</b> ドロップダウンリストから適切な製造プロセスを選択します。</p>
+</li>
+</ul>
+<p>Note:</p>
+<p>ルールファイルで選択されたルールに基づき、対応する製造プロセスが実行可能として表示され、その他の製造プロセスは無効化されます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_Manufacturing_Process_CP.png"/>
+</div>
+<p>ルールファイルで一般ルールが選択されている場合、すべての製造プロセスが実行可能として表示されます。</p>
+
+<ul>
+<li>
+<p><b><a href="Analysis_Region.htm">解析領域</a>:</b> 製造プロセスとして <i>Prismatic Mill</i> が選択されている場合に表示されます。種類は次の 2 つです:</p>
+</li>
+</ul>
+<ul>
+<li><b>パーツ全体:</b> このオプションを選択すると、パーツ全体に対して解析が実行されます。</li>
+<li><b>選択領域:</b> このオプションを選択すると、選択した領域に対して解析が実行されます。</li>
+</ul>
+
+<ul>
+<li>
+<p><b>材料:</b> ドロップダウンリストから適切な材料を選択します。</p>
+</li>
+<li>
+<p><b>材料グレード:</b> ドロップダウンリストから適切な材料グレードを選択します。</p>
+</li>
+<li>
+<p><b>地域:</b> 製造施設の所在地をドロップダウンリストから選択します（サポートされる地域は US、Europe、China、India です）。</p>
+</li>
+</ul>
+<p>Note:</p>
+<p>以下に示す入力オプションのうち、地域（Region）までの項目はコスト計算に必要です。すべての入力値はパーツコストの算出に考慮されます。ただし、実行に必要なのは <i>Manufacturing Process</i> と <i>Material</i> の入力のみです。</p>
+
+<ul>
+<li>
+<p><b>コストテンプレート:</b> ドロップダウンリストから適切なレポートテンプレートを選択します。DFMPro では、Cost Administration Vault を通じてテンプレートの追加または変更が可能です。</p>
+</li>
+</ul>
+<p>Note:</p>
+<p>コストテンプレートは Cost ライセンスが利用可能な場合にのみ表示されます。そうでない場合、このオプションは無効化されます。</p>
+
+<ul>
+<li>
+<p><b>ライフサイクル:</b> ドロップダウンリストから製造のライフサイクル年を選択します。</p>
+</li>
+<li>
+<p><b>切断プロセス:</b> 既定の切断プロセスが表示されます。ドロップダウンリストから必要な切断プロセスを選択します。</p>
+</li>
+<li>
+<p><b>キャビティ数:</b> 既定では 1 が表示されます。ドロップダウンリストからキャビティ数を選択します。</p>
+</li>
+<li>
+<p><b>工具（ツーリング）コスト:</b></p>
+</li>
+</ul>
+<ul>
+<li><span style="font-weight: bold;">Automatic:</span> 入力に基づいてツーリングコストが自動計算されます。</li>
+<li><span style="font-weight: bold;">Manual:</span> ツーリングコストの入力値を手動で入力します。</li>
+</ul>
+
+<ul>
+<li>
+<p><b>バッチ数量:</b> 1 バッチで製造されるパーツ数を入力します。</p>
+</li>
+<li>
+<p><b>年間数量:</b> 年間を通じて製造されるパーツ数を入力します。</p>
+</li>
+<li>
+<p><strong>ストック種別</strong>: 製造プロセスとして <i>Prismatic Mill</i> が選択されている場合に表示されます。ドロップダウンリストから指定の <i>Stock type</i> を選択するか、ストック数を定義します。ドロップダウンリストには 5 種類の <i>Stock Type</i> があります。既定では常に <i>Standard</i> が選択されます。</p>
+</li>
+</ul>
+<p><i>Custom</i> オプションが選択されると、ユーザーは加工に必要となる金額を入力できます。たとえば通貨が USD に設定されているときに 1000 を入力すると、材料費として 1000 USD がそのまま考慮されます。</p>
+<p>Note:</p>
+<p>金額（数値）は 12 桁を超えて入力しないでください（例: 999999999999）。追加の数字を入力しようとすると、DFMPro は警告として数値を赤色（RED）で表示し、以下の画像のように Analysis ボタンを無効化します。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_StockType_1.png"/>
+<img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_StockType_2.png"/>
+</div>
+<p>数値の代わりに他の変数を入力しようとすると、DFMPro は警告として変数を赤色（RED）で表示し、それらは解析されません。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_StockType_3.png"/>
+</div>
+
+<ul>
+<li>
+<p><span style="font-weight: bold;"><a href="Assembly_Analysis_Selection.htm">アセンブリ解析</a></span>: 製造プロセスとして <span>Assembly</span> が選択されている場合に表示されます。種類は次の 2 つです:</p>
+</li>
+</ul>
+<ul>
+<li><b>アセンブリ全体:</b> このオプションを選択すると、アセンブリ全体に対して解析が実行されます。</li>
+<li><b>事前選択コンポーネント:</b> このオプションを選択すると、選択したコンポーネントに対して解析が実行されます。</li>
+</ul>
+
+<ul>
+<li>
+<p><span style="font-weight: bold;">切断プロセス:</span> 製造プロセスとして <span>Sheet Metal</span> が選択されている場合にのみ表示されます。その他の必要入力は Prismatic Milling と同じです。切断プロセスは 4 種類あります: <i>Default</i>、<i>Water Jet</i>、<i>Laser</i>、<i>Plasma Cutting</i>。</p>
+</li>
+</ul>
+<p>既定では、切断プロセスに <i>Water jet</i> が設定されています。ドロップダウンリストから必要な切断プロセスを選択します。</p>
+
+<ul>
+<li>
+<p><span style="font-weight: bold;">サブプロセス:</span> 製造プロセスとして <span>Additive Manufacturing</span> が選択されている場合に表示されます。サブプロセスの種類は <i>Default</i>、<i>FDM (Fusion Deposition Modeling)</i>、<i>SLS (Selective Laser Sintering)</i>、<i>SLA (Stereolithography)</i> です。</p>
+</li>
+</ul>
+<p>Additive Manufacturing プロセスには、以下に示す 3 種類のルールがあります:</p>
+<p><b>1) 材料およびサブプロセスに依存しない</b></p>
+<ul>
+<li><a href="../Additive_Manufacturing/Avoid_Sharp_Edges.htm">Avoid Sharp Edges</a></li>
+<li><a href="../Additive_Manufacturing/Mimimum_Gap_Bitween_Faces.htm">Gap Between Faces</a></li>
+<li><a href="../Additive_Manufacturing/Thickness_Bet_Faces.htm">Thickness Between Faces</a></li>
+</ul>
+<p><b>2) 材料固有</b></p>
+<ul>
+<li><a href="../Additive_Manufacturing/faces_requiring_support.htm">Faces Requiring Support</a></li>
+<li><a href="../Additive_Manufacturing/Recommended_Angular_Tolerance.htm">Recommended Angular Tolerance</a></li>
+<li><a href="../Additive_Manufacturing/maximum_hole_size.htm">Recommended Hole Sizes</a></li>
+<li><a href="../Additive_Manufacturing/Recommended_Pin_Diameter_Additive_Manufacturing.htm">Recommended Pin Diameter</a></li>
+</ul>
+<p><b>3) プロセス固有</b></p>
+<ul>
+<li><a href="../Additive_Manufacturing/Maximum_Print_Size.htm">Maximum Print Size</a></li>
+<li><a href="../Additive_Manufacturing/Minimum_Wall_Thickness.htm">Minimum Wall Thickness</a></li>
+<li><a href="../Additive_Manufacturing/Recommended_Text_Parameters.htm">Recommended Text Parameters</a></li>
+</ul>
+<p>ドロップダウンリストから必要な <strong><i>Sub Process</i></strong> を選択します。既定ではサブプロセスに <i>Default</i> が選択されます。DFMPro は選択に基づき、Additive Manufacturing のルールおよび該当するサブプロセス固有ルールで解析を実行します。</p>
+
+<ul>
+<li>
+<p><b>DFMPro の実行に進むにはクリック</b> <img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"/>。</p>
+</li>
+<li>
+<p>DFMPro の実行をキャンセルするにはクリック <img alt="" border="0" height="42" src="../../assets/images/Common/image/Cancel_Run_button.png" width="43"/>。</p>
+</li>
+</ul>
+
+
+</body></html>

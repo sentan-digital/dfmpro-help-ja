@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_19"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="build tags" content="English_CP,English_CATIA"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Bolted Joints</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Recommended Bolted Joints "推奨ボルト締結数"</h1>
+<h4>ルール</h4>
+<p>部品あたりのボルト締結数は、ユーザーが指定した値に従う必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>多くの組織では、異なるバージョンやシリーズを持つ類似製品を、部品の修正または置き換えによって製造しています。これは、市場の需要に応じて異なる機能を異なるコストで提供するために実施されています。</p>
+<p>締結具の数が多すぎると、組立作業に過剰な時間がかかり、穴あけやタップ加工に多大なコストが発生します。また、ボルト選定のばらつきによって潜在的なミスの可能性が増加し、品質問題の増加にもつながります。</p>
+<br>
+<h4>構成</h4>
+<p>DFMProはアセンブリ内のボルトを識別します。部品あたりのボルト締結数を検証し、その値をルールマネージャーで設定された構成値と照合します。</p>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Bolted_Joints.bmp"/>
+</div>
+
+<br>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ パーツ</a>で実行できます。</p></li>
+<li><p>トップレベルまたは全レベルでの識別については、本ルールでは個別ルールの構成がDFMPro 設定よりも優先されます。詳細については、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>セクションを確認してください。</p></li>
+<li><p>このルールを実行するには、<a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェア データベース</a>の「ハードウェア名」および「ハードウェア種別」フィールドの入力が必須です。</p></li>
+<li><p>本ルールは、ハードウェア種別として「Bolt」および「Screw」のみをサポートします。</p></li>
+<li><p>ユーザーは、コンポーネント名を構成する際にワイルドカード文字を使用できます:</p></li>
+</ul>
+
+<ol><ol class="note-body">
+<li><p>*dia*（コンポーネント名に dia または DIA を含む）</p></li>
+<li><p>*_dia（名前が _dia または DIA で終わる）</p></li>
+<li><p>dia*（名前が dia または DIA で始まる）</p></li>
+</ol></ol>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Assembly Analysis Selection</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>アセンブリ解析の選択</h1>
+<p>アセンブリの場合、DFMProでは <b><i>アセンブリ全体</i></b> または <b><i>事前選択コンポーネント</i></b> に対して解析を実行できます。</p>
+<p><a href="DFMPro_Settings.htm">DFMPro 設定</a> で <a href="DFMPro_Settings.htm#Assembly">アセンブリ事前選択オプション</a> が選択されている場合のみ、ドロップダウンリストに「事前選択コンポーネント」オプションが表示されます。それ以外の場合は、「<i>アセンブリ全体</i>」オプションのみが使用可能です。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Asm_General_Tab_CP.png"></div>
+
+
+<br>
+
+<h2>アセンブリ解析</h2>
+<p>アセンブリ解析として <strong><i>アセンブリ全体</i></strong> または <strong><i>事前選択コンポーネント</i></strong> を選択し、<img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>解析</i></strong> ボタンをクリックして解析を実行します。</p>
+<p>DFMPro は、ルールファイル内で選択された Assembly "組立て"、Tubing "チューブ配管"、Cabling "ケーブリング"、Welding "溶接" モジュール向けのアセンブリ固有ルールを解析し、統合された結果を表示します。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Component_Selection_Ass_Analysis_options.png"></div>
+
+<br>
+
+
+<ul>
+  <li>
+    <p><b>アセンブリ全体:</b> ドロップダウンリストからこの機能を選択すると、アセンブリ全体に対して解析を実行します。</p>
+  </li>
+  <li>
+    <p><b>事前選択コンポーネント:</b> ドロップダウンリストからこの機能を選択すると、選択したコンポーネント／サブアセンブリに対して解析を実行します。<strong><i>解析</i></strong> ボタンをクリックすると、必要なコンポーネント／サブアセンブリを選択するためのコンポーネント選択グループボックスが表示されます。</p>
+  </li>
+</ul>
+
+<br>
+
+<p>注記:</p>
+<li><p>一般ルールは、事前選択されたコンポーネントに依存せず、アセンブリ内のすべてのコンポーネントに適用されます。</p></li>
+
+<br>
+
+<h2><a id="Different_ways_to_select_the_components_sub-assemblies"></a>コンポーネント／サブアセンブリを選択するさまざまな方法</h2>
+<p>解析を実行するために、コンポーネント選択グループボックスから単一または複数のコンポーネント／サブアセンブリを選択します。</p>
+
+<br>
+
+
+<h4><b>方法 1：コンポーネント選択ダイアログボックスを使用する</b></h4>
+<p>DFMPro はモデルツリーに基づいてコンポーネントの一覧を生成します。コンポーネント選択グループボックスに表示されるリストから必要なコンポーネントを選択します。選択されたコンポーネントはグラフィック領域でハイライト表示されます。</p>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>解析</i></strong> ボタンをクリックして、選択したコンポーネント／サブアセンブリの解析を実行します。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Component_Selection_group_box.png"></div>
+<p> </p>
+
+<h4><b>方法 2：グラフィック領域／モデルツリーから選択する</b></h4>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Select_Components_from_Graphics_or_Model_Tree_button.png"> <b><i>グラフィックまたはモデルツリーからコンポーネントを選択</i></b> ボタンをクリックして、グラフィック領域およびモデルツリーの選択モードを有効にします。</p>
+
+<p>要件に応じて、グラフィック領域から <em><strong>単一</strong></em> または <em><strong>複数のコンポーネント</strong></em> を選択します。DFMPro では、グラフィック領域でのウィンドウ選択による複数コンポーネントの選択も可能です。</p>
+
+<p>または</p>
+
+<p>モデルツリーから必要なコンポーネントを選択します。</p>
+
+<p>必要なコンポーネントを選択した後、選択ダイアログボックス内の <strong><i>OK</i></strong> ボタンをクリックするか、マウスの中ボタンをクリックして選択モードを終了し、選択を確定します。その後、<img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>解析</i></strong> ボタンをクリックして、選択したコンポーネント／サブアセンブリの解析を実行します。</p>
+
+<p> </p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Component_Selection_Select_dialog_box.png"></div>
+<p> </p>
+
+<p><b>選択されたすべてのコンポーネントを表示:</b> <img alt="" border="0" src="../../assets/images/Common/image/Show_All_the_Selected_Components_button.png"> <b><i>選択されたすべてのコンポーネントを表示</i></b> ボタンを選択すると、選択されたすべてのコンポーネントがグラフィック領域でハイライト表示され、確認できます。</p>
+
+<br>
+
+<h2>コスト結果</h2>
+<p>コストタブのコンポーネントコストビューグループボックスでは、解析が実行された選択コンポーネントのみについて、数量および単価が表示されます。</p>
+
+<br>
+
+<h2>解析の再実行</h2>
+<p>DFMPro では、同一セッション内において、必要なコンポーネントを再度選択する手順を繰り返すことなく、保存されたアセンブリに対して解析を再実行できます。</p>
+
+<br>
+
+<h2>Excel レポート</h2>
+<p>DFMPro の解析レポートには、アセンブリ解析で選択されたオプションが表示されます。</p>
+
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Component_Selection_Excel_Report.png"></div>
+
+
+
+</body></html>

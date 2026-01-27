@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_31"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Cost Results</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>コスト結果</h1>
+<p>DFMPro の実行後、コスト解析結果は［Cost］タブに表示されます。これは <i>Cost Overview</i> と <i>Cost View.</i> に分かれます。</p>
+<p><b>Cost Overview と View のオプションは、<a href="#Part_Cost_Overview">Part</a> と <a href="#Assembly_Cost_Overview">Assembly</a> で異なります。</b></p>
+
+<br>
+
+<p>注記:</p>
+<p>Cost ライセンスが利用可能な場合のみ Cost 結果が表示されます。利用できない場合は空白になります。</p>
+
+<br>
+
+<h2><a name="Part_Cost_Overview" id="Part_Cost_Overview"></a>Part - Cost Overview</h2>
+<p>Cost Overview には、<i>Raw Material Shape, Raw Material Cost</i>、<i>Process Cost</i>、および <i>Total Cost</i> の概要値が表示されます。<img alt="" border="0" src="../../assets/images/Common/image/Cost_Overview_Save_button.png"/> <strong><i>Save</i></strong> ボタンをクリックすると、コスト結果をデータベースに保存します。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_1.png"/>
+</div>
+
+<br>
+
+<h2>Part - Cost View</h2>
+<p>DFMPro では、コスト結果をさまざまな形式で表示できます。View グループボックスで任意の View 形式を選択します。</p>
+
+<br>
+
+<p>View 形式は 4 種類あります:</p>
+<ul>
+  <li><a href="#Part_High_Cost_Feature_View_format">High Cost Feature</a></li>
+  <li><a href="#Part_Feature_Graph_View_format">Feature Graph</a></li>
+  <li><a href="#Part_Operation_Details_View_format">Operation Details</a></li>
+  <li><a href="#Part_Contribution_Chart_View_format">Contribution Chart</a></li>
+</ul>
+
+<br>
+
+<p>デフォルトでは、<i>High Cost Feature</i> の View 形式が表示されます。</p>
+
+<br>
+
+<h4><a name="Part_High_Cost_Feature_View_format" id="Part_High_Cost_Feature_View_format"></a>High Cost Feature View format</h4>
+<p>High Cost Feature の View 形式では、フィーチャー単位のコスト結果が表示されます。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_2.png"/>
+</div>
+
+<br>
+
+<p><strong><i>Potential Cost Saving</i></strong> の比較が利用可能なリスト内の任意の Feature をクリックすると、詳細なコスト比較と潜在的な削減額を表示できます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" src="../../assets/images/Common/image/Potentail_Cost_Saving.png"/>
+</div>
+
+<br>
+
+<p><b>Potential Cost Saving のビューは、次のルールにのみ適用されます:</b></p>
+
+<br>
+
+<ul>
+<li><p><b>Milling</b></p></li>
+</ul>
+<ul><ul>
+  <li><a href="../Milling/deep_radiused_corners.htm">Deep Radiused Corners</a></li>
+  <li><a href="../Milling/fillets_on_top_edges.htm">Fillets on Top Edges</a></li>
+  <li><a href="../Milling/sharp_internal_corners.htm">Sharp Internal Corners</a></li>
+</ul></ul>
+
+<ul>
+<li><p><b>Drilling</b></p></li>
+</ul>
+
+<ul><ul>
+  <li><a href="../Drilling/Recommended_Tolerances_for_Holes.htm">Recommended Tolerances for Holes</a></li>
+</ul></ul>
+
+<ul>
+<li><p><b>Sheet Metal</b></p></li>
+</ul>
+
+<ul><ul>
+  <li><a href="../Sheet_Metal/minimum_hole_diameter.htm">Minimum Hole Diameter</a></li>
+</ul></ul>
+
+<br>
+
+<h4><a name="Part_Feature_Graph_View_format" id="Part_Feature_Graph_View_format"></a>Feature Graph View format</h4>
+<p>Feature Graph の View 形式では、フィーチャー単位のコスト結果が、グラフ形式で降順に表示されます。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_3.png"/>
+</div>
+
+<h4><a name="Part_Operation_Details_View_format" id="Part_Operation_Details_View_format"></a>Operation Details View format</h4>
+<p>Operation Details の View 形式では、パーツの製造に必要なオペレーション数と、各工程フェーズの概算コスト見積りが表示されます。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_4.png"/>
+</div>
+
+<p>必要に応じて、DFMPro では任意のオペレーションを <i>追加/削除</i> できます。オペレーションを右クリックし、ドロップダウンメニューから <b><i>Add Operation</i></b> または <b><i>Delete</i></b> を選択します。</p>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Cost_Results_5.png"/>
+</div>
+
+<p>プラス記号をクリックして <i>Operation</i> を展開すると、オペレーションに関連する他の詳細を表示できます。</p>
+
+<div style="text-align:center;">
+<img alt="" src="../../assets/images/Common/image/Cost_Results_6.png"/>
+</div>
+
+<h4><a name="Part_Contribution_Chart_View_format" id="Part_Contribution_Chart_View_format"></a>Contribution Chart View format</h4>
+<p>Contribution Chart の View 形式では、<i>Raw material</i> と <i>Process cost</i> の比較結果が表示されます。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_7.png"/>
+</div>
+
+<h2>Part - Cost Indicator</h2>
+<p><i>Cost indicators</i> は 3 種類あります:</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_9.png"/>
+</div>
+
+<h4>Target Cost Indicator</h4>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Red.png"/> : 目標コストに対する乖離を確認するために使用します。</p>
+
+<h4>Cost Trend Indicator</h4>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Green.png"/> : 前回のコスト解析と比較するために使用します。</p>
+
+<h4>Currency</h4>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Blue.png"/> : コスト計算に使用する通貨種別を定義します。</p>
+
+<h2><a name="Assembly_Cost_Overview" id="Assembly_Cost_Overview"></a>Assembly - Cost Overview</h2><br>
+<p>Assembly のロールアップ処理による Cost Overview 結果が表示されます。これは <i>Part Cost</i>、<i>Assembly Cost</i>、および <i>Total Cost</i> で構成されます。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Ass_1.png"/>
+</div>
+
+<h2>Assembly - Cost Views</h2>
+<p>DFMPro では、コスト結果をさまざまな形式で表示できます。</p>
+<ul>
+  <li><a href="#Ass_Component_Cost_View">Component Cost View</a></li>
+  <li><a href="#Assembly_Tree_view_format">Assembly Tree View</a></li>
+  <li><a href="#Ass_Contribution_Chart_view_format">Contribution Chart</a></li>
+</ul>
+
+<br>
+
+<h4><a name="Ass_Component_Cost_View" id="Ass_Component_Cost_View"></a>Component Cost View</h4>
+<p>Component Cost View の形式では、コンポーネント単位のコスト結果が表示されます。</p>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Ass_3.png"/>
+</div>
+
+<h4><a name="Assembly_Tree_view_format" id="Assembly_Tree_view_format"></a>Assembly Tree View format</h4>
+<p>このビューでは、アセンブリの詳細なツリービューが表示され、コストの変更が可能です。</p>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>Make コンポーネントの Part Cost は GUI でのみ変更できます。</p></li>
+<li><p>Assembly Costs はルートレベルで変更できます。</p></li>
+<li><p>Buy コンポーネントの Part Cost はデータベースでのみ変更できます。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Ass_2.png"/>
+</div>
+
+<br>
+
+<h4><a name="Ass_Contribution_Chart_view_format" id="Ass_Contribution_Chart_view_format"></a>Contribution Chart view format</h4>
+<p>各コンポーネントのコスト寄与度とアセンブリコストの比較が表示されます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Cost_Results_Ass_4.png"/>
+</div>
+
+</body></html>

@@ -1,0 +1,1 @@
+rh._.exports({"0":[[" ","Cabling Part Tutorial"]],"1":[[" ","Cabling Part Tutorial"]],"2":[[" ","The workflow for a Cabling part is the same as for a"," ","Prismatic Milled Part","."," ","Note:"," ","Before running the analysis for a Cabling part, set Manufacturing Process option to a ","Cabling"," in the Inputs group box of DFMPro User Interface."]],"id":"243"})

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_92"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Punch Parameters</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Punch Parameters "推奨パンチ寸法"</h1>
+<h4>ルール</h4>
+<p>追加の工具費および在庫コストを回避するために、パンチ工具の形状およびサイズは標準に従う必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>各組織には、標準のパンチ／ダイ形状およびサイズの独自のセットがあります。任意のコンポーネントを設計する際、設計者が在庫にあるパンチ形状およびサイズの情報を把握していれば、フィーチャ設計に対応する最も近い標準工具を特定するのに役立ちます。</p>
+<p>フィーチャ設計に何らかのばらつきがある場合、設計者は非標準のパンチ形状／サイズで進めるか、工具費および在庫コストを削減するために利用可能な標準サイズに合わせて設計を修正するかを判断できます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>このルールは、正方形、丸形、オブロング、六角形、皿穴など、さまざまな形状タイプに対して、許容される標準パンチパラメータを絶対値として指定できるように構成できます。</p>
+
+<br>
+
+<p>注:</p>
+<p>ルール構成ダイアログボックスで長方形パンチが構成されていない場合（正方形パンチのみが構成されている場合）、長方形の切り欠きはニブリング加工で製造できます。長方形の切り欠きに対して、このルールは長方形の最小幅を用いて正方形パンチを推奨します。長方形切り欠きの幅が正方形パンチと一致する場合、長方形切り欠きが正方形パンチを用いたニブリング加工で製造されるものとして、このルールは合格になります。</p>
+<p>ルール構成ダイアログボックスで長方形パンチが構成されている場合、長方形切り欠きの幅または長さのいずれかが標準の長方形パンチと一致することを前提に、長方形の切り欠きはニブリング加工で製造できます。</p>
+<p>ルール構成ダイアログボックスで正方形パンチと長方形パンチの両方が構成されている場合、このルールは個別に検証されます。</p>
+<ul>
+<li>正方形の切り欠きは標準の正方形パンチで検証されます。</li>
+<li>長方形の切り欠きは標準の長方形パンチで検証されます。</li>
+</ul>
+
+<br>
+
+<p>角R付きの長方形切り欠きでは、非標準の丸パンチに対してこのルールは不合格を示します。角R付きの長方形切り欠きは、正方形または長方形パンチによるニブリング加工で製造できますが、角部の非標準Rは達成できないため、このような場合は不合格になります。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Punch_Parameter_Rect_Cutout_1.png"/>
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Punch_Parameter_Rect_Cutout_2.png"/>
+</div>
+
+<br>
+
+<p>穴径がデータベース内の最大丸パンチ径より大きい場合、このルールはニブリング加工で穴を製造するために最大パンチ径を考慮します。</p>
+<p>オブロング形状および六角形状については、ルール構成ダイアログボックスに移動して標準パンチ値を参照してください。</p>
+<p>Pre Loading: ルール構成ダイアログボックスで、すでにロード済みのパンチに対する YES／NO の状態をユーザーが構成できます。</p>
+
+<br>
+
+<h4>例</h4>
+<p>次の標準切り欠きがサポートされています:</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Punch_Para_CP_Shapes1.png"/>
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>W = 幅</p>
+<p>L = 長さ</p>
+<p>D = 穴径（丸パンチ）</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Punch_Para_CP_Shapes2.png"/>
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>L = 長さ（オブロングパンチ）</p>
+<p>W = 幅（オブロングパンチ）</p>
+<p>D = 対角点間距離（六角パンチ）</p>
+<p>d = 平行辺間距離（六角パンチ）</p>
+<p>D = 皿穴径（皿穴パンチ）</p>
+<p>d = 穴径（皿穴パンチ）</p>
+
+<br>
+
+<p>注:</p>
+<p>DFMPro では、K 係数のデフォルト値は 0.5 です。</p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/K_Factor_Img.png"/>
+</div>
+
+<br>
+
+<h2>Excel 入力形式</h2>
+<p>ユーザーは、<strong><em>Import</em></strong> ボタンを使用して、Excel シートテンプレートに存在する一括データをインポートできます。</p>
+
+<br>
+
+<p><strong>標準テンプレート形式:</strong></p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Punch_Para_Import_excel_Hex.png"/>
+</div>
+
+
+<br>
+
+</body></html>

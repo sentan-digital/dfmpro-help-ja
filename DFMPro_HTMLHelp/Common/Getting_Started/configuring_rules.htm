@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_8"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Configuring Rules</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  <h1>ルールの構成</h1>
+<p>ルール構成は通常、一度だけ実施する作業であり、組織内の製造エンジニアやシニア設計エンジニアが担当します。</p>
+<p>ルールマネージャーダイアログボックスでは、解析対象とするルールの選択／解除や、既定のルール構成値の編集が可能です。</p>
+
+<br>
+
+
+<p><b>ルールマネージャーダイアログボックスを開くには、以下のいずれかの方法を使用します：</b></p>
+<ul>
+  <li>
+    <p><img alt="" border="0" src="../../assets/images/Common/image/New_RuleMgr_SW.bmp"> DFMPro メニュー上の <strong><i>DFMPro ルールマネージャー</i></strong> ボタンをクリックします。</p>
+  </li>
+  <li>
+    <p><strong><i>DfmProRuleBuilderu.exe</i></strong> を右クリックし、コンテキストメニューから <strong><i>管理者として実行</i></strong> を選択します。ファイルの場所は以下のとおりです。</p>
+  <p><i>C:\Program Files\Geometric\DFMPro for Creo Parametric(x64)\DFMPro</i></p></li>
+</ul>
+
+
+<br>
+
+<h2>ルールを構成する手順：</h2>
+<ol>
+  <li><p>ルールマネージャーダイアログボックスのタイトルバーに、正しいルールファイルが表示されていることを確認します。</p></li>
+  <li><p>任意のヘッダー列をクリックすると、上矢印 <img src="../../assets/images/Common/image/Up_Arrow_Sorting_Header_Rule_Manager.png"> または下矢印 <img src="../../assets/images/Common/image/Down_Arrow_Sorting_Header_Rule_Manager.png"> が表示され、ルール、カテゴリ、モジュール、重要度、カスタムメッセージの各列をアルファベット順に並べ替えることができます。</p></li>
+  <li><p><a name="HightLight" id="HightLight"></a>一覧から目的のルールをハイライトし、ダブルクリックするか、<img alt="" border="0" src="../../assets/images/Common/image/toolbarimage.bmp"> <strong><i>ルールを構成</i></strong> ボタンをクリックして、ルール構成ダイアログボックスを開きます。</p>
+      <p>DFMPro では、値の構成欄をクリックすることで、推奨値およびアラートのしきい値を設定できます。</p>
+      <p>たとえば、最小厚さおよび最大厚さに対して、推奨値とアラートのしきい値を設定できます。</p></li>
+</ol>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/ConfiguringRules_Alert_CP.png"></div>
+
+<br>
+
+<p>結果は、推奨値およびアラート値に基づいて分類されます。最小厚さが 5.0 mm 未満の場合は推奨事項として分類され、5.0 mm～10.0 mm の範囲の値はアラートとして分類されます。</p>
+
+<p><i><a href="../../Creo_Parametric/DFMPro_Rules/dfm_rules.htm#listofsupportedrules">推奨事項およびアラートに対応するルールの一覧は、(*) 印で示されています。</a></i></p>
+
+<br>
+
+<ol start="3">
+  <li value="4"><p>必要に応じて値を変更し、<strong><i>OK</i></strong> ボタンをクリックします。</p></li>
+  <li><p><a name="Highlight_a_rule_in_the_list__then_right-click_and_reset_to_default._The_modified_configured_value_is_then_reset_to_the_default_value." id="Highlight_a_rule_in_the_list__then_right-click_and_reset_to_default._The_modified_configured_value_is_then_reset_to_the_default_value."></a>ルールマネージャーダイアログボックスで、一覧内の <em><strong>ルール</strong></em> をハイライトし、右クリックします。</p></li>
+  <li><p>コンテキストメニューから <strong><i>既定値にリセット</i></strong> を選択します。変更されたルール構成値は既定値に戻されます。</p></li>
+</ol>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/ResetToDefImage.png"></div>
+<p> </p>
+
+<ol start="6">
+  <li value="7"><p><strong><i>保存</i></strong> ボタンをクリックして、変更内容をファイルに保存します。</p></li>
+  <li><p><a name="CtrlF" id="CtrlF"></a><b>Ctrl+F</b> を使用して、ルールマネージャーダイアログボックス内でルール名をすばやく検索するか、<img alt="" border="0" src="../../assets/images/Common/image/Search_button_Rule_Manager.png"> <em><strong>検索</strong></em> ボタンをクリックします。</p></li>
+</ol>
+
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Ctrl F.bmp"></div>
+
+
+<br>
+
+<h2>ルールのパラメータを構成する</h2>
+<p><b>期待値</b></p>
+<p>一部のルールでは、パーツ内のパラメータを算出し、その値を期待値と比較します。必要に応じて、この期待値を変更してください。</p>
+
+<p>ルールマネージャーダイアログボックスで単位系を変更するには、<img alt="" border="0" src="../../assets/images/Common/image/Rule_Inputs_Units_button.png"> <strong><i>ルール入力単位</i></strong> ボタンをクリックします。DFMPro では、企業標準に合わせて <a href="rule_input_units.htm">単位を設定</a> できます。</p>
+
+<br>
+
+<p><b>重要度</b></p>
+<p>ルールの重要度を指定します。</p>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>以下のアセンブリルールでは、<i>既定値にリセット</i> は <b>サポートされていません</b>。</p></li>
+</ul>
+<ul><ul>
+  <li><a href="../Assembly/fastener_clearance.htm">ファスナークリアランス</a></li>
+  <li><a href="../Assembly/fastener_engagement_length.htm">ファスナーかみ合い長さ</a></li>
+  <li><a href="../Assembly/check_pref_comp.htm">推奨コンポーネントのチェック</a></li>
+</ul></ul>
+
+
+<br>
+</body>
+</html>

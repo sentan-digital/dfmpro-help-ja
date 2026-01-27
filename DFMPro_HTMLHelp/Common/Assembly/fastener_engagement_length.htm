@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_8"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Fastener Engagement Length</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Fastener Engagement Length "留め具かみ合い長さ"</h1>
+<h4>ルール</h4>
+<p>留め具かみ合い長さ（留め具と対応する穴の軸方向の重なり量）は、ユーザー指定値以上である必要があります。</p>
+<p>&nbsp;</p>
+<h4>説明</h4>
+<p>ユーザーは、ルールに対して以下の入力を指定する必要があります。</p>
+<ol style="list-style: decimal;">
+  <li>
+    <p><b>Fastener</b> - ルールを検証するための留め具名です。ドロップダウンリストから留め具を選択します。リストには <a href="../DFMPro_Customization/Hardware_Database.htm">Hardware Database</a> のデータが読み込まれて表示されます。</p>
+  </li>
+  <li>
+    <p><b>Engagement length</b> - 留め具の期待かみ合い長さを入力します。</p>
+  </li>
+</ol>
+<p>&nbsp;</p>
+<h4>構成</h4>
+<p>留め具構成 では、次のオプションから選択します。</p>
+<ol>
+  <li><b>Fastener Name "留め具名"</b> – ユーザーは留め具の品番（パート番号）を設定できます。</li>
+</ol>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Fastener_Engagement_Length_Name_Config.png" />
+</div>
+<p>&nbsp;</p>
+<ol>
+  <li value="2"><strong>Fastener Thread "留め具ねじ"</strong> – ユーザーは、パラメータ名として留め具ねじを設定できます。</li>
+</ol>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Fastener_Engagement_Length_Thread_Config.png" />
+</div>
+<p>&nbsp;</p>
+<p><strong><b>Fastener Thread</b></strong> のラジオボタンを選択して <strong><em>Edit</em></strong> ボタンを有効にします。続いて <i>Edit</i> ボタンをクリックし、次の画像に示すように、留め具ねじの Attribute 名と値を設定します。</p>
+<p>Fastener Thread ダイアログボックスで、必要に応じて Attribute Name と Attribute Value を設定できます。</p>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Fastener_Thread_dialog_box.png" />
+</div>
+<p>&nbsp;</p>
+<p>このルールでは、Attribute Name は完全一致（厳密な文字列一致）で比較されます。Attribute Value は、ユーザー指定値がコンポーネントの実際の属性値の部分文字列として含まれているかどうかで比較されます。</p>
+<p>例えば、このルールは文字列型／パラメータ型として次のように扱います。</p>
+<ul>
+  <li>Attribute Name as ITEM_1</li>
+  <li>Attribute Value as M20X160</li>
+</ul>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Fastener_Thread_Compare_Attributes.png" />
+</div>
+<p>&nbsp;</p>
+<ol>
+  <li>
+    <p>Fastener 列の <em><strong>空白</strong></em> をダブルクリックし、ドロップダウンメニューから必要な <em><strong>留め具</strong></em> を1つずつ選択します。</p>
+  </li>
+  <li>
+    <p>各留め具に対して標準のかみ合い長さ値（例：A&gt;3*Pitch）を追加します。</p>
+  </li>
+  <li>
+    <p>完了したら、<strong><em>OK</em></strong> ボタンをクリックします。</p>
+  </li>
+</ol>
+<p>&nbsp;</p>
+<p><b>Consider Actual Thread Engagement -</b> このオプションは、実際のボルトねじと穴ねじを考慮して、実ねじのかみ合いをチェックします。</p>
+<p>&nbsp;</p>
+<h4>例</h4><br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Fastener_Engagement_Length.jpg" />
+</div>
+<p class="caption">Normal Engagement &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Actual Thread Engagement</p>
+<p class="caption">&nbsp;</p>
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>A = 留め具かみ合い長さ</p>
+</div>
+</div>
+<br>
+
+
+
+
+
+<h2>Excel 入力形式</h2>
+<p>ユーザーは、ルール構成で <em><strong>Ctrl+I</strong></em> コマンドを使用して、Excel シートテンプレートからハードウェアデータを一括インポートできます。データをインポートすると、DFMPro Hardware Database で使用できるようになります。&nbsp;</p>
+<p>ハードウェアを構成するには、<a href="../DFMPro_Customization/Hardware_Database.htm">Hardware Database</a> を参照してください。</p>
+<p>&nbsp;</p>
+<p><strong>標準テンプレート形式:</strong></p>
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col width="100" />
+    <col width="100" />
+    <col width="100" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight: bold; text-align: center;">F</p></td>
+      <td><p style="font-weight: bold; text-align: center;">A</p></td>
+      <td><p style="font-weight: bold; text-align: center;">N</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">Fastener_1</p></td>
+      <td><p style="text-align: center;">1.0</p></td>
+      <td><p style="text-align: center;">ITEM_1</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">Fastener_2</p></td>
+      <td><p style="text-align: center;">2.0</p></td>
+      <td><p style="text-align: center;">ITEM_2</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">Fastener_3</p></td>
+      <td><p style="text-align: center;">3.0</p></td>
+      <td><p style="text-align: center;">ITEM_3</p></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<table align="center" border="1" cellspacing="0" style="width: 169px;">
+  <colgroup>
+    <col />
+    <col />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight: bold; text-align: center;">N</p></td>
+      <td><p style="font-weight: bold; text-align: center;">V</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">ITEM_1</p></td>
+      <td><p style="text-align: center;">M20X160</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">ITEM_2</p></td>
+      <td><p style="text-align: center;">M24X150</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">ITEM_3</p></td>
+      <td><p style="text-align: center;">M20X100</p></td>
+    </tr>
+  </tbody>
+</table>
+<p class="caption">Fastener Thread 用の標準テンプレート形式</p>
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>F = 留め具名</p>
+<p>A = 留め具かみ合い長さ</p>
+<p>N = Attribute Name</p>
+<p>V = Attribute Value</p>
+</div>
+</div>
+<br>
+
+
+
+<p class="note-title">注記:</p>
+
+
+<ul class="note-body">
+<li><p>Excel には、Fastener の名前にパート拡張子が含まれます。（例：Fastener_1.prt）</p></li>
+<li><p>Fastener 名にはスペースを含めないでください。（例：Fastener 1）</p></li>
+<li><p>Hardware Database ダイアログボックスで必須のフィールドは <em>Hardware Name</em> です。</p></li>
+<li><p>Fastener Thread オプションを使用するには、<em>DFMPro for Creo Parametric 8.0</em> バージョンからデータベースを更新してください。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>で実行できます。</p></li>
+<li><p>ユーザーはワイルドカード文字を使用してコンポーネント名を設定できます。</p></li>
+</ul>
+<ol><ol class="note-body">
+  <li>*dia*（コンポーネント名に dia または DIA が含まれる）</li>
+  <li>*_dia（名前が _dia / DIA で終わる）</li>
+  <li>dia*（名前が dia / DIA で始まる）</li>
+</ol></ol>
+
+
+</body></html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.6.0_2"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Entry/Exit Surface for Holes</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Entry / Exit Surface For Hole "穴の入口面／出口面"</h1>
+<h4>ルール</h4>
+<p>穴は、入口面および出口面が穴軸に対して垂直になる位置にドリル加工する必要があります。</p>
+<br>
+<h4>説明</h4>
+<ul>
+<li>ドリル先端が表面に接触した際、その表面がドリル軸に対して垂直でない場合、ドリル先端がぶれやすくなります。</li>
+<li>出口穴の周囲に不均一なバリが発生すると、バリ除去が困難になります。</li>
+<li>ドリルの入口面が穴軸に対して垂直であれば、穴の正確な位置決めが可能になります。また、ドリルの出口面が穴軸に対して垂直であれば、ドリルがワークから抜ける際の工具破損を防ぐことができます。</li>
+</ul>
+<br>
+<h4>推奨事項</h4>
+<ul>
+<li>開始面および終了面が穴軸に対して垂直でない穴形状の作成は避けてください。</li>
+</ul>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/EntryExitFail.bmp"/>
+</div>
+<ul>
+<li>代替設計</li>
+</ul>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/EntryExitPass.bmp"/>
+</div>
+<br>
+<h4>構成</h4>
+<p>本ルールでは、各穴について（貫通穴の場合）穴の開始面および終了面をチェックします。そのため、構成情報は不要です。</p>
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>ルール構成では、許容される角度偏差（ドリル軸と、ドリル入口面または出口面の法線とのなす角度）を指定できます。デフォルトでは、顧客標準に基づいてこのチェックボックスは無効化されていますが、ユーザーが値を追加することが可能です。</p></li>
+</ul>
+
+<br>
+
+<h4>例</h4>
+<p><b>ドリル入口角度</b>: ドリル入口面における、ドリル軸と面法線とのなす角度です。この角度はドリル中心点で算出されます。</p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/entry_1.bmp"/>
+</div>
+
+<br>
+
+<p><b>ドリル出口角度</b>: ドリル出口面における、ドリル軸と面法線とのなす角度です。この角度はドリル中心点で算出されます。</p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/entry_2.bmp"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/entry_3.bmp"/>
+</div>
+<div style="text-align:center;">
+<img alt="" border="0" height="262" width="466" src="../../assets/images/Common/image/EntryExit Example.PNG"/>
+</div>
+<div style="text-align:center;">
+<img alt="" border="0" height="346" width="480" src="../../assets/images/Common/image/Entry-Exit.bmp"/>
+</div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>ドリル工具はデータベースで構成されています。ルールマネージャーダイアログボックスでドリル径を確認するには、<a href="standard_hole_sizes.htm">標準穴径</a>を編集してください。</p></li>
+<li><p>最大ドリル工具径は、<a href="standard_hole_sizes.htm">標準穴径</a>ルール構成で選択されている<b>単位選択</b>オプションに基づいて解析に考慮されます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

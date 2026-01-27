@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_17"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Cutout Distance To Part Edge</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+  <style type="text/css">
+    /*<![CDATA[*/
+    body {
+      border-left-style: none;
+      border-right-style: none;
+      border-top-style: none;
+      border-bottom-style: none;
+      background-color: #ffffff;
+    }
+    /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Cutout Distance to Part Edge "カットアウトから部品端面間の距離"</h1>
+<h4>ルール</h4>
+<p>カットアウトからパーツのエッジまでの最小距離と板厚との比率は、ユーザーが指定した値以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>カットアウトからパーツのエッジまでの距離が最小値を下回る場合、対象領域の板材が変形したり割れたりする可能性があります。</p>
+<p>許容距離は製造方法によって異なります。カットアウトがエッジに近すぎると、エッジが変形して膨らみが生じることがあります。これは、パーツをクランプするためのスペースが不足していることが原因で発生する場合があります。カットアウトのエッジからの最小距離は、材料の板厚とする必要があります。</p>
+
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、カットアウトからパーツのエッジまでの最小距離は、板厚の少なくとも2倍以上であることが推奨されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>デフォルトでは、カットアウトからパーツのエッジまでの最小距離は、板厚に対して構成されています。ユーザーは、自社の標準および製造能力に応じて、構成値を変更できます。</p>
+<p>また、板厚が異なる場合に応じて、カットアウトからパーツのエッジまでの最小距離について、板厚に対する比率の値をそれぞれ異なる値として構成することもできます。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout Distance To Part Edge_Help.bmp"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>t = 板厚</p>
+<p>D = カットアウトからパーツエッジまでの最小距離</p>
+
+<br>
+
+<p>注記：</p>
+<p>面取り付きのカットアウトにも対応しています。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Cutout_With_Chamfers_right.png"></div>
+
+
+<br>
+</body>
+</html>

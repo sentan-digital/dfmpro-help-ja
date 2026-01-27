@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Analysis Region</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  <h1>解析領域</h1>
+<p>Prismatic Mill "フライス加工"の製造プロセスでは、DFMPro は <i>パーツ全体</i> または <i>選択した領域</i> に対して解析を実行することができます。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Entity_Selection_Aanlysis_Region.png"><b></b></div>
+<p> </p>
+
+<h2>解析領域</h2>
+<ol>
+  <li>
+    <p>解析領域では、ドロップダウンメニューから <i>パーツ全体</i> または <i>選択した領域</i> を選択して解析を実行できます。</p>
+  </li>
+</ol>
+
+<ul>
+  <li><b>Entire Part:</b>この機能を選択すると、パーツ全体の解析が実行されます。</li>
+  <li><b>Selected Region:</b>ドロップダウンリストからこの機能を選択すると、選択した領域でDFMProルールが実行されます。</li>
+</ul>
+
+<br>
+
+<ol start="2">
+  <li>
+    <p><strong><i>選択した領域</i></strong> オプションを選択し、<img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>Analyze</i></strong> ボタンをクリックします。</p>
+  </li>
+</ol>
+
+<br>
+
+<ol start="3">
+  <li>
+    <p>加工領域用のエンティティ選択グループボックスでは、DFMPro はドロップダウンリストから選択できる 3 つのオプションを提供します。</p>
+  </li>
+</ol>
+
+<ul>
+  <li><a href="#Select_Pre_Machined_Region_form_Feature_Tree">Select Pre-Machined Region from Feature Tree</a></li>
+  <li><a href="#Select_Machined_Faces_based_on_Color">Select Machined Faces based on Color</a></li>
+  <li><a href="#Select_Machined_Features_from_Feature_Tree">Select Machined Features from Feature Tree</a></li>
+</ul>
+
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Machined_Region.png"></div>
+<p> </p>
+
+<h4><a name="Select_Pre_Machined_Region_form_Feature_Tree" id="Select_Pre_Machined_Region_form_Feature_Tree"></a>オプション 1: フィーチャーツリーから前加工領域を選択</h4>
+<p><i>DFMPro</i> では、モデルツリーから前加工領域（最後のラフ加工フィーチャー）を選択できます。前回のラフ加工フィーチャー以降に追加されたフィーチャーは、加工フィーチャーとして扱われます。</p>
+<p>この選択に基づいて、DFMPro のルール実行は加工フィーチャーに対して行われます。</p>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Entity_Selection_Pre-Machined_Region_FeatureTree_CP.png"></div>
+
+
+<h4><a name="Select_Machined_Faces_based_on_Color" id="Select_Machined_Faces_based_on_Color"></a>オプション 2: 色に基づいて加工面を選択</h4>
+<p>色分けされた加工フィーチャーが CAD ファイルに追加されている場合、ユーザー（設計者）は組織の標準に基づいて CAD パーツから色付きの面を選択できます。<i>DFMPro</i> は、選択された色に関連付けられたフィーチャーを自動的に識別し、DFMPro 解析用に検証します。</p>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Entity_Selection_Machined_Color_Face.png"></div>
+
+<p>図のとおり、すべての黄色は加工面であり、加工用に関連付けられた加工フィーチャーの一覧が表示されます。</p>
+
+<br>
+
+<h4><a name="Select_Machined_Features_from_Feature_Tree" id="Select_Machined_Features_from_Feature_Tree"></a>オプション 3: フィーチャーツリーから加工フィーチャーを選択</h4>
+<p>ユーザーはモデルツリーから加工フィーチャーを選択でき、これらのフィーチャーは DFMPro 解析用に検証されます。</p>
+
+<br>
+
+<p>注記:</p>
+<p>PMI ベースのルールを除き、すべてのPrismatic Mill "フライス加工" ルールおよび以下に示すGeneral "基本設計" ルールがサポートされています。</p>
+<ul>
+  <li><a href="../General/chamfered_hole_edges.htm">Chamfered Hole Edges</a></li>
+  <li><a href="../General/fillet_radius_generic.htm">Fillet Radius</a></li>
+  <li><a href="../General/min_drill_break_thk.htm">Minimum Drill Breakout Wall Thickness</a></li>
+  <li><a href="../General/min_wall_thk_for_boss.htm">Minimum Wall Thickness for Boss</a></li>
+  <li><a href="../General/recommended_countersink_hole_parameters.htm">Recommended Countersink Hole Parameters</a></li>
+</ul>
+
+
+
+</body></html>

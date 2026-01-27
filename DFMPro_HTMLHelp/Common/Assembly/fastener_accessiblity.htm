@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Fastener Accessibility</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>"Fastener Accessibility" 留め具のアクセス性</h1>
+
+<h4>ルール</h4>
+
+<p>ユーザーは、工具の高さと直径を入力することで、アセンブリで使用されている留め具のアクセス性をチェックできます。</p>
+<p>&nbsp;</p>
+
+<h4>説明</h4>
+
+<p>留め具にアクセスするために、締結工具のための十分なスペースが確保されていることを確認する必要があります。これは、締結または取り外しの容易性を高めます。これは、組立および分解（組立性・分解性）を考慮した設計を実現するためのベストプラクティスです。</p>
+<p>&nbsp;</p>
+
+<p><strong>このルールを使用するために、ユーザーは以下の入力を提供する必要があります:</strong></p>
+<p>留め具 - ルールを検証するための留め具名称。</p>
+<p>留め具は <a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェアデータベース</a> を通じて追加する必要があります。</p>
+<p>&nbsp;</p>
+
+<p>ワッシャ、ねじなどが、留め具のアクセス性を妨げるコンポーネントとして報告される可能性があります。ルール構成ダイアログボックスで、<b>Ignored Hardware</b> オプションをクリックして、そのようなハードウェアを無視してください。</p>
+<p>ユーザーが Ignored Hardware チェックボックスを選択すると、<i style="font-weight: bold;">Edit</i> ボタンが有効になります。<i style="font-weight: bold;">Edit</i> ボタンをクリックして、ワッシャ、ねじなどのハードウェアタイプを構成するか、または次の画像に示すように CAD パラメータ／属性を定義してください。</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/fastener_accessibility_dialogbox.bmp" />
+</div>
+<p>&nbsp;</p>
+
+<p>ユーザーが <b>Edit</b> ボタンをクリックすると、次の「構成」ダイアログボックスが表示されます。</p>
+<p>Hardware Type タブでは、<a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェアデータベース</a> に設定されている留め具の利用可能なハードウェアタイプの一覧が表示され、ユーザーは無視するハードウェアタイプを一覧から選択できます。</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/fastener_accessibility_HardwareType.bmp" />
+</div>
+<p>&nbsp;</p>
+
+<p>Attribute Based タブでは、ユーザーは必要に応じて CAD パラメータ／属性の名称および値を構成できます。</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/fastener_accessibility_AttributesBased.bmp" />
+</div>
+<p>&nbsp;</p>
+
+<p>ルールは、属性名については完全一致の文字列で比較されます。属性値については、コンポーネントの実際の属性値に含まれる部分文字列として存在する、ユーザー指定の値と比較されます。</p>
+<p>例として、このルールは次のような文字列型／パラメータ型に対応します:</p>
+
+<ul>
+  <li>
+    <p>属性名：ITEM_1</p>
+  </li>
+  <li>
+    <p>属性値：Washer</p>
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/fastener_accessibility_Parameter_CP.png" />
+</div>
+<p>&nbsp;</p>
+
+<h4>構成</h4>
+
+<ul style="list-style: disc;">
+  <li>
+    <p>このチェックは、ハードウェアデータベースを更新する場合にのみ必要です。</p>
+  </li>
+  <li>
+    <p>デフォルトでは、<strong>締結工具の直径</strong>（D1）が設定されています。ユーザーは必要に応じて値を構成できます。</p>
+  </li>
+  <li>
+    <p>デフォルトでは、<strong>締結工具の高さ</strong>（H）が設定されていますが、このチェックボックスはオフになっています。ユーザーは必要な値を構成できます。</p>
+  </li>
+  <li>
+    <p>デフォルトでは、<strong>Ignored Hardware</strong> オプションはオフになっています。</p>
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h4>例</h4>
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/fastener_accessibility.bmp" />
+</div>
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D = 留め具ヘッド直径</p>
+<p>D1 = 締結工具直径</p>
+<p>H = 留め具工具高さ</p>
+<p>L = 留め具長さ</p>
+</div>
+</div>
+<br>
+
+
+
+
+<h2>ハードウェア構成</h2>
+<p>ユーザーは、Excel シートテンプレートに存在するハードウェアデータを <span style="font-weight: bold; font-style: italic;">Import</span> ボタンを使用して一括でインポートできます。</p>
+<p>ハードウェアを構成するには、<a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェアデータベース</a> を参照してください。</p>
+<p>&nbsp;</p>
+
+<p class="note-title">注記:</p>
+
+
+<ul class="note-body">
+<li><p>必須フィールドは <em>Hardware Name</em>（P1 列）です。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+<li><p>Ignored Hardware ダイアログボックスで利用可能な Hardware Type タブの必須フィールドは <em>Hardware Type</em>（H1 列）です。</p></li>
+<li><p>ユーザーは、コンポーネント名を構成するためにワイルドカード文字を使用できます:</p></li>
+</ul>
+<ol><ol class="note-body">
+  <li>*dia*（コンポーネント名に dia または DIA を含む）</li>
+  <li>*_dia（名前が _dia / DIA で終わる）</li>
+  <li>dia*（名前が _dia / DIA で始まる）</li>
+</ol></ol>
+
+<br>
+</body>
+</html>

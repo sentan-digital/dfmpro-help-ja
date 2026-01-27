@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_29"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>DFMPro Graphical Filter</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>DFMPro グラフィカルフィルター</h1>
+<p>グラフィカルフィルターコマンドは、［Rules］グループボックス内に表示されるルール違反の件数をフィルタリングします。失敗結果は、DFMPro - グラフィカルフィルターダイアログボックスで選択されたオプションに基づいてフィルタリングされます。</p>
+
+<br>
+
+<p>この機能の目的は以下のとおりです：</p>
+<ul>
+<li>3D モデルの特定領域に容易にフォーカスし、関連する指摘事項を確認する。</li>
+<li>重要な設計フィーチャーを迅速にチェックする。</li>
+<li>重要領域の迅速な妥当性確認を行う。</li>
+<li>アセンブリセクションを迅速に検証する。</li>
+</ul>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Graphical_Filter_1.png"/>
+</div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>干渉検出に関連する違反については、<a href="#Part_Assembly_Selection"><i>Part Selection</i></a> フィルタ方法の使用を推奨します。</p></li>
+</ul>
+
+<br>
+
+<p>以下のフィルタ方法があります：</p>
+<ul>
+<li><a href="#Region_Base_Filter">領域ベースフィルター</a></li>
+<li><a href="#Face_Edge_Entity_Selection">面／エッジ エンティティ選択</a></li>
+<li><a href="#Feature_Selection">フィーチャー選択</a></li>
+<li><a href="#Part_Assembly_Selection">パーツ／アセンブリ選択</a></li>
+</ul>
+
+<br>
+
+<h2><a name="Region_Base_Filter" id="Region_Base_Filter"></a>領域ベースフィルター</h2>
+<p>マウスでウィンドウを<b>作成</b>（下図参照）し、グラフィックスエリアから複数の目的のフィーチャーを選択します。ウィンドウ内に含まれるフィーチャーは、DFMPro - グラフィカルフィルターダイアログボックスに表示されます。</p>
+<p>グラフィックスエリアでのウィンドウ選択に基づいて、対応する結果としてルール違反の一覧が表示されます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_2.png"/>
+</div>
+
+<br>
+
+<p>注記:</p>
+<p>1 回の選択で選択できるエンティティ数は最大 14,000 です。</p>
+
+<br>
+
+
+<h2><a name="Face_Edge_Entity_Selection" id="Face_Edge_Entity_Selection"></a>面／エッジ エンティティ選択</h2><br>
+<ol>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_Face_Edge_Entity_Selection_button.png"/> <i>Face/Edge Entity Selection</i> オプションでは、<i>Ctrl</i> キーを使用してグラフィックスエリアから複数の面またはエッジを選択します。</p></li>
+<li><p>マウスの<em><strong>中</strong></em>ボタンをクリックして選択を確定します。</p></li>
+<li><p>選択後、<strong><i>OK</i></strong> ボタンをクリックします。</p></li>
+</ol>
+<div style="text-align:center;">領域ベースフィルター
+<img alt="" border="1" src="../../assets/images/Common/image/Select_Lines_Dialog_Box.png"/>
+</div>
+<p> </p>
+<ol start="4">
+<li><p>選択した面またはエッジが選択ボックスに表示されます。</p></li>
+<li><p>選択内容に基づいて、対応する結果としてルール違反の一覧が表示されます。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_3.png"/>
+</div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>グラフィックスエリアでマウスを使用してウィンドウを作成し、複数のフィーチャーを選択できます。</p></li>
+</ul>
+
+<br>
+
+
+<h2><a name="Feature_Selection" id="Feature_Selection"></a>フィーチャー選択</h2><br>
+<ol>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_Feature_Selection_button.png"/> <i>Feature Selection</i> オプションでは、<strong><i>Ctrl</i></strong> キーを使用してモデルツリーから複数のフィーチャーを選択します。</p></li>
+<li><p>マウスの中ボタンをクリックして選択を確定します。</p></li>
+<li><p>選択後、<strong><i>OK</i></strong> ボタンをクリックします。</p></li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Select_Lines_Dialog_Box.png"/>
+</div>
+<p> </p>
+<ol start="4">
+<li><p>選択したフィーチャーが選択ボックスに表示されます。</p></li>
+<li><p>選択内容に基づいて、対応する結果としてルール違反の一覧が表示されます。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_4.png"/>
+</div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>ユーザーは、失敗結果の一覧をフィルタリングしている最中でも、エッジ、面、フィーチャーを追加できます。</p></li>
+</ul>
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_5.png"/>
+</div>
+<p> </p>
+
+<h2><a name="Part_Assembly_Selection" id="Part_Assembly_Selection"></a>パーツ／アセンブリ選択</h2>
+<p>このオプションは、DFMPro がアセンブリ、溶接、またはチューブのルールに対して解析された場合にのみ表示されます。</p>
+<ol>
+<li><p>パーツ／アセンブリ選択オプションでは、<em><strong>Ctrl</strong></em> キーを使用して、モデルツリーまたはグラフィックスエリアから必要なパーツまたはアセンブリを選択します。</p></li>
+<li><p>マウスの中ボタンをクリックして選択を確定します。</p></li>
+<li><p>選択後、<strong><i>OK</i></strong> ボタンをクリックします。</p></li>
+</ol>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Select_Lines_Dialog_Box.png"/>
+</div>
+<p> </p>
+<ol start="4">
+<li><p>選択したパーツまたはアセンブリが選択ボックスに表示されます。</p></li>
+<li><p>選択内容に基づいて、対応する結果としてルール違反の一覧が表示されます。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_6.png"/>
+</div>
+<p> </p>
+
+<h4>グラフィカルフィルターダイアログボックスで使用可能なコマンド</h4>
+<table align="center" border="1" cellspacing="0" width="59.581%">
+<colgroup>
+<col/>
+<col/>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"/>
+</div>
+</td>
+<td>
+<p>右側のルール違反ペインに結果一覧を表示します。</p>
+</td>
+</tr>
+<tr>
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" height="38" src="../../assets/images/Common/image/Cancel_Run_button.png" width="39"/>
+</div>
+</td>
+<td>
+<p>ダイアログボックスを閉じるために使用します。</p>
+</td>
+</tr>
+<tr>
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_ClearAll_button.png"/>
+</div>
+</td>
+<td>
+<p>選択されているすべてのエンティティをクリアするために使用します。</p>
+</td>
+</tr>
+<tr>
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Graphical_Filter_Remove_button.png"/>
+</div>
+</td>
+<td>
+<p>選択したエンティティを削除するために使用します。</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+
+
+
+</body></html>

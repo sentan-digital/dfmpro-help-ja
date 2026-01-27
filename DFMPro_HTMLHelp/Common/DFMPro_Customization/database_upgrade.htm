@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="12.0_5"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>DFMPro Database Upgrade</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>DFMPro データベースのアップグレード</h1><br>
+<h2>手動インストールの場合</h2><br>
+<p><i>DFMPro</i> のインストール中に、既存のデータベースファイルを上書きする許可を求める警告メッセージが表示されます。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/DFMProDatabaseUpgrade1_CP.png"/>
+</div>
+<p>データベースファイルを上書きするための警告メッセージ</p>
+<p> </p>
+<p><b><i>Yes</i></b> ボタンをクリックして、既存のデータベースファイルを上書きします。この処理により、次の場所に日付拡張子付きのバックアップファイルが作成されます。</p>
+<p><i>ドライブ C:\ProgramData\GeometricLtd\DFMPro\DFMDataBase</i></p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/DFMProDatabaseUpgrade2.png"/>
+</div>
+<p> </p>
+<p> </p>
+<p><b><i>Yes</i></b> を選択した場合、次の機能を利用できるようになります。</p>
+<ul>
+  <li><p>DFMPro for Creo Parametric 6.1 バージョン以降では、ルールマネージャー（Rule Manager）ダイアログボックス内で <img alt="" border="0" height="23" src="../../assets/images/Common/image/Map_Material_icon.png" width="23"/> <i><a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a></i> ボタンが利用可能です。</p></li>
+  <li><p>DFMPro for Creo Parametric 8.0 バージョン以降では、ルールマネージャー（Rule Manager）ダイアログボックス内で <img alt="" border="0" src="../../assets/images/Common/image/Material_Property_button.png"/> <i><a href="../Getting_Started/Material_Property.htm">Material Property</a></i> ボタンが利用可能です。</p></li>
+</ul>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/DFMProDatabaseUpgrade3.png"/>
+</div>
+<p> </p>
+<p><b><i>No</i></b> ボタンをクリックすると、上書き処理を回避してインストールを続行します。この場合、既存のデータベースのみが使用可能となり、新しい拡張機能にはアクセスできません。<i>Rule Manager</i> ダイアログボックス内のボタンは無効状態になります。</p>
+<p> </p>
+<p>新しいデータベースは、将来使用するために %DFM_PRO_DATABASE_DIR% に配置されます。</p>
+<p> </p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/DFMProDatabaseUpgrade5_CP.png"/>
+</div>
+<p> </p>
+<h2>DFXDatabaseApplication.exe</h2><br>
+<p>このアプリケーションは %DFMPro_ProE_Installation% の場所にあり、既存のデータベースをアップグレードするために使用できます。</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/DFMProDatabaseUpgrade6_CP.png"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade7_CP.png"/>
+</div>
+<p> </p>
+<h4>データベースを更新する手順:</h4><br>
+<ol>
+  <li><p><em><strong>CMD（コマンド プロンプト）</strong></em> アプリケーションを管理者として開きます。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade8.png"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade9.png"/>
+</div>
+<p> </p>
+<ol start="2">
+  <li><p><b>下図に記載されている入力を、スペースで区切って入力してください。</b></p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade10_CP.png"/>
+</div>
+<p> </p>
+<p><b>ここで、</b></p>
+<ul>
+  <li><p><b>Executable</b>: <b>DFXDatabaseApplication.exe のパス</b></p></li>
+</ul>
+<p><i>例: "C:\Program Files\Geometric\DFMPro for Creo Parametric(x64)\DFMPro\DFXDatabaseApplication.exe"</i></p>
+<p> </p>
+<ul>
+  <li><p><b>Source Database</b>: %DFM_PRO_DATABASE_DIR% にバックアップとして存在する最新のデータベース</p></li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/DFMProDatabaseUpgrade5_CP.png"/>
+</div>
+<p> </p>
+<p><i>例: "C:\ProgramData\GeometricLtd\DFMPro\DFMDataBase\dfmSqliteDb_v8.1.0.9249.dat"</i></p>
+<p> </p>
+<ul>
+  <li><p><b>Target Database</b>: <b>DFMPro の最新リリースでアップグレードする必要があるデータベース</b></p></li>
+</ul>
+<p><i>例: "C:\ProgramData\GeometricLtd\DFMPro\DFMDataBase\dfmSqliteDb.dat"</i></p>
+<p> </p>
+<p style="text-decoration: underline;"><b>例</b>:</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade12_CP.png"/>
+</div>
+<p> </p>
+<ol start="3">
+  <li><p>すべてのパスを入力したら <strong><span style="font-style: italic;">Enter</span></strong> キーを押します。現在のデータベースのバックアップを作成した後、新しく追加されたテーブル／列をターゲットデータベースにマージします。</p></li>
+</ol>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade13_CP.png"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade14_CP.png"/>
+</div>
+<p> </p>
+<p><b>注:</b></p>
+<p><b>このユーティリティを実行する前に、既存のデータベースのバックアップを作成することを推奨します。</b></p>
+<p> </p>
+<ol start="4">
+  <li><p>生成されたログファイルの場所は、参照用に CMD に表示されます。</p></li>
+</ol>
+<p><i>例: Database logfile location: C:\Program Files\Geometric\DFMPro for Creo Parametric(x64)\DFMPro\DatabaseLog.txt</i></p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade15_CP.png"/>
+</div>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/DFMProDatabaseUpgrade16.png"/>
+</div>
+<p><b>DatabaseLog.txt</b></p>
+<p> </p>
+<h2>サイレントインストールモードの場合:</h2><br>
+<p>手動インストールの場合に記載した同じ手順に従い、インストールパッケージに含まれる <span><b style="font-style: italic;">Source Database</b></span><span style="font-style: italic;"><b>:</b></span> <b>を使用してください。</b></p>
+<p> </p>
+<p> </p>
+
+
+</body></html>

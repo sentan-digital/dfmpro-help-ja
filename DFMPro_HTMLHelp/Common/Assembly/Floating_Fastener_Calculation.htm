@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_10"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Floating Fastener Calculation</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Floating Fastener Calculation "位置非拘束留め具の計算"</h1>
+<h4>ルール</h4>
+<p>このルールは、3D PMI の公差データを確認し、以下の 2 点について妥当性を確認します。</p>
+<ul>
+<li><p><strong>F:留め具の最大径</strong> および <strong>T:穴位置度</strong> を変更しない前提で、<strong>クリアランス穴の最小径</strong></p></li>
+<li><p><strong>F:留め具の最大径</strong> および <strong>H:クリアランス穴の最小径</strong> を変更しない前提で、<strong>穴の最大位置度公差</strong></p></li>
+</ul>
+<br>
+<p>クリアランス穴の最小径（MMC）が留め具径の最大径（MMC）より小さい場合、基本的な組立条件が満たされていないため、このルールはアラートとしてフラグ付けします。</p>
+<p>※MMC（Maximum Material Condition：最大実体状態）とは、部品が最も材料を多く含む状態を示し、穴では最小径、留め具では最大径を指します。</p>
+
+<br>
+<h4>説明</h4>
+<p>位置非拘束留め具アセンブリでは、すべての部品に留め具用のクリアランス穴があります。</p>
+<p>位置非拘束留め具の計算式を使用すると、組立を確実にするために必要な適切なクリアランス穴の最小径、または最大位置度公差を算出できます。</p>
+<p>この計算式は、形体が MMC の状態にあり、かつ位置度公差が極限の場合に「干渉ゼロ」のはめあいを提供します。</p>
+<br>
+<p>ねじ／ボルトの長さが胴径の 8 倍を超える場合、このルールは留め具の直進度偏差を考慮します。ボルトが長いと、同軸度が崩れやすくなります。</p>
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Fixed_Fastener_Calculation_Explanation.png"/>
+</div>
+
+
+
+<p>ねじ長さがねじ径の 8 倍を超える場合には、留め具の真直度偏差を考慮し、解析上の留め具最大径（MMC）として補正後の径（FD）を用いて評価を行います。</p>
+
+<ul>
+  <li>
+    <p>この場合は、留め具の真直度偏差を以下の方法で評価します。</p>
+  </li>
+</ul>
+
+<ol>
+<li><p>L &lt;= 305 mm の 場合</p>
+<p><b>FD = F + L x 0.006</b></p></li>
+<li><p>L &gt; 305 mm の 場合</p>
+<p><b>FD = F + L x 0.008</b></p></li>
+</ol>
+
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>F = 留め具の最大径（MMC）</p>
+<p>L = 留め具の長さ</p>
+<p>FD = 真直度偏差を考慮した留め具径（包絡径）</p>
+</div>
+</div>
+<br>
+
+
+<br>
+<h4>推奨事項</h4>
+
+<ol>
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">CAD ファイル内の PMI データとしてすべての値（F、H、T）が利用可能な場合、</p>
+<p style="color:#C00000; font-weight:bold;">クリアランス穴の最小径（F および T を変更しない前提）に対する推奨値が提示されます。</p>
+<p style="color:#C00000; font-weight:bold;">同様に、穴の最大位置度公差（F および H を変更しない前提）をチェックします。</p></li>
+</ol>
+
+<p>&nbsp;</p>
+<p><b>例:</b></p>
+<p>T1 = T2 = T かつ H1 = H2</p>
+<p>位置非拘束留め具の計算式: <b>H = F + T</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex1.png"/>
+</div>
+<p>&nbsp;</p>
+<p><b><u>推奨インスタンス:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.5 mm</p>
+<p>クリアランス穴の最大位置度公差（T）= 0.8 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最小径: <b>H = F + T</b></p>
+<p>実際の値（H）= 10.5 mm</p>
+<p>推奨値（H）&gt;= 10.8 mm（F および T の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: <b>T = H - F</b></p>
+<p>実際の値（T）= 0.8 mm</p>
+<p>推奨値（T）&lt;= 0.5 mm（F および H の値を変更しない場合）</p>
+<p>&nbsp;</p>
+
+<ol start="2">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">クリアランス穴の位置度公差（T1）が欠落している場合、このルールは各プレートごとに個別の不合格インスタンスとして扱います。</p>
+<p style="color:#C00000; font-weight:bold;">このルールは値の算出に H = F + T の式を使用します。</p></li>
+</ol>
+
+<p>&nbsp;</p>
+<p><b>例:</b></p>
+<p>クリアランス穴の位置度公差が欠落しており、F と H の値が利用可能な場合。</p>
+<p>T1 = T2 = T</p>
+<p>位置非拘束留め具の計算式: <b>H = F + T</b> &amp; <b>T = H - F</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex2.png"/>
+</div>
+<p>&nbsp;</p>
+<p><b><u>推奨インスタンス:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.5 mm</p>
+<p>&nbsp;</p>
+<p>位置非拘束留め具の計算式: <b>T = H - F</b></p>
+<p>実際の値（T）= 値が欠落しています</p>
+<p>推奨値（T）&lt;= 0.5 mm</p>
+<p>&nbsp;</p>
+
+
+<ol start="3">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">クリアランス穴の位置度公差 T1 と T2 が異なる場合、このルールは値の算出に位置非拘束留め具の計算式 H = F + ½ (T1+T2) を使用します。</p></li>
+</ol>
+<p>&nbsp;</p>
+<p><b>例:</b></p>
+<p>T1#T2</p>
+<p>位置非拘束留め具の計算式: <b>H = F + ½ (T1 + T2)</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex4.png"/>
+</div>
+<p>&nbsp;</p>
+<p><b><u>推奨インスタンス:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.5 mm</p>
+<p>クリアランス穴の最大位置度公差（T1）= 0.6 mm</p>
+<p>クリアランス穴の最大位置度公差（T2）= 0.5 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最小径: H = F + ½ (T1 + T2)</p>
+<p>実際の値（H）= 10.5 mm</p>
+<p>推奨値 &gt;= 10.55 mm（F、T1、T2 の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: T1 = 2H - 2F - T2</p>
+<p>実際の値（T1）= 0.6 mm</p>
+<p>推奨値（T1）&lt;= 0.5 mm（F、H、T2 の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: T2 = 2H – 2F - T1</p>
+<p>実際の値（T2）= 0.5 mm</p>
+<p>推奨値（T2）&lt;= 0.4 mm（F、H、T1 の値を変更しない場合）</p>
+<br>
+
+<ol start="4">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">2 枚を超えるプレートのアセンブリの場合、各プレートのクリアランス穴ごとに個別の不合格となります。</p></li>
+</ol>
+
+
+<p>&nbsp;</p>
+<p><b>例:</b></p>
+<p>H1#H2 および T1#T2</p>
+<p>位置非拘束留め具の計算式: <b>H = F + T</b></p>
+<p>留め具、クリアランス穴、および（それらの）2 つのインスタンス間で個別に検証します。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex3.png"/>
+</div>
+<p>&nbsp;</p>
+<p><b><u>推奨インスタンス 1:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.5 mm</p>
+<p>クリアランス穴の最大位置度公差（T）= 0.8 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最小径: H = F + T</p>
+<p>実際の値（H）= 10.5 mm</p>
+<p>推奨値（H）&gt;= 10.8 mm（F および T の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: T = H - F</p>
+<p>実際の値（T）= 0.8 mm</p>
+<p>推奨値（T）&lt;= 0.5 mm（F および H の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p><b><u>推奨インスタンス 2:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.5 mm</p>
+<p>クリアランス穴の最大位置度公差（T）= 0.8 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最小径: H = F + T</p>
+<p>実際の値（H）= 10.5 mm</p>
+<p>推奨値（H）&gt;= 10.8 mm（F および T の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: T = H - F</p>
+<p>実際の値（T）= 0.8 mm</p>
+<p>推奨値（T）&lt;= 0.5 mm（F および H の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p><b><u>推奨インスタンス 3:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.6 mm</p>
+<p>クリアランス穴の最大位置度公差（T）= 0.8 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最小径: H = F + T</p>
+<p>実際の値（H）= 10.6 mm</p>
+<p>推奨値（H）&gt;= 10.8 mm（F および T の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: T = H - F</p>
+<p>実際の値（T）= 0.8 mm</p>
+<p>推奨値（T）&lt;= 0.6 mm（F および H の値を変更しない場合）</p>
+<p>&nbsp;</p>
+
+<br>
+<ol start="5">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">クリアランス穴の代わりにスロットが存在し、スロット幅に対する位置度公差が利用可能な場合。</p></li>
+</ol>
+
+<p>H = スロット幅</p>
+<p>T = スロット幅に対する位置度公差</p>
+<p>&nbsp;</p>
+<p>T1 = T2 = T かつ H1 = H2</p>
+<p>位置非拘束留め具の計算式 : <b>H = F + T</b></p>
+<p>&nbsp;</p>
+<p><b>例:</b></p>
+<p>スロット幅およびクリアランス穴の位置度公差の両方が欠落していると仮定します。この場合、このルールは T1 = T2 = T という条件として扱い、値の算出に位置非拘束留め具の式 <b>H = F + T</b> を使用します。</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex5.bmp"/>
+</div>
+<p>&nbsp;</p>
+<p><b><u>スロット幅の推奨インスタンス:</u></b></p>
+<p>&nbsp;</p>
+<p>位置非拘束留め具の計算式: <b>H = F + T</b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランススロットの最小幅-MMC（H）= 11.5 mm</p>
+<p>&nbsp;</p>
+<p>クリアランススロット幅の最大位置度公差: T = H – F</p>
+<p>実際の値（T）= 値が欠落しています</p>
+<p>推奨値（T）&lt;= 1.5 mm（F および H の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p><b><u>クリアランス穴の推奨インスタンス:</u></b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.55 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最大位置度公差: T = H – F</p>
+<p>実際の値（T）= 値が欠落しています</p>
+<p>推奨値（T）&lt;= 0.55 mm（F および H の値を変更しない場合）</p>
+<br>
+<ol start="6">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">位置度公差の許容値が負（-ve）の場合、このルールはまず必要条件、すなわち T1+T2 = 2 (H-F) をチェックします。</p></li>
+</ol>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex7.bmp"/>
+</div>
+<p>&nbsp;</p>
+<p><b>上記の例の不合格メッセージは次のとおりです–</b></p>
+<p>&nbsp;</p>
+<p>留め具の最大径-MMC（F）= 10.0 mm</p>
+<p>クリアランス穴の最小径-MMC（H）= 10.2 mm</p>
+<p>クリアランス穴の最大位置度公差（T1）= 0.5 mm</p>
+<p>クリアランス穴の最大位置度公差（T2）= 0.6 mm</p>
+<p>&nbsp;</p>
+<p>クリアランス穴の最小径: H = F + ½ (T1 + T2)</p>
+<p>実際の値（H）= 10.2 mm</p>
+<p>推奨値（H）&gt;= 10.55 mm（F、T1、T2 の値を変更しない場合）</p>
+<p>&nbsp;</p>
+<p>必要な最大値: T1 + T2 = 2 (H - F)</p>
+<p>実際の値（T1 + T2）= 1.1 mm</p>
+<p>推奨値（T1 + T2）&lt;= 0.4 mm（F および H の値を変更しない場合）</p>
+
+<br>
+<ol start="7">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;">このルールは、以下の条件が満たされると合格になります:</p></li>
+</ol>
+
+<ul>
+<li><p>実際のクリアランス穴の最小径-MMC（H）が推奨値より大きい場合。</p></li>
+<li><p>穴の位置度公差（T）の最大値が推奨値より小さい場合。</p></li>
+</ul>
+
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Ex6.bmp"/>
+</div>
+<p>&nbsp;</p>
+<p><b>上記の例では-</b></p>
+<ul>
+  <li>
+    <p>クリアランス穴の最小径-MMC（H）&gt;= 推奨値（H = F + T1 + T2）</p>
+  </li>
+</ul>
+<p>12 mm &gt;= 10.7 mm</p>
+<ul>
+  <li>
+    <p>クリアランス穴の最大位置度公差（T1）&lt;= 推奨値（T1 = H - F - T2）</p>
+  </li>
+</ul>
+<p>0.3 mm &lt;= 1.7 mm</p>
+<ul>
+  <li>
+    <p>クリアランス穴の最大位置度公差（T2）&lt;= 推奨値（T2 = H - F - T1）</p>
+  </li>
+</ul>
+<p>0.3 mm &lt;= 1.6 mm</p>
+<br>
+<h4>アラートケース:</h4>
+
+<ol>
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;"><b>穴に PMI が追加されているが、穴の直径寸法に対する直径公差値が欠落している場合、</b></p></li>
+</ol>
+<br>
+<p>以下の例文のようなメッセージが表示されます。</p>
+<ul>
+<li><p>Maximum Diameter of Fastener-MMC (F) = 10.0 mm</p></li>
+<li><p>Minimum Clearance Hole Diameter-MMC (H) = 10.4 mm</p></li>
+<li><p>Diameter Tolerance value is missing for the clearance hole.</p></li>
+</ul>
+
+<br>
+<p>以下、例文和訳</p>
+<ul>
+<li><p>留め具の最大径-MMC（F）= 10.0 mm</p></li>
+<li><p>クリアランス穴の最小径-MMC（H）= 10.4 mm</p></li>
+<li><p>クリアランス穴の直径公差値が欠落しています。</p></li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Alert1.bmp"/>
+</div>
+<br>
+
+<ol start="2">
+<li style="color:#C00000; font-weight:bold;"><p style="color:#C00000; font-weight:bold;"><b>クリアランス穴の最小径（MMC）が留め具の最大径（MMC）より小さい場合、組立条件を満たさないためアラートとしてフラグ付けされます。</b></p></li>
+</ol>
+<br>
+<p>以下の例文のようなメッセージが表示されます。</p>
+<ul>
+<li><p>Maximum Diameter of Fastener-MMC (F) = 10.0 mm</p></li>
+<li><p>Minimum Clearance Hole Diameter-MMC (H) = 9.5 mm</p></li>
+<li><p>Assembly condition is not satisfied as clearance hole diameter (MMC) is less than fastener diameter (MMC).</p></li>
+</ul>
+<br>
+<p>以下、例文和訳</p>
+<ul>
+<li><p>留め具の最大径-MMC（F）= 10.0 mm</p></li>
+<li><p>クリアランス穴の最小径-MMC（H）= 9.5 mm</p></li>
+<li><p>クリアランス穴径（MMC）が留め具径（MMC）より小さいため、組立条件が満たされていません。</p></li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Floating_Fastener_Calculation_Alert2.bmp"/>
+</div>
+
+<br>
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> に基づき、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>で実行できます。</p></li>
+<li><p>チェックを正常に実行するには、アセンブリ内のボルト、ワッシャなどを識別するために、以下の前提条件が必要です。</p></li>
+</ul>
+<ul><ul class="note-body">
+  <li>ボルト、ピン、スタッド、ワッシャ、ナットを識別するために、Hardware Name および Hardware Type の情報を必ず入力する必要があります。ハードウェアを構成するには、<a href="../DFMPro_Customization/Hardware_Database.htm">Hardware Database</a> を参照してください。</li>
+</ul></ul>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Hardware_Database_Rule_Image.png"/>
+</div>
+
+<br>
+
+<ul><ul class="note-body">
+<li>注釈（幾何公差および寸法）は、CAD ツリーで表示されているモードで利用可能な場合に強調表示されます。表示されていない場合は、手動で表示してください。</li>
+<li>スケッチで穴を作成してから押し出して作成した穴の場合、押し出し穴の寸法は強調表示されません。</li>
+</ul></ul>
+
+<br>
+</body>
+</html>

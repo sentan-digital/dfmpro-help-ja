@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_18"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Boss Parameters</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Boss Parameters "推奨ボス寸法"</h1>
+<h4>ルール</h4>
+<p>ボスの外径と内径の比、高さと外径の比、高さと公称肉厚の比など、ボスに関連するパラメータは、指定された値に従って設定する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>ボスの理想的な高さを維持するうえで重要なのは、適切なドラフトを付与して高いボスを設計した場合でも、根元には厚肉部が生じるという点を理解することです。これは冷却に影響を与え、ボイドやヒケの原因となります。高いボスは深い中空穴を生じさせ、長いコアピンを必要とします。また、コアピンの冷却や穴の寸法精度にも影響を与える可能性があります。</p>
+<p>外径と内径の比率については、荷重がかかった際にも十分な強度を確保できるようにすることが不可欠です。そのため、弱いボスを避けるために、外径と内径の比は規格に従って設定する必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+<li>ボス外径と内径の比については、2.0以下とすること。</li>
+<li>ボス高さと外径の比については、3.0以下とすること。</li>
+<li>ボス高さと公称肉厚の比については、5.0以下とすること。</li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProはボス形状を識別し、高さと外径の比、高さと公称肉厚の比をチェックしたうえで、設定された値と照合して検証します。同様に、DFMProはボスの外径および内径を算出し、その比率を設定値と比較して検証します。</p>
+<p>ユーザーは、デフォルトで設定されている比率を編集することができます。</p>
+<p>ルールUIでは、材料の一覧は <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から読み込まれ、ユーザーは材料およびその値を構成できます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルールUI内でマテリアルグループおよびグレード別に構成済み材料の一覧をフィルタ表示できます。同じキー（Ctrl+M）を使用してフィルタをリセットできます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png"/>
+</div>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Boss_Parametrers_Help.bmp"/>
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>D1 = 内径</p>
+<p>D2 = 外径</p>
+<p>H = ボス高さ</p>
+<p>t = 公称肉厚</p>
+
+<br>
+</body>
+</html>

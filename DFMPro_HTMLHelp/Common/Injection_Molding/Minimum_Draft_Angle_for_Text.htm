@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_9"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Minimum Draft Angle for Text</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Minimum Draft Angle for Text "刻印に対する最小抜き勾配"</h1>
+<h4>ルール</h4>
+<p>本ルールは、テキストに対する最小ドラフト角をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>テキスト文字はプラスチック部品における小さなフィーチャーであり、追加情報を伝達するために使用されます。</p>
+
+<br>
+
+<p><b>例：</b></p>
+<ul>
+<li><p>文字表記</p></li>
+<li><p>識別マーク</p></li>
+<li><p>重要な指示、警告</p></li>
+<li><p>法的情報および規制情報</p></li>
+<li><p>会社ロゴ、シンボル</p></li>
+</ul>
+
+<br>
+
+<p>テキスト文字はプラスチック部品の小さなフィーチャーであり、部品に凹形状として設けるよりも、浮き出し文字として配置した方が見栄えが良くなります（凹文字の場合、金型に文字が切削加工されます）。部品上の浮き出し文字は読みやすく、容易に確認できます。一方、金型側で凹文字とする場合は研磨が容易になります。これに対して、金型側で浮き出し文字とすると、良好な仕上げを得ることが難しくなります。一般的な設計指針では、離型を容易にし、摩擦や引きずり痕を防ぐために、最小でも0.5度のドラフト角を付与することが推奨されています。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な設計指針として、最小0.5度のドラフト角が必要とされますが、ドラフト角の値はテキスト高さに応じて変化する場合があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProでは、テキスト高さに依存しないデフォルトのドラフト角をチェックできます。ただし、必要に応じて、テキスト高さに基づいた値をユーザーが設定することも可能です。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum_Draft_Angle_for_Text.png"/>
+</div>
+
+<p>ここでは、</p>
+<p>Q = テキストのドラフト角</p>
+<p>H = テキストの面高さ</p>
+
+
+<br>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.13.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Minimum Bend Radius</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Minimum Bend Radius "最小曲げ半径"</h1>
+<h4>ルール</h4>
+<p>板金成形において、設計者は材料のしわを防ぐために最小曲げ半径を確保する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>板金成形プロセスでは、圧縮ひずみにより材料が押し合わされ、重なりが生じます。一般的なガイドとして、最小曲げ半径は少なくとも板厚と同等であるべきです。半径が推奨値より小さい場合、材料が軟らかい材料側へ流れ込み、硬い材料が破断する可能性があります。このような場合、局所的なくびれ（ネッキング）や破断が発生することもあります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、最小曲げ半径は少なくとも板厚と同等であるべきです。多くの焼鈍（アニール）された金属は、板厚と同等の半径まで曲げることができます。しかし、より軟らかい金属の中には、内側半径を板厚の1/2まで曲げられるものもあります。</p>
+<p>短い曲げ半径長さは、最小曲げ半径を小さくします。</p>
+<p>材料およびその硬さに基づき、「最小曲げ半径／板金板厚」の比に対して異なる値を推奨します。</p>
+
+<br>
+
+<h4>構成</h4>
+<p><b>曲げ半径／板厚</b> の値を適切に設定してください。</p>
+<p>さらに、<a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から取得される製造材料（fabrication materials）の一覧を使用して、特定材料に基づく比率を選択することもできます。ルールを実行する際は、入力選択（Input Selection）ダイアログボックスで、表示される製造材料の一覧から対象パーツの材料を選択してください。</p>
+<p>選択した材料に対して「曲げ半径／板厚」比率が構成されていない場合は、既定値（Default value）がパーツ解析に使用されます。</p>
+<p>ルールUIでは、材料の一覧は <a href="../DFMPro_Customization/material_database.htm">Materials Database</a> から読み込まれます。ユーザーは材料とそれに紐づく値を構成できます。材料グループ内では、材料グレードはアルファベット順に並べ替えられます。材料グループが選択されている場合、DFMPro は材料グループ全体で一貫した比率を維持しながら解析を進めます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Material_Group_Grade_Dropdown.png">
+</div>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Minimum_Bend_Radius_SMF_Help.bmp">
+</div>
+
+<br>
+
+<p><b>ここでは、</b></p>
+<p>t = 板金板厚</p>
+<p>R = 曲げ半径</p>
+
+
+<br>
+
+
+</body>
+</html>

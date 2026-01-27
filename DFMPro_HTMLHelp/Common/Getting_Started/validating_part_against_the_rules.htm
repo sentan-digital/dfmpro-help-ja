@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_25"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Running Analysis</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>解析の実行</h1>
+<p>ルールに基づいて設計を検証するには、以下の手順を実行します。</p>
+
+<ol>
+<li>
+<p><strong><i>DFMPro</i></strong> を起動し、単一のソリッドボディまたは複数のボディを含む <strong><i>パーツ／アセンブリ ドキュメント</i></strong> を開きます。</p>
+</li>
+</ol>
+
+<ol start="2">
+<li>
+<p>DFMPro ユーザーインターフェース上で、実行する DFMPro チェックの一覧を含む <strong><i>ルールファイル</i></strong> を選択します。</p>
+<p>DFMPro では、ドロップダウンメニューからルールファイルを選択することも、ファイルの保存場所を参照して指定することもできます。</p></li>
+</ol>
+
+<ol start="3">
+<li>
+<p>適切な <em><strong>製造プロセス</strong></em> を選択します。</p>
+<p>Additive Manufacturing "積層造形"、Cabling "ケーブリング"、Casting "鋳造"、Die Casting "ダイカスト"、General、Injection Molding "射出成形"、Investment Casting "精密鋳造"、Thermoforming "熱成形"、Prismatic Mill "フライス加工"、Sand Casting "砂型鋳造"、Sheet Metal "板金加工"、Sheet Metal Forming "板金成形"、Tubing "チューブ配管"、Vacuum Infusion ""、Welding "溶接"、Turning "旋盤加工"、または Assembly "組立て" を選択できます。</p></li>
+</ol>
+
+
+
+<ol start="4">
+<li>
+<p><img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"/> <strong><i>Analyze</i></strong> ボタンをクリックして解析を実行します。</p>
+<p>解析に要する時間は、パーツのサイズや複雑さに応じて、数秒から数分程度かかる場合があります。</p>
+<p>DFMPro は加工の観点からパーツを解析します。設計ツリーからは必ずしも明確に分からない、加工可能なフィーチャーをボディから抽出します。</p>
+<p>解析が完了すると、結果が Results グループボックスに表示されます。</p></li>
+</ol>
+
+
+<ol start="5">
+<li>
+<p><a href="viewing_and_interpreting_results.htm">結果の表示および解釈</a> を行います。</p>
+</li>
+</ol>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>Creo Parametric では、アセンブリ内でパーツやサブアセンブリを表示／非表示に切り替えた場合、その状態を新しいセッションで同じアセンブリを開いた際にも正しく反映させるために、ファイル保存時にレイヤー状態を必ず保存する必要があります。</p></li>
+<li><p>ユーザーが <a href="DFX_Server_Solution.htm">DFX サーバー</a> に解析リクエストを送信する場合も、これらの手順が確実に実行されている必要があります。コンポーネントの非表示状態を正しく取得するため、解析リクエストをサーバーに送信する前に、レイヤー状態およびアセンブリを保存してください。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

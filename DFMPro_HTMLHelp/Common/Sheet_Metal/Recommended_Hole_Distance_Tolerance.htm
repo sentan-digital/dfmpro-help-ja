@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_91"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Hole Distance Tolerance</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Recommended Hole Distance Tolerances "推奨穴間距離公差"</h1>
+<h4>ルール</h4>
+<p>板金部品における穴の公差は、ユーザーが指定した値以上である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+
+<br>
+
+<p>穴と穴の間の距離精度は、板金を加工する際に使用される機械に依存します。一般に、穴同士が非常に近い場合（パーフォレーションパターンや、ディンプルや皿穴などの成形フィーチャーがある場合）には、穴あけ加工中に板金へ応力が加わります。その結果、板金が反りや歪みを生じ、穴間距離に不要なばらつきが発生することがあります。このような場合、設計者は許容公差を設定する必要があります。</p>
+<p>厳しすぎる公差は製造コストを増加させ、生産性を低下させます。製造効率を向上させ、かつ機能的に許容可能な公差を指定することが重要です。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>過度に厳しい公差はコストの増加と生産性の低下につながります。適切な公差が設定された部品は、優れた嵌合性と機能性を備え、製造効率の向上にも寄与します。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro は CAD モデルから特定のフィーチャーを識別し、関連する寸法公差を読み取り、それらを設定された値と照合して検証します。</p>
+<p>ユーザーは、デフォルトで設定されている値を編集することができます。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/RecommendedHoleDistanceTolerances1.png"/>
+</div>
+
+<br>
+
+<h4>例</h4>
+<p>以下の板金部品では、ユーザーが穴間距離に対して 0.10 の公差値、穴から部品エッジまでの距離に対して 0.08 の公差値を設定しています。</p>
+<p>しかし、設定されている推奨公差値は 0.12 であるため、DFMPro は解析を行い、不適合として表示します。詳細は以下の画像を参照してください。</p>
+
+<br>
+
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/RecommendedHoleDistanceTolerances2.png"/>
+</div>
+
+<br>
+
+<p>注記:</p>
+<p>CAD モデルで指定された公差は、eDrawings レポート上では表示されません。</p>
+
+
+<br>
+</body></html>

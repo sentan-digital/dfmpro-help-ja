@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Check Preferred Components</title>
+  <style type="text/css">
+    /*<![CDATA[*/
+    table.MsoNormalTable {
+      mso-style-parent: ;
+      font-size: 11.0pt;
+      font-family: Calibri, sans-serif;
+    }
+    /*]]>*/
+  </style>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>"Check Preferred Components" 推奨コンポーネントのチェック</h1>
+
+<h4>ルール</h4>
+
+<p>アセンブリには、ユーザーが設定した推奨または許可されたコンポーネントのリストが含まれている必要があります。</p>
+<br>
+
+<h4>説明</h4>
+
+<p>多くの組織では、コンポーネントを変更または置き換えることで、類似した製品を異なるバージョンやシリーズとして製造しています。これは、市場の需要に応じて、異なる機能やコスト帯で製品を提供するために行われています。</p>
+<p>このような場合、製品やシリーズに応じて、最終アセンブリに推奨コンポーネントおよび許可されたコンポーネントが含まれていることを保証することが重要です。目的は、特定の製品バージョンやシリーズの最終アセンブリから、使用が許可されていないコンポーネントを除外することです。また、組織によっては、却下されたコンポーネントに割り当てられている材質を廃止扱いとする場合もあります。そのため、そのような部品が最終アセンブリとともに出荷されないようにする必要があります。</p>
+<p>&nbsp;</p>
+
+<h4>構成</h4>
+
+<p>解析対象となる製品シリーズまたはバージョンに応じて、ルール構成テーブルに、適切なコンポーネントタイプと、推奨、許可、非許可の各コンポーネント名を追加してください。</p>
+<p>テーブルに示されているように、非許可コンポーネントはアセンブリに含まれてはなりません。非許可コンポーネントがアセンブリ内に存在する場合、その結果は不合格として表示され、推奨コンポーネント名が提案されます。一方、許可または推奨コンポーネントが存在する場合は、その解析は合格となります。</p>
+<p>&nbsp;</p>
+
+<table align="center" border="1" cellspacing="0" width="36.624%">
+  <colgroup>
+    <col style="width: 33.864%;" />
+    <col style="width: 21.768%;" />
+    <col style="width: 22.646%;" />
+    <col style="width: 21.722%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td style="text-align: center;">
+        <p><strong>コンポーネントタイプ</strong></p>
+      </td>
+      <td style="text-align: center;">
+        <p><strong>推奨</strong></p>
+      </td>
+      <td style="text-align: center;">
+        <p><strong>許可</strong></p>
+      </td>
+      <td style="text-align: center;">
+        <p><strong>非許可</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>制御基板</p>
+      </td>
+      <td>
+        <p>2A4296-01</p>
+      </td>
+      <td>
+        <p>P00013-02</p>
+      </td>
+      <td>
+        <p>900-1234</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <p>ギアボックスアセンブリ</p>
+      </td>
+      <td rowspan="4">
+        <p>8911-0200</p>
+      </td>
+      <td rowspan="4">
+        <p style="text-align: center;">-</p>
+      </td>
+      <td>
+        <p>8911-0100</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>8911-0150</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>8911-0300</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>8911-0400</p>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="4">
+        <p>冷却システム</p>
+      </td>
+      <td rowspan="4">
+        <p>5C11-0120</p>
+      </td>
+      <td rowspan="4">
+        <p style="text-align: center;">-</p>
+      </td>
+      <td>
+        <p>5C11-0080</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>5C11-0090</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>5C11-0110</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>5C11-0130</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2><b>ハードウェア構成</b></h2>
+
+<p>ユーザーは、<em><strong>Import</strong></em> ボタンを使用して、Excel シートテンプレートに含まれるハードウェアデータを一括でインポートできます。</p>
+
+<br>
+
+<p class="note-title">注記:</p>
+
+
+
+<ul class="note-body">
+<li><p>ヘッダーは必須ではありません。ユーザーは、Excel シートの最初の 4 列にコンポーネント名を追加できます。</p></li>
+<li><p>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+<li><p>ユーザーは、ワイルドカード文字を使用してコンポーネント名を構成できます。</p></li>
+</ul>
+
+<ol><ol class="note-body">
+  <li><p>*dia*（コンポーネント名に dia または DIA が含まれる）</p></li>
+  <li><p>*_dia（名前が _dia または DIA で終わる）</p></li>
+  <li><p>dia*（名前が dia または DIA で始まる）</p></li>
+</ol></ol>
+
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Check_Preferred_Components_Wild-Card.png" />
+</div>
+
+<br>
+
+
+</body>
+</html>

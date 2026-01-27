@@ -1,0 +1,1 @@
+rh._.exports({"0":[[" ","Contacting Technical Support"]],"1":[[" ","Contacting Technical Support"]],"2":[[" ","In case of any queries or problems, please contact the technical support team at ","dfmpro.support@hcl-software.com","."]],"id":"2"})

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="12.0_2"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <title>Modifying the DFMPro Database</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  <h1>DFMPro データベースの変更</h1><br>
+<p>DFMPro には、標準穴径（Standard Hole Sizes）を含むデータベースが用意されています。データベース内のデフォルト値は、データベースで定義されている材料に基づいて利用可能です。DFMPro のデータベースは、すべてのルールファイルから読み取られます。</p>
+<p>このデータベースは、使用している加工環境で用いられる材料および穴径を反映するように変更することができます。</p>
+<ol>
+  <li>
+    <p>DFMPro メニューの <strong><em>Rule Manager</em></strong> ボタンをクリックして、<a href="../Getting_Started/configuring_rules.htm">Rule Manager ダイアログボックス</a>を開きます。</p>
+  </li>
+</ol>
+<ol start="2">
+  <li>
+    <p><strong><em>Standard Hole Sizes</em></strong> ルールを選択し、<strong><em>Edit Rule</em></strong> ボタンをクリックします。</p>
+  </li>
+</ol>
+<p>現在のレコード一覧が表示されます。各レコードは、標準ドリルビット（すなわちドリル径）を定義しています。</p>
+<ol start="3">
+  <li>
+    <p>必要に応じてサイズを <strong>Add</strong>（追加）または <strong>remove</strong>（削除）し、その後 <strong><em>OK</em></strong> ボタンをクリックします。</p>
+  </li>
+  <li>
+    <p><strong><em>Save</em></strong> ボタンをクリックします。</p>
+  </li>
+</ol>
+<p>これらの変更はデフォルトのデータベースファイルに保存され、すべてのルールファイルから読み取られます。</p>
+<p><strong>注:</strong></p>
+<p>DFMPro は、オープンソースデータベースである SQLite を使用して、材料および標準穴径のデフォルトデータベースを提供しています。このデータベースは *.dat ファイルとして保存されており、上記で説明した方法で変更することができます。</p>
+
+
+</body></html>

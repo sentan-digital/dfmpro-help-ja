@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_17"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Analysis with Multiple Processes</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>複数プロセスによる解析</h1>
+<p>モデルに鋳造後加工領域が含まれている場合、DFMPro では複数のプロセスに対して同時に解析を実行し、統合された DFMPro の結果を取得することができます。</p>
+
+<br>
+
+<p><b>対応している複合プロセス:</b></p>
+<ul>
+  <li><p>Casting "鋳造" と Prismatic Mill "フライス加工"</p></li>
+  <li><p>Die-Cast "ダイカスト" と Prismatic Mill "フライス加工"</p></li>
+  <li><p>Sand-Casting "砂型鋳造" と  Prismatic Mill "フライス加工" </p></li>
+</ul>
+
+<br>
+
+<p>以下のセクションでは、鋳造とフライス加工の解析を組み合わせて、統合された DFMPro の結果を取得するための手順を段階的に説明します。</p>
+<p>同様の手順で、ダイカスト／砂型鋳造とフライス加工の解析も実行できます。</p>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Analysis_with_Multiple_Process_Example_Part.png"></div>
+<p> </p>
+
+<h2>鋳造 と フライス加工</h2>
+<p>製造プロセスとして「鋳造」を選択すると、DFMPro は副次プロセスの選択肢として、<b><i>フライス加工</i></b> および <b><i>なし</i></b> をドロップダウンリストで提供します。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Analysis_with_Multiple_Process_Inputs_Casting.png"></div>
+<p> </p>
+<p> </p>
+
+<h4>副次プロセスを選択する手順</h4>
+<ol>
+  <li><p><em><strong>CAD パーツ</strong></em>を開きます。</p></li>
+  <li><p><a href="User_Inputs.htm">製造プロセス</a>として <strong><i>鋳造</i></strong> を選択し、必要な入力情報をすべて追加します。</p></li>
+  <li><p><img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>Analyze</i></strong> ボタンをクリックして、DFMPro の実行を進めます。</p></li>
+  <li><p>表示されたエンティティ選択グループボックスで、<strong><i>パーツの引き抜き方向</i></strong> を定義します。</p></li>
+  <li><p><strong><i>金型面の分類を編集</i></strong> チェックボックスを選択します。</p></li>
+  <li><p>必要に応じて、副次プロセスのドロップダウンボックスからいずれかのオプションを選択します。</p></li>
+</ol>
+
+<ul><ul>
+  <li><p><b>フライス加工:</b> <a href="DFMPro_Settings.htm#Prismatic_Mill">設定ファイル</a>で定義されたカラ―コードに基づき、DFMPro は CAD モデル上に存在する加工領域の色を判定し、ドロップダウンリストから <i>フライス加工</i> を選択します。</p>
+  <p>必要に応じて、<a href="Analysis_Region.htm">加工領域</a>に対して別のオプションを選択することも可能です。</p></li>
+  <li><b>なし:</b> ユーザーは <b><i>なし</i></b> オプションを選択できます。このオプションを選択した場合、DFMPro は鋳造に関するすべてのルールをパーツ全体に対して実行します。</li>
+</ul></ul>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Entity_Selection_Casting.png"></div>
+<p> </p>
+
+<ol start="7">
+  <li><p><b><i>フライス加工</i></b> オプションを選択した状態で <img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>Analyze</i></strong> ボタンをクリックすると、加工領域用のエンティティ選択グループボックスが表示されます。</p>
+<p>DFMPro の設定ファイルで定義されたカラ―コードと一致する、CAD モデル上の加工領域が表示されます。</p></li>
+</ol>
+
+<br>
+
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Analysis_with_Multiple_Process_Entity_Selection.png"></div>
+<p> </p>
+
+<ol start="8">
+  <li><p><strong><i>加工セットアップを編集</i></strong> チェックボックスを選択し、<img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"> <strong><i>Analysis</i></strong> ボタンをクリックして、複数プロセスでの解析を実行します。</p></li>
+  <li><p>選択された加工領域に基づき、対象となる加工フィーチャーのみに対して <i>加工セットアップ</i> が作成されます。ユーザーはこれらのセットアップを確認および変更できます。</p></li>
+  <li><p><a href="MPD_Mold_Faces_Classification.htm">金型壁の分類</a> - DFMPro は、主引き抜き方向および副引き抜き方向に基づいて、面を <i>コア</i>、<i>キャビティ</i>、<i>サイドアクション</i> に分類します。</p></li>
+</ol>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Analysis_with_Multiple_Process_Edit_Mold_Classification.png"></div>
+
+<br>
+
+<p>注記:</p>
+<ul>
+<li><p>鋳造フィーチャー面および部分的に着色された加工フィーチャー面（加工フィーチャーとして分類されていないもの）のみが金型壁分類の対象となり、これらの面が鋳造ルール解析に使用されます。</p></li>
+</ul>
+
+<br>
+
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Analysis_with_Multiple_Process_Notes.png"></div>
+
+
+<br>
+
+<ol start="11">
+  <li><p><em><strong>OK</strong></em> ボタンをクリックし、定義された分類に基づいて DFMPro の解析を続行します。</p></li>
+  <li><p>ルールグループボックス内に、DFMPro は選択内容に基づいたルールカテゴリを表示します。</p></li>
+</ol>
+
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Analysis_with_Multiple_Process_Results.png"></div>
+
+<br>
+</body>
+</html>

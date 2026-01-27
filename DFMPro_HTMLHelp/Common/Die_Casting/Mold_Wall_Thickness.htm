@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.5.0_6"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Mold Wall Thickness</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Mold Wall Thickness "金型壁厚"</h1>
+<h4>ルール</h4>
+<p>金型肉厚（または公称肉厚に対する比率）は、ユーザーが指定した値より大きくなければなりません。</p>
+<br>
+<h4>説明</h4>
+<p>金型肉厚は、ダイカストモデル内の各種フィーチャー間の間隔によって影響を受けます。リブやボスなどのフィーチャーが互いに近接して配置されたり、部品の壁に近い位置に配置されたりすると、冷却が困難な薄肉部が形成され、品質に悪影響を及ぼす可能性があります。金型肉厚が薄すぎる場合、製造が困難になるだけでなく、ホットブレードの発生や冷却の不均一といった問題により、金型寿命が短くなる原因にもなります。</p>
+<br>
+<h4>推奨事項</h4>
+<p>許容される最小の金型肉厚は、工程および材料に関する検討に基づいて決定する必要があります。ただし、ダイカスト部品のフィーチャー間には 1 mm 程度のクリアランスを確保することが妥当であり、その寸法の金型肉厚を確保することが推奨されます。</p>
+<br>
+<h4>構成</h4>
+<p>金型肉厚の絶対値、または部品の公称肉厚に対する比率を使用して、このルールを構成します。</p>
+<p>場合によっては、フェース高さが非常に小さいために、金型肉厚が不足していると判定されることがあります。このようなケースを避けるために、ユーザーは考慮対象とするフェース高さ（H）を &gt;= &lt;値&gt; mm として入力することができます。</p>
+<p>フェース高さが小さい場合、金型が破損したり曲がったりする可能性は低くなりますが、フェース高さが大きくなると、金型が破損または曲がる可能性は非常に高くなります。</p>
+<p>ルール UI では、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">材料マッピング</a> から読み込まれ、ユーザーは材料およびその値を構成することができます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルール UI 上で材料グループおよびグレードとともに、構成済み材料の一覧をフィルタリングして表示できます。同じキー（Ctrl+M）を使用して、フィルタをリセットすることができます。</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png"/>
+</div>
+<p> </p>
+<h4>例</h4><br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Mold_Wall_Thickness_DC_Help.bmp"/>
+</div>
+
+<br>
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D = フィーチャー間の距離</p>
+<p>H = 面高さ</p>
+<p>t = 公称肉厚</p>
+</div>
+</div>
+
+
+<br>
+</body>
+</html>

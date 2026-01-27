@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_47"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Gusset Parameter</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Gusset Parameters "ガセットの寸法"</h1>
+<h4>ルール</h4>
+<p>ガセットのパラメータは、ユーザーが指定した値に従っている必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>板材の強度や板厚だけでは不足する曲げ部の剛性を確保するため、成形された部品の一部には補強リブを設ける必要があります。</p>
+<p>材料や板厚の制約により、板金ブラケットで一般的に要求される高い剛性を持つ曲げを実現するために、板金の引張強度を単純に高めることは困難です。通常は、より高価で適さない別の材料を使用する必要があります。場合によっては、溶接ガセットを用いて設計を補強することもできますが、その場合はスペースやコストの制約を受けることになります。</p>
+<p>これらを実現する最も簡単な方法は、剛性を高めるためにガセットを設けることです。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<ul>
+  <li><p>ガセットの最小幅（W）は、板厚の2倍以上とする必要があります。</p></li>
+  <li><p>ガセットの最大深さ（D）は、板厚の2倍以下とする必要があります。</p></li>
+  <li><p>推奨されるガセット成形角度（Q2）は45度です。</p></li>
+  <li><p>この場合の推奨ガセットヘッド角度（Q1）は、90度以上とする必要があります。</p></li>
+</ul>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro はガセット形状を識別し、その深さ、幅、および角度を算出します。算出された値は、構成された設定値と照合されて検証されます。</p>
+<p>ガセットの幅および深さは、板厚に対する比率として算出されます。</p>
+<p>また、ガセットヘッド角度およびガセット成形角度も、構成された設定値と照合して検証されます。</p>
+<p>ユーザーは、デフォルトで構成されている値を編集することができます。</p>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Gusset_Parameters_Help.bmp"></div>
+
+<br>
+
+<p>ここでは、</p>
+<p>Q1 = ガセット成形角度</p>
+<p>Q2 = ガセットヘッド角度</p>
+<p>h = ガセットの深さ</p>
+<p>t = 板厚</p>
+<p>W = ガセットの幅</p>
+
+<br>
+</body>
+</html>

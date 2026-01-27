@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="9.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>DFMPro Settings</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>DFMPro 設定</h1><br>
+<p> </p>
+<p>DFMPro は、DFMPro 設定を編集するためのインターフェースを提供します。このダイアログボックスでは、一部の設定はユーザーが必要に応じて変更できますが、残りは管理者のみが制御できます。管理者管理の設定は常に無効状態で表示され、ユーザーは変更できません。これらの設定にアクセスするには、（以下に示す）インストール先にある <b><i>DFXSettingApplication.exe</i></b> ファイルを右クリックし、コンテキストメニューから <b><i>Run as administrator</i></b> を選択します。</p>
+<p>E.g., <i>C:\Program Files\Geometric\DFMPro for Creo Parametric(x64)\DFMPro</i></p>
+<p> </p>
+<p><b>以下は、DFMPro-Settings ダイアログボックスで利用可能なタブおよびサブタブです:</b></p>
+<ul>
+  <li><a href="#Settings">Settings - Info</a>
+    <ul>
+      <li><a href="#General">General</a>
+        <ul>
+          <li><a href="#Instance_Highlight">Instance Highlight</a></li>
+          <li><a href="#Import_Export">Import/Export</a></li>
+          <li><a href="#Report">Report</a></li>
+          <li><a href="#PLM_Integration">PLM Integration</a></li>
+          <li><a href="#Profile_Execution">Profile Execution</a></li>
+          <li><a href="#DFX_Analytics">Analytics</a></li>
+          <li><a href="DFMPro_Settings.htm#Inputs">Inputs</a></li>
+          <li><a href="#Others">Others</a></li>
+          <li><a href="DFMPro_Settings.htm#DFXServer">DFX Server</a></li>
+          <li><a href="DFMPro_Settings.htm#Cost">Cost</a></li>
+        </ul>
+      </li>
+      <li><a href="DFMPro_Settings.htm#Rule_Manager">Rule Manager - General</a></li>
+      <li><a href="DFMPro_Settings.htm#Module-specific_settings">Modules</a>
+        <ul>
+          <li><a href="DFMPro_Settings.htm#Injection_Molding">Injection Molding</a></li>
+          <li><a href="DFMPro_Settings.htm#Assembly">Assembly</a></li>
+          <li><a href="DFMPro_Settings.htm#Prismatic_Mill">Prismatic Mill</a></li>
+          <li><a href="DFMPro_Settings.htm#Tubing">Tubing</a></li>
+          <li><a href="#Cabling">Cabling</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p> </p>
+
+<h2><a name="Settings" id="Settings"></a>Settings</h2><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Tab_CP.png"/></div>
+<p> </p>
+
+<h4><b>Info</b></h4><br>
+<p><b><i>Settings</i></b> タブをクリックすると、Info サブタブが表示されます。このセクションでは、既定の <i>Directory</i> の場所を提示し、必要に応じて新しい場所を設定することもできます。</p>
+<ul>
+  <li><b>Default location:</b> <i>DFX Global Settings file</i>（<i>DFXCreoSettings.xml</i>）は、記載された既定の場所にあります。</li>
+  <li><b>DFMPro - Setting Upgrade:</b> この設定では、既存の <i>DFMPro Setting file</i> を新しいバージョンの <i>Setting file</i> にアップグレードできます。この設定は管理者専用です。</li>
+</ul>
+<p> </p>
+
+<p><u><b>Global Settings File をアップグレードする手順:</b></u></p>
+<ol>
+  <li>新しい Settings file をマシン上の安全なフォルダにコピーします。</li>
+  <li>次の場所から <b><i>DFXSettingApplication.exe</i></b> を起動します。</li>
+</ol>
+<p style="margin-left: 96px;">E.g., C:\Program Files\Geometric\DFMPro for Creo Parametric(x64)\DFMPro</p>
+<p> </p>
+<ol>
+  <li value="3">左側ペインから <b><i>Settings</i></b> オプションを選択します。</li>
+  <li value="4"><b><i>Browse</i></b> ボタンをクリックし、新しい Settings file を選択して既存の DFMPro Settings file をアップグレードします。</li>
+  <li value="5"><b><i>Upgrade</i></b> ボタンをクリックします。</li>
+  <li value="6">アップグレード後、次の変更が行われます:</li>
+</ol>
+<ul>
+  <li>既存の settings files は新しいバージョンに更新され、以前のすべての Settings files のバックアップが作成されます。</li>
+  <li>新しく追加された設定が既存の settings file に追加され、ユーザーが利用可能になります。</li>
+  <li>既存の変更済み設定 &lt;user / global level&gt; は保持されます。</li>
+  <li>新しく追加された設定は、DFMPro アドインの起動後に利用可能になります。</li>
+  <li>アップグレードが成功すると、アップグレード状態を素早く確認するためのログファイルが settings Directory の場所に生成されます。</li>
+</ul>
+<h4> </h4><br>
+
+<h2><a name="General" id="General"></a>General</h2><br>
+<p><b><i>General</i></b> タブをクリックすると、右側ペインにさまざまなサブタブが表示されます。各タブには独自の設定セクションがあります。目的のサブタブをクリックし、必要に応じて変更してください。</p>
+<p> </p>
+
+<h4><a name="Instance_Highlight" id="Instance_Highlight"></a>Instance Highlight</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Instance_Highlight_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b><a name="Zoom_on_Failed_Instance_Selection" id="Zoom_on_Failed_Instance_Selection"></a>Zoom on Failed Instance Selection:</b> この設定は、失敗インスタンスへズームインするために使用します。</p></li>
+  <li><p><b>Display out of Instance Count:</b> この設定は、DFMPro の結果の失敗ツリーにおけるインスタンス数の表示/非表示を切り替えるために使用します。</p></li>
+</ul>
+<p>E.g., チェックボックスがオンの場合、結果は (2/10 または 10/10) のように表示されます。チェックボックスがオフの場合、結果は (2 または 10) のように表示されます。</p>
+<ul>
+  <li><p><b>Capture Image on Ignoring Instance:</b> この設定は、ユーザーが失敗インスタンスを無視（Ignore）したときに <a href="Review_Details.htm">Review Details ダイアログボックス</a> を起動します。</p></li>
+</ul>
+<p> </p>
+
+<h4><a name="Import_Export" id="Import_Export"></a>Import/Export</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_ImportExport_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Default Folder Path for Export and Import Results:</b> この設定は、DFMPro 結果のエクスポートおよびインポートの既定フォルダパスを設定します。</p></li>
+  <li><p><b>Add Folder/Directories for Auto Import:</b> この設定は、Auto Import（自動インポート）結果に使用されます。</p></li>
+</ul>
+<ol>
+  <li>*.dfmr を保管するローカルフォルダまたはネットワークディレクトリを設定します。</li>
+  <li><b>plus (+)</b> 記号をクリックし、複数のディレクトリを追加して *.dfmr ファイルをインポートします。</li>
+  <li>ディレクトリを選択し、<b>minus (-)</b> 記号をクリックして削除します。</li>
+</ol>
+<p> </p>
+
+<h4><a name="Report" id="Report"></a>Report</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Report_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>View Report on Save:</b> 選択内容に基づき、レポート生成後に DFMPro レポートを起動します。この設定は PLM Integration には適用されません。</p></li>
+  <li><p><b>Filter Ignored Instances:</b> 選択内容に基づき、DFMPro は無視（Ignore）されたインスタンスをフィルタします。</p></li>
+  <li><p><b>Maintain Instance Index Sequence in Report:</b> この設定は eDrawings および Excel ベースのレポートの両方に適用されます。インスタンスが無視された後でも、インスタンスの順序（シーケンス）がレポート内で維持されます。</p></li>
+</ul>
+<p>たとえば、チェックボックスがオンの場合、eDrawings レポート内の失敗インスタンスの順序は DFMPro の結果ツリーと同じになります。</p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Report_Instance.png"/></div>
+<p> </p>
+
+<h4><a name="PLM_Integration" id="PLM_Integration"></a>PLM Integration</h4><br>
+<p>PLM Integration の設定を変更できるのは管理者のみです。設定に基づき、DFMPro の結果とレポートは PLM システムに保存されます。デフォルトでは、これらの設定はオフ（未チェック）です。</p>
+<p>結果およびレポートをローカルにエクスポートするには、チェックボックスがオフ（未チェック）であることをユーザーが確認する必要があります。</p>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_PLM_Integration_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Export-Import Results to PLM:</b> この設定は、DFMPro 結果を PLM システムへエクスポート/インポートするために使用します。パーツがチェックインされると、結果はパーツリビジョンに添付されます。</p></li>
+  <li><p><b>Automatic:</b> この設定は、パーツが保存されチェックインされると、DFMPro 結果を PLM システムへ自動的にエクスポートします。結果が PLM システムに存在する場合、ユーザーが DFMPro を起動すると自動的にインポートされます。</p></li>
+  <li><p><b>Add Report to PLM:</b> この設定は、DFMPro レポートを PLM システムに追加します。</p></li>
+</ul>
+<p>Excel、eDrawings、PDF レポートは、パーツがチェックインされるとパーツリビジョンに添付されます。</p>
+<p>詳細については、<a href="../PLM_Integration/PLM_Integration_with_DFMPro.htm">PLM Integration with DFMPro</a> セクションを参照してください。</p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/Creo_PLM_Integration_Windchill_Saved_Reports.png"/></div>
+<p> </p>
+
+<h4><a name="Profile_Execution" id="Profile_Execution"></a>Profile Execution</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Profile_Execution_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Enable Profile Execution:</b> 選択内容に基づき、プロファイル構成を選択するための <a href="DFMPro_Profile_Execution.htm">DFMPro Profile Execution</a> タブが DFMPro ユーザーインターフェースに表示されます。ユーザーは必要に応じて独自のプロファイル構成を追加できます。チェックボックスを有効にすると、Profile Definition File のパスが表示されます。</p></li>
+</ul>
+<p>デフォルトでは、このチェックボックスはオフ（未選択）であり、DFMPro は通常どおり動作します（<a href="workflow_at_a_glance.htm">既存の動作</a>）。</p>
+<p><b>注:</b></p>
+<p>DFMPro ユーザーインターフェースの Profile タブの下に新しいプロファイルを追加するには、ユーザーは標準の構成フォーマットに従う必要があります。</p>
+<ul>
+  <li><p><b>Profile Definition File Path:</b> <b>DFMProfile.config</b> ファイルは、デフォルトで次の場所にあります。ユーザーはプロファイルファイルをネットワーク上の場所に置くこともできます。</p></li>
+</ul>
+<p>C:\ProgramData\GeometricLtd\DFMPro\wildfire\Profiles</p>
+<p>これはグローバルレベルの設定です。ただし、定義できるのは管理者のみです。非管理者ユーザーでは、この設定は無効になります。</p>
+<p>詳細については、<a href="DFMPro_Profile_Execution.htm">DFMPro Profile Execution</a> セクションを参照してください。</p>
+<p> </p>
+
+<h4><a name="DFX_Analytics" id="DFX_Analytics"></a>Analytics</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_DFXAnalytics_Tab_CP_Direct.png"/></div>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_DFXAnalytics_Tab_CP_Server.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Enable Analytics:</b> DFX Analytics は、モジュールを使用しているユーザー数、パーツの実行回数、失敗インスタンス数などの重要なデータを取得するツールです。</p></li>
+</ul>
+<p>これはグローバルレベルの設定です。ただし、定義できるのは管理者のみです。非管理者ユーザーでは、この設定は無効になります。</p>
+<ul>
+  <li><p><b>Database Access:</b> ユーザーは <b>Direct</b> または <b>Server</b> のいずれかを選択できます。</p></li>
+  <li><p><b>Direct:</b> この設定は、Analytic Database と直接通信するために使用します。アクセスするには次の詳細を更新してください:</p></li>
+</ul>
+<ul>
+  <li><p><b>Server Name and Database Name:</b> SQL Server が定義されているマシン名と、構成する Database 名を入力し、<b><i>Validate</i></b> ボタンをクリックして検証します。選択内容に基づき、DFMPro は DFX Analytics と接続を作成し、取得したデータを DFX Analytics サーバーへ投稿します。</p></li>
+  <li><p><b>Authentication:</b> この設定は、必要な認証モード（Windows または SQL）を選択するために使用します。</p></li>
+</ul>
+<ul>
+  <li>Authentication に <b>Windows</b> を選択すると、<i>Login</i> と <i>Password</i> フィールドはグレーアウトされます。</li>
+  <li>Authentication に <b>SQL</b> を選択すると、該当する <i>Login</i> と <i>Password</i> フィールドに管理者ログイン資格情報を設定します。</li>
+</ul>
+<ul>
+  <li><p><b>Folder / Directory to save DFMPro Results:</b> この設定は、DFMPro Results を保存する共有場所を定義します。</p></li>
+</ul>
+<p> </p>
+<ul>
+  <li><p><b>Server:</b> この設定は、DFX Analytics Webservice を通じて Analytic Database と通信するために使用します。</p></li>
+</ul>
+<ul>
+  <li><p><b>Server Connection Protocol:</b> ユーザーは、データベースアクセスに必要に応じて <b>HTTP</b> または <b>HTTPS</b> を選択できます。</p></li>
+  <li><p><b>Server:</b> 次の形式で Server Port Number と IP Address/Hostname を入力し、Validate ボタンをクリックして検証し、Server と Database への接続を作成します。</p></li>
+</ul>
+<p style="margin-left: 88px;">PortNumber@IPAddress/Hostname</p>
+<p> </p>
+<p><b>注:</b></p>
+<p>Direct access 用に server と port を指定している場合、Server オプションへ切り替えると既存の server 詳細が利用されます。</p>
+<p>Server Database Access 用に DFMPro 結果（dfmr ファイル）を保存する場所が定義されています。ユーザーは DFX Analytics ダッシュボードからファイルを直接ダウンロードできます。</p>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" height="349" width="685" src="../../assets/images/Common/image/DFMPro_Settings_DFXAnalytics_Tab_Dashboard.png"/></div>
+<h4> </h4><br>
+
+<h4><a name="Inputs" id="Inputs"></a>Inputs</h4><br>
+<p> </p>
+<ul>
+  <li>
+    <p><b>Read Material from CAD Attribute/Parameter:</b> 一部の組織では、CAD 属性に材料情報を定義することを標準化しています。DFMPro は、設定を通じて CAD Attributes/Parameters から材料を読み取るオプションを提供します。Read Material from CAD Attribute/Parameter オプションを使用して <b>Attribute/Parameter Name</b> を定義してください。DFMPro は材料に関する情報を自動的に読み取り、それをルール検証に使用します。</p>
+  </li>
+</ul>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Inputs_Tab_CP.png"/></div>
+<p> </p>
+<p>下図では、<b>MATERIAL_NAME</b> が Attribute name として定義され、<b>1060 Alloy</b> が材料として定義されています。DFMPro は CAD ファイルから Attribute Name（例: MATERIAL_NAME）を読み取り、関連する材料を検証に使用します。</p>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Inputs-ReadMaterial_CP.png"/></div>
+<p> </p>
+
+<h4><a name="Others" id="Others"></a>Others</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Others_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Rule Files Path:</b> この設定は、標準のルールファイルが保管されている <i>標準ディレクトリ</i> を定義します。このディレクトリにある Rule files は、Rule Configuration のドロップダウンに一覧表示されます。</p></li>
+</ul>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Others_UserInputs.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Log Files Path:</b> この設定は、DFMPro ログファイルが保存される標準ディレクトリを定義します。ログファイルパスが指定されていない場合、temp フォルダの場所に保存されます。</p></li>
+</ul>
+<p style="margin-left: 60px;">“%temp%DFMPro_Log”</p>
+<ul>
+  <li><p><b>Log Level:</b> この設定は、DFMPro ログファイルに書き込まれるログ情報のカテゴリを設定できるようにします。必要に応じてログファイルレベルを設定し、詳細ログを生成できます。例外が発生した場合、この詳細ログはオフショアチームに共有され、問題の理解に役立てられます。</p></li>
+</ul>
+<p style="margin-left: 52px;">異なるレベルを選択すると、異なる組み合わせのログが書き込まれます:</p>
+<ul>
+  <li>Level 1 - Error Logs</li>
+  <li>Level 2 - Error And Warning Logs</li>
+  <li>Level 3 - Error, Warning, Debug, and Info Logs</li>
+</ul>
+<p> </p>
+<ul>
+  <li><p><b>Add Run Detail Info into Parameters:</b></p></li>
+</ul>
+<ul>
+  <li>DFMPRO_LAST_RUN_BY（User information）</li>
+  <li>DFMPRO_LAST_RUN_TIME（DFMPro last run time）</li>
+  <li>DFMPRO_RULEFILE（Rule file name）</li>
+  <li>DFMPRO_PROCESS（Manufacturing Process）</li>
+  <li>DFMPRO_STATUS [REVIEWED / NOT REVIEWED / REVIEW IN PROGRESS (%)]</li>
+</ul>
+<ul>
+  <li>REVIEWED: Designer がすべての失敗インスタンスを確認し、設計の修正または失敗インスタンスの無視など、適切な対応を行った状態です。</li>
+  <li>NOT REVIEWED: Designer がすべての失敗インスタンスを確認しておらず、適切な対応も行っていない状態です。</li>
+  <li>REVIEW IN PROGRESS (%): Designer はすべての失敗インスタンスを確認しておらず、確認作業が進行中（WIP）です。% の値は、すべての失敗ルールの全失敗インスタンスのうち、どれだけの失敗インスタンスが確認済みかを示します。</li>
+</ul>
+<ul>
+  <li>DFMPRO_REGION（Location of manufacturing facility）</li>
+  <li>DFMPRO_BATCH_QUANTITY（Quantity of parts manufactured for a batch）</li>
+  <li>DFMPRO_ANNUAL_QUANTITY（Quantity of parts manufactured throughout the year）</li>
+  <li>DFMPRO_LIFE_CYCLE（Lifecycle years of manufacturing）</li>
+  <li>DFMPRO_COST_TEMPLATE（Report template format）</li>
+  <li>DFMPRO_STOCK_TYPE（Stock type name）</li>
+</ul>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Others_Parameters_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Automatic Save:</b></p></li>
+</ul>
+<ul>
+  <li>Check - パーツファイルにパラメータを追加した後、パーツファイルが自動的に保存されます。</li>
+  <li>Uncheck – パーツファイルにパラメータ情報を追加するには、ユーザーがパーツファイルを保存する必要があります。</li>
+</ul>
+<p>デフォルトでは、この設定はオフ（未チェック）です。ただし、管理者はオン/オフを切り替えられます。非管理者ユーザーでは、この設定は無効になります。</p>
+<ul>
+  <li><p><a href="Enale_Diagnostic_Data_Collection_for_Product_Improvement.htm">Enable Diagnostic Data Collection for Product Improvement</a> - この設定は、使用状況データ収集プロセスをオン/オフします。デフォルトでは、このオプションは常に選択されています。このオプションにより、顧客側から DFMPro Usage Data を収集でき、製品の品質とパフォーマンスの向上に役立ちます。</p></li>
+  <li><p>Enable Manual Check Input Selection - この設定は、手動チェック入力選択ダイアログボックスを有効/無効にするために使用します。デフォルトでは、このオプションは常に選択されています。このオプションにより、ユーザーが手動チェックされるルールを選択できる手動チェック選択ダイアログボックスを無効化できます。</p></li>
+  <li><p><b>Show Unanalyzed Regions:</b> この設定は、DFMPro 結果に未解析領域を表示します。デフォルトでは選択されます。</p></li>
+</ul>
+<p> </p>
+
+<h4><a name="DFXServer" id="DFXServer"></a>DFX Server</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_DFX_Server_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Allow server analysis:</b> 選択内容に基づき、<a href="DFX_Server_Solution.htm">DFX Server</a> タブと、Local/Server オプションが DFMPro ユーザーインターフェースに表示され、Server または Local 解析の実行要求を送信できるようになります。</p></li>
+</ul>
+<p>これはグローバルレベルの設定です。ただし、管理者はオン/オフを切り替えられます。非管理者ユーザーでは、この設定は無効になります。</p>
+<ul>
+  <li><p><b>Server Connection Protocol:</b> ユーザーは、サーバー接続に対して任意のオプションを選択できます。</p></li>
+  <li><p><b>Server:</b> すでに DFX Server に定義されている Server マシン名を入力して構成し、<i>Validate</i> ボタンをクリックして検証します。</p></li>
+</ul>
+<p><b>注:</b></p>
+<p>DFX Server 設定を有効にするには、DFMPro 管理者に連絡してください。</p>
+<p> </p>
+
+<h4><a name="Cost" id="Cost"></a>Cost</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Cost_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Server Name:</b> <span>SQL Database のサーバー名。</span></p></li>
+  <li><p><b>Database Name:</b> <span>Cost データベースの名前。</span></p></li>
+  <li><p><b>Display Currency:</b> コスト計算に使用する必要な通貨タイプをドロップダウンリストから選択します。</p></li>
+  <li><p><b>Rejection Rate (%):</b> 合計コストに適用される割合はパーツに対して計算され、Cost レポートでは Landed Cost の一部として反映されます。</p></li>
+  <li><p><b>SG&amp;A (%):</b> 合計コストに適用される割合はパーツに対して計算され、Cost レポートでは Landed Cost の一部として反映されます。</p></li>
+  <li><p><b>Profit Margin (%):</b> Landed cost に適用される割合はパーツに対して計算され、Cost レポートでは Net Price の一部として反映されます。</p></li>
+</ul>
+<p><b>注:</b></p>
+<p>Rejection Rate、SG&amp;A、Profit Margin のオプションは Assembly モジュールではサポートされません。</p>
+<p> </p>
+<ul>
+  <li><p><b>Tooling Cost Calculations:</b></p></li>
+</ul>
+<ul>
+  <li>Manual - このオプションは、Input グループボックスで治具/工具費（tooling costs）を手動で追加できるようにします。</li>
+  <li>Automatic - このオプションは、治具/工具費を自動的に計算するためのものです。</li>
+</ul>
+<p><b>注:</b></p>
+<p>いずれの場合も、総治具/工具費は 5 年間の総生産数量で償却されます。</p>
+<p> </p>
+
+<h2><a name="Rule_Manager" id="Rule_Manager"></a>Rule Manager</h2><br>
+<p><b><i>Rule Manager</i></b> タブをクリックすると、右側ペインに <i>General</i> サブタブが表示されます。</p>
+<p> </p>
+
+<h4>General</h4><br>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_RuleManager_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Length Unit:</b> この設定は、ルールファイルの長さ単位を定義します。</p></li>
+  <li><p><b>Angular Unit:</b> この設定は、ルールファイルの角度単位を定義します。</p></li>
+</ul>
+<h2> </h2><br>
+
+<h2><a name="Module-specific_settings" id="Module-specific_settings"></a>モジュール別設定</h2><br>
+
+<h4><a name="Injection_Molding" id="Injection_Molding"></a>Injection Molding</h4><br>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Module_InjectionMolding_HotType_CP.png"/></div>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Module_InjectionMolding_ColdType_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Runner Type:</b></p></li>
+</ul>
+<ul>
+  <li>Hot - デフォルトでは、Injection Molding モジュールに Hot runner が選択されています。</li>
+  <li>Cold - ユーザーは必要に応じて cold runner オプションを選択でき、Sprue Runner Weight の割合を設定する必要があります。</li>
+</ul>
+<p> </p>
+
+<h4><a name="Assembly" id="Assembly"></a>Assembly</h4><br>
+<p><b><u>General</u></b></p>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Asm_General_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Display Only Failed Components:</b> この設定は、失敗結果を簡単に確認するために使用します。失敗インスタンスをクリックすると、画面上には失敗したパーツのみが表示され、残りのパーツは一時的に非表示になります。</p></li>
+  <li><p><b>Execute Assembly Rules only on Top Level Assembly Parts:</b> この設定は、アセンブリルールを <a href="Top_Level_Assembly_Analysis.htm">Assembly におけるトップレベルパーツ</a> のみに対して実行するために使用します。</p></li>
+</ul>
+<p>以下に列挙する項目については、個別のルール構成が DFMPro Settings より優先されます:</p>
+<ul>
+  <li><a href="../Assembly/Bolt_and_Screw_Rationalization.htm">Bolt and Screw Rationalization</a></li>
+  <li><a href="../Assembly/Hardware_Rationalization.htm">Hardware Rationalization</a></li>
+  <li><a href="../Assembly/Preferred_Hardware.htm">Preferred Hardware</a></li>
+  <li><a href="../Assembly/Recommended_Bolted_Joints.htm">Recommended Bolted Joints</a></li>
+</ul>
+<p>ユーザーは、これらのルールについて、構成時にトップレベルまたは全レベル解析の選択を個別に変更できます。その他すべてのルールについては、DFMPro Settings の選択が優先されます。</p>
+<p>この設定はデフォルトではオフ（未チェック）です。ただし、管理者はオン/オフを切り替えられます。非管理者ユーザーでは、この設定は無効になります。</p>
+<ul>
+  <li><p><b>Ignore Imported Component Analysis:</b> この設定は、Imported Component Analysis を Ignore するワークフローを定義し、同一の結果表示を回避して解析時間を改善するためのものです。</p></li>
+</ul>
+<ul>
+  <li>DFMPro hardware database に追加された Fasteners/Accessories（supplier/brought components）は、ルール検証の対象として扱われます。</li>
+  <li>supplier components と designed assembly components の間の DFM 問題が考慮され、DFM 問題として報告されます。</li>
+</ul>
+<p><b>Supported ルール –</b></p>
+<ul>
+  <li><a href="../Assembly/hole_alignment.htm">Hole Alignment</a>（For Axial Misalignment）</li>
+  <li><a href="../Assembly/interference_detection.htm">Interference Detection</a></li>
+  <li><a href="../Assembly/Slot_to_Hole_Alignment.htm">Slot to Hole Alignment</a></li>
+</ul>
+<p> </p>
+<ul>
+  <li><p><b>Assembly Preselection Option:</b> デフォルトではチェックボックスが選択されています。これが選択されている場合、Inputs グループボックスの <a href="Assembly_Analysis_Selection.htm">Assembly Analysis</a> は、ドロップダウンリストに <i>Entire Assembly</i> と <i>Pre-Selected Components</i> のオプションを表示し、選択できるようになります。これが選択されていない場合、<i>Entire Assembly</i> オプションのみが利用可能です。</p></li>
+</ul>
+<p> </p>
+<p><b><u>Component Identifier</u></b></p>
+<p>ドロップダウンには、サポートされるさまざまな component identifier の一覧が表示されます。ユーザーは component identifier 内で FileName と Attribute/Parameter Name のみを設定し、ルール構成で入力するパーツ名および属性名に関連する値を与える必要があります。</p>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Asm_Compt_Identification_Tab_CP.png"/></div>
+<p> </p>
+<p><b>Supported ルール -</b></p>
+<ul>
+  <li><a href="../Assembly/Distance_Between_Components.htm">Distance Between Components</a></li>
+</ul>
+<p> </p>
+<p><a name="Hardware_Identifier" id="Hardware_Identifier"></a><b><u>Hardware Identifier</u></b></p>
+<p>ドロップダウンメニューには次のオプションがあります:</p>
+<ul>
+  <li><p><b>Database/FileName:</b> このオプションを選択すると、DFMPro は DFMPro Hardware Database から hardware 情報を取得できるようになります。</p></li>
+  <li><p><b>Feature Tree:</b> feature tree により、CAD ファイルから thread 情報（male thread）を取得できます。</p></li>
+</ul>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Asm_Hardware_Identification_Tab_CP.png"/></div>
+<p> </p>
+<p><b>注:</b></p>
+<p>現在、DFMPro は、Feature Tree と Database 構成の両方で、次の Assembly ルールをサポートしています。その他すべての Assembly ルールについては、DFMPro Database 構成のみを使用してください。</p>
+<p> </p>
+<p><b>Supported ルール -</b></p>
+<ul>
+  <li><a href="../Assembly/recomm_thread_connection.htm">Recommended Thread Connection</a></li>
+</ul>
+<p> </p>
+
+<h4><a name="Prismatic_Mill" id="Prismatic_Mill"></a>Prismatic Mill</h4><br>
+<p><b><u>General</u></b></p>
+<p> </p>
+<div style="text-align:center;"><img alt="" src="../../assets/images/Common/image/DFMPro_Settings_PrismaticMill_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Display Machining Setup:</b> Prismatic Mill では、DFMPro は machining setup を表示および編集するオプションを提供します。この設定により、ユーザーは <i>Machining Setup check box</i> をクリックして machine setups を確認します。machining setups の数と feature リストは、設計者が setups を理解するのに役立ちます。setup 情報に基づき、設計者は設計の features を最適化できます。定義された setups に基づいて、DFMPro のルール検証が実行されます。</p></li>
+</ul>
+<p>詳細情報は <a href="Machining_Setup.htm">Machining Setup</a> にあります。</p>
+<p> </p>
+<p><b><u>Machined Region</u></b></p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_PrismaticMill_MachinedRegion_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Color-Based Machined Region/Regions:</b> Machined regions は色によって識別されます。CAD モデル上の machined regions を識別するために Setting file に定義された色に基づき、DFMPro は自動的にその色を取得し、解析のための <a href="Analysis_with_Multiple_Processes.htm">Entity Selection</a> グループボックスに表示します。</p></li>
+</ul>
+<p>デフォルトでは、machined region の色コードは選択されていません。ユーザーは <b><i>Add</i></b> ボタンを使用して色コードを追加し、machined regions と一致させる必要があります。</p>
+<p>これはグローバルレベルの設定であり、管理者権限を持つユーザーが定義できます。</p>
+<p>詳細情報は <a href="Analysis_with_Multiple_Processes.htm">Analysis with Multiple Processes</a> にあります。</p>
+<p> </p>
+
+<h4><a name="Tubing" id="Tubing"></a>Tubing</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Tubing_Tab_CP.png"/></div>
+<p> </p>
+<p>この設定は、Attribute/Parameter 名と値を通じてチューブを識別するために提供されます。ユーザーは pipe 属性名とそれらの値を追加できます。</p>
+<p> </p>
+
+<table align="center" border="1" width="806">
+  <colgroup>
+    <col width="90">
+    <col width="667">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p><b>Input</b></p></td>
+      <td><p><b>Interpretation</b></p></td>
+    </tr>
+    <tr>
+      <td><p>Pipe</p></td>
+      <td><p>Attribute values には、(space, -, _) を含まずに "pipe" 名のみが含まれている必要があります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*Pipe*</p></td>
+      <td><p>Attribute values の名前に "pipe" が含まれている必要があります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_Pipe</p></td>
+      <td><p>すべての attribute values は "_pipe" で終わる必要があります。</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> </p>
+<p><b>Tube Identification</b></p>
+<p>チューブ識別の優先度は、attributes/parameters で利用可能な情報と、settings に構成された値に対する一致状況に従います。参考として下図を参照してください。</p>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Tubing_Parameters_CP.png"/></div>
+<p> </p>
+<p><b>Note:</b></p>
+<p>Pipe コマンドおよび Pipe Application を使用して作成された Pipes が検証対象として考慮されます。</p>
+<p> </p>
+
+<h4><a name="Cabling" id="Cabling"></a>Cabling</h4><br>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Cabling_Tab_CP.png"/></div>
+<p> </p>
+<ul>
+  <li><p><b>Cable:</b> この設定は、Attribute/Parameter 名と値を通じて cable を識別します。ユーザーは cable 属性名とそれらの値を追加できます。</p></li>
+  <li><p><b>Cable Bundle:</b> cable bundle は、複数の cables が存在するサブアセンブリです。この設定は、Attribute/Parameter 名と値を通じて cable bundle を識別します。</p></li>
+  <li><p><b>Cable Support:</b> ユーザーは cable support コンポーネントの一覧を定義できます。support コンポーネントは、パーツの Attribute/Parameter 名と値で識別されます。ユーザーは “;”（セミコロン）で区切って複数の support コンポーネントを定義できます。</p></li>
+</ul>
+<ul>
+  <li><p><b>Vicinity Distance:</b> 多くの場合、support コンポーネントは cable/cable bundle に接触しておらず、cable の近くに配置されています。DFMPro は、適切な support コンポーネントを識別するための “Vicinity Distance” 値を提供しており、これは <a href="../Cabling/Recommended_Distance_Between_Cable_Supports.htm">Recommended Distance Between Cable Supports</a> ルール検証の入力として使用されます。</p></li>
+</ul>
+<p>これはグローバルレベルの設定であり、構成できるのは管理者のみです。</p>
+<p><b>Note:</b></p>
+<p>上記の設定に基づき、すべての cables および cable bundles が分類されます。</p>
+<p> </p>
+
+<p style="margin-left: 36px;"><b>Cable、Cable Bundle、および Support Component 構成の入力フォーマット</b></p>
+<p> </p>
+
+<table align="center" border="1" width="710">
+  <colgroup>
+    <col style="width: 13.704%;">
+    <col width="608">
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p><b>Input</b></p></td>
+      <td><p><b>Interpretation</b></p></td>
+    </tr>
+    <tr>
+      <td><p>Cable</p></td>
+      <td><p>Attribute values には、(space, -, _) を含まずに "cable" という名前のみが含まれている必要があります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*Cable*</p></td>
+      <td><p>Attribute values の名前に "cable" が含まれている必要があります。</p></td>
+    </tr>
+    <tr>
+      <td><p>*_Cable</p></td>
+      <td><p>すべての attribute values は "_cable" で終わる必要があります。</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<p> </p>
+<p style="margin-left: 36px;"><b>例:</b></p>
+<p style="margin-left: 36px;">以下のサンプル cabling assembly では cable parameter が定義されており、DFMPro はこの parameter を使用して cable と support component を識別します。</p>
+<div style="text-align:center;"><img alt="" border="1" src="../../assets/images/Common/image/DFMPro_Settings_Cabling_Parameters_Example.png"/></div>
+<p> </p>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/DFMPro_Settings_Cabling_Model_Tree_Example.png"/></div>
+
+
+</body></html>

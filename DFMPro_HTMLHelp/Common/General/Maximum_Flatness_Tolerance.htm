@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.7.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Maximum Flatness Tolerance</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+  
+<h1>Maximum Flatness Tolerance "最大平面度公差"</h1>
+<h4>ルール</h4>
+<p>3D CAD 上で指定されている幾何公差（GD&amp;T）情報および PMI 情報を特定し、フィーチャサイズ公差値と照合して検証します。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>平面度公差は、指定された面が収まるべき 2 つの平行平面によって定義される公差域を示します。平面度公差は、常にそれに関連付けられた寸法公差よりも小さくなります。一般的なガイドラインでは、平面度公差は寸法公差の 1/2 以下であるべきとされています。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインでは、平面度公差は寸法公差の 1/2 以下であることが推奨されています。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro では、フィーチャサイズ公差に対する倍率として値を設定できます。</p>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Maximum_Flatness_Tolerance1.png"/></div>
+
+<br>
+
+<p>平面度公差域の値は、フィーチャサイズ公差域の値よりも小さくなければなりません。すなわち、0.1 &lt; 0.5 です。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Maximum_Flatness_Tolerance2.png"/></div>
+
+<br>
+
+<p>平面度公差域の値は、フィーチャサイズ公差域の値よりも大きくなってはなりません。すなわち、0.6 は 0.5 を超えてはなりません。</p>
+
+<br>
+
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Maximum_Flatness_Tolerance3.png"/></div>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>CAD モデルで指定されている公差は、eDrawings レポートには表示されません。</p></li>
+<li><p>本ルールは、幾何公差が付与されているパーツモデルに対して実行されます。</p></li>
+<li><p>最大平面度公差条件を確認するには、平面度公差が付与されている参照面を持つ寸法公差が必要です。</p></li>
+</ul>
+<div style="text-align:center;"><img alt="" border="0" src="../../assets/images/Common/image/Maximum_Flatness_Tolerance4.png"/></div>
+
+<br>
+</body>
+</html>

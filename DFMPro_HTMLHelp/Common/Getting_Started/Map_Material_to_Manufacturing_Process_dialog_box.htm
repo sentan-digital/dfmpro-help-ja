@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_13"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Map Material to Manufacturing Process dialog box</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  <h1>材料と製造プロセスのマッピング</h1><br>
+<p> </p>
+<p>ルールマネージャーダイアログボックス内の <img alt="" border="0" height="23" src="../../assets/images/Common/image/Map_Material_icon.png" width="23"/> <strong><i>Map Material</i></strong> ボタンをクリックすると、<i>材料と製造プロセスのマッピング</i> ダイアログボックスが表示されます。このダイアログボックスには、材料およびグレードに関連するプロセスの一覧が表示されます。このダイアログボックスから、DFMPro は必要に応じてデータベースを更新することができます。</p>
+<p> </p>
+<p>書き込み権限を持つユーザーは、必要に応じて列の追加／削除／編集を行うことができます。<strong><i>Update</i></strong> ボタンをクリックすると、変更内容がデータベースに保存されます。組織固有の材料リストを一括で追加するには、<strong><i>Export</i></strong> ボタンをクリックして材料リストをエクスポートします。この操作により、既存のすべての材料および選択されたプロセスの一覧が表示され、新しい材料を追加し、それらを製造プロセスにマッピングするのに役立ちます。</p>
+<p>エクスポート後、<i>Import</i> ボタンを使用して同じリストをインポートします。更新されたすべての材料は DFMPro データベースに追加されます。</p>
+<p>列上にマウスカーソルを合わせるとチェックボックスが表示されます。<em><strong>材料</strong></em>および<em><strong>グレード</strong></em>に対して、必要なプロセスを選択します（またはその逆も可能です）。材料およびグレードの同じ選択内容は、選択されたプロセスに対して DFMPro インターフェースにも反映されます。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Map_Material_to_Manufacturing_Process_dialog_box.png"/>
+</div>
+<p> </p>
+<h2>データベースに新しい材料およびグレードを追加する手順：</h2><br>
+<ol>
+<li><p>ダイアログボックス内で最下部までスクロールし、最後の行にマウスカーソルを合わせて選択します。</p></li>
+<li><p>DFM Material Family および DFM Grade Family フィールドに、<strong><i>材料</i></strong>名および<strong><i>グレード</i></strong>名を入力します。</p></li>
+<li><p>Cost Material Family および Cost Grade Family フィールドでは、ドロップダウンリストから<strong><i>材料</i></strong>名および<strong><i>グレード</i></strong>名を選択します。</p></li>
+</ol>
+<p>注：</p>
+<p>DFM または Cost のいずれかに材料が入力されている場合、グレードの定義は必須です。定義されていない場合、<i>Update</i> ボタンをクリックした際に無効なエントリーとして表示されます。</p>
+<p> </p>
+<ol start="4">
+<li><p>材料およびグレードを選択した後、一覧から該当するプロセスのチェックボックスを選択します。</p></li>
+<li><p>選択後、<i>Update</i> ボタンを<strong>クリック</strong>して、変更内容をデータベースに保存します。</p></li>
+</ol>
+<p>注：</p>
+<p>Cost ライセンスが利用できない場合、<i>Cost Material Family および Cost Grade Family の列</i>はダイアログボックスに表示されません。</p>
+<p>Cost ライセンスが利用可能な場合、これらの列が表示されます。DFMPro では、材料およびグレードを定義し、その変更をデータベースに保存することができます。</p>
+<p> </p>
+<h2>材料およびグレードに割り当てられたプロセスを編集する手順：</h2><br>
+<ol>
+<li><p>一覧から対象の行にマウスカーソルを合わせて選択します。</p></li>
+<li><p>必要なプロセスについて、チェックを<strong>入れる</strong>または<strong>外す</strong>操作を行います。</p></li>
+<li><p><strong><i>Update</i></strong> ボタンをクリックして、変更内容をデータベースに保存します。</p></li>
+</ol>
+<p> </p>
+<h2>データベースから行を削除する手順：</h2><br>
+<ol>
+<li><p>材料名の前にあるチェックボックスを選択します。</p></li>
+<li><p><strong><i>Delete</i></strong> ボタンをクリックします。該当行が赤色に変わります。</p></li>
+<li><p><strong><i>Update</i></strong> ボタンをクリックして、データベース一覧から行を削除します。</p></li>
+</ol>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Map_Material_Delete_red_row.jpg"/>
+</div>
+<p> </p>
+<p>注：</p>
+<p>追加、削除、または編集後にデータベースへ保存されたすべての変更内容は、DFMPro セッションを再起動した際に反映されます。</p>
+<p> </p>
+
+
+
+</body></html>

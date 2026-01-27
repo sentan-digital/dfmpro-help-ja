@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Distance Between Components</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>"Distance Between Components" コンポーネント間距離</h1>
+
+<h4>ルール</h4>
+<p>2 つのコンポーネント間の距離計算は汎用的なチェックであり、このルールでは 2 つのコンポーネント間の最小距離をチェックします。</p>
+<br>
+
+<h4>説明</h4>
+<p>2 つのコンポーネント間の距離計算は汎用的なチェックであり、このルールでは 2 つのコンポーネント間の最小距離をチェックします。これらのチェックは、組立標準、組立性設計（Design for Assembly）ガイドライン、または安全上の観点に関連しており、コンポーネント間に特定の距離を維持する必要がある場合に用いられます。ルール構成では、正確な距離、最小距離、最大距離、または距離範囲など、さまざまな条件で距離計算を構成するオプションが提供されます。</p>
+<br>
+
+<h4>構成</h4>
+<p>ルール構成では、コンポーネント識別子およびコンポーネント親識別子を設定します（コンポーネント親識別子とは、アセンブリ内でのコンポーネントの位置、すなわち次レベルのアセンブリ名を意味します）。以下の情報は、正しいコンポーネントとそのアセンブリ内での位置を特定するのに役立ちます。</p>
+<p>以下のルール構成では、ユーザーは component1.identifier および component1.Parentidentifier を定義する必要があります。同様の方法で component 2 を構成できます。</p>
+<p>この構成により、特定のサブアセンブリ／アセンブリの特定セクション内に存在する特定のコンポーネント間の距離をチェックできます。</p>
+<p>&nbsp;</p>
+
+<p>例：以下のアセンブリでは、ユーザーは <a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a> ダイアログボックスでコンポーネントのファイル名を構成しています。</p>
+
+<ul style="list-style: disc;">
+  <li>
+    <p>component1.Identifier = connecting_rod</p>
+  </li>
+  <li>
+    <p>component1.Parentidentifier = HD_Cooler_RearPC.ASM</p>
+  </li>
+  <li>
+    <p>component2.Identifier = 3303_ATN9_PART</p>
+  </li>
+  <li>
+    <p>component2.Parentidentifier = BEARING1.ASM</p>
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Distance_Between_Components_config1_CP.bmp" />
+</div>
+<p>&nbsp;</p>
+
+<p>コンポーネントのファイルとその親アセンブリ名のルールに基づき、このルールは設定された値に対して最小距離を検証します。</p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Distance_Between_Components_config2_CP.bmp" />
+</div>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Distance_Between_Components_config3_CP.bmp" />
+</div>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p class="note-title">注記:</p>
+
+
+
+<ul class="note-body">
+<li><p>組織は、DFMPro 設定ファイルを通じて、コンポーネント識別子をコンポーネントの「FileName」または「Attribute/Parameter Name」として設定できます。詳細については、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a> を参照してください。</p></li>
+</ul>
+<p>&nbsp;</p>
+
+<h4>例</h4>
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Distance_Between_Components.bmp" />
+</div>
+<p>&nbsp;</p>
+
+
+
+
+
+
+<br>
+
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>D = コンポーネント間の距離</p>
+</div>
+</div>
+
+
+<br>
+
+
+
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>このルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+</ul>
+
+<br>
+</body>
+</html>

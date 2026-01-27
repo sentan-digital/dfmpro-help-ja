@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.10.0_15"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Surface Profile Tolerance Based on Part Size</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Surface Profile Tolerance Based on Part Size "部品サイズに基づく推奨表面輪郭度公差"</h1>
+<h4>ルール</h4>
+<p>本ルールは、部品サイズの範囲に基づいて、最小表面プロファイル公差値をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>表面プロファイルは、表面の周囲に設定される三次元の公差ゾーンを表します。他の幾何公差記号では管理できない複雑な形状曲線に対しては、プロファイル公差が最適な選択肢となります。データムと組み合わせて使用した場合、サイズ、位置、姿勢、形状など、フィーチャーの幾何特性のあらゆる側面を管理します。不必要に厳しい表面プロファイル公差値を設定すると、追加の加工時間が発生し、部品全体のコストや検査コストが増加します。厳しい公差値が指定されることで、製造チームは形状および位置拘束の正確性を確保する必要があり、そのためには熟練した作業者が求められます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、不必要に厳しい公差は追加の加工時間を招く可能性があることが示されています。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProでは、公差タイプ、部品サイズ範囲、およびそれに対応する公差値をユーザーが設定できます。</p>
+
+<br>
+
+<p>部品外形サイズ = 部品の最大対角長のおおよその値</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Tolerance_Common.png" />
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>Lt = 長さ</p>
+<p>Wt = 幅</p>
+<p>Ht = 高さ</p>
+<p>Ldt = 部品の対角長</p>
+
+<br>
+
+<h4>例</h4>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Surface_Profile_Tolerance_Based_on_Part_Size1.png" />
+</div>
+
+<br>
+
+<p>注記:</p>
+<p>CADモデル内で指定されている公差は、eDrawingsレポートには表示されません。</p>
+<p>ルール構成で設定された公差値は、公差ゾーンとして扱われます。</p>
+<p>本ルールでは、面やエッジなど、CADフィーチャーに関連付け（参照）されている幾何公差のみが考慮されます。</p>
+
+<br>
+</body>
+</html>

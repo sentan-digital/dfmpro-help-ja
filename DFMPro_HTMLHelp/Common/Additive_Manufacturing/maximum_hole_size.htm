@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.1.0_7"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Hole Sizes</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Recommended Hole Sizes "推奨穴径"</h1>
+<h4>ルール</h4>
+<p>積層造形において良好な品質を確保し、外観上の問題を回避するために、適切な穴径を維持する必要があります。</p>
+<br>
+<h4>説明</h4>
+<p>造形方向に基づき、垂直面上に穴が存在する場合、その穴径は 10 mm を超えないことが推奨されます。穴径が 10 mm を超える場合、通常は追加のサポートが必要になります。</p>
+<br>
+<h4>推奨事項</h4>
+<p>可能な限り、垂直面上に最大径の穴を設けることは避けてください（以下の画像を参照）。ただし、やむを得ない場合には、円形断面の形状を洋梨形状または円錐形状に変更することを推奨します。</p>
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/MaximumHoleSizeRecommendations.bmp"/>
+</div>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended Hole Size SW.png"/>
+</div>
+<p>穴軸は造形方向に対して垂直です。</p>
+
+
+<br>
+
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>Z = 造形方向</p>
+</div>
+</div>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro はパーツ内に存在する穴を識別し、最大穴径および最小穴径の条件について検証を行います。</p>
+<ul>
+  <li>すべての穴が最小穴径条件について検証されます。</li>
+  <li>造形方向に対して垂直（±5 度）な面に存在する穴は、最大穴径条件について検証されます。</li>
+</ul>
+<br>
+<p>ルール UI では、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">材料マッピング</a> から自動的に読み込まれ、ユーザーは材料およびその値を設定できます。</p>
+<p>材料とその値を設定した後、ユーザーは <strong>Ctrl+M</strong> コマンドを使用して、ルール UI 上で材料グループおよびグレードとともに、設定済み材料の一覧をフィルタ表示できます。同じキー（Ctrl+M）を使用してフィルタを解除できます。</p>
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png"/>
+</div>
+
+<br>
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>造形プロセスが円形断面の上部に近づくにつれて、溶融が発生する上面の面積が減少し、その結果、熱伝達率が低下します。</p>
+<p>このため、この領域では焼けが発生します。焼けた部分は円形断面の上部に位置するため、表面が粗くなり、追加の仕上げ工程が必要になります。</p></li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/MaximHoleSizeRoughSurface.bmp"/>
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Hole_Sizes_Help.bmp"/>
+</div>
+
+<br>
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>D1 は造形方向とは関連付けられていません。</p></li>
+<li><p>D2 は造形方向と関連付けられています。</p></li>
+</ul>
+
+<br>
+
+
+<ul>
+  <li>
+    <p>テーパ穴またはドラフト穴の場合で、指定されたテーパ穴の軸が造形方向に対して垂直である場合。</p>
+    <ul>
+      <li>小さい方の穴径は、最小穴径条件として検証されます。</li>
+      <li>大きい方の穴径は、最大穴径条件として検証されます。</li>
+    </ul>
+  </li>
+  <li>
+    <p>ホールチェーン：各穴の直径に基づいて、個別の違反インスタンスが作成されます。</p>
+  </li>
+</ul>
+<br>
+</body>
+</html>

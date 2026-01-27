@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_20"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Molding Tolerances</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<h1>Recommended Molding Tolerances "推奨成形公差"</h1>
+<h4>ルール</h4>
+<p>プラスチック成形部品の公差は、製造を容易にするために推奨されるデフォルト値に従う必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>成形公差は、機械加工（穴あけ、フライス加工、旋削加工など）や製缶（板金）形状に適用される公差とは異なります。</p>
+<p>公差が厳しくなるほどコストが増え、時間のかかる工程が必要になりますが、得られる表面仕上げの品質は高くなります。特定の機能要件（例えば外観やはめあい（組立仕様）など）に対応するために設計上の要求がある場合を除き、標準公差を推奨します。</p>
+<p>プラスチック成形では、ISOの基本公差から公差を採用することはできません。これは、ISOの基本公差が他の原理に基づき、呼び寸法に対して相関しているためです。</p>
+<p>プラスチックの成形では寸法ばらつきを避けることはできません。これは次の要因により発生します：</p>
+
+<br>
+
+<ul>
+  <li>加工結果のばらつき – これは次に依存します</li>
+</ul>
+<ul>
+  <li>成形材料の均一性</li>
+  <li>機械設定</li>
+  <li>金型温度</li>
+  <li>圧力下での金型変形</li>
+</ul>
+
+<br>
+
+<ul>
+  <li>金型の状態 – これは次に依存します</li>
+</ul>
+<p> </p>
+<ul>
+  <li>製作公差を考慮した金型寸法</li>
+  <li>金型摩耗</li>
+  <li>可動金型部品の位置ばらつき</li>
+</ul>
+
+
+<br>
+
+<h4>推奨事項</h4>
+<p>過度に厳しい公差はコスト増と生産性低下につながります。適切な公差を持つ部品は、優れたはめあいと機能を備え、製造効率も向上します。</p>
+<p>プラスチック部品の推奨成形公差は、材料、寸法、および位置に依存します。デフォルト構成では標準公差が示され、機能要件によってより高い／低い精度が求められる場合を除き、すべてのケースに適用されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProはCADモデルから該当する金型寸法を特定し、関連する寸法／幾何公差を読み取り、それらを構成された値に対して検証します。</p>
+<p>プラスチック部品の寸法に公差が指定されている場合にのみ、その公差が、材料・寸法・寸法の位置に対応する表の推奨値に対してチェックされます。</p>
+<p>必要に応じて、デフォルトの構成値を編集してください。公差の構成は次のとおりです：</p>
+
+<ul>
+  <li>金型に関連する寸法（A）– 金型の同一側（同一パート）にあるエンティティ間の寸法（例：リブ厚、コア側のみで完結する寸法）。</li>
+  <li>金型に関連しない寸法（B）– 金型の異なる（可動）部品間のエンティティ間の寸法（例：コア面とキャビティ面で形成される肉厚）。</li>
+</ul>
+
+<br>
+
+<p>この場合、可動部品の閉位置が毎回わずかに変動する可能性があるため、前者のケースより公差は大きくなります。デフォルトではノーマル公差のみが許可されますが、必要に応じてユーザーが上書きできます。個別（Individual）および精密（Precision）公差はデフォルト構成ではサポートされていませんが、既存の値を置き換えることで構成できます。</p>
+
+<br>
+
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Molding_Tolerance.png"/>
+</div>
+
+<br>
+
+<p>注：</p>
+<p>CADモデルに与えられている公差は、eDrawingsレポートには表示されません。</p>
+<p>Rule Managerでは、構成する公差値を「公差範囲」の形式で指定してください。例えば、推奨公差が +/- 0.08 の場合、表には 0.16 を追加します。</p>
+
+<br>
+</body>
+</html>

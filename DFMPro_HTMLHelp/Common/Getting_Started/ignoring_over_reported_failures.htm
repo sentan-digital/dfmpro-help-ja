@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="3.0_27"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Ignoring Over Reported Failures</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  <h1>過剰に報告された違反の無視</h1><br>
+<p>DFMPro は、解析によって製造時に発生する可能性のある問題を特定した場合にエラーを報告します。このレポートは、必ずしもその形状が加工不可能であることを意味するものではありません。あくまで、追加検討が必要な設計箇所を示すものです。これらの箇所を加工するには、工程パラメータの調整や、特に量産時において高価な工具など、特別な配慮が必要となる場合があります。</p>
+<p>報告されたエラーが利用環境において重要でない場合、設計者はそのエラーを無効として指定し、以降の解析実行において無視することができます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Review_Details_Instance_Options.bmp"/>
+</div>
+<h2> </h2><br>
+<h2>違反インスタンスの無視／類似違反インスタンスをすべて無視</h2><br>
+<p>結果ツリー内の <strong><i>違反インスタンス</i></strong> をクリックし、無視するための任意のコマンドを選択します。このツールバーには、レビュー詳細、インスタンスの無視、類似インスタンスをすべて無視、ヘルプなどのオプションが含まれています。</p>
+<p>必要に応じて解析を再実行し、同一の違反インスタンスが報告されなくなったことを確認してください。</p>
+<p> </p>
+<ul>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Review_Details_Camera_button.bmp"/> <strong><i>レビュー詳細</i></strong> オプションをクリックすると、<a href="Review_Details.htm">レビュー詳細ダイアログボックス</a> 内で対象インスタンスの画像を取得できます。</p></li>
+<li><p>報告された違反インスタンスが重要でない場合は、<img alt="" border="0" src="../../assets/images/Common/image/Ignore_Instance_icon_CP.png"/> <strong><i>インスタンスを無視</i></strong> オプションを選択します。選択した違反インスタンスのアイコンは変更され、ツリーの下部へ移動します。</p></li>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Ignore_All_Similar_Instances_icon_CP.png"/> <strong><i>類似インスタンスをすべて無視</i></strong> オプションを選択します。</p></li>
+</ul>
+<ul>
+<li><b>パーツレベルのルールの場合</b>、重要でないすべての類似違反インスタンスを無視します。1 回の操作で、すべての類似インスタンスが DFMPro の結果から無視されます。</li>
+<li><b>アセンブリレベルのルールの場合</b>、同一のソースおよびターゲットのコンポーネントペアで、同じ実測値を持つ重要でないすべての類似インスタンスを無視します。このオプションは、アセンブリ内の位置に関係なく、すべてのコンポーネントに対して機能します。類似インスタンスは一括で無視されます。</li>
+</ul>
+<p> </p>
+<ul>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Help_icon_CP.png"/> <strong><i>ヘルプ</i></strong> ボタンをクリックすると、選択したルールの情報や推奨事項を確認できます。</p></li>
+<li><p><img alt="" border="0" src="../../assets/images/Common/image/Zoom_On_Instance_icon_CP.png"/> <strong><i>インスタンスにズーム</i></strong> オプションをクリックすると、特定の違反インスタンスを表示できます。</p></li>
+</ul>
+<p>Note:</p>
+<p><b>インスタンスにズーム</b> コマンドは、<a href="DFMPro_Settings.htm#Zoom_on_Failed_Instance_Selection">DFMPro 設定ダイアログボックス</a> の「インスタンスハイライト」タブで <i>違反インスタンス選択時にズーム</i> オプションが選択されている場合のみ使用できます。</p>
+<p> </p>
+<ul>
+<li><p><img alt="" border="0" height="32" width="32" src="../../assets/images/Common/image/Zoom_To_Fit_icon_CP.png"/> <strong><i>全体表示にズーム</i></strong> オプションをクリックすると、選択したインスタンスをハイライト表示した状態で、グラフィック領域に部品をフィットさせて表示します。</p></li>
+</ul>
+<p> </p>
+<h2>無視したインスタンスの復元／類似無視インスタンスをすべて復元</h2><br>
+<p>結果ツリー内の <strong>無視されたインスタンス</strong> をクリックし、任意のコマンドを選択します。このツールバーには、レビュー詳細、インスタンスの復元、類似インスタンスをすべて復元、ヘルプなどのオプションが含まれています。</p>
+<p> </p>
+<ul>
+<li><p>無視された違反インスタンスが必要になった場合は、<strong><i>無視</i></strong> インスタンスをクリックし、<img alt="" border="0" src="../../assets/images/Common/image/Restore_Instance_icon_CP.png"/> <strong><i>インスタンスを復元</i></strong> オプションを選択すると、失敗ルール一覧に復元されます。</p></li>
+<li><p>パーツレベルのルールの場合、すべての類似無視インスタンスを復元したい場合は、<img alt="" border="0" src="../../assets/images/Common/image/Restore_All_Similar_Instances_icon_CP.png"/> <strong><i>類似インスタンスをすべて復元</i></strong> オプションを選択すると、失敗ルール一覧に復元されます。</p></li>
+<li><p>アセンブリレベルのルールの場合、同一のソースおよびターゲットのコンポーネントペアで、同じ実測値を持つすべての類似無視ケースを復元できます。</p></li>
+</ul>
+<h2> </h2><br>
+<h2>インスタンスグループボックスで使用可能なその他のコマンド</h2><br>
+<p> </p>
+<table align="center" border="1" cellspacing="0" width="480">
+<colgroup>
+<col style="width: 22.836%;"/>
+<col style="width: 77.164%;"/>
+</colgroup>
+<tbody>
+<tr style="height: 36px;">
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Hide_Recommendation_Results_icon_CP.png"/>
+</div>
+</td>
+<td>
+<p>推奨事項の結果を非表示にするために使用します。</p>
+</td>
+</tr>
+<tr style="height: 34px;">
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Hide_alert_instances_icon_CP.png"/>
+</div>
+</td>
+<td>
+<p>アラートインスタンスを非表示にするために使用します。</p>
+</td>
+</tr>
+<tr style="height: 35px;">
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Ignore_Instance_icon_CP.png"/>
+</div>
+</td>
+<td>
+<p>無視されたインスタンスを非表示にするために使用します。</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Tree_View_icon_CP.png"/>
+</div>
+</td>
+<td>
+<p>ツリービュー（クイック可視化）で結果を表示するために使用します。</p>
+</td>
+</tr>
+<tr style="height: 34px;">
+<td>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Scatter_Plot_icon_CP.png"/>
+</div>
+</td>
+<td>
+<p><a href="#Scatter_Plot_Result_View">散布図</a>（クイック可視化）</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h2><a name="Filters_based_on_the_Parameter" id="Filters_based_on_the_Parameter"></a>パラメータに基づくフィルタ</h2><br>
+<h4>違反インスタンスフィルタ</h4><br>
+<p>ルール構成ダイアログボックスでパラメータを持つルールに対して、パラメータのドロップダウンが使用可能になります。結果を確認および修正するために、一覧から違反インスタンスを特定するのに役立ちます。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Failure_Instance_filter_SW.png"/>
+</div>
+<p> </p>
+<p><b>例:</b></p>
+<p>鋳造モジュールの「均一な肉厚」ルールでは、「最小肉厚」および「最大肉厚」パラメータに基づいて、DFMPro のインスタンスを容易にフィルタし、その件数を把握できます。次の例では、ドロップダウンから最小および最大肉厚を選択できます。</p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Failure_Instance_filter_WhatsNew.png"/>
+</div>
+<p> </p>
+<h2><a name="Scatter_Plot_Result_View" id="Scatter_Plot_Result_View"></a>散布図による結果表示</h2><br>
+<p>散布図の結果表示を使用することで、標準的な推奨値から大きく外れている重要な違反インスタンスを迅速に特定できます。</p>
+<p><b>例:</b> 最大肉厚の画像では、右側上部の点が肉厚 10 mm ～ 12 mm の範囲にあることを示しています。これらの結果に重点的に注意する必要があります。左マウスボタンを押しながら DFMPro ペインをドラッグすることで、これらのインスタンスを素早く確認できます。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Scatter_Plot_image_Single_Unit.png"/>
+</div>
+<p> </p>
+<p>結果に複数単位の違反インスタンスが含まれている場合、設計者は特定の単位ボタンをクリックすることで、散布図に結果を表示できます。</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Scatter_Plot_image_Multiple_Unit.png"/>
+</div>
+
+
+</body></html>

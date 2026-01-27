@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.14.0_1"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="build tags" content="English_CP"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Maximum Depth of Draw Ratio</title>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/cwhtmlhelp1.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Maximum Depth of Draw Ratio "最大深絞り比"</h1>
+<h4>ルール</h4>
+<p>本ルールは、成形深さと部品幅を算出することで、ドロー深さ比の最大値をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>熱成形では、ドローが深すぎるとシートが破れる可能性があります。より深い、または背の高い部品の場合、より厚い初期シート（ゲージ）が必要になります。部品設計時には、設計者はドロー深さの制限を把握しておく必要があります。</p>
+<p>雌型を用いたストレート真空成形の場合、深さと幅の比（深さ／幅）は 0.5 を超えてはなりません。</p>
+<p>雄型を用いたドレープ成形の場合、この比は 1.0 を超えてはなりません。場合によっては、プラグアシストやスリップリングを使用することで、最大 2.0 程度まで達成できることもあります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な設計ガイドラインでは、深さと幅の比について次のように示されています。</p>
+<ul>
+  <li>雄型の場合：1.0 以下とすること。</li>
+  <li>雌型の場合：0.5 以下とすること。</li>
+</ul>
+
+<br>
+
+<p>浅いドラフトは深いドローよりも製造が容易であり、完成部品の肉厚を均一に保つことができます。</p>
+
+<br>
+
+<h4>例</h4>
+<br>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Maximum_Depth_for_Draw_Ratio_1.png">
+</div>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Maximum_Depth_for_Draw_Ratio_2.png">
+</div>
+
+
+<br>
+
+<p>ここで、</p>
+<p>W = 部品の幅</p>
+<p>D = 部品の深さ</p>
+
+<br>
+</body>
+</html>

@@ -1,0 +1,805 @@
+/*Created with Adobe RoboHelp 2019.*/
+P {
+  text-align: left;
+  margin-top: 2pt;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 2pt;
+  color: #000000;
+  margin-left: 0pt;
+  font-size: 10pt;
+  line-height: 1.25;
+}
+ol.Decimal {
+  list-style-type: none;
+  list-style: decimal;
+}
+LI.P {
+  text-align: left;
+  font-family: Verdana, sans-serif;
+  color: #000000;
+  font-size: 10pt;
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  line-height: 1.25;
+  margin-left: 6pt;
+}
+H1 {
+    padding-bottom: 5pt;
+    padding-left: 5pt;
+    font-family: "Trebuchet MS";
+    margin-bottom: 20pt;
+    margin-left: 2pt;
+    font-size: 14pt;
+    padding-top: 8pt;
+
+    /* blue bar */
+    background: #1e6bd6;   /* 好きな青に変えてOK */
+    color: #ffffff;        /* 青地なら白文字が見やすい */
+    display: block;
+}
+H2 {
+  text-align: left;
+  margin-top: 4pt;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-bottom: 4pt;
+  color: #0000ff;
+  margin-left: 2pt;
+  font-size: 12pt;
+  font-weight: bold;
+  mso-fareast-font-family: "MS Mincho";
+  mso-fareast-language: JA;
+  mso-ansi-language: EN-US;
+  mso-bidi-language: AR-SA;
+}
+H3 {
+  margin-top: 4pt;
+  margin-bottom: 4pt;
+  margin-left: 2pt;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: Verdana;
+}
+H4 {
+  text-align: left;
+  margin-top: 4pt;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 4pt;
+  color: #800000;
+  margin-left: 2pt;
+  font-size: 10pt;
+  font-weight: bold;
+}
+H5 {
+  text-align: left;
+  margin: 12pt 6.5pt 3pt 5.75pt;
+  font-family: Arial;
+  font-size: 12pt;
+  font-weight: bold;
+}
+H6 {
+  text-align: left;
+  font-style: italic;
+  margin: 12pt 6.5pt 3pt 5.75pt;
+  font-family: Arial;
+  font-size: 12pt;
+  font-weight: bold;
+}
+H6.Heading7 {
+  text-align: left;
+  margin: 12pt 6.5pt 3pt 5.75pt;
+  font-family: "MS Sans Serif";
+  font-size: 10pt;
+}
+H6.Heading8 {
+  text-align: left;
+  font-style: italic;
+  margin: 12pt 6.5pt 3pt 5.75pt;
+  font-family: "MS Sans Serif";
+  font-size: 10pt;
+}
+H6.Heading9 {
+  text-align: left;
+  font-style: italic;
+  margin: 12pt 6.5pt 3pt 5.75pt;
+  font-family: "MS Sans Serif";
+  font-size: 9pt;
+}
+P.Topic-Text {
+  text-align: left;
+  margin-top: 2pt;
+  font-family: Verdana;
+  margin-bottom: 2pt;
+  color: #800000;
+  margin-left: 49pt;
+  font-size: 10pt;
+  line-height: 1.25;
+  position: relative;
+}
+p.Topic-Heading {
+  text-align: left;
+  margin-top: 4pt;
+  font-family: Arial, sans-serif;
+  margin-bottom: 4pt;
+  color: #008000;
+  font-weight: bold;
+  margin-left: 24pt;
+  font-size: 11pt;
+  line-height: 1.25;
+  position: relative;
+}
+P.Tip-Note-Heading {
+  text-align: left;
+  margin-top: 2pt;
+  font-family: "Trebuchet MS";
+  margin-bottom: 2pt;
+  color: #916805;
+  margin-left: 6pt;
+  font-size: 12pt;
+  font-weight: bold;
+}
+P.footnote-text {
+  text-align: left;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #3d3d00;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 2pt;
+  margin-right: 0pt;
+  margin-bottom: 2pt;
+  margin-left: 24pt;
+}
+P.Normal-Indent {
+  text-align: left;
+  font-family: Verdana;
+  font-size: 10pt;
+  line-height: 1.25;
+  margin-top: 2pt;
+  margin-right: 0pt;
+  margin-bottom: 2pt;
+  margin-left: 3pt;
+}
+P.header {
+  text-align: left;
+  margin: 0pt 0pt 2.4pt 6pt;
+  font-family: Verdana;
+  font-size: 10pt;
+}
+P.footer {
+  text-align: left;
+  margin: 0pt 0pt 2.4pt 6pt;
+  font-family: Verdana;
+  font-size: 10pt;
+}
+P.Document-Map {
+  text-align: left;
+  background-color: #000080;
+  margin: 0pt 0pt 2.4pt 6pt;
+  font-family: Tahoma;
+  font-size: 10pt;
+}
+P.caption {
+  text-align: center;
+  font-style: normal;
+  margin-top: 3pt;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 3pt;
+  color: #000080;
+  font-size: 10pt;
+  font-weight: bold;
+}
+UNKNOWN {
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  text-align: left;
+  font-family: Verdana;
+  color: #000000;
+  font-size: 10pt;
+}
+P.HTML-Preformatted {
+  text-align: left;
+  margin-top: 0pt;
+  font-family: "Courier New";
+  margin-bottom: 0pt;
+  color: #000000;
+  font-size: 10pt;
+}
+LI.P-HTML-Preformatted {
+  text-align: left;
+  font-family: "Courier New";
+  color: #000000;
+  font-size: 10pt;
+}
+A:link {
+  font-family: Verdana, sans-serif;
+  color: #0000ff;
+  font-size: 10pt;
+}
+A:active {
+  font-family: Verdana, sans-serif;
+  color: #cf771e;
+  font-size: 10pt;
+}
+A:visited {
+  font-family: Verdana, sans-serif;
+  color: #0000ff;
+  font-size: 10pt;
+}
+A.expandspot {
+  font-style: italic;
+  color: #008000;
+  cursor: hand;
+  text-decoration: none;
+}
+SPAN.expandtext {
+  font-style: italic;
+  color: #ff0000;
+  font-weight: normal;
+}
+A.dropspot {
+  font-style: italic;
+  font-family: Arial, sans-serif;
+  color: #009b27;
+  font-size: 11pt;
+  cursor: hand;
+  font-weight: normal;
+  text-decoration: none;
+}
+A.glossterm {
+  font-style: italic;
+  color: #800000;
+  cursor: hand;
+  text-decoration: none;
+}
+SPAN.glosstext {
+  font-style: italic;
+  color: #0000ff;
+  font-weight: normal;
+}
+OL {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+UL {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+P.Tip {
+  border-bottom: #08407a 1px solid;
+  padding-bottom: 3pt;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  border-top: #08407a 1px solid;
+  x-next-class: ;
+  x-next-type: P;
+}
+LI.P-Tip {}
+P.Tip-Indent {
+  border-bottom: #08407a 1px solid;
+  padding-bottom: 3pt;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  margin-left: 40px;
+  border-top: #08407a 1px solid;
+}
+ul.P-Tip-Note-Text-Bulleted {
+  list-style-type: disc;
+}
+ul.P-Tip-Note-Text-Bulleted>li {
+  text-align: left;
+  text-indent: -0.02in;
+  font-family: Verdana;
+  font-size: 10pt;
+  font-weight: normal;
+}
+p.BasicNumber {
+  position: relative;
+}
+p.BasicNumber:before {
+  counter-increment: pbasicnumber1;
+  content: counter(pbasicnumber1, decimal)")";
+  text-align: left;
+  left: -34.7px;
+  margin-right: 10.7px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="2"] {
+  margin-left: 20px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="2"]:before {
+  counter-increment: item2;
+  content: counter(item2, lower-alpha)")";
+  text-align: left;
+  left: -34.7px;
+  margin-right: 10.7px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="3"] {
+  margin-left: 40px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="3"]:before {
+  counter-increment: item3;
+  content: counter(item3, lower-roman)")";
+  text-align: left;
+  left: -34.7px;
+  margin-right: 10.7px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="4"] {
+  margin-left: 60px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="4"]:before {
+  counter-increment: item4;
+  content: "(" counter(item4, decimal)")";
+  text-align: left;
+  left: -32px;
+  margin-right: 8px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="5"] {
+  margin-left: 80px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="5"]:before {
+  counter-increment: item5;
+  content: "(" counter(item5, lower-roman)")";
+  text-align: left;
+  left: -32px;
+  margin-right: 8px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="6"] {
+  margin-left: 100px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="6"]:before {
+  counter-increment: item6;
+  content: "(" counter(item6, lower-roman)")";
+  text-align: left;
+  left: -32px;
+  margin-right: 8px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="7"] {
+  margin-left: 120px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="7"]:before {
+  counter-increment: item7;
+  content: counter(item7, decimal)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="8"] {
+  margin-left: 140px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="8"]:before {
+  counter-increment: item8;
+  content: counter(item8, lower-alpha)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.BasicNumber[data-list-level="9"] {
+  margin-left: 160px;
+  position: relative;
+}
+p.BasicNumber[data-list-level="9"]:before {
+  counter-increment: item9;
+  content: counter(item9, lower-roman)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.sss {
+  position: relative;
+}
+p.sss:before {
+  counter-increment: psss1;
+  content: counter(psss1, disc);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.sss[data-list-level="2"] {
+  margin-left: 20px;
+  position: relative;
+}
+p.sss[data-list-level="2"]:before {
+  counter-increment: item2;
+  content: counter(item2, square);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.sss[data-list-level="3"] {
+  margin-left: 40px;
+  position: relative;
+}
+p.sss[data-list-level="3"]:before {
+  counter-increment: item3;
+  content: counter(item3, circle);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.sss[data-list-level="4"] {
+  margin-left: 60px;
+  position: relative;
+}
+p.sss[data-list-level="4"]:before {
+  counter-increment: item4;
+  content: counter(item4, square);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.sss[data-list-level="5"] {
+  margin-left: 80px;
+  position: relative;
+}
+p.sss[data-list-level="5"]:before {
+  counter-increment: item5;
+  content: counter(item5, disc);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.sss[data-list-level="6"] {
+  margin-left: 100px;
+  position: relative;
+}
+p.sss[data-list-level="6"]:before {
+  counter-increment: item6;
+  content: counter(item6, square);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.sss[data-list-level="7"] {
+  margin-left: 120px;
+  position: relative;
+}
+p.sss[data-list-level="7"]:before {
+  counter-increment: item7;
+  content: counter(item7, circle);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.sss[data-list-level="8"] {
+  margin-left: 140px;
+  position: relative;
+}
+p.sss[data-list-level="8"]:before {
+  counter-increment: item8;
+  content: counter(item8, square);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.sss[data-list-level="9"] {
+  margin-left: 160px;
+  position: relative;
+}
+p.sss[data-list-level="9"]:before {
+  counter-increment: item9;
+  content: counter(item9, disc);
+  font-size: 8pt;
+  text-align: left;
+  left: -42.7px;
+  margin-right: 18.7px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet {
+  position: relative;
+}
+p.NumberBulletAlphaBullet:before {
+  counter-increment: pnumberbulletalphabullet1;
+  content: counter(pnumberbulletalphabullet1, decimal)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="2"] {
+  margin-left: 20px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="2"]:before {
+  counter-increment: item2;
+  content: counter(item2, disc);
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="3"] {
+  margin-left: 40px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="3"]:before {
+  counter-increment: item3;
+  content: counter(item3, lower-alpha)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="4"] {
+  margin-left: 60px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="4"]:before {
+  counter-increment: item4;
+  content: counter(item4, circle);
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="5"] {
+  margin-left: 80px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="5"]:before {
+  counter-increment: item5;
+  content: counter(item5, decimal)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="6"] {
+  margin-left: 100px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="6"]:before {
+  counter-increment: item6;
+  content: counter(item6, circle);
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="7"] {
+  margin-left: 120px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="7"]:before {
+  counter-increment: item7;
+  content: counter(item7, decimal)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="8"] {
+  margin-left: 140px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="8"]:before {
+  counter-increment: item8;
+  content: counter(item8, square);
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.NumberBulletAlphaBullet[data-list-level="9"] {
+  margin-left: 160px;
+  position: relative;
+}
+p.NumberBulletAlphaBullet[data-list-level="9"]:before {
+  counter-increment: item9;
+  content: counter(item9, decimal)".";
+  text-align: left;
+  left: -36px;
+  margin-right: 12px;
+  width: 24px;
+}
+p.Bullets {
+  position: relative;
+}
+p.Bullets:before {
+  counter-increment: pbullets1;
+  content: counter(pbullets1, disc);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.Bullets[data-list-level="2"] {
+  margin-left: 20px;
+  position: relative;
+}
+p.Bullets[data-list-level="2"]:before {
+  counter-increment: item2;
+  content: counter(item2, square);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.Bullets[data-list-level="3"] {
+  margin-left: 40px;
+  position: relative;
+}
+p.Bullets[data-list-level="3"]:before {
+  counter-increment: item3;
+  content: counter(item3, circle);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.Bullets[data-list-level="4"] {
+  margin-left: 60px;
+  position: relative;
+}
+p.Bullets[data-list-level="4"]:before {
+  counter-increment: item4;
+  content: counter(item4, square);
+  font-size: 12pt;
+  text-align: left;
+  left: -40px;
+  margin-right: 16px;
+  width: 24px;
+}
+p.Bullets[data-list-level="5"] {
+  margin-left: 80px;
+  position: relative;
+}
+p.Bullets[data-list-level="5"]:before {
+  counter-increment: item5;
+  content: counter(item5, disc);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.Bullets[data-list-level="6"] {
+  margin-left: 100px;
+  position: relative;
+}
+p.Bullets[data-list-level="6"]:before {
+  counter-increment: item6;
+  content: counter(item6, square);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.Bullets[data-list-level="7"] {
+  margin-left: 120px;
+  position: relative;
+}
+p.Bullets[data-list-level="7"]:before {
+  counter-increment: item7;
+  content: counter(item7, circle);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.Bullets[data-list-level="8"] {
+  margin-left: 140px;
+  position: relative;
+}
+p.Bullets[data-list-level="8"]:before {
+  counter-increment: item8;
+  content: counter(item8, square);
+  font-size: 10pt;
+  text-align: left;
+  left: -41.3px;
+  margin-right: 17.3px;
+  width: 24px;
+}
+p.Bullets[data-list-level="9"] {
+  margin-left: 160px;
+  position: relative;
+}
+p.Bullets[data-list-level="9"]:before {
+  counter-increment: item9;
+  content: counter(item9, disc);
+  font-size: 8pt;
+  text-align: left;
+  left: -42.7px;
+  margin-right: 18.7px;
+  width: 24px;
+}
+:not([data-list-level])+[data-list-level="2"] {}
+[data-list-level="2"]+[data-list-level="3"] {}
+[data-list-level="3"]+[data-list-level="4"] {}
+[data-list-level="4"]+[data-list-level="5"] {}
+[data-list-level="5"]+[data-list-level="6"] {}
+[data-list-level="6"]+[data-list-level="7"] {}
+[data-list-level="7"]+[data-list-level="8"] {}
+[data-list-level="8"]+[data-list-level="9"] {}
+ul.Disc {
+  list-style: disc;
+}
+P.Topic-Text:before {
+  counter-increment: ptopic-text1;
+  content: counter(ptopic-text1, disc);
+  text-align: right;
+  position: absolute;
+  left: -33pt;
+  margin-right: 12px;
+  width: 24pt;
+  overflow: hidden;
+}
+body {}
+ol.Decimal>li {
+  font-size: 10pt;
+  font-family: Verdana;
+  position: relative;
+  margin-left: -10pt;
+}
+ol.Decimal>li:before {}
+ol.Decimal>li>ol {
+  list-style-type: none;
+  list-style: decimal;
+}
+ol.Decimal>li>ol>li {
+  position: relative;
+}
+ol.Decimal>li>ol>li:before {}
+OL>li {
+  font-family: Verdana;
+  font-size: 10pt;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: -10pt;
+}
+UL>li {
+  margin-left: -10pt;
+  font-family: Verdana;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+UL>li>ul>li {
+  font-family: Verdana;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+ul.Circle {
+  list-style: circle;
+}
+ol.LowerAlpha {
+  list-style: lower-alpha;
+}
+ul.Square {
+  list-style: square;
+}

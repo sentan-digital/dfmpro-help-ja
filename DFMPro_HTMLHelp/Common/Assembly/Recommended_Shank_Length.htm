@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.2.0_21"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Shank Length</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Recommended Shank Length "推奨シャンク長さ"</h1>
+<h4>ルール</h4>
+<p>ボルト締結されたアセンブリでは、適切なねじ結合を実現するために、完全に締め付けた際にナットがプレート表面に確実に接触している必要があります。本ルールでは、ねじ部がプレート表面の直後、またはプレート内部から始まっているかどうかを識別することで、この条件をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>ボルト／ねじによる締結では、正しいねじ長さを持つ適切なボルトを選定することが常に推奨されます。具体的には、下側プレートにクリアランス穴がある場合、その直後、またはプレート内部からねじが開始されている必要があります。この条件が満たされない場合、ナットは下側プレートの面に対して完全に締結されず、結果としてボルト締結部が緩んだ状態になります。</p>
+<p>&nbsp;</p>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、組立条件および組み付けるプレートの枚数に基づき、ナットが下側プレートに対して完全に締結されることを確実にするため、適切なねじ長さを持つ締結部品を使用することが推奨されます。</p>
+<p>&nbsp;</p>
+
+<p><b>ボルトねじ長さ = *最小ねじ長さの計算式 ― インチ単位</b></p>
+<ul>
+  <li><p>ボルト長さが 6 インチ以下の場合 ― 呼び径の 2 倍 ＋ 1/4 インチ（2D + 1/4&quot;）</p></li>
+  <li><p>ボルト長さが 6 インチを超える場合 ― 呼び径の 2 倍 ＋ 1/2 インチ（2D + 1/2&quot;）</p></li>
+</ul>
+<p>&nbsp;</p>
+
+<p><b>ボルトねじ長さ = *最小ねじ長さの計算式 ― メートル単位</b></p>
+<ul>
+  <li><p>ボルト長さ &lt;= 125 mm：呼び径の 2 倍 ＋ 6 mm（2D + 6）</p></li>
+  <li><p>ボルト長さ &gt; 125 mm かつ &lt;= 200 mm：呼び径の 2 倍 ＋ 12 mm（2D + 12）</p></li>
+  <li><p>ボルト長さ &gt; 200 mm：呼び径の 2 倍 ＋ 25 mm（2D + 25）</p></li>
+</ul>
+<p>&nbsp;</p>
+
+<p><b>シャンク長さ = ボルト全長 − ねじ長さ</b></p>
+<p>&nbsp;</p>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Shank_Length_Table.png"/>
+</div>
+
+<br>
+
+<h4>例</h4>
+<br/>
+<p><b>貫通穴</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Shank_Length.png"/>
+</div>
+<p>&nbsp;</p>
+
+<p><b>止まり穴</b></p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Shank_Length_Ex1.png"/>
+</div>
+
+
+<br>
+<div class="legend">
+<div class="legend-title">ここでは、</div>
+<div class="legend-list">
+<p>L1 = ボルトのシャンク長さ</p>
+<p>D1 = クリアランス穴の総深さ</p>
+</div>
+</div>
+<br>
+
+
+
+<p class="note-title">注記:</p>
+
+<ul class="note-body">
+<li><p>本ルールは、スロット形状のケースには対応していません。</p></li>
+<li><p>本ルールは、<a href="../Getting_Started/Top_Level_Assembly_Analysis.htm">トップレベルのアセンブリ部品</a>に対して、<a href="../Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro 設定</a>に基づいて実行できます。</p></li>
+<li><p>本チェックを正しく実行するためには、アセンブリ内のボルトを特定するために、ハードウェア名およびハードウェアタイプの情報を必ず入力する必要があります。ハードウェアの設定については、<a href="../DFMPro_Customization/Hardware_Database.htm">ハードウェアデータベース</a>を参照してください。</p></li>
+</ul>
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Hardware_Database_Rule_Image.png"/>
+</div>
+
+<br>
+
+</body>
+</html>

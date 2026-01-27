@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.6.0_10"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Tolerances for Holes</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Tolerances for Holes "穴に対する推奨公差"</h1>
+<h4>ルール</h4>
+<p>穴の公差は、製造を容易にするために推奨されるデフォルト値に従う必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>厳しすぎる公差は製造コストを増加させ、生産性を低下させます。製造効率を向上させ、かつ機能的にも許容可能な公差を指定してください。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>過度に厳しい公差はコスト増加と生産性低下を招きます。適切な公差を持つ部品は、優れた嵌合性と機能性を備え、製造効率も向上します。</p>
+<p>穴に対する推奨サイズ公差は穴径に依存し、穴径が大きくなるにつれて公差も大きくなります。デフォルト構成では標準的な公差が示されており、機能要件によってより高い、または低い精度が求められる場合を除き、すべてのケースに適用されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro は CAD モデルから該当する穴を特定し、関連付けられた寸法公差および幾何公差を読み取り、それらを構成された値と照合して検証します。</p>
+<p>ユーザーはデフォルトで構成されている値を編集できます。公差の構成は、サイズ公差に対する各穴径範囲に基づいて行われます。穴径の値が範囲の中間にある場合は、最も近い値が採用されます。</p>
+<p>公差にはプラス（+）またはマイナス（-）の符号を指定する必要があります。指定されていない場合は、プラス（+）が指定されたものとして扱われます。</p>
+<p>位置公差として実現可能な精度は、位置決めに使用される方法に依存します。これには、手動ドリル治具、治具を用いた CNC 加工、精密位置決め、ジグボーリングなどが含まれます。推奨される位置公差のデフォルト値は、精密フライス加工または治具を用いた CNC 加工を前提としています。</p>
+<p>本ルールは、DFMPro の推奨値と一致する正確な公差値に対して合格となる必要があります。</p>
+
+<br>
+
+
+
+
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>DFMPro は比較の際に小数点以下 6 桁までの値を考慮します。</p></li>
+</ul>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Tolerance for Hole.png"/>
+</div>
+
+<br>
+
+
+
+
+
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>CAD モデルで指定された公差は、eDrawings レポートには表示されません。</p></li>
+</ul>
+
+
+</body></html>

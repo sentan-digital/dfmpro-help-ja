@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.13.0_3"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Hole To Part Edge Distance</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Hole to Part Edge Distance "穴と部品端面間の距離"</h1>
+<h4>ルール</h4>
+<p>穴と部品エッジ間距離と板厚の比率は、ユーザーが指定した値の範囲内である必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>変形や破れを防ぐため、穴は部品エッジから十分に離れて配置する必要があります。一般的な設計指針として、穴と部品エッジ間の最小距離は、板厚の少なくとも 2 倍とする必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な設計指針として、穴と部品エッジとの最小距離は、板厚の少なくとも 2 倍とすることが推奨されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>ユーザーは Materials Database から加工材料を設定し、対応する穴と部品エッジ間距離と板厚の比率を構成できます。DFX は、穴から部品エッジまでの最小距離（点と点の最小距離）を特定し、この距離を事前に構成された板厚比率の値と比較します。必要に応じて、デフォルトで構成されている値を編集することも可能です。</p>
+<p>ルール UI では、材料の一覧が <a href="../DFMPro_Customization/material_database.htm">Materials Database</a> から読み込まれます。ユーザーは材料およびそれに関連する値を構成できます。材料グループ内では、材料グレードはアルファベット順に並べ替えられます。材料グループが選択されている場合、DFMPro は材料グループ全体で一貫した比率を維持したまま解析を実行します。</p>
+<div style="text-align:center;">
+<img alt="" border="1" src="../../assets/images/Common/image/Material_Group_Grade_Dropdown.png"/>
+</div>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Hole_to_Part_Edge_SMForming.png"/>
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>D2 = 穴と曲げエッジ間の最小距離</p>
+<p>t = 板金の板厚</p>
+
+<br>
+
+<p>注記：</p>
+<p>穴と部品エッジ間の点と点の距離計算が行われます。</p>
+<p>単純穴（Simple Hole）のみがサポートされています。</p>
+<p>穴が複数のエッジ近傍に存在する場合、ルールは最小距離の値を用いた 1 つの違反インスタンスのみを表示します。</p>
+
+
+<br>
+</body>
+</html>

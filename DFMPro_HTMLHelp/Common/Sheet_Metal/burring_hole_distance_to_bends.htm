@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.12.0_38"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Extruded Hole Distance To Bends</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>Extruded Hole Distance to Bends "押出穴と曲げ部間の距離"</h1>
+<h4>ルール</h4>
+<p>押し出し穴と曲げ部との最小距離を板厚で割った比率は、構成で設定された値より大きくなければなりません。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>押し出し穴が曲げ部に近すぎる場合、曲げ加工中に変形が発生します。穴の端から内側曲げ半径の開始位置までの距離が板厚の少なくとも4倍以上であれば、変形は最小限に抑えられます。また、適切な距離を確保することで、パンチとダイが押し出し穴を成形するために十分な隙間を確保できます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインとして、押し出し穴と曲げ部との最小距離は、板厚の少なくとも4倍以上であるべきです。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMPro は押し出し穴フィーチャーを識別し、押し出し穴と曲げ部との最小距離を板厚で割った比率を算出します。この実際の比率は、構成で設定された比率と照合されて検証されます。</p>
+<p>ユーザーは、デフォルトで構成されている比率を編集することができます。</p>
+<p>ルールUIでは、材料の一覧が <a href="../Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から読み込まれ、ユーザーは材料およびその値を構成することができます。</p>
+<p>材料とその値を構成した後、ユーザーは Ctrl+M コマンドを使用して、ルールUI内で材料グループおよびグレードごとに構成された材料の一覧をフィルタ表示できます。同じキー（Ctrl+M）を使用してフィルタを解除することができます。</p>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="1" src="../../assets/images/Common/image/Filter_Configuration_Command.png">
+</div>
+
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Extruded Hole Distance To Bends.png">
+</div>
+
+<br>
+
+<p>ここで、</p>
+<p>t = 板厚</p>
+<p>D = 押し出し穴と曲げ部との最小距離</p>
+
+<br>
+</body>
+</html>

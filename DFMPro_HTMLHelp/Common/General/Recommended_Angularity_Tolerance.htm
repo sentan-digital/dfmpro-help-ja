@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.7.0_8"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Recommended Angularity Tolerance</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Recommended Angularity Tolerance "推奨角度公差"</h1>
+<h4>ルール</h4>
+<p>3D CAD上で利用可能な幾何公差（GD&amp;T）情報およびPMI情報を特定し、指定された値に対して厳しすぎる公差を検証します。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>角度公差は、あるフィーチャが別のフィーチャに対して、基準となる角度でどのような向きを持つかを示すための記号です。他の部品と角度をもって嵌合する重要なフィーチャでは、角度公差が使用され、嵌合面の角度および平面度を制御するのに役立ちます。曲げ形状を持つプレス部品の場合、角度公差は、プレス加工によって形成される3次元表面が公差域内に収まることを保証します。この公差は角度のばらつきを直接制御するものではなく、基準（データム）に基づいて表面が存在できる位置を制御することで、間接的に角度を制御します。軸に対して角度公差が指定された場合、公差域はデータムに対して角度を持つ軸の周囲に形成される円筒となります。</p>
+
+<br>
+
+<p>厳しい公差は、製品設計、製造、検査時間に影響を与えます。公差が厳しくなることで、以下の要素が追加され、最終的な製品コストが増加します。</p>
+<ul>
+<li><p>高度または特殊な検査装置が必要になる</p></li>
+<li><p>工具交換の頻度が増加する</p></li>
+<li><p>最終製品受け入れ時の歩留まりが低下する</p></li>
+<li><p>スクラップ率が高くなる</p></li>
+<li><p>原材料の使用量が増加する</p></li>
+</ul>
+
+<br>
+
+<p>過度に厳しい公差はコスト増加と生産性低下につながります。適切な公差が設定された部品は、優れた嵌合性と機能を持ち、製造効率も向上します。組立工程においては、公差の厳しい部品は組み付けが困難になり、組立コストの増加を招きます。</p>
+<p> </p>
+<p>適切な公差を設定する際には、以下の点を考慮する必要があります。</p>
+<ul>
+<li><p>部品機能に基づいて、重要公差と非重要公差を区別する</p></li>
+<li><p>不必要に厳しい公差を避ける</p></li>
+<li><p>品質コストを最小化する</p></li>
+</ul>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的な指針として、過度に厳しい公差はコスト増加と生産性低下を招きます。公差値は、社内の加工能力および検査能力を考慮して設定する必要があります。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProでは、公差の種類、部品サイズ範囲、およびそれに対応する公差値を構成することができます。</p>
+<p> </p>
+<p>部品外形サイズ = 部品の最大対角長のおおよその値</p>
+<p> </p>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Tolerance_Common.png"/>
+</div>
+
+<br>
+
+<p>ここでは、</p>
+<p>Lt = 長さ</p>
+<p>Wt = 幅</p>
+<p>Ht = 高さ</p>
+<p>Ldt = 部品対角長</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Recommended_Angularity_Tolerance.png"/>
+</div>
+
+<br>
+
+<p>注記：</p>
+<ul>
+<li><p>CADモデルに設定されている公差は、eDrawingsレポートでは表示されません。</p></li>
+<li><p>ルール構成で設定された公差値は、公差域として扱われます。</p></li>
+<li><p>このルールは、面やエッジなど、CADフィーチャに関連付け（参照）られた幾何公差のみを対象とします。</p></li>
+<li><p>このルールは、幾何公差を持つ部品モデルに対して実行されます。</p></li>
+</ul>
+
+
+<br>
+</body>
+</html>

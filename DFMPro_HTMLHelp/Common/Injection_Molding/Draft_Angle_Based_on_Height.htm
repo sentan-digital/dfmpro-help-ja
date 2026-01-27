@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_4"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="topic-status" content="Sent for Review"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Draft Angle Based on Height</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+  
+<h1>Draft Angle Based on Height "高さに基づく抜き勾配"</h1>
+<h4>ルール</h4>
+<p>抜き勾配は、引き抜き方向に対してパーツ壁の内側および外側に付与する必要があります。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>抜き勾配の設計は、プラスチックパーツを設計する際の重要な要素です。こうしたパーツはコアに収縮して張り付きやすい傾向があります。その結果、コア表面における接触圧力が高まり、コアとパーツの間の摩擦が増加して、金型からパーツを排出することが困難になります。したがって、パーツの排出を補助するために、抜き勾配は適切に設計する必要があります。また、サイクルタイムを短縮し、生産性を向上させます。抜き勾配は、引き抜き方向に沿ってパーツの内壁または外壁に使用する必要があります。</p>
+<p>一般に、コアおよびキャビティを設計する際には、面ごとに抜き勾配を変化させる必要があります。そのため、金型からパーツを容易に取り外せるように、適切な抜き勾配を付与する必要があります。深い部位、複雑な形状、内側コアまたはダイ部位では、パーツが周囲に収縮する傾向があるため、より大きな抜き勾配を使用する必要があります。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>一般的なガイドラインでは、内側壁および外側壁の両方に対して、片側あたり0.5°～2°の角度が推奨されます。</p>
+
+<br>
+
+<h4>構成</h4>
+<p>DFMProは、与えられた引き抜き方向に基づいて、コア、キャビティ、およびサイドコア上の抜き勾配を特定します。これらの抜き勾配は、面の高さに対して構成された値と照合して検証されます。</p>
+<p>ユーザーはデフォルトの構成値を編集できます。</p>
+
+<br>
+
+<h4>例</h4>
+<div style="text-align:center;">
+<img alt="" border="0" src="../../assets/images/Common/image/Draft_Angle_Based_on_height.bmp"/>
+</div>
+
+<br>
+
+<p>ここで、</p>
+<p>H1 = キャビティ面の高さ</p>
+<p>H2 = コア面の高さ</p>
+<p>H3 = サイドコア面の高さ</p>
+<p>Q1 = キャビティの抜き勾配</p>
+<p>Q2 = コアの抜き勾配</p>
+<p>Q3 = サイドコアの抜き勾配</p>
+
+<br>
+
+<h2>Excel入力形式</h2>
+<p>ユーザーは、Importボタンを使用して、Excelシートテンプレート内にある一括データをインポートできます。</p>
+
+<br>
+
+<p>標準テンプレート形式:</p>
+<table align="center" border="1" cellspacing="0">
+  <colgroup>
+    <col width="49"/>
+    <col width="49"/>
+    <col width="49"/>
+    <col width="49"/>
+    <col width="49"/>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td><p style="font-weight: bold; text-align: center;">H1</p></td>
+      <td><p style="font-weight: bold; text-align: center;">H2</p></td>
+      <td><p style="font-weight: bold; text-align: center;">Q1</p></td>
+      <td><p style="font-weight: bold; text-align: center;">Q2</p></td>
+      <td><p style="font-weight: bold; text-align: center;">Q3</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">0</p></td>
+      <td><p style="text-align: center;">2</p></td>
+      <td><p style="text-align: center;">1.91</p></td>
+      <td><p style="text-align: center;">1.43</p></td>
+      <td><p style="text-align: center;">3.0</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">2</p></td>
+      <td><p style="text-align: center;">4</p></td>
+      <td><p style="text-align: center;">1.43</p></td>
+      <td><p style="text-align: center;">1.14</p></td>
+      <td><p style="text-align: center;">0.3</p></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center;">4</p></td>
+      <td><p style="text-align: center;"> </p></td>
+      <td><p style="text-align: center;">1.14</p></td>
+      <td><p style="text-align: center;">0.95</p></td>
+      <td><p style="text-align: center;">0.3</p></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p>ここでは、</p>
+<p>H1 = 面の高さ = 最小（超過）</p>
+<p>H2 = 面の高さ = 最大（以下、または包含）</p>
+
+<br>
+</body>
+</html>

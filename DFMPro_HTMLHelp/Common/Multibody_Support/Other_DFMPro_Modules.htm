@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="4.0_6"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="rh-authors" content="Sharvari Panpalia"/>
+  <meta name="condition-tags" content=""/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Other DFMPro Modules</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+<h1>その他の DFMPro モジュール</h1><br>
+<p>マルチボディのパーツ設計の場合、ユーザーが他のモジュールを実行すると、DFMPro はアクティブなソリッドボディに対して実行されます。</p>
+<p> </p>
+<p>以下のフローチャートは、他のモジュールにおけるマルチボディケースを説明しています：</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Multibody_Part_Design.png"/>
+</div>
+<h2> </h2><br>
+<h2> </h2><br>
+<h2>マルチボディ設計の場合における DFMPro の材料選択の動作</h2><br>
+<p>以下のフローチャートは、マルチボディパーツケースにおける材料選択の動作を説明しています：</p>
+<p> </p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Multibody_DFMPro_Material_Selection.png"/>
+</div>
+<p> </p>
+<p> </p>
+<p>注記：</p><br>
+<p>上記のワークフローは、<a href="../Getting_Started/DFMPro_Settings.htm#Inputs">Read Material for CAD Attribute/Parameter</a> 設定に適用されます。</p>
+<p>マルチボディのパーツ設計の場合、eDrawings レポートでは失敗インスタンスがワイヤーフレームで表示されます。</p>
+<p>以下の PMI ベースおよび共通ルールは、すべてのボディに対して実行されます。</p>
+<ul>
+  <li><a href="../Additive_Manufacturing/Recommended_Angular_Tolerance.htm">Recommended Angular Tolerance</a></li>
+  <li><a href="../General/Recommended_Dimensioning_Method.htm">Recommended Dimensioning Method</a></li>
+  <li><a href="../Injection_Molding/Recommended_Molding_Tolerances.htm">Recommended Molding Tolerances</a></li>
+  <li><a href="../Milling/Recommended_Profile_Tolerance.htm">Recommended Profile Tolerance</a></li>
+  <li><a href="../General/Recommended_Standard_Thread_Sizes.htm">Recommended Standard Thread Sizes</a></li>
+  <li><a href="../General/Recommended_Thread_Class_External_Threads.htm">Recommended Thread Class – External Threads</a></li>
+  <li><a href="../General/Recommended_Thread_Class_Internal_Threads.htm">Recommended Thread Class – Internal Threads</a></li>
+  <li><a href="../General/thread_relief_for_hole.htm">Thread Relief for Hole</a></li>
+</ul>
+<p> </p>
+<p><b>アセンブリ ルール：</b> <a href="../Assembly/interference_detection.htm">Interference Detection</a></p>
+<ul>
+  <li><b>All Components</b> – ルールは、コンポーネント内に存在するアクティブなソリッドボディを検証します。ルールは、2つのコンポーネント間でアクティブなソリッドボディ同士の干渉を識別します。</li>
+  <li><b>Selected Components</b> – ルールは、コンポーネント内に存在するアクティブなソリッドボディを検証します。ルールは、2つのコンポーネント間でアクティブなソリッドボディ同士の干渉を識別します。</li>
+</ul>
+<p><b>溶接ルール：</b> <a href="../Welding/Weld Leg For T- Joint.htm">Weld Leg For T- Joint</a> - このルールは、コンポーネント内に存在するアクティブなソリッドボディに対して実行されます。</p>
+<p><b>アセンブリ固有ルール：</b> 例：<a href="../Tubing/Minimum_Clearance_Between_Tubes.htm">Minimum Clearance Between Tubes</a>、<a href="../Assembly/min_clearance_bet_parts.htm">Minimum Clearance Between Components</a>、留め具（Fastener）ルール</p>
+<p>アセンブリ固有ルールについて、各アセンブリコンポーネントに2つを超えるソリッドボディが含まれている場合、DFMPro はコンポーネント内のアクティブなソリッドボディに対して実行されます。</p>
+<p>2つのコンポーネントのうち、片方のコンポーネントがアクティブな空ボディを持つ場合、このケースではルールは合格になります。</p>
+
+
+</body></html>
