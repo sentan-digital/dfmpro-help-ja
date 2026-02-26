@@ -790,6 +790,34 @@
         <param name="Name" value="Wall Thickness Variation">
         <param name="Local" value="Common/Injection_Molding/wall_thickness_variation.htm">
       </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Minimum_Wall Thickness for Gate Location">
+        <param name="Local" value="Common/Injection_Molding/Minimum_Wall_Thickness_for_Gate_Location.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Minimum Diameter of Support Hole for Long Cores">
+        <param name="Local" value="Common/Injection_Molding/Minimum_Diameter_of_Support_Hole_for_Long_Cores.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Avoid Fillet Radius Around Parting Line">
+        <param name="Local" value="Common/Injection_Molding/Avoid_Fillet_Radius_Around_Parting_Line.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Check Support Hole for Long Cores">
+        <param name="Local" value="Common/Injection_Molding/Check_Support_Hole_for_Long_Cores.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Maximum_Support Hole Distance for Long Cores">
+        <param name="Local" value="Common/Injection_Molding/Maximum_Support_Hole_Distance_for_Long_Cores.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Recommended_Interlock Parameters for Long Cores">
+        <param name="Local" value="Common/Injection_Molding/Recommended_Interlock_Parameters_for_Long_Cores.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Rib_Parameters_for_Mold_Machining">
+        <param name="Local" value="Common/Injection_Molding/Rib_Parameters_for_Mold_Machining.htm">
+      </object>
       </ul>
     <li><object type="text/sitemap">
       <param name="Name" value="Investment Casting">

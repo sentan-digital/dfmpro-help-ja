@@ -30,5 +30,12 @@
 {"name":"リブ先端部の肉厚 (Thickness at Tip of Rib)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Thickness_at_Tip_of_Rib.htm"},
 {"name":"アンダーカット検出 (Undercut Detection)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/undercut_detection.htm"},
 {"name":"均一な製品肉厚 (Uniform Wall Thickness)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/uniform_wall_thickness.htm"},
-{"name":"製品肉厚のばらつき (Wall Thickness Variation)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/wall_thickness_variation.htm"}];    
+{"name":"製品肉厚のばらつき (Wall Thickness Variation)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/wall_thickness_variation.htm"},
+{"name":"長尺コア用サポート穴チェック (Check Support Hole for Long Cores)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Check_Support_Hole_for_Long_Cores.htm"},
+{"name":"パーティングライン周辺のフィレット回避 (Avoid Fillet Radius Around Parting Line)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Avoid_Fillet_Radius_Around_Parting_Line.htm"},
+{"name":"長尺コア用サポート穴の最小径 (Minimum Diameter of Support Hole for Long Cores)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Minimum_Diameter_of_Support_Hole_for_Long_Cores.htm"},
+{"name":"ゲート位置の最小肉厚 (Minimum Wall Thickness for Gate Location)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Minimum_Wall_Thickness_for_Gate_Location.htm"},
+{"name":"金型加工用リブパラメータ (Rib Parameters for Mold Machining)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Rib_Parameters_for_Mold_Machining.htm"},
+{"name":"長尺コア用推奨インターロックパラメータ (Recommended Interlock Parameters for Long Cores)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Recommended_Interlock_Parameters_for_Long_Cores.htm"},
+{"name":"長尺コア用サポート穴の最大間隔 (Maximum Support Hole Distance for Long Cores)","type":"item","tilePath":"","description":"","url":"Common/Injection_Molding/Maximum_Support_Hole_Distance_for_Long_Cores.htm"},];    
 window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

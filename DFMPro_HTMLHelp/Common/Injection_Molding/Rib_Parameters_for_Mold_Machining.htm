@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_30"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" data-condition="Topic_Level:Topic_SW;Topic_Level:Topic_CP"/>
+  <meta name="rh-authors" content="Sharvari Panpalia" data-condition="Topic_Level:Topic_SW;Topic_Level:Topic_CP"/>
+  <meta name="condition-tags" content="Topic_Level:Topic_SW;Topic_Level:Topic_CP" data-condition="Topic_Level:Topic_SW;Topic_Level:Topic_CP"/>
+  <meta name="generator" content="Adobe RoboHelp 2022" data-condition="Topic_Level:Topic_SW;Topic_Level:Topic_CP"/>
+  <title data-condition="Topic_Level:Topic_SW;Topic_Level:Topic_CP">Rib Parameters for Mold Machining</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css" data-condition="Topic_Level:Topic_SW;Topic_Level:Topic_CP"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>金型加工のためのリブパラメータ</h1>
+<h4>ルール</h4>
+<p>本ルールは、DFMProデータベースから選択されたミーリングカッターに基づき、リブの最小抜き勾配角をチェックします。要求されるカッターパラメータがリブ先端厚みおよび高さに適合しない場合、ルールは不合格となり、設計者が要求するカッターではリブ用金型を切削できないことを示唆します。</p>
+<br>
+<h4>説明</h4>
+<p>一般的に、金型メーカーはボールノーズテーパ、およびエンドミルカッターを用いて金型を切削します。しかし、非標準のリブ（先端厚み、高さ、抜き勾配角）が存在する場合、それらのリブは利用可能な標準の金型用ミーリングカッターでは切削できません。リブのパラメータが非標準であるため、その金型を切削するには追加のカッターが必要となり、結果としてオペレーションコストおよび金型コストが増加します。</p>
+<p>本ルールは、モデルからリブ先端厚みとリブ高さを特定し、DFMProデータベースからカッターを選定して、以下の項目をチェックします。</p>
+<ul>
+  <li>
+    <p>樹脂部品上のリブ抜き勾配角がカッターの抜き勾配角より小さい場合、ルールは不合格となります。</p>
+  </li>
+  <li>
+    <p>リブ先端のフィレット半径がカッター半径より小さい場合、ルールは不合格となります。</p>
+  </li>
+  <li>
+    <p>リブ先端厚みおよび高さに一致するカッターが利用できない場合、ルールは不合格となります。</p>
+  </li>
+</ul>
+<br>
+<h4>推奨事項</h4>
+<p>必要な標準カッターでリブ用金型を切削できるように、適切なパラメータでリブを設計してください。</p>
+<br>
+<p><strong>カッター選定基準</strong></p>
+<p>本ルールは、リブ先端の最小厚みに最も近く、かつそれ以下の直径を持つカッターをデータベースから選定します。カッターが選定された後、カッターのフルート長（L2）が最大リブ高さに最も近く、かつそれより大きいカッターが選択されます。</p>
+<br>
+<h4>構成</h4>
+<p>DFMProでは、<a href="../DFMPro_Customization/Cutter_Database.htm">Cutter Database</a>から、フラットエンドミルおよびボールノーズ用のカッターデータベースを構成するオプションが提供されています。</p>
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Rib_Parameters_for_Mold_Machining.png"/>
+</div>
+<br>
+<p>ここでは、</p>
+<p>Hp = 抜き方向に沿ったリブの高さ</p>
+<p>Tt = リブ先端部の厚み</p>
+<p>Q = リブの抜き勾配角</p>
+
+<br>
+</body>
+</html>

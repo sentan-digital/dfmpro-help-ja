@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_25"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="rh-authors" content="Sharvari Panpalia" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="generator" content="Adobe RoboHelp 2022" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <title data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW">Recommended Interlock Parameters for Long Cores</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="condition-tags" content="Topic_Level:Topic_CP;Topic_Level:Topic_SW" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>長尺コアに対する推奨インターロックパラメータ</h1>
+<h4>ルール</h4>
+<p>コア穴の長さ／直径比が構成された値より大きく、かつインターロック形状が存在する場合、本ルールは次の2つの条件をチェックします：</p>
+<ul>
+  <li>
+    <p>コア穴の最小直径（d1）：コア穴の最小直径は、構成された値より大きい必要があります。これにより、穴がコアの構造健全性を支えるのに十分な大きさとなり、成形圧力下での潜在的なたわみ（変形）を防ぐことができます。</p>
+  </li>
+  <li>
+    <p>コア穴インターロックの最小クリアランス（Cmin）：インターロック形状の最小クリアランスは、構成された値より大きい必要があります。これにより、インターロックが適切に機能するための十分なスペースが確保され、コアに安定性を与え、たわみ（変形）の防止に役立ちます。</p>
+  </li>
+</ul>
+<br>
+
+<h4>説明</h4>
+<p>このような問題を防ぐためには、コア同士に十分なインターロック（かみ合わせ）を設けることが重要です。インターロック形状はコアを安定化させ、圧力下でコアがたわむことを防ぎます。このインターロック機構は構造的な支持を提供し、成形サイクル中にコアが所定位置に保持され、たわみに抵抗できるようにします。インターロック形状の作成が不可能な場合は、コアの反対側にサポート穴を設けるなどの追加の設計要素が必要になることがあります。これらのサポート穴はコアの安定性をさらに高め、コアのたわみに起因する問題を最小化するのに役立ちます。</p>
+
+<br>
+<h4>推奨事項</h4>
+<p>2つの反対方向から抜き取られる長尺のコア穴では、コアの十分な強度と安定性を確保し、コアのたわみ問題を効果的に防止するために、コアのインターロック形状が必要です。コアが2つの反対方向からアクセスされる場合、コアの長さと高い成形圧力により、たわみのリスクが高くなります。これに対処するため、インターロック形状は十分な支持と位置合わせを提供するように設計し、成形工程中にコアが確実に所定位置に保持されるようにする必要があります。このインターロックはコア同士の堅固な結合を形成し、たわみや位置ずれを引き起こす不要な動きを防止する必要があります。</p>
+
+<br>
+<h4>例</h4>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Recommended_Interlock_Parameters_for_Long_Cores.png"/>
+</div>
+
+<br>
+<p>注記：</p>
+<ul>
+  <li style="margin-left: 23pt">
+    <p>コア軸とコアの抜き方向（取り外し方向）が一致している場合、そのコアは長尺コアとして扱われます。&nbsp;&nbsp;</p>
+  </li>
+</ul>
+
+<br>
+
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Check_Support_Core_Hole_for_Long_Cores_Note.png"/>
+</div>
+
+<br>
+</body>
+</html>

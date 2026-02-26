@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_11"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="rh-authors" content="Sharvari Panpalia" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="generator" content="Adobe RoboHelp 2022" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <title data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW">Minimum Diameter of Support Hole for Long Cores</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="condition-tags" content="Topic_Level:Topic_CP;Topic_Level:Topic_SW" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>長いコアに対するサポート穴の最小直径</h1>
+<h4>ルール</h4>
+<p>このルールは、長い中子穴（long-cored hole）の条件に基づいて、サポート用コア穴の最小直径をチェックします。</p>
+
+<br>
+
+<h4>説明</h4>
+<p>長く、かつ支持されていないコアのたわみは、成形プロセスで一般的に発生する問題です。高い成形圧力のため、長いコアは特にたわみやすく、その結果としてコア周辺でフラッシュが発生する問題につながる可能性があります。この問題を緩和するには、コア同士の間に十分なインターロック（かみ合わせ）が確保されていることが重要です。このインターロックは、成形中にコアを安定させ、不要なたわみを防ぐのに役立ちます。インターロック形状の作成が現実的でない場合の代替策として、コアの反対側にコアサポート穴を追加する方法があります。これらのサポート穴は追加の安定性を与え、コアが十分に支持された状態を保つことで、たわみのリスクを最小化します。このアプローチにより成形プロセスの健全性を維持し、コア周辺のフラッシュのような欠陥の発生を低減できます。</p>
+
+<br>
+
+<h4>推奨事項</h4>
+<p>サポート用コア穴の直径は、有効な支持を得られるよう十分に大きくする必要があります。穴のサイズは、成形プロセス中にコアへ加わる荷重および圧力に耐えられるように設定してください。直径が小さすぎる場合、支持が十分に機能せず、コアのたわみや位置ずれにつながる可能性があります。</p>
+
+<br>
+
+<h4>例</h4>
+<p>止まり中子穴</p>
+<div style="text-align:center;">
+  <img src="../../assets/images/Common/image/image1.png"/>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>貫通中子穴</p>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img src="../../assets/images/Common/image/image2.png"/>
+</div>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Minimum_Diameter_of_Support_Hole_for_Long_Cores_Through_Hole.png"/>
+</div>
+
+<br>
+<p>ここでは、</p>
+<p>L = 全長</p>
+<p>d1 = 中子穴の最小直径</p>
+<p>Dw = サポート穴までの最小距離</p>
+<p>dsmin = サポート穴の最小直径</p>
+
+<br>
+
+<p>注記：</p>
+<ul>
+  <li style="margin-left: 20pt">
+    <p>長いコア上に存在する穴は、サポート穴として扱われます。</p>
+  </li>
+  <li style="margin-left: 20pt">
+    <p>以下の種類の穴がサポート対象となります：</p>
+  </li>
+</ul>
+<p>単純穴</p>
+<p>テーパ穴（ドラフト付き）</p>
+<p>皿もみ穴（カウンターシンク）</p>
+<p>座ぐり穴（カウンターボア）</p>
+
+<br>
+
+<ul>
+  <li style="margin-left: 19pt">
+    <p>このルールは、長いコア上に存在するすべての穴をサポート穴として検証し、さらに直径チェックのために長いコア上に存在するすべての穴を検証します。</p>
+  </li>
+  <li style="margin-left: 19pt">
+    <p>止まり穴、ねじ穴、部分穴は、コアサポート穴とは見なされません。</p>
+  </li>
+  <li style="margin-left: 19pt">
+    <p>コア軸とコアの抜き方向が一致している場合、長いコアとして扱われます。&nbsp;&nbsp;</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Check_Support_Core_Hole_for_Long_Cores_Note.png"/>
+</div>
+
+<br>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8">
+
+
+  <meta name="gRootRelPath" content="../.."/>
+	<meta name="gCommonRootRelPath" content="../.."/>
+  <meta name="gTopicId" content="10.8.0_10"/>
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/DFMPro/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="rh-authors" content="Sharvari Panpalia" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="generator" content="Adobe RoboHelp 2022" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <title data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW">Maximum Support Hole Distance for Long Cores</title>
+  <link rel="StyleSheet" href="../../assets/css/cwhtmlhelp1.css" type="text/css" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+  <meta name="condition-tags" content="Topic_Level:Topic_CP;Topic_Level:Topic_SW" data-condition="Topic_Level:Topic_CP;Topic_Level:Topic_SW"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="DFMPro for Creo Parametric">
+        <span>DFMPro for Creo Parametric</span>
+      </div>
+      <div class="gotohome" title="">
+        <a href="#" onclick="rh._.goToFullLayout()"></a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+<h1>長いコアに対するサポート穴の最大距離</h1><br/>
+<h4>ルール</h4><br/>
+<p>長いコアの場合、このルールはコア端からサポート穴までの最大距離をチェックし、構成された値と比較します。止まり中子穴（Blind-cored holes）の場合、距離計算は止まり中子穴の端部から測定されます。これはその位置で支持が必要となるためです。貫通中子穴（through-cored holes）の場合、距離計算は中子穴のいずれかの側から測定されます。中子穴タイプに基づいてこれらの特定の距離計算を考慮することで、このルールは長いコアの構造的完全性を維持し、成形プロセス中のたわみリスクを最小化します。</p>
+<p>&nbsp;</p>
+<h4>説明</h4><br/>
+<p>長く、かつ支持されていないコアのたわみは、成形プロセスで一般的に発生する問題です。高い成形圧力のため、長いコアは特にたわみやすく、その結果としてコア周辺でフラッシュが発生する問題につながる可能性があります。この問題を緩和するには、コア同士の間に十分なインターロック（かみ合わせ）が確保されていることが重要です。このインターロックは、成形中にコアを安定させ、不要なたわみを防ぐのに役立ちます。インターロック形状の作成が現実的でない場合の代替策として、コアの反対側にコアサポート穴を追加する方法があります。これらのサポート穴は追加の安定性を与え、コアが十分に支持された状態を保つことで、たわみのリスクを最小化します。このアプローチにより成形プロセスの健全性を維持し、コア周辺のフラッシュのような欠陥の発生を低減できます。</p>
+<p>&nbsp;</p>
+<h4>推奨事項</h4><br/>
+<p>長いコアでのコアのたわみを回避するための一般的なガイドラインとして、コアの反対側にサポート穴を追加することが推奨されます。これらのサポート穴はコアを安定させ、高い成形圧力下でコアがたわむのを防ぎます。反対側にサポート穴を配置することで、コアが均等に支持され、成形プロセス中の不要な動きが低減されます。</p>
+<h4>&nbsp;</h4><br/>
+<h4>例</h4><br/>
+<p>止まり中子穴</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Max_Support_Hole_Distance_for_Long_Cores_Blind_Core.png"/>
+</div>
+<p>&nbsp;</p>
+<p>貫通中子穴</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Max_Support_Hole_Distance_for_Long_Cores_Through_Core.png"/>
+</div>
+<p>&nbsp;</p>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Max_Support_Hole_Distance_for_Long_Cores.png"/>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>ここで、</p>
+<p>L = 全長</p>
+<p>D1 = 中子穴の最大直径</p>
+<p>d1 = 中子穴の最小直径</p>
+<p>Dw = サポート穴までの最小距離</p>
+<p>&nbsp;</p>
+<p>注記：</p>
+<ul>
+  <li style="margin-left: 20pt">
+    <p>止まり中子穴の場合、このルールは止まり中子穴端部からのサポート穴の最大距離をチェックし、単一の不適合インスタンスを表示します。また、止まり中子穴端部から最も近いサポート穴をチェックします。</p>
+  </li>
+  <li style="margin-left: 20pt">
+    <p>貫通中子穴の場合、このルールは中子端部のいずれかの側にあるサポート穴を検証し、単一の不適合インスタンスを表示します。また、いずれかの端部からの最も近いサポート穴距離をチェックします。</p>
+  </li>
+  <li style="margin-left: 20pt">
+    <p>止まり中子穴が2つある場合、このルールは各中子穴についてサポート穴の最大距離をチェックし、各中子穴について最も近いサポート穴距離をチェックし、各中子穴に対して2つの不適合インスタンスを表示します。</p>
+  </li>
+  <li style="margin-left: 20pt">
+    <p>コア軸とコアの抜き方向が一致している場合、長いコアとして扱われます。&nbsp;&nbsp;</p>
+  </li>
+</ul>
+<div style="text-align:center;">
+  <img alt="" border="0" src="../../assets/images/Common/image/Check_Support_Core_Hole_for_Long_Cores_Note.png"/>
+</div>
+
+
+<br>
+</body>
+</html>
