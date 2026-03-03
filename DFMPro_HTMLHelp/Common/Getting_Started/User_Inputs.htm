@@ -37,21 +37,15 @@
     </div>
   </div>
   <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
-  <h1>ユーザー入力</h1><br>
+<h1>ユーザー入力</h1>
 <p>ユーザー入力のグループボックスでは、必要に応じて入力値を追加／変更できます。</p>
 <ol>
-<li>
-<p>DFMPro メニューの <img alt="" border="0" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp"/> <strong><i>Start DFMPro</i></strong> をクリックして、DFMPro ユーザーインターフェースを開きます。</p>
-</li>
-<li>
-<p>ユーザー入力のグループボックスで、パーツ／アセンブリを解析するために必要な入力値とパラメータを <strong>追加／変更</strong> します。</p>
-</li>
-<li>
-<p>DFMPro は、実行に進む前に、ユーザーインターフェース下部に設計者向けの提案／必要なアクションを表示します。</p>
-</li>
+<li><p>DFMPro メニューの <img alt="" border="0" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp"/> <strong><i>Start DFMPro</i></strong> をクリックして、DFMPro ユーザーインターフェースを開きます。</p></li>
+<li><p>ユーザー入力のグループボックスで、パーツ／アセンブリを解析するために必要な入力値とパラメータを <strong>追加／変更</strong> します。</p></li>
+<li><p>DFMPro は、実行に進む前に、ユーザーインターフェース下部に設計者向けの提案／必要なアクションを表示します。</p></li>
 </ol>
-
-<h2>ユーザー入力のグループボックス</h2><br>
+<br>
+<h2>ユーザー入力のグループボックス</h2>
 <p>このグループボックスでは、必要に応じて入力を定義できます。</p>
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_CP.png"/>
@@ -64,12 +58,17 @@
 <p><b>製造プロセス:</b> ドロップダウンリストから適切な製造プロセスを選択します。</p>
 </li>
 </ul>
-<p>Note:</p>
-<p>ルールファイルで選択されたルールに基づき、対応する製造プロセスが実行可能として表示され、その他の製造プロセスは無効化されます。</p>
+<br>
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>ルールファイルで選択されたルールに基づき、対応する製造プロセスが実行可能として表示され、その他の製造プロセスは無効化されます。</p></li>
+<li><p>ルールファイルで一般ルールが選択されている場合、すべての製造プロセスが実行可能として表示されます。</p></li>
+</ul>
+
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_Manufacturing_Process_CP.png"/>
 </div>
-<p>ルールファイルで一般ルールが選択されている場合、すべての製造プロセスが実行可能として表示されます。</p>
+
 
 <ul>
 <li>
@@ -92,16 +91,26 @@
 <p><b>地域:</b> 製造施設の所在地をドロップダウンリストから選択します（サポートされる地域は US、Europe、China、India です）。</p>
 </li>
 </ul>
-<p>Note:</p>
-<p>以下に示す入力オプションのうち、地域（Region）までの項目はコスト計算に必要です。すべての入力値はパーツコストの算出に考慮されます。ただし、実行に必要なのは <i>Manufacturing Process</i> と <i>Material</i> の入力のみです。</p>
+<br>
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>以下に示す入力オプションのうち、地域（Region）までの項目はコスト計算に必要です。すべての入力値はパーツコストの算出に考慮されます。ただし、実行に必要なのは <i>Manufacturing Process</i> と <i>Material</i> の入力のみです。</p></li>
+</ul>
+
+<br>
 
 <ul>
 <li>
 <p><b>コストテンプレート:</b> ドロップダウンリストから適切なレポートテンプレートを選択します。DFMPro では、Cost Administration Vault を通じてテンプレートの追加または変更が可能です。</p>
 </li>
 </ul>
-<p>Note:</p>
-<p>コストテンプレートは Cost ライセンスが利用可能な場合にのみ表示されます。そうでない場合、このオプションは無効化されます。</p>
+<br>
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>コストテンプレートは Cost ライセンスが利用可能な場合にのみ表示されます。そうでない場合、このオプションは無効化されます。</p></li>
+</ul>
+
+<br>
 
 <ul>
 <li>
@@ -131,11 +140,17 @@
 </li>
 <li>
 <p><strong>ストック種別</strong>: 製造プロセスとして <i>Prismatic Mill</i> が選択されている場合に表示されます。ドロップダウンリストから指定の <i>Stock type</i> を選択するか、ストック数を定義します。ドロップダウンリストには 5 種類の <i>Stock Type</i> があります。既定では常に <i>Standard</i> が選択されます。</p>
-</li>
+<p><i>Custom</i> オプションが選択されると、ユーザーは加工に必要となる金額を入力できます。たとえば通貨が USD に設定されているときに 1000 を入力すると、材料費として 1000 USD がそのまま考慮されます。</p></li>
 </ul>
-<p><i>Custom</i> オプションが選択されると、ユーザーは加工に必要となる金額を入力できます。たとえば通貨が USD に設定されているときに 1000 を入力すると、材料費として 1000 USD がそのまま考慮されます。</p>
-<p>Note:</p>
-<p>金額（数値）は 12 桁を超えて入力しないでください（例: 999999999999）。追加の数字を入力しようとすると、DFMPro は警告として数値を赤色（RED）で表示し、以下の画像のように Analysis ボタンを無効化します。</p>
+
+
+<br>
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>金額（数値）は 12 桁を超えて入力しないでください（例: 999999999999）。追加の数字を入力しようとすると、DFMPro は警告として数値を赤色（RED）で表示し、以下の画像のように Analysis ボタンを無効化します。</p></li>
+</ul>
+
+<br>
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_StockType_1.png"/>
 <img alt="" border="1" src="../../assets/images/Common/image/User_Inputs_StockType_2.png"/>
@@ -158,15 +173,17 @@
 <ul>
 <li>
 <p><span style="font-weight: bold;">切断プロセス:</span> 製造プロセスとして <span>Sheet Metal</span> が選択されている場合にのみ表示されます。その他の必要入力は Prismatic Milling と同じです。切断プロセスは 4 種類あります: <i>Default</i>、<i>Water Jet</i>、<i>Laser</i>、<i>Plasma Cutting</i>。</p>
-</li>
+<p>既定では、切断プロセスに <i>Water jet</i> が設定されています。ドロップダウンリストから必要な切断プロセスを選択します。</p></li>
 </ul>
-<p>既定では、切断プロセスに <i>Water jet</i> が設定されています。ドロップダウンリストから必要な切断プロセスを選択します。</p>
+
 
 <ul>
 <li>
 <p><span style="font-weight: bold;">サブプロセス:</span> 製造プロセスとして <span>Additive Manufacturing</span> が選択されている場合に表示されます。サブプロセスの種類は <i>Default</i>、<i>FDM (Fusion Deposition Modeling)</i>、<i>SLS (Selective Laser Sintering)</i>、<i>SLA (Stereolithography)</i> です。</p>
 </li>
 </ul>
+
+<br>
 <p>Additive Manufacturing プロセスには、以下に示す 3 種類のルールがあります:</p>
 <p><b>1) 材料およびサブプロセスに依存しない</b></p>
 <ul>
@@ -174,6 +191,8 @@
 <li><a href="../Additive_Manufacturing/Mimimum_Gap_Bitween_Faces.htm">Gap Between Faces</a></li>
 <li><a href="../Additive_Manufacturing/Thickness_Bet_Faces.htm">Thickness Between Faces</a></li>
 </ul>
+
+<br>
 <p><b>2) 材料固有</b></p>
 <ul>
 <li><a href="../Additive_Manufacturing/faces_requiring_support.htm">Faces Requiring Support</a></li>
@@ -181,12 +200,16 @@
 <li><a href="../Additive_Manufacturing/maximum_hole_size.htm">Recommended Hole Sizes</a></li>
 <li><a href="../Additive_Manufacturing/Recommended_Pin_Diameter_Additive_Manufacturing.htm">Recommended Pin Diameter</a></li>
 </ul>
+
+<br>
 <p><b>3) プロセス固有</b></p>
 <ul>
 <li><a href="../Additive_Manufacturing/Maximum_Print_Size.htm">Maximum Print Size</a></li>
 <li><a href="../Additive_Manufacturing/Minimum_Wall_Thickness.htm">Minimum Wall Thickness</a></li>
 <li><a href="../Additive_Manufacturing/Recommended_Text_Parameters.htm">Recommended Text Parameters</a></li>
 </ul>
+
+<br>
 <p>ドロップダウンリストから必要な <strong><i>Sub Process</i></strong> を選択します。既定ではサブプロセスに <i>Default</i> が選択されます。DFMPro は選択に基づき、Additive Manufacturing のルールおよび該当するサブプロセス固有ルールで解析を実行します。</p>
 
 <ul>

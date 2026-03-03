@@ -49,7 +49,7 @@
 
 <br>
 
-<p>DFMPro 設定</p>
+<p><b>DFMPro 設定</b></p>
 <p>DFMPro は、ミーリング、板金、アセンブリ向けにデフォルトのプロファイル構成を提供します。ユーザーは、同一セッション内で異なる解析用に複数の事前構成済み製造プロセスを追加することもできます。また、必要に応じてデフォルト以外の単一または複数のプロファイル構成を追加できます。<strong><i>DFMProfile.config</i></strong> ファイルは、以下の場所に配置されています。</p>
 <p>C:\ProgramData\GeometricLtd\DFMPro\wildfire\Profiles</p>
 
@@ -67,41 +67,44 @@
 
 <br>
 
-<p>注記:</p>
-<p>DFMPro ユーザーインターフェースのプロファイルタブに新しいプロファイルを追加するには、標準の構成フォーマットに従う必要があります（上記の画像を参照）。各プロファイルに対して、必要に応じて複数のルールファイルを構成できます。エラーを防ぐため、設定ファイル内に誤ったパスや名前を記載しないことを推奨します。</p>
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>DFMPro ユーザーインターフェースのプロファイルタブに新しいプロファイルを追加するには、標準の構成フォーマットに従う必要があります（上記の画像を参照）。各プロファイルに対して、必要に応じて複数のルールファイルを構成できます。エラーを防ぐため、設定ファイル内に誤ったパスや名前を記載しないことを推奨します。</p></li>
+</ul>
 
 <br>
 
 
 <h2>プロファイルタブ</h2>
-<ol>
-<li><p>DFMPro 設定で <i><a href="DFMPro_Settings.htm#Profile_Execution">Enable Profile Execution</a></i> が選択されている場合、DFMPro ユーザーインターフェースにプロファイルタブが表示されます。</p></li>
-</ol>
-<p>これが未選択の場合、DFMPro は通常どおり動作します（<a href="workflow_at_a_glance.htm">従来の動作</a>）。</p>
+<ol><ol>
+<li><p>DFMPro 設定で <i><a href="DFMPro_Settings.htm#Profile_Execution">Enable Profile Execution</a></i> が選択されている場合、DFMPro ユーザーインターフェースにプロファイルタブが表示されます。</p>
+<p>これが未選択の場合、DFMPro は通常どおり動作します（<a href="workflow_at_a_glance.htm">従来の動作</a>）。</p></li>
+</ol></ol>
+
 
 <br>
 
-<p>注記:</p>
-<ul>
+<p class="note-title">注記:</p>
+<ul class="note-body">
 <li><p>デフォルトでは、DFMPro 設定ダイアログボックス内の <i>Enable Profile Execution</i> チェックボックスは未選択です。</p></li>
 </ul>
 
 <br>
 
-<ol start="2">
+<ol><ol start="2">
 <li><p>プロファイルタブから、DFMPro 解析を実行するために必要なプロファイルを選択できます。</p></li>
-</ol>
+</ol></ol>
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/Profile_Tab_User_Interface.png"/>
 </div>
-<p>プロファイルタブ</p>
+<p style="text-align: center;">プロファイルタブ</p>
 
 <br>
 
-<p>注記:</p>
-<li>
-<p>追加されたルールファイルのパスまたは名前が一致しない場合、プロファイル選択時に、該当するパスまたは名前が正しくないことを示す警告メッセージが表示されます。例:</p>
-</li>
+<p class="note-title">注記:</p>
+<ul class="note-body">
+<li><p>追加されたルールファイルのパスまたは名前が一致しない場合、プロファイル選択時に、該当するパスまたは名前が正しくないことを示す警告メッセージが表示されます。例:</p></li>
+</ul>
 
 <br>
 
@@ -109,29 +112,37 @@
 <img alt="" border="1" src="../../assets/images/Common/image/Profile_Tab_Mismatch_path_Warning.png"/>
 <img alt="" border="1" src="../../assets/images/Common/image/Profile_Tab_Mismatch_File_Warning.png"/>
 </div>
-<p> </p>
-<ol start="3">
+
+<br>
+
+<ol><ol start="3">
 <li><p>構成ファイルで定義されたプロファイルに基づき、DFMPro ユーザーインターフェースのプロファイルタブにそれらが表示されます（上記の DFMPro UI 画像を参照）。</p></li>
-</ol>
+</ol></ol>
+
+<br>
 <ul>
 <li><p><strong><a href="#Default_Profile_Configuration">デフォルト プロファイル構成</a>:</strong></p></li>
 </ul>
-<ol class="LowerAlpha">
+
+<ol><ol class="LowerAlpha">
 <li><p>プロファイルタブでプロファイルを選択すると、引き抜き方向を定義するための <a href="Entity_Selection.htm">エンティティ選択</a> グループボックスが表示されます。</p></li>
-<li><p>User Inputs グループボックスはグレーアウトされます。組織でプロファイル実行が有効になると、ユーザー入力のドロップダウンオプションは無効化されます。ユーザーは User Inputs グループボックスを使用して解析を実行することはできません。</p></li>
+<li><p>User Inputs グループボックスはグレーアウトされます。組織でプロファイル実行が有効になると、ユーザー入力のドロップダウンオプションは無効化されます。</p>
+    <p>ユーザーは User Inputs グループボックスを使用して解析を実行することはできません。</p></li>
 <li><p>製造プロセスおよびルールファイルは、プロファイル構成ページから自動的に読み込まれます。</p></li>
-</ol>
+</ol></ol>
+
+<br>
 <p>これにより、組織は組織固有の製造プロセスとそのルールファイルのみを構成できます。</p>
 <p> </p>
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/Profile_Tab_User_Inputs_Grayed_Out.png"/>
 </div>
-<p> </p>
+
+<br>
+
 <ul>
 <li><p><strong><a href="#Multiple_Profile_Configuration">複数ルールファイル構成</a>:</strong></p></li>
 </ul>
-
-<br>
 
 <ol><ol class="LowerAlpha">
 <li><p>複数のルールファイルが追加されている場合、プロファイルタブからプロファイルを選択すると、<a href="User_Inputs.htm">User Inputs</a> グループボックスが表示されます。このグループボックスでは、ルール構成ドロップダウンメニューから必要なルールファイルを選択できます。</p></li>
@@ -148,8 +159,8 @@
 
 <br>
 
-<p>注記:</p>
-<ul>
+<p class="note-title">注記:</p>
+<ul class="note-body">
 <li><p>ルールファイルでアセンブリ、チューブ、ケーブル、および溶接ルールが選択されている場合、<a href="Multiprocess_analysis_with_Assembly_modules.htm">アセンブリモジュールによるマルチプロセス解析</a> のワークフローがサポートされます。</p></li>
 <li><p>モデルに鋳造・機械加工領域が含まれている場合は、<a href="Analysis_with_Multiple_Processes.htm">複数プロセスによる解析</a> がサポートされます。</p></li>
 </ul>
@@ -159,11 +170,11 @@
 <h2>DFMPro プロファイル実行 - DFX サーバ解析</h2>
 <p><a href="DFMPro_Settings.htm">DFMPro 設定</a> で <a href="DFMPro_Settings.htm#DFXServer">Allow server analysis</a> および <a href="DFMPro_Settings.htm#Assembly">Assembly Preselection Option</a> が選択されている場合、ユーザーは DFX サーバ上でプロファイル実行による DFMPro 解析を実行できます。この場合、解析実行時に <i>Server</i> および <i>Local</i> オプションが表示されます。</p>
 <p> </p>
-<ol>
+<ol><ol>
 <li><p>アセンブリドキュメントを開き、<strong><i>DFMPro</i></strong> メニューをクリックします。</p></li>
 <li><p>DFMPro メニュー内の <img alt="" border="0" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp"/> <strong><i>Start DFMPro</i></strong> をクリックして、ユーザーインターフェースを開きます。</p></li>
 <li><p>プロファイルタブから、DFMPro 解析を実行するために <strong><i>Assembly</i></strong> を選択します。</p></li>
-</ol>
+</ol></ol>
 <p> </p>
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/Profile_Tab_User_Interface_Assembly.png"/>
@@ -171,13 +182,15 @@
 
 <br>
 
-<ol start="4">
+<ol><ol start="4">
 <li><p>表示された User Inputs グループボックスで、選択に応じてローカルまたはサーバでの解析実行が可能です。</p></li>
-</ol>
+
 <ul><ul>
 <li><p><strong>Local</strong> オプションが選択されている場合、解析はローカルマシンで実行されます。</p></li>
 <li><p><strong>Server</strong> オプションが選択されている場合、解析は <a href="DFX_Server_Solution.htm">DFX サーバ</a> 上で実行されます。</p></li>
 </ul></ul>
+
+</ol></ol>
 
 <br>
 
@@ -188,9 +201,9 @@
 
 <br>
 
-<ol start="5">
+<ol><ol start="5">
 <li><p><strong><i>Entire Assembly</i></strong> または <strong><i>Pre-Selected Components</i></strong> の解析オプションを選択することもできます。</p></li>
-</ol>
+
 
 <ul><ul>
 <li><p>Entire Assembly が選択されている場合、解析はアセンブリ全体に対して実行されます。</p></li>
@@ -198,10 +211,12 @@
 <p><img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"/> <strong><i>Analyze</i></strong> ボタンをクリックすると、必要なコンポーネント／サブアセンブリを選択するための <a href="Assembly_Analysis_Selection.htm#Different_ways_to_select_the_components_sub-assemblies">コンポーネント選択グループボックス</a> が表示されます。</p></li>
 </ul></ul>
 
+</ol></ol>
 
-<ol start="6">
+
+<ol><ol start="6">
 <li><p><i>Entire Assembly</i> または <i>Pre-Selected Components</i> のいずれかで解析実行タイプとして <strong>Server</strong> が選択されている場合、解析は <a href="DFX_Server_Solution.htm">DFX サーバ</a> 上で実行されます。</p></li>
-</ol>
+</ol></ol>
 
 <br>
 </body>

@@ -42,82 +42,151 @@
 <h2>システム要件</h2>
 <br>
 <h4>対応する PTC バージョンおよび DFMPro のリアルタイムモード</h4>
-<ul>
+<ul><ul>
   <li>Creo Parametric 12.4.0.0 ～ Creo Parametric 12.4.1.0</li>
   <li>Creo Parametric 11.0.0.0 ～ Creo Parametric 11.0.5.0</li>
   <li>Creo Parametric 10.0.0.0 ～ Creo Parametric 10.0.9.0</li>
   <li>Creo Parametric 9.0.0.0 ～ Creo Parametric 9.0.11.0</li>
   <li>Creo Parametric 8.0.0.0 ～ Creo Parametric 8.0.12.0</li>
+</ul></ul>
+
+<br>
+
+<p class="note-title"><b>注記:</b></p>
+<ul  class="note-body">
+<li><p>64 ビット版でのみサポートされます。</p></li>
 </ul>
-<p><b>注:</b></p>
-<p>64 ビット版でのみサポートされます。</p>
+
 <br>
 <h2>Creo Parametric v12.4 サポート</h2>
 <br>
+
 <h2>既存ルールの強化</h2>
-<br>
-<h4>ケーブリング</h4>
+
+<ol><ol start="1">
+<li><h3>ケーブリング</h3></li>
+
+
 <p>ケーブルがケーブルバンドルセグメントを使用して作成される場合、このルールはバンドルセグメント全体を 1 本のケーブルとして扱います。</p>
 <p><b>対応ルール:</b></p>
-<p><a href="../../Common/Cabling/Interference_Between_Cable_and_Other_Components.htm">ケーブルと他コンポーネント間の干渉</a></p>
-<p><a href="../../Common/Cabling/Interference_Between_Cables.htm">ケーブル同士の干渉</a></p>
-<p><a href="../../Common/Cabling/Recommended_Distance_Between_Cable_Supports.htm">ケーブル支持間の推奨距離</a></p>
+<ul><ul>
+<li><p><a href="../../Common/Cabling/Interference_Between_Cable_and_Other_Components.htm">ケーブルと他コンポーネント間の干渉</a></p></li>
+<li><p><a href="../../Common/Cabling/Interference_Between_Cables.htm">ケーブル同士の干渉</a></p></li>
+<li><p><a href="../../Common/Cabling/Recommended_Distance_Between_Cable_Supports.htm">ケーブル支持間の推奨距離</a></p></li>
+</ul></ul>
+
+</ol></ol>
 <br>
-<h4>一般</h4>
+
+<ol><ol start="2">
+<li><h3>基本設計ルール</h3></li>
+
 <p><a href="../../Common/General/min_drill_break_thk.htm">ドリル貫通部の最小壁厚</a>: このルールは、側面からの穴あけ位置までの距離を直径に対する比率としてチェックします。</p>
+</ol></ol>
+
 <br>
-<h4>ミリング</h4>
+
+<ol><ol start="3">
+<li><h3>切削加工</h3></li>
+
+
 <p><a href="../../Common/Milling/tool_accessibility.htm">工具アクセス性</a>: このルールは、ミリング/ドリル加工フィーチャと、ポケット/スロット近傍の壁とのクリアランスをチェックし、設計段階で干渉問題を修正できるようにします。</p>
+</ol></ol>
+
 <br>
-<h4>板金</h4>
+
+<ol><ol start="4">
+<li><h3>板金加工</h3></li>
+
+
 <p><a href="../../Common/Sheet_Metal/minimum_width_of_cutout.htm">切り欠きの最小幅</a>: 不規則な切り欠きの場合、このルールはまず鋭角コーナー (A) のケースをチェックし、それに合格した後に切り欠きの最小幅をチェックします。</p>
+</ol></ol>
+
 <br>
+
 <h2>ルールマネージャーの機能強化</h2>
-<br>
-<h4>ルールファイル比較機能</h4>
+<ol><ol start="1">
+<li><h3>ルールファイル比較機能</h3></li>
+
 <p>DFMPro は、ルールマネージャーダイアログに <i>Compare Rule Files</i>（ルールファイル比較）ボタンを追加しました。これにより、別々の 2 つのルールファイルを比較して差分を特定できます。</p>
 <p>詳細は <a href="../../Common/Getting_Started/Compare_Rule_Files.htm">Compare Rule Files</a> を参照してください。</p>
+</ol></ol>
+
 <br>
-<h4>並べ替え順機能</h4>
+
+<ol><ol start="2">
+<li><h3>並べ替え順機能</h3></li>
+
+
 <p>DFMPro は、ルールマネージャーダイアログに <i>Sort</i>（並べ替え）ボタンを追加しました。これにより、列をアルファベット順に並べ替え、上矢印/下矢印を使用して優先順位を設定できます。</p>
 <p>詳細は <a href="../../Common/Getting_Started/Sort_Order_Rule_Manager.htm">Sort Order</a> を参照してください。</p>
+
+</ol></ol>
+
 <br>
-<h4>ヘッダー並べ替え機能</h4>
+<ol><ol start="3">
+<li><h3>ヘッダー並べ替え機能</h3></li>
 <p>任意のヘッダー列をクリックすると矢印（上または下）が表示され、上矢印/下矢印を使用して、Rule、Category、Module、Criticality、Custom Message の各列をアルファベット順に並べ替えることができます。</p>
 <p>詳細は <a href="../../Common/Getting_Started/configuring_rules.htm">Configuring Rules</a> を参照してください。</p>
+</ol></ol>
+
 <br>
 <h2>ハードウェアデータベースの機能強化</h2>
-<br>
-<h4>ハードウェアタイプの一括削除機能</h4>
+<ol><ol start="1">
+<li><h3>ハードウェアタイプの一括削除機能</h3></li>
+
 <p>ユーザーは、<b>Delete</b> ボタン、またはキーボードの <b>Shift</b> と <b>Ctrl</b> コマンドを使用して、1 つまたは複数のハードウェアタイプを同時に削除できます。</p>
+</ol></ol>
+
 <br>
-<h4>検索オプション</h4>
+<ol><ol start="2">
+<li><h3>検索オプション</h3></li>
+
 <p>DFMPro は、ハードウェアデータベースダイアログでハードウェアタイプを素早く検索するために、<i>Search</i>（検索）ボタンまたは <b>Ctrl+F</b> コマンドを提供します。</p>
+</ol></ol>
 <br>
-<h4>Unit 列</h4>
+<ol><ol start="3">
+<li><h3>Unit 列</h3></li>
+
 <p>ハードウェアデータベースの Unit 列は、DFMPro ルール検証を効果的に行うための、異なるハードウェア単位を構成するために使用されます。</p>
 <p>詳細は <a href="../../Common/DFMPro_Customization/Hardware_Database.htm">Hardware Database</a> を参照してください。</p>
+</ol></ol>
+
 <br>
 <h2>ミリングルールに対する材料データベースサポート</h2>
-<p>DFMPro は、<a href="../../Common/Milling/narrow_regions_in_pockets.htm">Narrow Regions in Pockets</a> ルールに対する材料データベースサポートを提供しています。ルール UI では、材料リストは <a href="../../Common/Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から取り込まれ、ユーザーは材料とその値を構成できます。</p>
+<ul><ul>
+<li><p>DFMPro は、<a href="../../Common/Milling/narrow_regions_in_pockets.htm">Narrow Regions in Pockets</a> ルールに対する材料データベースサポートを提供しています。ルール UI では、材料リストは <a href="../../Common/Getting_Started/Map_Material_to_Manufacturing_Process_dialog_box.htm">Map Material</a> から取り込まれ、ユーザーは材料とその値を構成できます。</p></li>
+</ul></ul>
 <br>
 <h2>材料グループおよびグレードのサポート</h2>
-<p>DFMPro は、<a href="../../Common/DFMPro_Customization/material_database.htm">Materials Database</a> から取り込まれる Material Group および Grade のドロップダウンメニューを導入しました。ユーザーは材料および関連する値を構成できます。材料グループ内では、材料グレードはアルファベット順に並び替えられます。材料グループが選択されると、DFMPro は材料グループ全体で一貫した比率を維持したまま解析を実行します。</p>
+<ul><ul>
+<li><p>DFMPro は、<a href="../../Common/DFMPro_Customization/material_database.htm">Materials Database</a> から取り込まれる Material Group および Grade のドロップダウンメニューを導入しました。ユーザーは材料および関連する値を構成できます。材料グループ内では、材料グレードはアルファベット順に並び替えられます。材料グループが選択されると、DFMPro は材料グループ全体で一貫した比率を維持したまま解析を実行します。</p></li>
+</ul></ul>
 <br>
 <h2>散布図（Scatter Plot）結果表示の強化</h2>
-<p>DFMPro の結果に複数のユニットレベルの失敗インスタンスが含まれる場合、ユーザーは Scatter Plot 機能を使用して、結果をユニット単位で表示・解析し、より明確に把握できます。</p>
-<p>詳細は <a href="../../Common/Getting_Started/ignoring_over_reported_failures.htm#Scatter_Plot_Result_View">Scatter Plot Result View</a> セクションを参照してください。</p>
+<ul><ul>
+<li><p>DFMPro の結果に複数のユニットレベルの失敗インスタンスが含まれる場合、ユーザーは Scatter Plot 機能を使用して、結果をユニット単位で表示・解析し、より明確に把握できます。</p>
+<p>詳細は <a href="../../Common/Getting_Started/ignoring_over_reported_failures.htm#Scatter_Plot_Result_View">Scatter Plot Result View</a> セクションを参照してください。</p></li>
+</ul></ul>
+
 <br>
+
 <h2>DFX サーバー解析 - バージョン不一致通知</h2>
-<p>クライアントが DFX サーバーにリクエストを送信すると、サーバーはクライアント側で利用可能な DFMPro バージョンと実行サーバー上のバージョンを照合します。不一致が検出された場合、設計者に通知のポップアップメッセージが表示されます。</p>
-<p>詳細は <a href="../../Common/Getting_Started/DFX_Server_Solution.htm">DFX Server Solution</a> を参照してください。</p>
+<ul><ul>
+<li><p>クライアントが DFX サーバーにリクエストを送信すると、サーバーはクライアント側で利用可能な DFMPro バージョンと実行サーバー上のバージョンを照合します。不一致が検出された場合、設計者に通知のポップアップメッセージが表示されます。</p>
+<p>詳細は <a href="../../Common/Getting_Started/DFX_Server_Solution.htm">DFX Server Solution</a> を参照してください。</p></li>
+</ul></ul>
+
 <br>
+
 <h2>トップレベル機能のサポート</h2>
-<p><a href="../../Common/Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> で <i>Execute Assembly Rules only on Top Level Assembly Parts</i>（トップレベルアセンブリパーツのみでアセンブリルールを実行）オプションを選択すると、DFMPro はトップレベルとして識別されたサブアセンブリ内の問題は検出しません。ただし、2 つ以上のトップレベルサブアセンブリ/パーツ間の問題は検出されます。これにより、アセンブリ解析を、製品モジュール間のインターフェースレベルの問題に限定できます。この設定は、製品アセンブリが非常に大規模であり、アセンブリを完全または部分的にロードした場合にのみインターフェースレベルの問題が観察される場合に非常に有用です。</p>
-<p>詳細は <a href="../../Common/Getting_Started/Top_Level_Assembly_Analysis.htm">Top-Level Assembly Analysis</a> を参照してください。</p>
+<ul><ul>
+<li><p><a href="../../Common/Getting_Started/DFMPro_Settings.htm#Assembly">DFMPro Settings</a> で <i>Execute Assembly Rules only on Top Level Assembly Parts</i>（トップレベルアセンブリパーツのみでアセンブリルールを実行）オプションを選択すると、DFMPro はトップレベルとして識別されたサブアセンブリ内の問題は検出しません。ただし、2 つ以上のトップレベルサブアセンブリ/パーツ間の問題は検出されます。これにより、アセンブリ解析を、製品モジュール間のインターフェースレベルの問題に限定できます。この設定は、製品アセンブリが非常に大規模であり、アセンブリを完全または部分的にロードした場合にのみインターフェースレベルの問題が観察される場合に非常に有用です。</p>
+<p>詳細は <a href="../../Common/Getting_Started/Top_Level_Assembly_Analysis.htm">Top-Level Assembly Analysis</a> を参照してください。</p></li>
+</ul></ul>
 <br>
 <h2>重要な注意事項:</h2>
-<ul>
+<ul><ul>
   <li>Creo Parametric v12.4 のサポートは、DFMPro for Creo Parametric v12.3 から利用可能です。</li>
   <li>Creo Parametric v7.0 のサポートは、DFMPro for Creo Parametric v12.1 から廃止されています。</li>
   <li>Creo Parametric v8.0 のサポートは、次回の DFMPro for Creo Parametric リリースで廃止される予定です。</li>
@@ -125,11 +194,15 @@
   <li>DFX Server Solution は、標準の DFMPro for Creo Parametric には含まれていません。</li>
   <li>Cost アドオンは追加ライセンスが必要なコンポーネントであり、標準の DFMPro for Creo Parametric には含まれていません。</li>
   <li>Toolkit ライブラリの競合により、DFMPro が補助アプリケーションとしてロードされている場合、Creo Simulation は動作しません。これは PTC R&amp;D に SPR10179627 として報告されています。</li>
-</ul>
+</ul></ul>
 <p>このオプションのアドオンに関心がある既存のお客様は、HCL Technologies（<a href="mailto:dfmpro.marketing@hcl-software.com">dfmpro.marketing@hcl-software.com</a>）へ直接お問い合わせいただくか、<a href="http://www.dfmpro.com" target="_blank">www.dfmpro.com</a> をご参照ください。</p>
-<p><b>注:</b></p>
-<p>関連するサポート記事を閲覧するには PTC Support へのログインが必要です。</p>
 
+<br>
+
+<p class="note-title">注記:</p>
+<ul  class="note-body">
+<li><p>関連するサポート記事を閲覧するには PTC Support へのログインが必要です。</p></li>
+</ul>
 
 
 </body></html>

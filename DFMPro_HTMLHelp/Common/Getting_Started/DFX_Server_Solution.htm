@@ -38,7 +38,8 @@
     </div>
   </div>
   <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
-  <h1>DFX サーバーソリューション</h1><br>
+
+<h1>DFX サーバーソリューション</h1>
 <p><b>DFX サーバーソリューション</b>は、DFX サーバー上で解析を実行するためのオプションを提供します。この機能は <a href="DFMPro_Settings.htm#DFXServer">DFMPro 設定</a> から有効にできます。</p>
 <p> </p>
 <p>これにより、ユーザーは以下のことが可能になります：</p>
@@ -48,7 +49,9 @@
 <li><p>DFMPro for Creo Parametric の「DFX サーバー」タブから解析ステータスを確認する。</p></li>
 <li><p>サーバー上で解析が正常に完了した後、（ローカルで解析した場合と同様に）DFMPro for Creo Parametric 内で結果を確認する。</p></li>
 </ul>
-<p> </p>
+
+<br>
+
 <p>注記：</p>
 <p>DFX サーバーソリューションは、現在以下のモジュールをサポートしています：</p>
 <ul>
@@ -57,39 +60,55 @@
 <li>ケーブリング</li>
 <li>溶接（アセンブリファイルのみ）</li>
 </ul>
+
+<br>
+
 <p>DFX サーバー設定を有効にするには、DFMPro 管理者にお問い合わせください。</p>
 <p>DFX サーバー機能を使用するには、DFMPro 設定ファイルをバージョン 8.11 から <a href="DFMPro_Settings.htm#Settings">アップグレード</a> してください。</p>
 <p><a href="Multiprocess_analysis_with_Assembly_modules.htm">アセンブリモジュールによるマルチプロセス解析</a> は、DFX サーバーでサポートされています。</p>
-<p> </p>
-<p> </p>
-<h2>DFX サーバータブ</h2><br>
+
+<br>
+
+<h2>DFX サーバータブ</h2>
 <p><b>アセンブリ</b> が <a href="User_Inputs.htm">製造プロセス</a> として選択され、かつ <a href="DFMPro_Settings.htm#DFXServer">サーバー解析を許可</a> オプションが <a href="DFMPro_Settings.htm">DFMPro 設定</a> ダイアログボックスで有効になっている場合、DFMPro は解析実行タイプとして <i>サーバー</i> および <i>ローカル</i> のオプションを表示します。</p>
-<p> </p>
-<h4>前提条件</h4><br>
+
+<br>
+
+<h4>前提条件</h4>
 <ul>
 <li><p>DFMPro for Creo Parametric のインストール</p></li>
 <li><p>DFX サーバーのセットアップ</p></li>
 <li><p>バッチ機能を備えた DFMPro for Creo Parametric のライセンス</p></li>
 </ul>
-<p> </p>
+
+<br>
+
 <div style="text-align:center;">
 <img alt="" border="0" src="../../assets/images/Common/image/DFX_Server_Local_Server_Option_CP.png"/>
 </div>
-<p> </p>
+
+<br>
+
 <ul>
 <li><p>ローカル オプションが選択されている場合、解析はローカルマシンで実行されます。</p></li>
 <li><p>サーバー オプションが選択されている場合、解析は DFX サーバー上で実行されます。</p></li>
 </ul>
-<p> </p>
-<p> </p>
+
+<br>
+
 <p>注記：</p>
 <p>サーバー実行は DFMPro のルール解析のみがサポートされています。コスト見積りは現在 DFX サーバーではサポートされていません。</p>
 <p>解析リクエストを DFX サーバーで実行するには、各ユーザーまたはユーザーグループに有効なメール ID が設定されている必要があります。ユーザーまたはグループのメール ID は、DFX サーバー管理ダッシュボードで管理者のみが設定できます。ユーザー名が DFX サーバー管理ダッシュボードに設定されていない場合、DFMPro は以下の警告メッセージを表示します。詳細については、DFX サーバー管理者ユーザーガイドを参照してください。</p>
 <p>DFX サーバー解析機能のユーザー／グループ選択は、DFMPro for Creo Parametric v12.1 から DFX サーバー管理ダッシュボードで利用可能です。</p>
+
+<br>
+
 <div style="text-align:center;">
 <img alt="" border="1" src="../../assets/images/Common/image/DFX_Server_Warning.png"/>
 </div>
-<p> </p>
+
+<br>
+
 <p>選択されたコンポーネント数および適用可能なルールに基づくヒューリスティックにより、アプリケーションは解析をサーバーで実行すべきかどうかを推奨します。ユーザーはこの推奨を上書きすることができます。</p>
 <p> </p>
 <p>ユーザーは DFX サーバータブから送信済みリクエストのステータスを確認できます。</p>
@@ -97,8 +116,10 @@
 <div style="text-align:center;">
 <img alt="" border="0" src="../../assets/images/Common/image/DFX_Server_tab_DFMProUI_CP_NX.png"/>
 </div>
-<p> </p>
-<h2>解析リクエストステータス グループボックス</h2><br>
+
+<br>
+
+<h2>解析リクエストステータス グループボックス</h2>
 <p>このグループボックスでは、サーバーでの実行のためにユーザーが送信したすべてのリクエストのステータスを確認できます。以下の情報が表示されます：</p>
 <p> </p>
 <div style="text-align:center;">
@@ -132,54 +153,83 @@
 <li><p><b>リクエスト日：</b> 実行のためにリクエストが送信され、サーバーに送られた日付。</p></li>
 <li><p><b>リクエスト時刻：</b> リクエストが送信された時刻。</p></li>
 </ul>
-<p> </p>
-<h4>通知メール</h4><br>
+
+<br>
+
+<h4>通知メール</h4>
 <p>ユーザーは解析実行ステータスを通知するメールを受信します。通知メールの設定は DFX サーバー管理ダッシュボードで管理者のみが行えます。詳細については、DFX サーバー管理者ユーザーガイドを参照してください。</p>
+
+<br>
+
 <p>注記：</p>
 <p>通知メール機能は DFMPro for Creo Parametric バージョン 9.4 から利用可能です。</p>
-<p> </p>
-<h4>解析リクエストのキャンセル</h4><br>
+
+<br>
+
+<h4>解析リクエストのキャンセル</h4>
 <p>解析リクエストが Queued または Running 状態の場合、DFX サーバー管理者のみが解析リクエストをキャンセルできます。<b><i>Queued／Running</i></b> ステータスを右クリックし、コンテキストメニューから <b><i>キャンセル</i></b> オプションを選択して解析リクエストをキャンセルします。キャンセル後、ステータスは Cancelled に変更され、同じステータスが DFX サーバー管理ダッシュボードにも反映されます。</p>
-<p> </p>
-<h4>日付範囲</h4><br>
+
+<br>
+
+<h4>日付範囲</h4>
 <p>カレンダーから日付範囲を設定して、該当する送信済みリクエストの解析ステータスを表示します。</p>
 <div style="text-align:center;">
 <img alt="" border="0" src="../../assets/images/Common/image/DFXServer_DateRange_CP_NX.png"/>
 </div>
-<p> </p>
-<h4>検索バー</h4><br>
+
+<br>
+
+<h4>検索バー</h4>
 <p>モデル名、リクエスト ID、ルールファイル名などの入力を指定して、該当する解析結果を表示します。</p>
 <div style="text-align:center;">
 <img alt="" border="0" src="../../assets/images/Common/image/SearchBar_DFXServer.png"/>
 </div>
-<p> </p>
-<h4>ステータス更新ボタン <img alt="" border="0" src="../../assets/images/Common/image/Refresh_DFXServer.png"/></h4><br>
+
+<br>
+
+<h4>ステータス更新ボタン <img alt="" border="0" src="../../assets/images/Common/image/Refresh_DFXServer.png"/></h4>
 <p><i>ステータス更新</i> ボタンを使用して、送信済みのすべての解析リクエストの解析ステータスを更新します。</p>
-<p> </p>
-<h4>結果のインポート</h4><br>
+
+<br>
+
+<h4>結果のインポート</h4>
 <p>結果は、サーバー上の送信済みリクエストに対して DFX サーバータブからインポートできます。特定のリクエストの Successful ステータスをクリックすると、その実行に対する dfmr ファイルがインポートされます。</p>
 <p>必要に応じて、インポート処理をキャンセルすることもできます。</p>
+
+<br>
+
 <p>注記：</p>
 <p>正常にインポートするには、結果生成に使用されたものと同じアセンブリを開いている必要があります。</p>
-<p> </p>
-<h2>DFX サーバー解析を保証するためのバージョン不一致通知</h2><br>
+
+<br>
+
+<h2>DFX サーバー解析を保証するためのバージョン不一致通知</h2>
 <p><img alt="" border="0" src="../../assets/images/Common/image/Run_button.png"/> <em>解析</em> ボタンをクリックすると、DFMPro は DFX 実行サーバーのバージョンを確認し、解析リクエストを送信する前にメッセージで通知します。</p>
 <p>クライアントが DFX サーバーにリクエストを送信すると、サーバーはクライアント側の DFMPro バージョンと実行サーバー上のバージョンを比較します。不一致が検出された場合、設計者に通知ポップアップメッセージが表示されます。</p>
-<p> </p>
-<h4>実行サーバーに DFMPro がインストールされていない／接続されていない場合：</h4><br>
+
+<br>
+
+<h4>実行サーバーに DFMPro がインストールされていない／接続されていない場合：</h4>
 <p>解析を行うには、DFMPro と DFX 実行サーバーが同一マシン上で利用可能である必要があります。DFX 実行サーバーに DFMPro がインストールされていない、または接続されていない場合、DFMPro は利用可能な DFX サーバーの一覧を含むメッセージを表示します。<strong>OK／キャンセル</strong> をクリックしてメッセージを閉じてください。</p>
 <p>詳細については、DFX サーバー管理者にお問い合わせください。</p>
-<p> </p>
+
+<br>
+
 <div style="text-align:center;">
 <img height="337" width="483" src="../../assets/images/Common/image/DFX_Server_Not_Installed_Connected_Message.png" border="1" alt=""/>
 </div>
-<p> </p>
-<h4>シナリオ 2：DFMPro と DFX 実行サーバーのバージョンが異なる場合：</h4><br>
+
+<br>
+
+<h4>シナリオ 2：DFMPro と DFX 実行サーバーのバージョンが異なる場合：</h4>
 <p>クライアント側の DFMPro バージョンと DFX 実行サーバー側のバージョンが異なる場合、DFMPro は以下のメッセージを表示し、現在のバージョンを持つ利用可能な実行サーバーの一覧を提供します。</p>
 <ul>
 <li><p><strong>はい</strong> をクリックすると、解析を続行します。</p></li>
 <li><p><strong>いいえ</strong> をクリックすると、処理を停止します。</p></li>
 </ul>
+
+<br>
+
 <p>詳細については、DFX サーバー管理者にお問い合わせください。</p>
 <p> </p>
 <div style="text-align:center;">
