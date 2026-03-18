@@ -1,7 +1,6 @@
 (function() {    var toc =  [
 {"name":"v12.3の新機能 (What's New in v12.3)","type":"book","tilePath":"","key":"toc1"},
 {"name":"概要 (Overview)","type":"book","tilePath":"","key":"toc2"},
-{"name":"著作権・免責事項(Copyright Disclaimer)","type":"book","tilePath":"","key":"toc99"},
 {"name":"はじめに (Getting Started)","type":"book","tilePath":"","key":"toc3"},
 {"name":"DFMProマルチボディ対応 (DFMPro Multibody Support)","type":"book","tilePath":"","key":"toc4"},
 {"name":"DFXサーバーソリューション (DFX Server Solution)","type":"book","tilePath":"","key":"toc5"},
