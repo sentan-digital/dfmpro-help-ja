@@ -39,7 +39,6 @@
   </div>
   <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
 <h1>角柱形状の切削部品チュートリアル</h1>
-<br>
 <p>この例では、機能や機能（ファンクション）を段階的に実際に操作しながら学ぶツアーを通して、部品全体のミリング（切削）加工手順を学びます。このチュートリアルはDFMProの使用方法を示すことを目的としており、実際の加工プロセスと一致しない場合があります。</p>
 <br>
 <p><b>重要!</b> これらの演習を行う際、手順に記載された内容や図に示された内容と同じ結果にならない場合があります。これは、加工を必要としない形状、または他の加工（オペレーション）を必要とする形状が含まれる可能性があるためです。これらの考慮事項は手動で確認する必要があります。</p>
@@ -49,7 +48,6 @@
 <p>この例の手順の並びは、<a href="../../Common/Getting_Started/workflow_at_a_glance.htm">設計を解析する手順</a>とは異なります。このチュートリアルでは、ルールを構成し、解析を実行し、エラーを修正するための手順を進めていきます。</p>
 <br>
 <h2><a name="top" id="top"></a>基本手順</h2>
-<br>
 <p><a href="#Step1">DFMPro解析の実行</a>（DFMProルールに対して設計を検証）</p>
 <p><a href="#Step2">解析結果の表示と解釈</a></p>
 <p><a href="#Step3">設計の修正と再検証</a>（ルールに対して）</p>
@@ -57,7 +55,6 @@
 <p><a href="#Step5">DFMProルールの構成</a></p>
 <br>
 <h4><a name="Step1" id="Step1"></a>手順 I: DFMPro解析の実行</h4>
-<br>
 <ol style="list-style: decimal;">
   <li>
     <p><strong><i>DFMPro</i></strong>がCreo Parametricで有効な補助アプリケーション（Auxiliary Application）になっていることを確認します。</p>
@@ -67,22 +64,23 @@
   </li>
   <li>
     <p>DFMProメニューから <img alt="" border="0" src="../../assets/images/Common/image/New_StartDFMPro_SW.bmp" /> <strong><i>Start DFMPro</i></strong> ボタンをクリックして、ユーザーインターフェースを開きます。</p>
-  </li>
-</ol>
-<p>または</p>
+  <p>または</p>
 <p>Creo Parametricメニューの<strong><i>DFMPro</i></strong>をクリックし、メニューから<strong><i>Start DFMPro</i></strong>を選択します。</p>
 <p>DFMProユーザーインターフェースが表示されます。</p>
+  </li>
+</ol>
+
 <ol start="4" style="list-style: decimal;">
   <li>
     <p>Manufacturing Process（製造プロセス）オプションで、ドロップダウンリストから<strong><i>Prismatic Mill</i></strong>を選択します。</p>
   </li>
   <li>
     <p><img alt="" border="0" src="../../assets/images/Common/image/Run_button.png" /> <strong><i>Analyze</i></strong> ボタンをクリックして解析を実行します。</p>
-  </li>
-</ol>
+  
 <p>解析に要する時間は、部品のサイズや複雑さによって、数秒から数分に及ぶ場合があります。</p>
 <p>DFMProは加工の観点から部品を解析し、解析プロセスが開始されるとダッシュボードにメッセージを表示します。ソリッドモデルから加工可能なフィーチャーを抽出します。加工可能なフィーチャーは、部品の加工可能な面、ポケット、スロット、ボス、溝のサイズと形状、位置、穴の種類などを定義します。フィーチャーは、これらの形状に面取りや丸め（R）があるかどうかなど、より詳細な情報も記述します。解析の終了時に、ダッシュボードにメッセージが表示されます。</p>
-<ol start="6" style="list-style: decimal;">
+</li>
+</ol><ol start="6" style="list-style: decimal;">
   <li>
     <p>解析が終了すると、DFMProユーザーインターフェースのResultsグループボックスに結果が表示されます。</p>
   </li>
@@ -90,19 +88,18 @@
 <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">top</a></p>
 <br>
 <h4><a name="Step2" id="Step2"></a>手順 II: 解析結果の表示と解釈</h4>
-<br>
 <ol style="list-style: decimal;">
   <li>
     <p><span style="font-weight: bold;">View</span>（表示）して、Resultsグループボックスで結果を確認します。</p>
-  </li>
+  <p>結果ツリーには、次の情報が報告されます:</p></li>
 </ol>
-<p>結果ツリーには、次の情報が報告されます:</p>
-<ul>
+
+<ul><ul>
   <li>設計に対して実行されたDFMProルール数: 33</li>
   <li>失敗（違反）したDFMProルール数: 4</li>
   <li>合格したルール数: 10</li>
   <li>指定された設計に適用されなかったルール数: 19</li>
-</ul>
+</ul></ul>
 <ol start="2" style="list-style: decimal;">
   <li>
     <p>ツリー内の失敗したルールをクリックします。ダッシュボードには、このルールが必要である理由（根拠）が説明されます。</p>
@@ -113,31 +110,29 @@
     <p>ルール配下のリスト内にある<em><strong>Instance</strong></em>（インスタンス）項目をクリックします。インスタンスがグラフィック領域でハイライトされ、ダッシュボードには次のような情報が表示されます:</p>
   </li>
 </ol>
-<ul>
+<ul><ul>
   <li>ルールに違反している形状（または設計内の特定フィーチャー）。</li>
   <li>そのインスタンスの何が問題なのかに関する情報</li>
   <li>可能な是正処置（修正）の提案。</li>
-</ul>
+</ul></ul>
 <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">top</a></p>
 <br>
 <h4><a name="Step3" id="Step3"></a>手順 III: 設計の修正と再検証</h4>
-<br>
 <ol style="list-style: decimal;">
   <li>
     <p><strong><i>Flat Bottom Holes</i></strong> エラーをクリックします。</p>
-  </li>
-</ol>
 <p>このルールは、すべての止まり穴（ブラインド穴）の底面が平らではなく円すい形になっていることをチェックします。標準的なツイストドリルでは、ドリル先端形状により円すい状の穴底が形成されるためです。平底の穴は、リーマ加工（リーミング）を行う際に問題になります。リーミングは、穴あけ後に穴径をより厳しい公差に仕上げるための仕上げ加工です。</p>
 <p>DFMProがエラーを報告した場合、解析によって、製造などの後工程で発生し得る潜在的な問題が特定されたことを意味します。必ずしも、その形状が加工できないことを意味するわけではありません。</p>
-<ol start="2" style="list-style: decimal;">
+</li>
+</ol><ol start="2" style="list-style: decimal;">
   <li>
     <p><strong><i>Flat Bottom Holes</i></strong> 項目を展開します。</p>
   </li>
   <li>
     <p>最初のインスタンスを右クリックし、コンテキストメニューから<strong><i>Ignore</i></strong>を選択します。</p>
-  </li>
+  <p>この報告エラーは、学習目的のこの加工環境においては重要ではないため、以降の解析でエラーとして報告しないよう指定できます。</p></li>
 </ol>
-<p>この報告エラーは、学習目的のこの加工環境においては重要ではないため、以降の解析でエラーとして報告しないよう指定できます。</p>
+
 <ol start="4" style="list-style: decimal;">
   <li>
     <p>すべてのインスタンスに対して手順3を繰り返します。</p>
@@ -155,14 +150,12 @@
 <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">top</a></p>
 <br>
 <h4><a name="Step4" id="Step4"></a>手順 IV: 手動でのレビュー</h4>
-<br>
 <p>エラーを修正した後、DFMProユーザーインターフェース内の情報を読みます。この領域は、DFMProがモデル全体を解析できたかどうかを報告します。何らかの理由でモデル全体を解析できなかった場合は、<i>Unanalysed</i>ボタンをクリックして、モデル上の該当形状をハイライトします。</p>
 <p>DFMProがモデルを十分にスキャンできない場合、現在の技術的制限が原因である可能性があります。これらの領域は手動で解析する必要があります。</p>
 <p>また、複雑な部品の場合、手動レビューを行わないと、隠れた形状内の一部のエラーが見落とされる可能性があります。</p>
 <p style="font-size: 8pt;"><a href="#top" style="font-size: 8pt;">top</a></p>
 <br>
 <h4><a name="Step5" id="Step5"></a>手順 V: DFMProルールの構成</h4>
-<br>
 <p>結果で失敗インスタンスを確認すると、DFMProは、特定パラメータの実測値が期待値に対してどの程度であるかの情報を提供します。</p>
 <p>たとえば、Deep Radiused Cornersルールで失敗したインスタンスのデータでは、ミルポケットの深さと最小コーナーRの比が25.0であると示されます。これに対し、推奨値は16.0未満です。</p>
 <p>期待値に対するルールと既定設定は、集積された経験に基づいて提供されています。</p>
